@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1725566825
+::res://::1725567262
 icon.svg::CompressedTexture2D::4648720931128078553::1721457102::1721457102::1::::<><>::
-::res://Assets/::1725566732
+::res://Assets/::1725566986
 ::res://Assets/Animals/::1725512497
 ::res://Assets/Animals/Chicken/::1725512493
 chicken blue.png::CompressedTexture2D::1828684576078513934::1721457102::1721583470::1::::<><>::
@@ -69,8 +69,8 @@ signs_sides.png::CompressedTexture2D::5785739587431149979::1721457102::172158347
 Water Objects.png::CompressedTexture2D::3685129344122376900::1721457102::1721583470::1::::<><>::
 Water well.png::CompressedTexture2D::4346772730740371897::1721457102::1721583470::1::::<><>::
 work station.png::CompressedTexture2D::1134479622575654221::1721457102::1721583470::1::::<><>::
-::res://Assets/Tilesets/::1725566732
-Tileset_Main.tres::TileSet::6191768234423323406::1725489255::0::1::::<><>::uid://kyokxtv2lr0k::::res://Assets/Tilesets/SubTileSets/Mushrooms.png<>uid://c8dawhes5jwpg::::res://Assets/Tilesets/SubTileSets/Trees.png<>uid://bxexduqeicxgv::::res://Assets/Tilesets/SubTileSets/Water.png<>uid://40cge1nvl8mi::::res://Assets/Tilesets/SubTileSets/Light_Dirt.png<>uid://plyr0nsndh8n::::res://Assets/Tilesets/SubTileSets/Stone.png<>uid://g6m8f86yo4np::::res://Assets/Tilesets/SubTileSets/Dark_Grass.png<>uid://s1l8w6s40jet::::res://Assets/Tilesets/SubTileSets/Dark_Dirt.png<>uid://dc8sqr53sn08s::::res://Assets/Tilesets/SubTileSets/Light_Grass.png
+::res://Assets/Tilesets/::1725566833
+Tileset_Main.tres::TileSet::6191768234423323406::1725566833::0::1::::<><>::uid://kyokxtv2lr0k::::res://Assets/Tilesets/SubTileSets/Mushrooms.png<>uid://c8dawhes5jwpg::::res://Assets/Tilesets/SubTileSets/Trees.png<>uid://bxexduqeicxgv::::res://Assets/Tilesets/SubTileSets/Water.png<>uid://40cge1nvl8mi::::res://Assets/Tilesets/SubTileSets/Light_Dirt.png<>uid://plyr0nsndh8n::::res://Assets/Tilesets/SubTileSets/Stone.png<>uid://g6m8f86yo4np::::res://Assets/Tilesets/SubTileSets/Dark_Grass.png<>uid://s1l8w6s40jet::::res://Assets/Tilesets/SubTileSets/Dark_Dirt.png<>uid://dc8sqr53sn08s::::res://Assets/Tilesets/SubTileSets/Light_Grass.png
 ::res://Assets/Tilesets/Building/::1725512493
 Basic_Furniture.png::CompressedTexture2D::4781150098396265955::1721457104::1721583470::1::::<><>::
 Chest.png::CompressedTexture2D::8661842267829376266::1721457104::1721583470::1::::<><>::
@@ -134,7 +134,7 @@ tree_none.png::CompressedTexture2D::7616379194433801270::1721457102::1721683966:
 tree_orange.png::CompressedTexture2D::8436169385765845944::1721457102::1721683966::1::::<><>::
 tree_peach.png::CompressedTexture2D::7490329219023218359::1721457102::1721683966::1::::<><>::
 tree_pear.png::CompressedTexture2D::6758245691672849008::1721457102::1721850858::1::::<><>::
-::res://Assets/UI Sprites/::1725566732
+::res://Assets/UI Sprites/::1725566986
 ALL UI ASSETS on one sheet.png::CompressedTexture2D::4966084277390604253::1721457104::1721583470::1::::<><>::
 Weather_UI.png::CompressedTexture2D::8803927322859652406::1724601680::1725485945::1::::<><>::
 ::res://Assets/UI Sprites/Buttons/::1725512493
@@ -171,7 +171,7 @@ Medium Happines-Sadness icons.png::CompressedTexture2D::529590337327529724::1721
 Small Happines-Sadness icons.png::CompressedTexture2D::7428418679207929839::1721457104::1721583470::1::::<><>::
 stars in wood.png::CompressedTexture2D::6572468906926743033::1721457104::1721583470::1::::<><>::
 stars.png::CompressedTexture2D::7768104034616036247::1721457104::1721583470::1::::<><>::
-::res://Assets/UI Sprites/Mouse sprites/::1725566732
+::res://Assets/UI Sprites/Mouse sprites/::1725566986
 Arrow Mouse icon 1.png::CompressedTexture2D::8476654976102399372::1721457104::1721583470::1::::<><>::
 Arrow Mouse icon 2.png::CompressedTexture2D::5395779205653107733::1721457104::1721583470::1::::<><>::
 Arrow Mouse icon 3.png::CompressedTexture2D::7884919978939645323::1721457104::1721583470::1::::<><>::
@@ -255,28 +255,28 @@ TreeFall.wav::AudioStreamWAV::5895521267134146515::1724182146::1724182148::1::::
 TreeHit.wav::AudioStreamWAV::5682944328184495600::1724025752::1724025804::1::::<><>::
 TreeShake.wav::AudioStreamWAV::2130007710296679858::1724182092::1724182092::1::::<><>::
 ::res://Resoures/::1725512491
-::res://Resoures/Coins/::1725512489
+::res://Resoures/Coins/::1725566833
 Coin1.tres::Resource/Coin::4533192487889256930::1724274738::0::1::::<><>::res://Scripts/ResourceScripts/Coin.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
-Coin5.tres::Resource/Coin::6676952843479005369::1725489255::0::1::::<><>::res://Scripts/ResourceScripts/Coin.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
+Coin5.tres::Resource/Coin::6676952843479005369::1725566833::0::1::::<><>::res://Scripts/ResourceScripts/Coin.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
 Coin10.tres::Resource/Coin::7266894828757097971::1724274872::0::1::::<><>::res://Scripts/ResourceScripts/Coin.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
 Coin25.tres::Resource/Coin::5050494394035386367::1724274872::0::1::::<><>::res://Scripts/ResourceScripts/Coin.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
 Coin50.tres::Resource/Coin::2869072488568406102::1724274872::0::1::::<><>::res://Scripts/ResourceScripts/Coin.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
 Coin100.tres::Resource/Coin::1611956614010352413::1724274872::0::1::::<><>::res://Scripts/ResourceScripts/Coin.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
 Coin250.tres::Resource/Coin::4100181307558912702::1724274872::0::1::::<><>::res://Scripts/ResourceScripts/Coin.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
 Coin1000.tres::Resource/Coin::7338772723298554720::1724274872::0::1::::<><>::res://Scripts/ResourceScripts/Coin.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
-::res://Resoures/Fruit/::1725512489
-Apple.tres::Resource/Fruit::8842657990677040800::1725489255::0::1::::<><>::uid://bn31tfimxoo77::::res://Assets/Trees/tree_apple.png<>res://Scripts/ResourceScripts/Fruit.gd<>uid://cotu7jtdtnnv::::res://Assets/Items/fruit-n-berries-items.png
-Orange.tres::Resource/Fruit::3827721363064717261::1725489255::0::1::::<><>::res://Scripts/ResourceScripts/Fruit.gd<>uid://dsgsqhxub821a::::res://Assets/Trees/tree_orange.png<>uid://cotu7jtdtnnv::::res://Assets/Items/fruit-n-berries-items.png
-Peach.tres::Resource/Fruit::4544547448975114091::1725489255::0::1::::<><>::res://Scripts/ResourceScripts/Fruit.gd<>uid://deymvl3pmfj7l::::res://Assets/Trees/tree_peach.png<>uid://cotu7jtdtnnv::::res://Assets/Items/fruit-n-berries-items.png
-Pear.tres::Resource/Fruit::3756164700734909072::1725489255::0::1::::<><>::uid://c3j0k364mo7c3::::res://Assets/Trees/tree_pear.png<>uid://cotu7jtdtnnv::::res://Assets/Items/fruit-n-berries-items.png<>res://Scripts/ResourceScripts/Fruit.gd
-::res://Resoures/Harvestables/::1725512489
-Branch.tres::Resource/Item::4331760544566554697::1725489255::0::1::::<><>::res://Scripts/ResourceScripts/Item.gd<>uid://blleh0q6i3l52::::res://Assets/Items/items-spritesheet.png
-Log.tres::Resource/Item::686534140547864542::1725489255::0::1::::<><>::res://Scripts/ResourceScripts/Item.gd<>uid://d0vkukchi2y8g::::res://Assets/Items/tools-n-meterial-items.png
-Twig.tres::Resource/Item::3012106836762515075::1725489255::0::1::::<><>::res://Scripts/ResourceScripts/Item.gd<>uid://d0vkukchi2y8g::::res://Assets/Items/tools-n-meterial-items.png
-::res://Resoures/Tools/::1725512489
-Axe.tres::Resource/Usable::6203270192739290889::1725489255::0::1::::<><>::res://Scripts/ResourceScripts/Usable.gd<>uid://d0vkukchi2y8g::::res://Assets/Items/tools-n-meterial-items.png
-Hoe.tres::Resource/Usable::1227788125100846264::1725489255::0::1::::<><>::res://Scripts/ResourceScripts/Usable.gd<>uid://d0vkukchi2y8g::::res://Assets/Items/tools-n-meterial-items.png
-WateringCan.tres::Resource/Usable::7464588700089320269::1725489255::0::1::::<><>::res://Scripts/ResourceScripts/Usable.gd<>uid://d0vkukchi2y8g::::res://Assets/Items/tools-n-meterial-items.png
+::res://Resoures/Fruit/::1725566833
+Apple.tres::Resource/Fruit::8842657990677040800::1725566833::0::1::::<><>::uid://bn31tfimxoo77::::res://Assets/Trees/tree_apple.png<>res://Scripts/ResourceScripts/Fruit.gd<>uid://cotu7jtdtnnv::::res://Assets/Items/fruit-n-berries-items.png
+Orange.tres::Resource/Fruit::3827721363064717261::1725566833::0::1::::<><>::res://Scripts/ResourceScripts/Fruit.gd<>uid://dsgsqhxub821a::::res://Assets/Trees/tree_orange.png<>uid://cotu7jtdtnnv::::res://Assets/Items/fruit-n-berries-items.png
+Peach.tres::Resource/Fruit::4544547448975114091::1725566833::0::1::::<><>::res://Scripts/ResourceScripts/Fruit.gd<>uid://deymvl3pmfj7l::::res://Assets/Trees/tree_peach.png<>uid://cotu7jtdtnnv::::res://Assets/Items/fruit-n-berries-items.png
+Pear.tres::Resource/Fruit::3756164700734909072::1725566833::0::1::::<><>::uid://c3j0k364mo7c3::::res://Assets/Trees/tree_pear.png<>uid://cotu7jtdtnnv::::res://Assets/Items/fruit-n-berries-items.png<>res://Scripts/ResourceScripts/Fruit.gd
+::res://Resoures/Harvestables/::1725566833
+Branch.tres::Resource/Item::4331760544566554697::1725566833::0::1::::<><>::res://Scripts/ResourceScripts/Item.gd<>uid://blleh0q6i3l52::::res://Assets/Items/items-spritesheet.png
+Log.tres::Resource/Item::686534140547864542::1725566833::0::1::::<><>::res://Scripts/ResourceScripts/Item.gd<>uid://d0vkukchi2y8g::::res://Assets/Items/tools-n-meterial-items.png
+Twig.tres::Resource/Item::3012106836762515075::1725566833::0::1::::<><>::res://Scripts/ResourceScripts/Item.gd<>uid://d0vkukchi2y8g::::res://Assets/Items/tools-n-meterial-items.png
+::res://Resoures/Tools/::1725566833
+Axe.tres::Resource/Usable::6203270192739290889::1725566833::0::1::::<><>::res://Scripts/ResourceScripts/Usable.gd<>uid://d0vkukchi2y8g::::res://Assets/Items/tools-n-meterial-items.png
+Hoe.tres::Resource/Usable::1227788125100846264::1725566833::0::1::::<><>::res://Scripts/ResourceScripts/Usable.gd<>uid://d0vkukchi2y8g::::res://Assets/Items/tools-n-meterial-items.png
+WateringCan.tres::Resource/Usable::7464588700089320269::1725566833::0::1::::<><>::res://Scripts/ResourceScripts/Usable.gd<>uid://d0vkukchi2y8g::::res://Assets/Items/tools-n-meterial-items.png
 ::res://Scenes/::1725566732
 Game.tscn::PackedScene::7346731436723818536::1725490277::0::1::::<><>::res://Scripts/Globals/Game.gd<>uid://dsj5jii06d4rf::::res://Scenes/Audio/AudioMachine.tscn
 ::res://Scenes/Audio/::1725566732
@@ -298,20 +298,20 @@ Player.tscn::PackedScene::2865639875494289319::1725490277::0::1::::<><>::res://S
 ::res://Scenes/Objects/Trees/::1725512493
 Stump.tscn::PackedScene::8181188394330185960::1724184228::0::1::::<><>::uid://c8dawhes5jwpg::::res://Assets/Tilesets/SubTileSets/Trees.png
 Tree.tscn::PackedScene::3865999699998143544::1725490278::0::1::::<><>::res://Scripts/Objects/Trees/Tree.gd<>uid://bbc4f518t1x12::::res://Assets/Trees/tree_fall.png<>uid://bls6ftfun40dh::::res://Scenes/Components/GrowableComponent.tscn<>uid://dgrowgmovs0fi::::res://Assets/Trees/tree_none.png<>uid://bna0blnh7t1ky::::res://Scenes/Components/HealthComponent.tscn<>uid://bn31tfimxoo77::::res://Assets/Trees/tree_apple.png
-::res://Scenes/UI/::1725512489
+::res://Scenes/UI/::1725567245
 CenterMenu.tscn::PackedScene::511170415438033558::1725490278::0::1::::<><>::uid://domfakxmg6lbb::::res://Scenes/UI/MenuBar.tscn<>res://Scripts/UI/CenterMenu.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png
 DateWeatherUI.tscn::PackedScene::9105615493604555223::1725207064::0::1::::<><>::uid://dxoxnqvm06ypq::::res://Assets/UI Sprites/Weather_UI.png<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png
 Hotbar.tscn::PackedScene::747468002729367672::1725211654::0::1::::<><>::res://Scripts/UI/Hotbar.gd
 InventoryMenu.tscn::PackedScene::159772024909422845::1725211654::0::1::::<><>::res://Scripts/UI/InventoryMenu.gd
 InventorySlotUI.tscn::PackedScene::2744641145248791617::1725490278::0::1::::<><>::res://Scripts/UI/InventorySlotUI.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://dshut2sdrrnxf::::res://Assets/Fonts/pixelFont-7-8x14-sproutLands.ttf
 MainMenu.tscn::PackedScene::8276991850760991509::1724023590::0::1::::<><>::res://Scripts/UI/MainMenu.gd<>uid://bi05k7fafahkk::::res://Scenes/UI/MenuButton.tscn
-MenuBar.tscn::PackedScene::8166982541342783463::1725490296::0::1::::<><>::res://Scripts/UI/MenuBar.gd<>uid://ci128iovra3dr::::res://Scenes/UI/TopBarButton.tscn<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png
+MenuBar.tscn::PackedScene::8166982541342783463::1725567245::0::1::::<><>::res://Scripts/UI/MenuBar.gd<>uid://ci128iovra3dr::::res://Scenes/UI/TopBarButton.tscn<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png
 MenuButton.tscn::PackedScene::3001381932848814218::1722577740::0::1::::<><>::uid://dshut2sdrrnxf::::res://Assets/Fonts/pixelFont-7-8x14-sproutLands.ttf<>res://Scripts/UI/MenuButton.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png
 OptionsMenu.tscn::PackedScene::314519170302027815::1725211060::0::1::::<><>::
 PlayerUI.tscn::PackedScene::1181129390942667866::1725490278::0::1::::<><>::res://Scripts/UI/PlayerUI.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://hju5w1smhwpi::::res://Scenes/UI/CenterMenu.tscn<>uid://d2y3flkfbn7nf::::res://Scenes/UI/DateWeatherUI.tscn<>uid://kwcxoisinfym::::res://Scenes/UI/Hotbar.tscn
 TopBarButton.tscn::PackedScene::5389724670890528535::1725490278::0::1::::<><>::res://Scripts/UI/TopBarButton.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png
 UIHeart.tscn::PackedScene::2091948515756754235::1724343946::0::1::::<><>::uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png
-::res://Scripts/::1725566732
+::res://Scripts/::1725566980
 AudioMachine.gd::GDScript::-1::1724199602::0::1::::<>Node2D<>::
 ::res://Scripts/Components/::1725566725
 CurrencyComponent.gd::GDScript::-1::1724345368::0::1::::CurrencyComponent<>Node2D<>::
@@ -328,7 +328,7 @@ Utils.gd::GDScript::-1::1724023330::0::1::::<>Node<>::
 ::res://Scripts/Inventory/::1725512489
 Inventory.gd::GDScript::-1::1724345606::0::1::::InventoryComponent<>Node2D<>::
 InventorySlot.gd::GDScript::-1::1722633238::0::1::::InventorySlot<>Node2D<>::
-::res://Scripts/Levels/::1725512489
+::res://Scripts/Levels/::1725566980
 Start.gd::GDScript::-1::1724346562::0::1::::<>Node2D<>::
 ::res://Scripts/Objects/::1725566448
 Collectable.gd::GDScript::-1::1724277912::0::1::::Collectable<>RigidBody2D<>::
@@ -336,13 +336,13 @@ Player.gd::GDScript::-1::1725489597::0::1::::Player<>CharacterBody2D<>::
 ::res://Scripts/Objects/Trees/::1725566448
 Stump.gd::GDScript::-1::1723063880::0::1::::<>Node2D<>::
 Tree.gd::GDScript::-1::1724292472::0::1::::<>Node2D<>::
-::res://Scripts/ResourceScripts/::1725566732
+::res://Scripts/ResourceScripts/::1725566980
 Coin.gd::GDScript::-1::1724275558::0::1::::Coin<>Item<>::
 Fruit.gd::GDScript::-1::1724112764::0::1::::Fruit<>Item<>::
 HotbarSlot.gd::GDScript::-1::1723060912::0::1::::Slot<>Resource<>::
 Item.gd::GDScript::-1::1724292646::0::1::::Item<>Resource<>::
 Usable.gd::GDScript::-1::1724292566::0::1::::Usable<>Item<>::
-::res://Scripts/UI/::1725512489
+::res://Scripts/UI/::1725566980
 CenterMenu.gd::GDScript::-1::1725209506::0::1::::<>VBoxContainer<>::
 Hotbar.gd::GDScript::-1::1725211326::0::1::::<>GridContainer<>::
 InventoryMenu.gd::GDScript::-1::1725211620::0::1::::<>Control<>::
