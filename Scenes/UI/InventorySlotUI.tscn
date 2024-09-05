@@ -1,0 +1,51 @@
+[gd_scene load_steps=7 format=3 uid="uid://bfdr3rq5pbkr6"]
+
+[ext_resource type="Script" path="res://Scripts/UI/InventorySlotUI.gd" id="1_af8vf"]
+[ext_resource type="Texture2D" uid="uid://cc0uxg71e5lu0" path="res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png" id="2_8ikg5"]
+[ext_resource type="FontFile" uid="uid://dshut2sdrrnxf" path="res://Assets/Fonts/pixelFont-7-8x14-sproutLands.ttf" id="3_ty8g2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lwmxg"]
+atlas = ExtResource("2_8ikg5")
+region = Rect2(8, 56, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rodc4"]
+atlas = ExtResource("2_8ikg5")
+region = Rect2(56, 56, 32, 32)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6ujyd"]
+
+[node name="InventorySlotUI" type="Control"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_af8vf")
+selected_texture = SubResource("AtlasTexture_lwmxg")
+unselected_texture = SubResource("AtlasTexture_rodc4")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+patch_margin_left = 2
+patch_margin_top = 2
+patch_margin_right = 2
+patch_margin_bottom = 2
+
+[node name="ItemSprite" type="Sprite2D" parent="NinePatchRect"]
+position = Vector2(48, 48)
+scale = Vector2(3, 3)
+
+[node name="CountText" type="Label" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 51.0
+offset_right = 80.0625
+offset_bottom = 82.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("3_ty8g2")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6ujyd")
+text = "0"
+horizontal_alignment = 2

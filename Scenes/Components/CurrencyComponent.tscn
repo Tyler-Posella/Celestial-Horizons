@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://tf88mpduami1"]
+
+[ext_resource type="Script" path="res://Scripts/Components/CurrencyComponent.gd" id="1_5dvrq"]
+
+[node name="CurrencyComponent" type="Node2D"]
+script = ExtResource("1_5dvrq")

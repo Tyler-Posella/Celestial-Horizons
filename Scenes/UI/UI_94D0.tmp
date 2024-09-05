@@ -1,0 +1,67 @@
+[gd_scene load_steps=7 format=3 uid="uid://bo18wajeiqtsl"]
+
+[ext_resource type="Script" path="res://Scripts/UI/UI_InventorySlot.gd" id="1_24uv3"]
+[ext_resource type="Resource" uid="uid://hiyr6g74x4wu" path="res://Resoures/UI/Slot.tres" id="2_sdciv"]
+[ext_resource type="FontFile" uid="uid://dshut2sdrrnxf" path="res://Assets/Fonts/pixelFont-7-8x14-sproutLands.ttf" id="3_6ydjj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0t2a6"]
+
+[sub_resource type="Theme" id="Theme_5oj4j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kvh2b"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+
+[node name="Inventory_UI_Slot" type="Panel"]
+custom_minimum_size = Vector2(128, 128)
+anchors_preset = -1
+anchor_right = 0.067
+anchor_bottom = 0.119
+offset_right = -2.64
+offset_bottom = -2.52
+theme_override_styles/panel = SubResource("StyleBoxEmpty_0t2a6")
+script = ExtResource("1_24uv3")
+slot_data = ExtResource("2_sdciv")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+region_rect = Rect2(4.16329e-12, 2.08165e-12, 32, 32)
+patch_margin_left = 2
+patch_margin_top = 2
+patch_margin_right = 2
+patch_margin_bottom = 2
+
+[node name="Counter" type="TextEdit" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 77.0
+offset_top = 65.0
+offset_right = -9.0
+offset_bottom = -7.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_5oj4j")
+theme_type_variation = &"Hotbar"
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 4
+theme_override_constants/outline_size = 10
+theme_override_constants/caret_width = 4
+theme_override_fonts/font = ExtResource("3_6ydjj")
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("StyleBoxEmpty_kvh2b")
+text = "0"
+
+[node name="Sprite2D" type="Sprite2D" parent="NinePatchRect"]
+position = Vector2(64, 64)
+scale = Vector2(4, 4)
+
+[node name="Sprite2D2" type="Sprite2D" parent="NinePatchRect"]
+position = Vector2(64, 64)
+scale = Vector2(4, 4)

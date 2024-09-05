@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://ci128iovra3dr"]
+
+[ext_resource type="Script" path="res://Scripts/UI/TopBarButton.gd" id="1_0kybn"]
+[ext_resource type="Texture2D" uid="uid://cc0uxg71e5lu0" path="res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png" id="1_w1j1f"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_asro6"]
+atlas = ExtResource("1_w1j1f")
+region = Rect2(112, 368, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ni3q"]
+atlas = ExtResource("1_w1j1f")
+region = Rect2(144, 368, 32, 32)
+
+[node name="Control" type="TextureButton"]
+custom_minimum_size = Vector2(128, 128)
+offset_right = 128.0
+offset_bottom = 128.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+toggle_mode = true
+action_mode = 0
+ignore_texture_size = true
+stretch_mode = 4
+script = ExtResource("1_0kybn")
+default_texture = SubResource("AtlasTexture_asro6")
+default_pressed_texture = SubResource("AtlasTexture_7ni3q")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

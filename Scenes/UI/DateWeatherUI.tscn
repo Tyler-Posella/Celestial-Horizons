@@ -1,0 +1,65 @@
+[gd_scene load_steps=6 format=3 uid="uid://d2y3flkfbn7nf"]
+
+[ext_resource type="Texture2D" uid="uid://dxoxnqvm06ypq" path="res://Assets/UI Sprites/Weather_UI.png" id="1_kcy8w"]
+[ext_resource type="Texture2D" uid="uid://cc0uxg71e5lu0" path="res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png" id="2_7uajb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d60al"]
+atlas = ExtResource("1_kcy8w")
+region = Rect2(224, 0, 104, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_otins"]
+atlas = ExtResource("1_kcy8w")
+region = Rect2(64, 96, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s8bma"]
+atlas = ExtResource("2_7uajb")
+region = Rect2(104, 104, 32, 32)
+
+[node name="WeatherUI" type="Control"]
+layout_mode = 3
+anchor_right = 0.747
+anchor_bottom = 1.0
+offset_right = -0.240112
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="WeatherBox" type="NinePatchRect" parent="."]
+z_index = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_d60al")
+
+[node name="DaylightBox" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.508
+anchor_top = 0.091
+anchor_right = 0.82
+anchor_bottom = 0.638
+offset_left = 0.639954
+offset_top = -0.280006
+offset_right = -0.400146
+offset_bottom = -0.0400391
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_otins")
+region_rect = Rect2(-1, 0, 0, 0)
+
+[node name="BackgroundBox" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.029
+anchor_top = 0.041
+anchor_right = 0.59
+anchor_bottom = 0.699
+offset_left = -0.68
+offset_top = -0.280003
+offset_right = 0.199951
+offset_bottom = 0.0799561
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_s8bma")

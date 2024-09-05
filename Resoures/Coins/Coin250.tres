@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Coin" load_steps=4 format=3 uid="uid://byofnfqik33rm"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/Coin.gd" id="1_flos5"]
+[ext_resource type="Texture2D" uid="uid://dqbytforj2b7j" path="res://Assets/UI Sprites/Icons/Icons/coins.png" id="2_j20do"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sdmtv"]
+atlas = ExtResource("2_j20do")
+region = Rect2(64, 16, 32, 32)
+
+[resource]
+script = ExtResource("1_flos5")
+coin_value = 250
+name = "Coin250"
+ispickupable = true
+has_action = false
+texture = SubResource("AtlasTexture_sdmtv")

@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcw2uf7xavjo7"]
+
+[ext_resource type="Script" path="res://Scripts/Game.gd" id="1_symbq"]
+
+[node name="Game" type="Node2D"]
+z_as_relative = false
+y_sort_enabled = true
+script = ExtResource("1_symbq")
+
+[node name="GUI" type="CanvasLayer" parent="."]
+
+[node name="GameLevel" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="GamePlayer" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="GameInventory" type="Node2D" parent="."]
+
+[node name="GameAudio" type="Node2D" parent="."]

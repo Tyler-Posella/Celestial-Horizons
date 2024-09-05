@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://bi6c7vhixprax"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/Item.gd" id="1_mxoyc"]
+[ext_resource type="Texture2D" uid="uid://d0vkukchi2y8g" path="res://Assets/Items/tools-n-meterial-items.png" id="2_v5tdg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_opgxa"]
+atlas = ExtResource("2_v5tdg")
+region = Rect2(0, 16, 16, 16)
+
+[resource]
+script = ExtResource("1_mxoyc")
+name = "Twig"
+texture = SubResource("AtlasTexture_opgxa")

@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://cmw8px4l1pk0t"]
+
+[ext_resource type="Script" path="res://Scripts/Game.gd" id="1_symbq"]
+[ext_resource type="PackedScene" uid="uid://c4nubndymsv1t" path="res://Scenes/UI/UI.tscn" id="2_rogct"]
+[ext_resource type="PackedScene" uid="uid://dlo4ny25kmrga" path="res://Scenes/Inventory/Inventory.tscn" id="3_yf7ke"]
+[ext_resource type="PackedScene" uid="uid://bg3ew1uuh21o2" path="res://Scenes/Player.tscn" id="4_mr0o1"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_symbq")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" parent="CanvasLayer" instance=ExtResource("2_rogct")]
+
+[node name="Inventory" parent="." instance=ExtResource("3_yf7ke")]
+position = Vector2(111.682, 100.281)
+
+[node name="Player" parent="." instance=ExtResource("4_mr0o1")]
+position = Vector2(111.682, 100.281)
+
+[node name="GameLevel" type="Node2D" parent="."]
+
+[connection signal="updateUI" from="Inventory" to="CanvasLayer/UI" method="_on_inventory_update_ui"]
+[connection signal="dropItem" from="Player" to="Inventory" method="_on_player_drop_item"]
+[connection signal="pickupItem" from="Player" to="." method="_on_player_pickup_item"]
+[connection signal="selectSlot" from="Player" to="." method="_on_player_select_slot"]

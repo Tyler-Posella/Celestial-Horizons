@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://42mc65sfrq0r"]
+
+[ext_resource type="Texture2D" uid="uid://cc0uxg71e5lu0" path="res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png" id="1_txgec"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wx05v"]
+atlas = ExtResource("1_txgec")
+region = Rect2(704, 704, 32, 32)
+
+[node name="Heart" type="NinePatchRect"]
+custom_minimum_size = Vector2(46, 46)
+texture = SubResource("AtlasTexture_wx05v")
+region_rect = Rect2(4, 4, 24, 24)

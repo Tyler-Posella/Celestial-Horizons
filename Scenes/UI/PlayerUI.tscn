@@ -1,0 +1,137 @@
+[gd_scene load_steps=10 format=3 uid="uid://q3fa77kp8bio"]
+
+[ext_resource type="Script" path="res://Scripts/UI/PlayerUI.gd" id="1_s6dr4"]
+[ext_resource type="Texture2D" uid="uid://cc0uxg71e5lu0" path="res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png" id="2_t1ep6"]
+[ext_resource type="PackedScene" uid="uid://hju5w1smhwpi" path="res://Scenes/UI/CenterMenu.tscn" id="3_g682t"]
+[ext_resource type="PackedScene" uid="uid://d2y3flkfbn7nf" path="res://Scenes/UI/DateWeatherUI.tscn" id="3_nxesl"]
+[ext_resource type="PackedScene" uid="uid://kwcxoisinfym" path="res://Scenes/UI/Hotbar.tscn" id="3_omqiv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tcepd"]
+atlas = ExtResource("2_t1ep6")
+region = Rect2(816, 448, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wx05v"]
+atlas = ExtResource("2_t1ep6")
+region = Rect2(704, 704, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_14ul5"]
+atlas = ExtResource("2_t1ep6")
+region = Rect2(704, 560, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vvd8c"]
+atlas = ExtResource("2_t1ep6")
+region = Rect2(104, 104, 32, 32)
+
+[node name="PlayerUI" type="Control" groups=["UI"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s6dr4")
+
+[node name="PlayerInfo" type="NinePatchRect" parent="."]
+custom_minimum_size = Vector2(384, 256)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.2
+anchor_bottom = 0.237
+offset_bottom = 0.0399802
+texture = SubResource("AtlasTexture_tcepd")
+
+[node name="HealthContainer" type="HBoxContainer" parent="PlayerInfo"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.13
+anchor_top = 0.125
+anchor_right = 0.883
+anchor_bottom = 0.484
+offset_left = 0.0799961
+offset_right = -0.0720062
+offset_bottom = 0.095993
+
+[node name="Heart" type="NinePatchRect" parent="PlayerInfo/HealthContainer"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+texture = SubResource("AtlasTexture_wx05v")
+region_rect = Rect2(4, 4, 24, 24)
+
+[node name="HealthCounter" type="Label" parent="PlayerInfo/HealthContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 48
+text = "10/10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CoinContainer" type="HBoxContainer" parent="PlayerInfo"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.125
+anchor_top = 0.656
+anchor_right = 0.513
+anchor_bottom = 0.844
+offset_top = 0.0639954
+offset_right = 0.00799561
+offset_bottom = -0.0640106
+
+[node name="CoinIcon" type="NinePatchRect" parent="PlayerInfo/CoinContainer"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+texture = SubResource("AtlasTexture_14ul5")
+patch_margin_left = 2
+patch_margin_top = 3
+patch_margin_right = 2
+patch_margin_bottom = 4
+
+[node name="CoinCounter" type="Label" parent="PlayerInfo/CoinContainer"]
+layout_mode = 2
+size_flags_horizontal = 11
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 32
+text = "0
+"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="HotbarRect" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -512.0
+offset_top = -112.0
+offset_right = 512.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = SubResource("AtlasTexture_vvd8c")
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 12
+
+[node name="Hotbar" parent="HotbarRect" instance=ExtResource("3_omqiv")]
+layout_mode = 1
+
+[node name="CenterMenu" parent="." instance=ExtResource("3_g682t")]
+layout_mode = 1
+offset_top = -274.0
+offset_bottom = 274.0
+
+[node name="WeatherUI" parent="." instance=ExtResource("3_nxesl")]
+layout_mode = 1
+anchor_left = 0.809
+anchor_right = 1.0
+anchor_bottom = 0.272
+offset_left = -0.280029
+offset_right = 0.0
+offset_bottom = 0.23999
+grow_horizontal = 0
+grow_vertical = 1

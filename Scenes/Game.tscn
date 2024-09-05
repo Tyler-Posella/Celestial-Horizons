@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcw2uf7xavjo7"]
+
+[ext_resource type="Script" path="res://Scripts/Globals/Game.gd" id="1_symbq"]
+[ext_resource type="PackedScene" uid="uid://dsj5jii06d4rf" path="res://Scenes/Audio/AudioMachine.tscn" id="2_cmana"]
+
+[node name="Game" type="Node2D" groups=["GameNode"]]
+z_as_relative = false
+y_sort_enabled = true
+script = ExtResource("1_symbq")
+
+[node name="GUI" type="CanvasLayer" parent="." groups=["UINode"]]
+
+[node name="GameLevel" type="Node2D" parent="." groups=["LevelNode"]]
+y_sort_enabled = true
+
+[node name="GamePlayer" type="Node2D" parent="." groups=["PlayerNode"]]
+y_sort_enabled = true
+
+[node name="AudioMachine" parent="." instance=ExtResource("2_cmana")]

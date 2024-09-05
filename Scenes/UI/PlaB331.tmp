@@ -1,0 +1,211 @@
+[gd_scene load_steps=13 format=3 uid="uid://q3fa77kp8bio"]
+
+[ext_resource type="Script" path="res://Scripts/UI/PlayerUI.gd" id="1_s6dr4"]
+[ext_resource type="Texture2D" uid="uid://cc0uxg71e5lu0" path="res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png" id="2_t1ep6"]
+[ext_resource type="FontFile" uid="uid://tebnlopbok7g" path="res://Assets/Fonts/PixulBrush.ttf" id="3_d4woo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_exrga"]
+atlas = ExtResource("2_t1ep6")
+region = Rect2(104, 104, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tcepd"]
+atlas = ExtResource("2_t1ep6")
+region = Rect2(816, 448, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_14ul5"]
+atlas = ExtResource("2_t1ep6")
+region = Rect2(704, 560, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vvd8c"]
+atlas = ExtResource("2_t1ep6")
+region = Rect2(104, 104, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cb5oq"]
+atlas = ExtResource("2_t1ep6")
+region = Rect2(240, 496, 32, 32)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5d8al"]
+texture = SubResource("AtlasTexture_cb5oq")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wd700"]
+atlas = ExtResource("2_t1ep6")
+region = Rect2(272, 496, 32, 32)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w054w"]
+texture = SubResource("AtlasTexture_wd700")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_48ut6"]
+
+[node name="PlayerUI" type="Control" groups=["UI"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s6dr4")
+
+[node name="InventoryRect" type="NinePatchRect" parent="."]
+custom_minimum_size = Vector2(1024, 416)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_exrga")
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+
+[node name="Inventory" type="GridContainer" parent="InventoryRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 492.0
+offset_top = 188.0
+offset_right = -492.0
+offset_bottom = -188.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 10
+
+[node name="PlayerInfo" type="NinePatchRect" parent="."]
+custom_minimum_size = Vector2(384, 256)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.8
+anchor_top = 0.001
+anchor_right = 1.0
+anchor_bottom = 0.237
+offset_left = 384.0
+offset_top = -1.08
+offset_right = 384.0
+offset_bottom = 0.0399933
+grow_horizontal = 0
+scale = Vector2(-1, 1)
+texture = SubResource("AtlasTexture_tcepd")
+
+[node name="CoinIcon" type="NinePatchRect" parent="PlayerInfo"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.378
+anchor_top = 0.656
+anchor_right = 0.523
+anchor_bottom = 0.844
+offset_left = 55.848
+offset_top = 0.0639954
+offset_right = 56.168
+offset_bottom = -0.0640259
+scale = Vector2(-1, 1)
+texture = SubResource("AtlasTexture_14ul5")
+patch_margin_left = 2
+patch_margin_top = 3
+patch_margin_right = 2
+patch_margin_bottom = 4
+
+[node name="CoinCounter" type="RichTextLabel" parent="PlayerInfo"]
+clip_contents = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.112
+anchor_top = 0.691
+anchor_right = 0.388
+anchor_bottom = 0.844
+offset_left = 105.992
+offset_top = 0.103989
+offset_right = 106.008
+offset_bottom = -0.0640106
+scale = Vector2(-1, 1)
+size_flags_horizontal = 11
+size_flags_vertical = 4
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/normal_font = ExtResource("3_d4woo")
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "[right]00000"
+fit_content = true
+scroll_active = false
+drag_and_drop_selection_enabled = false
+
+[node name="WorldInfo" type="NinePatchRect" parent="."]
+custom_minimum_size = Vector2(320, 192)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.1
+anchor_bottom = 0.178
+offset_right = 128.0
+offset_bottom = -0.240005
+texture = SubResource("AtlasTexture_exrga")
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+
+[node name="HotbarRect" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -512.0
+offset_top = -112.0
+offset_right = 512.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = SubResource("AtlasTexture_vvd8c")
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 12
+
+[node name="Hotbar" type="GridContainer" parent="HotbarRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.014
+anchor_top = 0.071
+anchor_right = 0.986
+anchor_bottom = 0.929
+offset_left = -0.336
+offset_top = 0.0479997
+offset_right = 0.335938
+offset_bottom = -0.0480022
+grow_horizontal = 2
+grow_vertical = 2
+columns = 10
+
+[node name="ReturnRect" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="ReturnToMenu" type="Button" parent="ReturnRect"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -8.0
+offset_bottom = 8.0
+grow_horizontal = 0
+theme_override_styles/normal = SubResource("StyleBoxTexture_5d8al")
+theme_override_styles/hover = SubResource("StyleBoxTexture_5d8al")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_w054w")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_48ut6")
+
+[connection signal="pressed" from="ReturnRect/ReturnToMenu" to="." method="_on_return_to_menu_pressed"]

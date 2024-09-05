@@ -1,0 +1,137 @@
+[gd_scene load_steps=15 format=3 uid="uid://cqe2tvun3ql7x"]
+
+[ext_resource type="Script" path="res://Scripts/FruitTree.gd" id="1_48tk6"]
+[ext_resource type="Texture2D" uid="uid://dgrowgmovs0fi" path="res://Assets/Trees/tree_none.png" id="2_c0fxb"]
+
+[sub_resource type="Animation" id="Animation_8ckm4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_2x3ps"]
+resource_name = "shake"
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0833333, 0.166667, 0.25, 0.333333, 0.416667, 0.5, 0.583333, 0.666667, 0.75, 0.833333, 0.916667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47]
+}
+
+[sub_resource type="Animation" id="Animation_0jjle"]
+resource_name = "still"
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_or6bm"]
+_data = {
+"RESET": SubResource("Animation_8ckm4"),
+"shake": SubResource("Animation_2x3ps"),
+"still": SubResource("Animation_0jjle")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_2mk02"]
+animation = &"shake"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_73kff"]
+animation = &"still"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_w8k3a"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_6u445"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_20lcp"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_75cjg"]
+states/shake/node = SubResource("AnimationNodeAnimation_2mk02")
+states/shake/position = Vector2(702.333, 99.4321)
+states/still/node = SubResource("AnimationNodeAnimation_73kff")
+states/still/position = Vector2(442.333, 100.074)
+transitions = ["Start", "still", SubResource("AnimationNodeStateMachineTransition_w8k3a"), "still", "shake", SubResource("AnimationNodeStateMachineTransition_6u445"), "shake", "still", SubResource("AnimationNodeStateMachineTransition_20lcp")]
+graph_offset = Vector2(148.586, -2)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nkakd"]
+radius = 17.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cwn8w"]
+radius = 5.0
+
+[node name="FruitTree" type="Node2D"]
+z_as_relative = false
+y_sort_enabled = true
+script = ExtResource("1_48tk6")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_or6bm")
+}
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeStateMachine_75cjg")
+anim_player = NodePath("../AnimationPlayer")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(0, 19)
+texture = ExtResource("2_c0fxb")
+offset = Vector2(0, -19)
+hframes = 12
+vframes = 4
+
+[node name="GrowthTimer" type="Timer" parent="."]
+wait_time = 5.0
+
+[node name="InteractionZone" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionZone"]
+position = Vector2(0, 11)
+shape = SubResource("CircleShape2D_nkakd")
+
+[node name="CollisionZone" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CollisionZone"]
+position = Vector2(0, 15)
+shape = SubResource("CircleShape2D_cwn8w")
+
+[node name="Marker2D_1" type="Marker2D" parent="."]
+position = Vector2(-20, 14)
+
+[node name="Marker2D_2" type="Marker2D" parent="."]
+position = Vector2(16, 18)
+
+[node name="Marker2D_3" type="Marker2D" parent="."]
+position = Vector2(19, 10)
+
+[connection signal="animation_finished" from="AnimationTree" to="." method="_on_animation_tree_animation_finished"]
+[connection signal="timeout" from="GrowthTimer" to="." method="_on_growth_timer_timeout"]
+[connection signal="body_entered" from="InteractionZone" to="." method="_on_pickable_area_body_entered"]
+[connection signal="body_exited" from="InteractionZone" to="." method="_on_pickable_area_body_exited"]

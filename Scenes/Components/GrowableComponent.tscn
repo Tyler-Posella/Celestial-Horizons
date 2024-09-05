@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bls6ftfun40dh"]
+
+[ext_resource type="Script" path="res://Scripts/Components/GrowableComponent.gd" id="1_v7b8d"]
+
+[node name="GrowableComponent" type="Node2D"]
+script = ExtResource("1_v7b8d")
+
+[node name="GrowthTimer" type="Timer" parent="."]
+wait_time = 5.0
+
+[connection signal="timeout" from="GrowthTimer" to="." method="_on_growth_timer_timeout"]

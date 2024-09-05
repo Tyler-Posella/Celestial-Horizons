@@ -1,0 +1,234 @@
+[gd_scene load_steps=28 format=3 uid="uid://bvcypkp2xfprc"]
+
+[ext_resource type="Script" path="res://Scripts/Objects/Trees/Tree.gd" id="1_my5rv"]
+[ext_resource type="Texture2D" uid="uid://bbc4f518t1x12" path="res://Assets/Trees/tree_fall.png" id="2_cfbcm"]
+[ext_resource type="PackedScene" uid="uid://bls6ftfun40dh" path="res://Scenes/Components/GrowableComponent.tscn" id="2_olac1"]
+[ext_resource type="Texture2D" uid="uid://dgrowgmovs0fi" path="res://Assets/Trees/tree_none.png" id="3_hf4k2"]
+[ext_resource type="PackedScene" uid="uid://bna0blnh7t1ky" path="res://Scenes/Components/HealthComponent.tscn" id="5_0o8wd"]
+[ext_resource type="Texture2D" uid="uid://bn31tfimxoo77" path="res://Assets/Trees/tree_apple.png" id="6_sjwxk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_li5pf"]
+radius = 15.0
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_qcdl4"]
+animation = &"fall"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ndsk0"]
+animation = &"idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_4q61f"]
+animation = &"shake_long"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_h41ef"]
+animation = &"shake_short"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_eru2q"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ou52i"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_360j1"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_175u4"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_hvlex"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_thige"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_yah8o"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_52prf"]
+states/End/position = Vector2(910.5, 93.6875)
+states/Start/position = Vector2(199, 97.0625)
+states/fall/node = SubResource("AnimationNodeAnimation_qcdl4")
+states/fall/position = Vector2(731, 95.875)
+states/idle/node = SubResource("AnimationNodeAnimation_ndsk0")
+states/idle/position = Vector2(381.5, 98.25)
+states/shake_long/node = SubResource("AnimationNodeAnimation_4q61f")
+states/shake_long/position = Vector2(545.5, 176.5)
+states/shake_short/node = SubResource("AnimationNodeAnimation_h41ef")
+states/shake_short/position = Vector2(545.25, 24)
+transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_eru2q"), "idle", "shake_short", SubResource("AnimationNodeStateMachineTransition_ou52i"), "idle", "shake_long", SubResource("AnimationNodeStateMachineTransition_360j1"), "idle", "fall", SubResource("AnimationNodeStateMachineTransition_175u4"), "shake_long", "idle", SubResource("AnimationNodeStateMachineTransition_hvlex"), "shake_short", "idle", SubResource("AnimationNodeStateMachineTransition_thige"), "fall", "idle", SubResource("AnimationNodeStateMachineTransition_yah8o")]
+graph_offset = Vector2(36, -26)
+
+[sub_resource type="Animation" id="Animation_p30wc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../TreeSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../FallSprite:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_hhc3w"]
+resource_name = "fall"
+step = 0.0769231
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../FallSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0769231, 0.153846, 0.230769, 0.307692, 0.384615, 0.461538, 0.538462, 0.615385, 0.692308, 0.769231, 0.846154, 0.923077),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+}
+
+[sub_resource type="Animation" id="Animation_rc24m"]
+resource_name = "idle"
+step = 1.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../TreeSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_6g360"]
+resource_name = "shake_long"
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../TreeSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0833333, 0.166667, 0.25, 0.333333, 0.416667, 0.5, 0.583333, 0.666667, 0.75, 0.833333, 0.916667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47]
+}
+
+[sub_resource type="Animation" id="Animation_u7rmh"]
+resource_name = "shake"
+length = 1.00002
+step = 0.166667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../TreeSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.166667, 0.333333, 0.5, 0.666667, 0.833333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [24, 25, 26, 27, 28, 29]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_f4akb"]
+_data = {
+"RESET": SubResource("Animation_p30wc"),
+"fall": SubResource("Animation_hhc3w"),
+"idle": SubResource("Animation_rc24m"),
+"shake_long": SubResource("Animation_6g360"),
+"shake_short": SubResource("Animation_u7rmh")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bvtk3"]
+radius = 7.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dq76t"]
+radius = 5.0
+
+[node name="Tree" type="Node2D" node_paths=PackedStringArray("health_component", "growable_component") groups=["Tree"]]
+script = ExtResource("1_my5rv")
+health_component = NodePath("HealthComponent")
+growable_component = NodePath("GrowableComponent")
+tree_texture = ExtResource("3_hf4k2")
+
+[node name="GrowableComponent" parent="." instance=ExtResource("2_olac1")]
+
+[node name="InteractionComponent" type="Area2D" parent="."]
+position = Vector2(2.08165e-12, -5)
+collision_layer = 0
+collision_mask = 17
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionComponent"]
+shape = SubResource("CircleShape2D_li5pf")
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+root_node = NodePath(".")
+tree_root = SubResource("AnimationNodeStateMachine_52prf")
+anim_player = NodePath("../AnimationPlayer")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../AnimationTree")
+libraries = {
+"": SubResource("AnimationLibrary_f4akb")
+}
+
+[node name="FallSprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_cfbcm")
+offset = Vector2(-8, -19)
+hframes = 13
+
+[node name="TreeSprite" type="Sprite2D" parent="."]
+texture = ExtResource("6_sjwxk")
+offset = Vector2(0, -19)
+hframes = 12
+vframes = 4
+
+[node name="HealthComponent" parent="." instance=ExtResource("5_0o8wd")]
+max_health = 3
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -4)
+shape = SubResource("CircleShape2D_bvtk3")
+
+[node name="ChopArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 16
+
+[node name="Chop" type="CollisionShape2D" parent="ChopArea"]
+position = Vector2(0, -4)
+shape = SubResource("CircleShape2D_dq76t")
+
+[node name="Marker1" type="Marker2D" parent="."]
+position = Vector2(-20, -5)
+
+[node name="Marker2" type="Marker2D" parent="."]
+position = Vector2(16, -1)
+
+[node name="Marker3" type="Marker2D" parent="."]
+position = Vector2(19, -9)
+
+[connection signal="area_entered" from="InteractionComponent" to="." method="_on_interaction_component_area_entered"]
+[connection signal="area_exited" from="InteractionComponent" to="." method="_on_interaction_component_area_exited"]
+[connection signal="animation_finished" from="AnimationTree" to="." method="_on_animation_tree_animation_finished"]
+[connection signal="area_entered" from="ChopArea" to="." method="_on_chop_area_area_entered"]

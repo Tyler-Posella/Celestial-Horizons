@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://bhmrogi0cr2f3"]
+
+[ext_resource type="Script" path="res://Scripts/Objects/Collectable.gd" id="1_dvecc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d8pto"]
+radius = 18.6696
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hwlg2"]
+radius = 4.01386
+
+[node name="Item" type="RigidBody2D" groups=["Collectable"]]
+z_index = 1
+scale = Vector2(0.75, 0.75)
+collision_layer = 32
+collision_mask = 0
+can_sleep = false
+lock_rotation = true
+linear_damp = 10.0
+script = ExtResource("1_dvecc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+offset = Vector2(1, -4)
+
+[node name="Gravity" type="CollisionShape2D" parent="."]
+position = Vector2(2.08165e-12, -3)
+shape = SubResource("CircleShape2D_d8pto")
+
+[node name="GravityTimer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[node name="InteractionComponent" type="Area2D" parent="."]
+
+[node name="Pickup" type="CollisionShape2D" parent="InteractionComponent"]
+position = Vector2(0, -3)
+shape = SubResource("CircleShape2D_hwlg2")
+
+[connection signal="timeout" from="GravityTimer" to="." method="_on_gravity_timer_timeout"]
+[connection signal="body_entered" from="InteractionComponent" to="." method="_on_interaction_component_body_entered"]

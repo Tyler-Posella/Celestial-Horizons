@@ -1,0 +1,95 @@
+[gd_scene load_steps=15 format=3 uid="uid://domfakxmg6lbb"]
+
+[ext_resource type="Script" path="res://Scripts/UI/MenuBar.gd" id="1_8y8ud"]
+[ext_resource type="PackedScene" uid="uid://ci128iovra3dr" path="res://Scenes/UI/TopBarButton.tscn" id="1_cj5fl"]
+[ext_resource type="Texture2D" uid="uid://cc0uxg71e5lu0" path="res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png" id="2_6bywd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h4g8s"]
+atlas = ExtResource("2_6bywd")
+region = Rect2(112, 368, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m7mhg"]
+atlas = ExtResource("2_6bywd")
+region = Rect2(112, 368, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v01ho"]
+atlas = ExtResource("2_6bywd")
+region = Rect2(112, 368, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x43j6"]
+atlas = ExtResource("2_6bywd")
+region = Rect2(176, 464, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bwy25"]
+atlas = ExtResource("2_6bywd")
+region = Rect2(208, 464, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pk7j8"]
+atlas = ExtResource("2_6bywd")
+region = Rect2(176, 496, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gekmy"]
+atlas = ExtResource("2_6bywd")
+region = Rect2(208, 496, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_47puv"]
+atlas = ExtResource("2_6bywd")
+region = Rect2(112, 400, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0id6r"]
+atlas = ExtResource("2_6bywd")
+region = Rect2(144, 400, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ch6tt"]
+atlas = ExtResource("2_6bywd")
+region = Rect2(240, 496, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ig6o3"]
+atlas = ExtResource("2_6bywd")
+region = Rect2(272, 496, 32, 32)
+
+[node name="MenuBar" type="HBoxContainer"]
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+script = ExtResource("1_8y8ud")
+
+[node name="InventoryButton" parent="." instance=ExtResource("1_cj5fl")]
+layout_mode = 2
+default_texture = SubResource("AtlasTexture_h4g8s")
+
+[node name="CraftingButton" parent="." instance=ExtResource("1_cj5fl")]
+layout_mode = 2
+default_texture = SubResource("AtlasTexture_m7mhg")
+
+[node name="PlayerInfoButton" parent="." instance=ExtResource("1_cj5fl")]
+layout_mode = 2
+default_texture = SubResource("AtlasTexture_v01ho")
+
+[node name="RelationsButton" parent="." instance=ExtResource("1_cj5fl")]
+layout_mode = 2
+normal_texture = SubResource("AtlasTexture_x43j6")
+selected_texture = SubResource("AtlasTexture_bwy25")
+
+[node name="QuestsButton" parent="." instance=ExtResource("1_cj5fl")]
+layout_mode = 2
+normal_texture = SubResource("AtlasTexture_pk7j8")
+selected_texture = SubResource("AtlasTexture_gekmy")
+
+[node name="OptionsButton" parent="." instance=ExtResource("1_cj5fl")]
+layout_mode = 2
+normal_texture = SubResource("AtlasTexture_47puv")
+selected_texture = SubResource("AtlasTexture_0id6r")
+
+[node name="ExitButton" parent="." instance=ExtResource("1_cj5fl")]
+layout_mode = 2
+normal_texture = SubResource("AtlasTexture_ch6tt")
+selected_texture = SubResource("AtlasTexture_ig6o3")
+
+[connection signal="pressed" from="InventoryButton" to="." method="_on_inventory_button_pressed"]
+[connection signal="pressed" from="CraftingButton" to="." method="_on_crafting_button_pressed"]
+[connection signal="pressed" from="PlayerInfoButton" to="." method="_on_player_info_button_pressed"]
+[connection signal="pressed" from="RelationsButton" to="." method="_on_relations_button_pressed"]
+[connection signal="pressed" from="QuestsButton" to="." method="_on_quests_button_pressed"]
+[connection signal="pressed" from="OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]
