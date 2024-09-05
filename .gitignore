@@ -7,3 +7,4 @@ export_presents.cfg
 .mono/
 data_*/
 mono_crash.*.json
+.godot/editor/script_editor_cache.cfg
