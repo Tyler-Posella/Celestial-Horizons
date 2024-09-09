@@ -17,3 +17,4 @@ noureshment = 0
 grown_texture = ExtResource("2_wx76l")
 name = "Pear"
 texture = SubResource("AtlasTexture_jb3gn")
+description = "Mildly sweet with a soft crunch. Great for a light boost on your adventures."

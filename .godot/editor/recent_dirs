@@ -1,6 +1,9 @@
 res://Assets/Fonts
+res://
+res://Scripts/Globals
 res://Scripts/UI
 res://Scenes/UI
+res://Scripts/UI/CenterMenu
 res://Resoures/Tools
 res://Resoures/Harvestables
 res://Scripts/Objects
@@ -12,11 +15,8 @@ res://Scripts/ResourceScripts/
 res://Scenes
 res://Scripts
 res://Resoures/Harvestables/
-res://Scripts/Globals
 res://Scripts/Objects/Trees
 res://Resoures/
-res://
 res://Scenes/Audio
 res://Scenes/Inventory
 res://Scripts/Inventory
-res://Resoures/Fruit

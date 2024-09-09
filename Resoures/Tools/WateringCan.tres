@@ -11,3 +11,4 @@ region = Rect2(0, 0, 16, 16)
 script = ExtResource("1_q47eh")
 name = "Watering Can"
 texture = SubResource("AtlasTexture_y7l74")
+description = "A simple tool used to water your crops. Can be refilled from any water source."

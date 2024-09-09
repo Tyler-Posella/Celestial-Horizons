@@ -11,3 +11,4 @@ region = Rect2(32, 0, 16, 16)
 script = ExtResource("1_j2b7i")
 name = "Hoe"
 texture = SubResource("AtlasTexture_k6eiy")
+description = "None"

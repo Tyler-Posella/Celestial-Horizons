@@ -1,25 +1,25 @@
 [gd_scene load_steps=10 format=3 uid="uid://q3fa77kp8bio"]
 
-[ext_resource type="Script" path="res://Scripts/UI/PlayerUI.gd" id="1_s6dr4"]
-[ext_resource type="Texture2D" uid="uid://cc0uxg71e5lu0" path="res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png" id="2_t1ep6"]
-[ext_resource type="PackedScene" uid="uid://hju5w1smhwpi" path="res://Scenes/UI/CenterMenu.tscn" id="3_g682t"]
-[ext_resource type="PackedScene" uid="uid://d2y3flkfbn7nf" path="res://Scenes/UI/DateWeatherUI.tscn" id="3_nxesl"]
-[ext_resource type="PackedScene" uid="uid://kwcxoisinfym" path="res://Scenes/UI/Hotbar.tscn" id="3_omqiv"]
+[ext_resource type="Script" path="res://Scripts/UI/PlayerUI.gd" id="1_gx1dn"]
+[ext_resource type="Texture2D" uid="uid://cc0uxg71e5lu0" path="res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png" id="2_8fxb6"]
+[ext_resource type="PackedScene" uid="uid://kwcxoisinfym" path="res://Scenes/UI/GameUI/Inventory/Hotbar.tscn" id="3_oif5e"]
+[ext_resource type="PackedScene" uid="uid://hju5w1smhwpi" path="res://Scenes/UI/CenterMenu/CenterMenu.tscn" id="4_b3dhn"]
+[ext_resource type="PackedScene" uid="uid://d2y3flkfbn7nf" path="res://Scenes/UI/GameUI/DateWeatherUI.tscn" id="5_8d51h"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tcepd"]
-atlas = ExtResource("2_t1ep6")
+atlas = ExtResource("2_8fxb6")
 region = Rect2(816, 448, 80, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wx05v"]
-atlas = ExtResource("2_t1ep6")
+atlas = ExtResource("2_8fxb6")
 region = Rect2(704, 704, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_14ul5"]
-atlas = ExtResource("2_t1ep6")
+atlas = ExtResource("2_8fxb6")
 region = Rect2(704, 560, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vvd8c"]
-atlas = ExtResource("2_t1ep6")
+atlas = ExtResource("2_8fxb6")
 region = Rect2(104, 104, 32, 32)
 
 [node name="PlayerUI" type="Control" groups=["UI"]]
@@ -29,7 +29,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_s6dr4")
+script = ExtResource("1_gx1dn")
 
 [node name="PlayerInfo" type="NinePatchRect" parent="."]
 custom_minimum_size = Vector2(384, 256)
@@ -117,15 +117,15 @@ patch_margin_top = 8
 patch_margin_right = 8
 patch_margin_bottom = 12
 
-[node name="Hotbar" parent="HotbarRect" instance=ExtResource("3_omqiv")]
+[node name="Hotbar" parent="HotbarRect" instance=ExtResource("3_oif5e")]
 layout_mode = 1
 
-[node name="CenterMenu" parent="." instance=ExtResource("3_g682t")]
+[node name="CenterMenu" parent="." instance=ExtResource("4_b3dhn")]
 layout_mode = 1
 offset_top = -274.0
 offset_bottom = 274.0
 
-[node name="WeatherUI" parent="." instance=ExtResource("3_nxesl")]
+[node name="WeatherUI" parent="." instance=ExtResource("5_8d51h")]
 layout_mode = 1
 anchor_left = 0.809
 anchor_right = 1.0

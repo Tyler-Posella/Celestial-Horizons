@@ -1,16 +1,19 @@
 extends Node2D
 class_name CurrencyComponent
-#Variables
+# Variables
 var coin_count : int = 0
-
+# Signals
 signal coinsChanged(count : int)
 
+# Functions
 func getCoinCount():
 	return coin_count
+
 
 func setCounCount(count : int):
 	coin_count = count
 	coinsChanged.emit(coin_count)
+	
 	
 func addCoins(count : int):
 	coin_count = coin_count + count

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://ci128iovra3dr"]
 
-[ext_resource type="Script" path="res://Scripts/UI/TopBarButton.gd" id="1_0kybn"]
+[ext_resource type="Script" path="res://Scripts/UI/CenterMenu/TopBarButton.gd" id="1_0kybn"]
 [ext_resource type="Texture2D" uid="uid://cc0uxg71e5lu0" path="res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png" id="1_w1j1f"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_asro6"]

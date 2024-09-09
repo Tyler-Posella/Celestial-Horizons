@@ -11,3 +11,4 @@ region = Rect2(48, 32, 16, 16)
 script = ExtResource("1_lta63")
 name = "Branch"
 texture = SubResource("AtlasTexture_gnd8o")
+description = "None"

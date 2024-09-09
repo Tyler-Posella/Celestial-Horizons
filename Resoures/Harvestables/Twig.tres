@@ -11,3 +11,4 @@ region = Rect2(0, 16, 16, 16)
 script = ExtResource("1_mxoyc")
 name = "Twig"
 texture = SubResource("AtlasTexture_opgxa")
+description = "None"

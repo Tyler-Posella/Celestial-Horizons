@@ -11,3 +11,4 @@ region = Rect2(16, 0, 16, 16)
 script = ExtResource("1_i5yn3")
 name = "Axe"
 texture = SubResource("AtlasTexture_heis8")
+description = "None"

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://kwcxoisinfym"]
 
-[ext_resource type="Script" path="res://Scripts/UI/Hotbar.gd" id="1_mvylo"]
+[ext_resource type="Script" path="res://Scripts/UI/InventoryUI/Hotbar.gd" id="1_mvylo"]
 
 [node name="Hotbar" type="GridContainer"]
 anchors_preset = 8

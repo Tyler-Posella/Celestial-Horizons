@@ -1,6 +1,6 @@
 extends TextureButton
 class_name TopBarButton
-#Export variables
+# Export variables
 @export var default_texture : Texture
 @export var default_pressed_texture : Texture
 @export var normal_texture : Texture
@@ -8,10 +8,11 @@ class_name TopBarButton
 @export var hover_texture : Texture
 @export var disabled_texture : Texture
 @export var focused_texture : Texture
+
 #Instance variables
 var is_selected : bool = false
 
-
+# Functions
 func _ready():
 	if(normal_texture != null):
 		texture_normal = normal_texture
@@ -26,14 +27,17 @@ func _ready():
 	texture_disabled = disabled_texture
 	texture_focused = focused_texture
 	
+	
 func _on_pressed() -> void:
 	is_selected = true
+	
 	
 func press():
 	if(button_pressed == true):
 		pass
 	else:
 		button_pressed = true
+	
 		
 func unpress():
 	if(button_pressed == false):

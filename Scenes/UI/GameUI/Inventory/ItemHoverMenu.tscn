@@ -1,0 +1,72 @@
+[gd_scene load_steps=7 format=3 uid="uid://cjd6gxg8818wh"]
+
+[ext_resource type="Script" path="res://Scripts/UI/InventoryUI/ItemHoverMenu.gd" id="1_gpeon"]
+[ext_resource type="Texture2D" uid="uid://cc0uxg71e5lu0" path="res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png" id="2_whgpa"]
+[ext_resource type="FontFile" uid="uid://tebnlopbok7g" path="res://Assets/Fonts/PixulBrush.ttf" id="3_0wg0f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rj2j8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vspb2"]
+atlas = ExtResource("2_whgpa")
+region = Rect2(104, 152, 32, 32)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e035h"]
+
+[node name="ItemHoverMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+grow_horizontal = 0
+size_flags_horizontal = 4
+size_flags_stretch_ratio = 0.0
+mouse_filter = 2
+script = ExtResource("1_gpeon")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+offset_right = 144.0
+offset_bottom = 88.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_rj2j8")
+
+[node name="MenuTextureRect" type="NinePatchRect" parent="PanelContainer"]
+layout_mode = 2
+texture = SubResource("AtlasTexture_vspb2")
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+
+[node name="PanelMarginRect" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/PanelMarginRect"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_e035h")
+
+[node name="LabelVBoxContainer" type="VBoxContainer" parent="PanelContainer/PanelMarginRect/PanelContainer"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="ItemLabel" type="Label" parent="PanelContainer/PanelMarginRect/PanelContainer/LabelVBoxContainer"]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("3_0wg0f")
+theme_override_font_sizes/font_size = 24
+
+[node name="DescriptionLabel" type="Label" parent="PanelContainer/PanelMarginRect/PanelContainer/LabelVBoxContainer"]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("3_0wg0f")
+theme_override_font_sizes/font_size = 12
+autowrap_mode = 2

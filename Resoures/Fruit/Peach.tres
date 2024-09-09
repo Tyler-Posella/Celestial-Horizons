@@ -17,3 +17,4 @@ noureshment = 0
 grown_texture = ExtResource("2_d80ke")
 name = "Peach"
 texture = SubResource("AtlasTexture_pwe4q")
+description = "Soft, sweet, and fragrant. A favorite of many for its comforting taste."

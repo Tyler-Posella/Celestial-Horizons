@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://hju5w1smhwpi"]
 
-[ext_resource type="PackedScene" uid="uid://domfakxmg6lbb" path="res://Scenes/UI/MenuBar.tscn" id="1_e1pe4"]
-[ext_resource type="Script" path="res://Scripts/UI/CenterMenu.gd" id="1_wlh08"]
+[ext_resource type="PackedScene" uid="uid://domfakxmg6lbb" path="res://Scenes/UI/GameUI/CenterMenu/MenuBar.tscn" id="1_e1pe4"]
+[ext_resource type="Script" path="res://Scripts/UI/CenterMenu/CenterMenu.gd" id="1_wlh08"]
 [ext_resource type="Texture2D" uid="uid://cc0uxg71e5lu0" path="res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png" id="2_r0doy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_exrga"]

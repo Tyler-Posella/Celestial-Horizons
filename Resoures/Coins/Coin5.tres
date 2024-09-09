@@ -12,3 +12,4 @@ script = ExtResource("1_bo10b")
 coin_value = 5
 name = "Coin5"
 texture = SubResource("AtlasTexture_hqq82")
+description = "None"

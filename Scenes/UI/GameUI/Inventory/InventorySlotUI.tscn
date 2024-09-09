@@ -1,24 +1,28 @@
 [gd_scene load_steps=7 format=3 uid="uid://bfdr3rq5pbkr6"]
 
-[ext_resource type="Script" path="res://Scripts/UI/InventorySlotUI.gd" id="1_af8vf"]
-[ext_resource type="Texture2D" uid="uid://cc0uxg71e5lu0" path="res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png" id="2_8ikg5"]
-[ext_resource type="FontFile" uid="uid://dshut2sdrrnxf" path="res://Assets/Fonts/pixelFont-7-8x14-sproutLands.ttf" id="3_ty8g2"]
+[ext_resource type="Script" path="res://Scripts/UI/InventoryUI/InventorySlotUI.gd" id="1_c7brg"]
+[ext_resource type="Texture2D" uid="uid://cc0uxg71e5lu0" path="res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png" id="2_ue2rp"]
+[ext_resource type="FontFile" uid="uid://dshut2sdrrnxf" path="res://Assets/Fonts/pixelFont-7-8x14-sproutLands.ttf" id="3_anxvl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lwmxg"]
-atlas = ExtResource("2_8ikg5")
+atlas = ExtResource("2_ue2rp")
 region = Rect2(8, 56, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rodc4"]
-atlas = ExtResource("2_8ikg5")
+atlas = ExtResource("2_ue2rp")
 region = Rect2(56, 56, 32, 32)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6ujyd"]
 
-[node name="InventorySlotUI" type="Control"]
+[node name="GuiInventorySlot" type="Control"]
 custom_minimum_size = Vector2(96, 96)
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_af8vf")
+offset_right = 96.0
+offset_bottom = 96.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_c7brg")
 selected_texture = SubResource("AtlasTexture_lwmxg")
 unselected_texture = SubResource("AtlasTexture_rodc4")
 
@@ -44,8 +48,12 @@ offset_right = 80.0625
 offset_bottom = 82.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 4
-theme_override_fonts/font = ExtResource("3_ty8g2")
+theme_override_fonts/font = ExtResource("3_anxvl")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxEmpty_6ujyd")
 text = "0"
 horizontal_alignment = 2
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

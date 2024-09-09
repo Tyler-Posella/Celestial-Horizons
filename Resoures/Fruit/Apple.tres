@@ -17,3 +17,4 @@ noureshment = 0
 grown_texture = ExtResource("2_vbfcp")
 name = "Apple"
 texture = SubResource("AtlasTexture_wf0jj")
+description = "A crisp, sweet fruit that restores a bit of health. Perfect for a quick snack in the wild."

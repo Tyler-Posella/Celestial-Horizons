@@ -1,5 +1,6 @@
 extends Node2D
 
+# Variables
 @onready var ambience_player = $AmbienceAudioStream
 @onready var music_player = $MusicAudioStream
 @onready var stream_1 = $AudioStream1
@@ -12,6 +13,7 @@ extends Node2D
 @onready var stream_8 = $AudioStream8
 var stream_array = []
 
+# Functions
 func _ready():
 	stream_array.append(stream_1)
 	stream_array.append(stream_2)
@@ -22,6 +24,7 @@ func _ready():
 	stream_array.append(stream_7)
 	stream_array.append(stream_8)
 	
+	
 func playSound(path : String):
 	var player = getOpenPlayer()
 	if(player == null):
@@ -30,22 +33,26 @@ func playSound(path : String):
 		player.stream = load(path)
 		player.play()
 	
+	
 func getOpenPlayer():
 	for i in stream_array.size():
 		if(stream_array[i].is_playing() == false):
 			return stream_array[i]
 			break
 	
+	
 func getMusicPlayer():
 	return music_player
+	
 	
 func muteMusicPlayer():
 	music_player.volume_db = -80
 	
+	
 func unmuteMusicPlayer():
 	music_player.volume_db = 0
+	
 	
 func getAmbiencePlayer():
 	return ambience_player
 	
-

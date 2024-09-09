@@ -1,21 +1,26 @@
 extends CharacterBody2D
 class_name Player
-#Export Variables
+
+# Export Variables
 @export var inventory_component : InventoryComponent
 @export var currency_component : CurrencyComponent
 @export var health_component : HealthComponent
-@onready var movement_speed : int = 100
-@onready var state : String = "Idle"
-@onready var isAction : bool = false
+
+# Variables
+var movement_speed : int = 100
+var state : String = "Idle"
+var isAction : bool = false
 @onready var animator = $AnimationPlayer
-@onready var last_direction : String = "Down"
-@onready var direction : Vector2 = Vector2.ZERO
+var last_direction : String = "Down"
+var direction : Vector2 = Vector2.ZERO
 @onready var inventory : InventoryComponent = $InventoryComponent
 
+# Signals
 signal coinsChanged(count : int)
 signal inventoryChanged()
 signal healthChanged(count : int)
 
+# Functions
 func _ready():
 	$ToolArea/Tool.set_disabled(true)
 	$ToolArea.monitorable = false
@@ -23,6 +28,7 @@ func _ready():
 	currency_component.coinsChanged.connect(_on_coin_update)
 	#inventory_component.inventoryChanged.connect(_on_inventory_update)
 	health_component.healthChanged.connect(_on_health_update)
+	
 	
 func _physics_process(delta):
 	if(Utils.getUI().isOpen() == false):
@@ -75,6 +81,7 @@ func _physics_process(delta):
 	if(Input.is_action_just_pressed("Menu")):
 		Utils.getUI().menuToggle()
 
+
 func checkForButtonPress():
 	if(Input.is_action_just_pressed("1")):
 		inventory.selectSlot(0,0)
@@ -103,17 +110,22 @@ func checkForButtonPress():
 			if(inventory.selected.item is Usable and isActioning() == false):
 				useItem()
 		
+		
 func getInventoryComponent():
 	return inventory
+	
 	
 func getCurrencyComponent():
 	return currency_component
 	
+	
 func getHealthComponent():
 	return health_component
 	
+	
 func getDropMarker():
 	return $Marker2D
+	
 	
 func useItem():
 	if(inventory.selected.getItem() is Usable):
@@ -157,11 +169,13 @@ func useItem():
 			elif(last_direction == "Up"):
 				$AnimationPlayer.play("water_up")
 		
+		
 func useItemEnd():
 	$ToolArea/Tool.set_disabled(true)
 	$ToolArea.monitorable = false
 	movement_speed = 100
 	isAction = false
+
 
 func _on_animation_player_animation_finished(anim_name):
 	if(anim_name == "axe_down" or anim_name == "axe_left" or anim_name == "axe_up" or anim_name == "axe_right"):
@@ -171,14 +185,18 @@ func _on_animation_player_animation_finished(anim_name):
 	elif(anim_name == "water_down" or anim_name == "water_left" or anim_name == "water_up" or anim_name == "water_right"):
 		useItemEnd()
 		
+		
 func isActioning():
 	return isAction
+	
 	
 func _on_coin_update(count : int):
 	coinsChanged.emit(count)
 	
+	
 func _on_health_update(count : int):
 	healthChanged.emit(count)
+	
 	
 func _on_inventory_update():
 	pass

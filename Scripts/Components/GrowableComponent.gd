@@ -1,25 +1,29 @@
 extends Node2D
 class_name GrowableComponent
-#Constant variables 
+# Constant variables 
 const collectable_scene = preload("res://Scenes/Objects/Collectable.tscn")
-#Export variables
+
+# Export variables
 var growable : Item
-#Variables
+
+# Variables
 var has_grown : bool = false
-#Onready variables
 @onready var growth_timer = $GrowthTimer
 @onready var marker_array = []
 
+# Functions
 func _ready():
 	growable = get_parent().growable
 	if(growable != null):
 		growth_timer.start()
+	
 	
 func isGrown():
 	if(has_grown):
 		return true
 	else:
 		return false
+		
 		
 func harvest():
 	if(isGrown()):
@@ -35,6 +39,7 @@ func harvest():
 	else:
 		pass
 	
+	
 func dropCollectables(item : Item):
 	for i in 3:
 		var collectable = collectable_scene.instantiate()
@@ -42,15 +47,19 @@ func dropCollectables(item : Item):
 		get_parent().add_child(collectable)
 		#Instantiate into scene
 	
+	
 func grow():
 	has_grown = true
 	get_parent().sprite.texture = growable.getGrownTexture()
 
+
 func _on_growth_timer_timeout():
 	grow()
 	
+	
 func getGrowableItem():
 	return growable
+	
 	
 func setGrowableItem(obj : Item):
 	growable = obj
