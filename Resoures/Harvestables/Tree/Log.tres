@@ -11,4 +11,4 @@ region = Rect2(32, 16, 16, 16)
 script = ExtResource("1_h6wpe")
 name = "Log"
 texture = SubResource("AtlasTexture_xfwxl")
-description = "None"
+description = "A heavy chunk of wood, perfect for crafting larger items or fueling a big fire."

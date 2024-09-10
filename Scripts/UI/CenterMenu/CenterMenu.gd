@@ -3,6 +3,7 @@ extends VBoxContainer
 # Variables
 var current_menu : String = "Inventory"
 var current_menu_obj
+var moving_item
 
 # Functions
 func _ready():
@@ -18,6 +19,8 @@ func setMenuScene(scene_passed):
 		current_menu_obj = null
 	$MenuRect.add_child(scene_passed)
 	current_menu_obj = scene_passed
+	
+
 
 	
 	

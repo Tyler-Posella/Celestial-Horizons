@@ -18,7 +18,6 @@ func _ready():
 		item = get_parent().inventory_slot.getItem()
 		item_label.text = item.getName()
 		description_label.text = item.getDescription()
+
+
 	
-	
-func setItem(new_item : Item):
-	item = new_item

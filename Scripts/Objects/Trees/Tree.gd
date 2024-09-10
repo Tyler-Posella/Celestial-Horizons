@@ -4,9 +4,9 @@ class_name TreeInteractable
 # Constant Variables
 const stump_scene = preload("res://Scenes/Objects/Trees/Stump.tscn")
 const collectable_scene = preload("res://Scenes/Objects/Collectable.tscn")
-const log_resource = preload("res://Resoures/Harvestables/Log.tres")
-const branch_resource = preload("res://Resoures/Harvestables/Branch.tres")
-const twig_resource = preload("res://Resoures/Harvestables/Twig.tres")
+const log_resource = preload("res://Resoures/Harvestables/Tree/Log.tres")
+const branch_resource = preload("res://Resoures/Harvestables/Tree/Branch.tres")
+const twig_resource = preload("res://Resoures/Harvestables/Tree/Twig.tres")
 
 # Export Variables
 @export var health_component : HealthComponent

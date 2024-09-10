@@ -1,3 +1,5 @@
+res://Scripts/UI/InventoryUI
+res://Scenes/UI/GameUI/Inventory
 res://Assets/Fonts
 res://
 res://Scripts/Globals
@@ -18,5 +20,3 @@ res://Resoures/Harvestables/
 res://Scripts/Objects/Trees
 res://Resoures/
 res://Scenes/Audio
-res://Scenes/Inventory
-res://Scripts/Inventory

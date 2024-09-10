@@ -72,4 +72,9 @@ func isEmpty():
 		return true
 	else:
 		return false
+		
+func clear():
+	count = 0
+	item = null
+	updateUI.emit(x, y)
 	

@@ -6,6 +6,7 @@ var player_currency : CurrencyComponent
 var player_health : HealthComponent
 var menu_open : bool
 @onready var hotbar = $HotbarRect/Hotbar
+var moving_item
 
 # Functions
 func _ready():
