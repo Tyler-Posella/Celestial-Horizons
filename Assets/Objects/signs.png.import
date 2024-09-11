@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dinoncejyj65s"
-path="res://.godot/imported/signs.png-415313b9c1d88d676c69bc366d593e4d.ctex"
+uid="uid://coowjyjclles6"
+path="res://.godot/imported/Signs.png-6a38ac8cdcca50d1e85dfdd37abaeb1a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Objects/signs.png"
-dest_files=["res://.godot/imported/signs.png-415313b9c1d88d676c69bc366d593e4d.ctex"]
+source_file="res://Assets/Objects/Signs.png"
+dest_files=["res://.godot/imported/Signs.png-6a38ac8cdcca50d1e85dfdd37abaeb1a.ctex"]
 
 [params]
 

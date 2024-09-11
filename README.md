@@ -1,6 +1,6 @@
-# 🐾 **Nekowind Adventures**
+# 🐾 **[TODO]**
 
-Welcome to **Nekowind Adventures**, a 2D RPG survival game where you play as a cat in a beautifully crafted open world! Inspired by titles like *Stardew Valley* and *The Legend of Zelda*, this game combines elements of exploration, resource management, crafting, and combat into a cozy yet thrilling experience.
+Welcome to **[TODO]**, a 2D RPG survival game where you play as a cat in a beautifully crafted open world! Inspired by titles like *Stardew Valley* and *The Legend of Zelda*, this game combines elements of exploration, resource management, crafting, and combat into a cozy yet thrilling experience.
 
 ![Game Screenshot](link-to-screenshot-or-gif)
 
@@ -47,6 +47,6 @@ TODO
 ## 🙌 Acknowledgments
 
 - **Inspiration**: Stardew Valley, The Legend of Zelda Series, The Elder Scrolls Series
-- **Asset Creators**: Big thank you to [CupNooble](https://cupnooble.itch.io/) for helping with the assets for this project!
+- **Asset Creators**: Big thank you to CupNooble for helping with the assets for this project!
 - **Community**: Special thanks to the community for their support and feedback!
 
