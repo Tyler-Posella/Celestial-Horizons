@@ -28,3 +28,28 @@ Welcome to **[Your Game Title]**, a 2D RPG survival game where you play as a cat
 ## 🛠️ **Installation**
 
 As releases are finished they will be avaliable for download on the repository page.
+
+# 📚 Requirements
+
+- **Engine or Framework**: TODO
+- **Languages/Technologies**: TODO
+
+## 🏗️ Planned Features
+
+- **Multiplayer mode**: Play with friends in a cooperative or competitive survival experience.
+- **Seasonal events**: Special quests, items, and events that change based on the in-game calendar.
+
+## 💡 Contributing
+
+TODO
+
+## 📝 License
+
+TODO
+
+## 🙌 Acknowledgments
+
+- **Inspiration**: Stardew Valley, The Legend of Zelda Series, The Elder Scrolls Series
+- **Asset Creators**: Big thank you to CupNooble for helping with the assets for this project!
+- **Community**: Special thanks to the community for their support and feedback!
+
