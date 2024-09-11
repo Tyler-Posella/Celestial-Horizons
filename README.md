@@ -21,9 +21,9 @@ Welcome to **[TODO]**, a 2D RPG survival game where you play as a cat in a beaut
 - **Seasonal events**: Special quests, items, and events that change based on the in-game calendar.
 
 ## 🎮 **How to Play**
-1. **Move** your cat character using the arrow keys or WASD.
-2. **Interact** with NPCs, objects, and crafting stations by pressing `[Interaction Key]`.
-3. **Open your inventory** using `[Inventory Key]` to manage items, craft tools, and build structures.
+1. **Move** your cat character using WASD.
+2. **Interact** with NPCs, objects, and crafting stations by pressing `E`.
+3. **Open your inventory** using `Esc` to manage items, craft tools, and build structures.
 4. **Survive** by gathering resources, crafting tools, building shelters, and fending off enemies.
 5. **Build relationships** by interacting with NPCs, offering gifts, and completing quests for them.
 
