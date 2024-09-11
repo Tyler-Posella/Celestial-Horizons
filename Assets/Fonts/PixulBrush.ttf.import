@@ -15,6 +15,7 @@ dest_files=["res://.godot/imported/PixulBrush.ttf-721b255f1d745213da1fcffa596149
 Rendering=null
 antialiasing=1
 generate_mipmaps=false
+disable_embedded_bitmaps=true
 multichannel_signed_distance_field=false
 msdf_pixel_range=8
 msdf_size=48
