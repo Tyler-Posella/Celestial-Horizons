@@ -17,9 +17,9 @@ region = Rect2(56, 56, 32, 32)
 [node name="GuiInventorySlot" type="Control"]
 custom_minimum_size = Vector2(96, 96)
 layout_mode = 3
-anchors_preset = 0
-offset_right = 96.0
-offset_bottom = 96.0
+anchor_right = 0.05
+anchor_bottom = 0.089
+offset_bottom = -0.120003
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("1_c7brg")
