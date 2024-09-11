@@ -20,6 +20,8 @@ func setMenuScene(scene_passed):
 	$MenuRect.add_child(scene_passed)
 	current_menu_obj = scene_passed
 	
+	
+	
 
 
 	

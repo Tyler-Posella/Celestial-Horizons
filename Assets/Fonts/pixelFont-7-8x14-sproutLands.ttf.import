@@ -15,6 +15,7 @@ dest_files=["res://.godot/imported/pixelFont-7-8x14-sproutLands.ttf-5f6df1606ef1
 Rendering=null
 antialiasing=1
 generate_mipmaps=false
+disable_embedded_bitmaps=true
 multichannel_signed_distance_field=false
 msdf_pixel_range=8
 msdf_size=48

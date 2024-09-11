@@ -32,16 +32,12 @@ func _on_ui_slot_update(x_num : int, y_num : int):
 
 func _on_slot_hover(slot):
 	hovered_slot = slot
-	if(hovered_slot.inventory_slot.item != null):
-		hovered_slot.addTooltip()
+	hovered_slot.hovering = true
 			
 			
 func _on_slot_unhover(slot):
-	if(hovered_slot == null):
-		pass
-	else:
-		hovered_slot.removeTooltip()
-		hovered_slot = null
+	hovered_slot.hovering = false
+	hovered_slot = null
 	
 		
 

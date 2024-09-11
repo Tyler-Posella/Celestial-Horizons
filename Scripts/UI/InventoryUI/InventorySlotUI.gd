@@ -13,6 +13,7 @@ const moving_item_scene = preload("res://Scenes/UI/GameUI/Inventory/MovingItem.t
 @onready var sprite = $NinePatchRect/ItemSprite
 @onready var text_edit = $NinePatchRect/CountText
 var hover_menu
+var hovering : bool = false
 
 # Signals
 signal hovered(node)
@@ -30,6 +31,17 @@ func _ready():
 	$NinePatchRect.texture = unselected_texture
 	updateSlot()
 
+func _process(delta: float) -> void:
+	if(hovering == true 
+		and Input.is_action_pressed("Keyboard-Shift")
+		and inventory_slot.isEmpty() == false 
+		and hover_menu == null
+		):
+		addTooltip()
+	elif(hovering == false
+		or Input.is_action_just_released("Keyboard-Shift")
+		):
+		removeTooltip()
 		
 func updateSlot():
 	if(inventory_slot.count == 0):
@@ -80,6 +92,7 @@ func hasTooltip():
 
 func _on_gui_input(event: InputEvent) -> void:
 	if(event.is_action_pressed("click_primary")):
+		print("CLick")
 		if(inventory_slot.isEmpty() == false and Utils.getUI().moving_item == null):
 			var moving_item = moving_item_scene.instantiate()
 			moving_item.setObject(inventory_slot)
