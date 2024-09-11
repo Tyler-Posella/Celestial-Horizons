@@ -47,6 +47,6 @@ TODO
 ## 🙌 Acknowledgments
 
 - **Inspiration**: Stardew Valley, The Legend of Zelda Series, The Elder Scrolls Series
-- **Asset Creators**: Big thank you to CupNooble for helping with the assets for this project!
+- **Asset Creators**: Big thank you to [CupNooble](https://cupnooble.itch.io/) for helping with the assets for this project!
 - **Community**: Special thanks to the community for their support and feedback!
 
