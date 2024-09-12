@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="UiMenuButton" load_steps=5 format=3 uid="uid://cp4l0pqdvelpr"]
+
+[ext_resource type="Texture2D" uid="uid://dfublfalq30f7" path="res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png" id="1_fynse"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/MainMenuButton.gd" id="1_t3jjv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g05k8"]
+atlas = ExtResource("1_fynse")
+region = Rect2(128, 352, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mc8xq"]
+atlas = ExtResource("1_fynse")
+region = Rect2(160, 352, 32, 32)
+
+[resource]
+script = ExtResource("1_t3jjv")
+normal_texture = SubResource("AtlasTexture_g05k8")
+pressed_texture = SubResource("AtlasTexture_mc8xq")
