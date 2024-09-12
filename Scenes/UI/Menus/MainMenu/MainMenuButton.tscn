@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://bi05k7fafahkk"]
 
 [ext_resource type="FontFile" uid="uid://dshut2sdrrnxf" path="res://Assets/Fonts/pixelFont-7-8x14-sproutLands.ttf" id="1_gwpbg"]
-[ext_resource type="Script" path="res://Scripts/UI/Menus/MenuButton.gd" id="1_i3w7l"]
+[ext_resource type="Script" path="res://Scripts/UI/Menus/MainMenuButton.gd" id="1_i3w7l"]
 [ext_resource type="Texture2D" uid="uid://cc0uxg71e5lu0" path="res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png" id="2_bwxqq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0gep4"]

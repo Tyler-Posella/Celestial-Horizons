@@ -1,5 +1,5 @@
 extends TextureButton
-class_name TopBarButton
+class_name GuiMenuButton
 # Export variables
 @export var default_texture : Texture
 @export var default_pressed_texture : Texture
@@ -9,7 +9,7 @@ class_name TopBarButton
 # Instance variables
 var scene_path : String
 # Signals
-signal buttonpress(button : TopBarButton)
+signal buttonpress(button : GuiMenuButton)
 
 # Functions
 func _ready():

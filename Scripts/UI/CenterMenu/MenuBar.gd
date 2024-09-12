@@ -3,10 +3,10 @@ extends HBoxContainer
 # Constants
 var top_button_scene = preload("res://Scenes/UI/GameUI/CenterMenu/TopBarButton.tscn")
 # Variables
-@onready var selected_button : TopBarButton
-@onready var old_button : TopBarButton
+@onready var selected_button : GuiMenuButton
+@onready var old_button : GuiMenuButton
 var buttons = []
-var current_button : TopBarButton
+var current_button : GuiMenuButton
 var current_menu
 # Signals
 signal updateMenu(new_menu)
@@ -28,7 +28,7 @@ func _ready():
 
 
 
-func _on_button_press(new_button : TopBarButton):
+func _on_button_press(new_button : GuiMenuButton):
 	if(current_button == null):
 		new_button.press()
 		current_button = new_button
