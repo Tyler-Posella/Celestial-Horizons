@@ -1,3 +1,4 @@
+res://Scripts/ResourceScripts/
 res://Scripts/UI/InventoryUI
 res://Scenes/UI/GameUI/Inventory
 res://Assets/Fonts
@@ -13,7 +14,6 @@ res://Scenes/Objects
 res://Resoures/Coins
 res://Scripts/Components
 res://Scenes/Components
-res://Scripts/ResourceScripts/
 res://Scenes
 res://Scripts
 res://Resoures/Harvestables/

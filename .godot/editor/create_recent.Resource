@@ -1,3 +1,5 @@
+GDScript
+PackedScene
 Usable
 Item
 Coin
