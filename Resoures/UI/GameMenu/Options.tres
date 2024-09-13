@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="UiMenuButton" load_steps=6 format=3 uid="uid://4fjqyp20aia0"]
 
 [ext_resource type="Texture2D" uid="uid://dfublfalq30f7" path="res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png" id="1_lnsus"]
-[ext_resource type="Script" path="res://Scripts/ResourceScripts/MainMenuButton.gd" id="1_s1tev"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/TopMenuButton.gd" id="1_s1tev"]
 [ext_resource type="PackedScene" uid="uid://eqmc5akv01g2" path="res://Scenes/UI/CenterMenu/OptionsMenu.tscn" id="2_gjijd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sbec2"]

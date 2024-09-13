@@ -5,7 +5,7 @@ class_name GuiMenuButton
 @export var default_pressed_texture : Texture
 # Instance variables
 var scene : PackedScene
-var resource : Resource
+var resource : UiMenuButton
 # Signals
 signal buttonpress(button : GuiMenuButton)
 
@@ -19,9 +19,16 @@ func _on_press() -> void:
 	buttonpress.emit(self)
 	
 	
-func setResource(resource : UiMenuButton):
-	resource = resource
+func setResource(new_resource : UiMenuButton):
+	resource = new_resource
 	scene = resource.scene
+	
+func setTexture():
+	if(resource.getNormalTexture() != null):
+		texture_normal = resource.getNormalTexture()
+	if(resource.getPressedTexture() != null):
+		texture_pressed = resource.getPressedTexture()
+	
 	
 func getScene():
 	return scene

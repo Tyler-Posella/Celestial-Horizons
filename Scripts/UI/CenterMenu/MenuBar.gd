@@ -16,7 +16,7 @@ func _ready():
 		var button = top_button_scene.instantiate()
 		button.buttonpress.connect(_on_button_press)
 		buttons.append(button)
-		add_child(button)
+		add_child(buttons[i])
 	
 	buttons[6].setResource(load("res://Resoures/UI/GameMenu/Exit.tres"))
 	buttons[5].setResource(load("res://Resoures/UI/GameMenu/Options.tres"))
@@ -25,7 +25,9 @@ func _ready():
 	buttons[2].setResource(load("res://Resoures/UI/GameMenu/PlayerInfo.tres"))
 	buttons[1].setResource(load("res://Resoures/UI/GameMenu/Crafting.tres"))
 	buttons[0].setResource(load("res://Resoures/UI/GameMenu/Inventory.tres"))
-
+	
+	for i in buttons.size():
+		buttons[i].setTexture()
 
 
 func _on_button_press(new_button : GuiMenuButton):
