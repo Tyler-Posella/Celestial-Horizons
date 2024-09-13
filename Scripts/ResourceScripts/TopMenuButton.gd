@@ -1,3 +1,6 @@
 extends Resource
 
-@export var scene : String
+@export var scene : PackedScene
+
+func getScene():
+	return scene

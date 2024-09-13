@@ -10,7 +10,8 @@ config_version=5
 
 [application]
 
-config/name="2D-Game-Project"
+config/name="Nekowind Adventures"
+config/version="0.1"
 run/main_scene="res://Scenes/Game.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
@@ -28,12 +29,16 @@ Debug="*res://Scripts/Globals/Debug.gd"
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/stretch/mode="viewport"
-window/stretch/aspect="expand"
+mouse_cursor/custom_image="res://Assets/UI Sprites/Mouse sprites/Arrow Mouse icon 1.png"
 mouse_cursor/name="NekoNekoLands"
 
 [dotnet]
 
 project/assembly_name="NekoNekoLands"
+
+[gui]
+
+theme/custom_font="res://Assets/Fonts/pixelFont-7-8x14-sproutLands.ttf"
 
 [input]
 

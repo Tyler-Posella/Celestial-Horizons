@@ -1,6 +1,7 @@
 extends Resource
 class_name UiMenuButton
 # Exports
+@export var scene : PackedScene
 @export var normal_texture : AtlasTexture
 @export var pressed_texture : AtlasTexture
 @export var hovered_texture : AtlasTexture
@@ -26,3 +27,7 @@ func getDisabledTexture():
 	
 func getFocusedTexture():
 	return focused_texture
+	
+
+func getScene():
+	return scene

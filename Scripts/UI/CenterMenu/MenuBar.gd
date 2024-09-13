@@ -18,13 +18,13 @@ func _ready():
 		buttons.append(button)
 		add_child(button)
 	
-	buttons[6].setScenePath("res://Scenes/UI/CenterMenu/ExitMenu.tscn")
-	buttons[5].setScenePath("res://Scenes/UI/CenterMenu/OptionsMenu.tscn")
-	buttons[4].setScenePath("res://Scenes/UI/CenterMenu/QuestsMenu.tscn")
-	buttons[3].setScenePath("res://Scenes/UI/CenterMenu/RelationsMenu.tscn")
-	buttons[2].setScenePath("res://Scenes/UI/CenterMenu/PlayerInfoMenu.tscn")
-	buttons[1].setScenePath("res://Scenes/UI/CenterMenu/CraftingMenu.tscn")
-	buttons[0].setScenePath("res://Scenes/UI/CenterMenu/InventoryMenu.tscn")
+	buttons[6].setResource(load("res://Resoures/UI/GameMenu/Exit.tres"))
+	buttons[5].setResource(load("res://Resoures/UI/GameMenu/Options.tres"))
+	buttons[4].setResource(load("res://Resoures/UI/GameMenu/Quests.tres"))
+	buttons[3].setResource(load("res://Resoures/UI/GameMenu/Relations.tres"))
+	buttons[2].setResource(load("res://Resoures/UI/GameMenu/PlayerInfo.tres"))
+	buttons[1].setResource(load("res://Resoures/UI/GameMenu/Crafting.tres"))
+	buttons[0].setResource(load("res://Resoures/UI/GameMenu/Inventory.tres"))
 
 
 
@@ -32,16 +32,13 @@ func _on_button_press(new_button : GuiMenuButton):
 	if(current_button == null):
 		new_button.press()
 		current_button = new_button
-		var new_scene_path = new_button.getScenePath()
-		var new_scene = load(new_scene_path)
+		var new_scene = current_button.getScene()
 		var new_menu = new_scene.instantiate()
 		updateMenu.emit(new_menu)
-		current_button = new_button
 	else:
 		new_button.press()
 		current_button.unpress()
-		var new_scene_path = new_button.getScenePath()
-		var new_scene = load(new_scene_path)
+		var new_scene = new_button.getScene()
 		var new_menu = new_scene.instantiate()
 		current_button = new_button
 		updateMenu.emit(new_menu)

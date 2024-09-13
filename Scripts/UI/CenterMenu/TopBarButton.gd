@@ -3,11 +3,9 @@ class_name GuiMenuButton
 # Export variables
 @export var default_texture : Texture
 @export var default_pressed_texture : Texture
-@export var normal_texture : Texture
-@export var selected_texture : Texture
-@export var hover_texture : Texture
 # Instance variables
-var scene_path : String
+var scene : PackedScene
+var resource : Resource
 # Signals
 signal buttonpress(button : GuiMenuButton)
 
@@ -21,12 +19,13 @@ func _on_press() -> void:
 	buttonpress.emit(self)
 	
 	
-func setScenePath(path : String):
-	scene_path = path
+func setResource(resource : UiMenuButton):
+	resource = resource
+	scene = resource.scene
 	
+func getScene():
+	return scene
 	
-func getScenePath():
-	return scene_path
 	
 func press():
 	button_pressed = true
