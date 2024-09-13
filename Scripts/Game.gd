@@ -6,14 +6,10 @@ class_name BaseGame
 @onready var level_node = $GameLevel
 @onready var player_node = $GamePlayer
 @onready var audio_node = $GameAudio
-var player : Player
-var ui = Utils.getUI()
-var music_player : AudioStreamPlayer
-var level
 
 # Functions
 func _ready():
-	GameManager.loadMainMenu()
+	GameManager.start()
 	
 	
 	

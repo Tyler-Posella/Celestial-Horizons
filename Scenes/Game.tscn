@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dcw2uf7xavjo7"]
 
-[ext_resource type="Script" path="res://Scripts/Globals/Game.gd" id="1_symbq"]
+[ext_resource type="Script" path="res://Scripts/Game.gd" id="1_symbq"]
 [ext_resource type="PackedScene" uid="uid://dsj5jii06d4rf" path="res://Scenes/Audio/AudioMachine.tscn" id="2_cmana"]
 
 [node name="Game" type="Node2D" groups=["GameNode"]]

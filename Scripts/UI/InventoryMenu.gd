@@ -3,7 +3,6 @@ class_name InventoryMenu
 # Constants
 const ui_slot_scene = preload("res://Scenes/UI/GameUI/Inventory/InventorySlotUI.tscn")
 # Instance Data
-var player
 var inventory_slots = []
 var hotbar_slots = []
 var hovered_slot
@@ -11,9 +10,7 @@ var hover_menu
 
 # Functions
 func _ready():
-#Player data imported
-	player = Utils.getPlayer()
-	var player_inventory = player.getInventoryComponent()
+	var player_inventory = Utils.getPlayer().getInventoryComponent()
 	for i in 4:
 		inventory_slots.append([])
 		for j in 10:

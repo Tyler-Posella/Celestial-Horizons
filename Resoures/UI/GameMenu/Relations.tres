@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="UiMenuButton" load_steps=6 format=3 uid="uid://ivljmgy6scqh"]
 
-[ext_resource type="Script" path="res://Scripts/ResourceScripts/MainMenuButton.gd" id="1_inuir"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/TopMenuButton.gd" id="1_inuir"]
 [ext_resource type="Texture2D" uid="uid://dfublfalq30f7" path="res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png" id="1_pr4rd"]
 [ext_resource type="PackedScene" uid="uid://fejg0r0tixx8" path="res://Scenes/UI/CenterMenu/RelationsMenu.tscn" id="2_0ik42"]
 

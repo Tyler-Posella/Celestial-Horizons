@@ -61,3 +61,7 @@ func unloadGame():
 	get_tree().get_first_node_in_group("Level").queue_free()
 	get_tree().get_first_node_in_group("Player").queue_free()
 	Utils.getGameAudio().getMusicPlayer().stop()
+	
+	
+func start():
+	loadMainMenu()
