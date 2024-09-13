@@ -11,7 +11,7 @@ region = Rect2(112, 368, 32, 32)
 atlas = ExtResource("1_w1j1f")
 region = Rect2(144, 368, 32, 32)
 
-[node name="Control" type="TextureButton"]
+[node name="GuiMenuButton" type="TextureButton"]
 custom_minimum_size = Vector2(128, 128)
 offset_right = 128.0
 offset_bottom = 128.0
@@ -25,4 +25,4 @@ script = ExtResource("1_0kybn")
 default_texture = SubResource("AtlasTexture_asro6")
 default_pressed_texture = SubResource("AtlasTexture_7ni3q")
 
-[connection signal="pressed" from="." to="." method="_on_pressed"]
+[connection signal="pressed" from="." to="." method="_on_press"]

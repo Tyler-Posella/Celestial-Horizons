@@ -1,0 +1,50 @@
+[gd_scene load_steps=11 format=3 uid="uid://bi05k7fafahkk"]
+
+[ext_resource type="FontFile" uid="uid://dshut2sdrrnxf" path="res://Assets/Fonts/pixelFont-7-8x14-sproutLands.ttf" id="1_gwpbg"]
+[ext_resource type="Script" path="res://Scripts/UI/Menus/MainMenuButton.gd" id="1_i3w7l"]
+[ext_resource type="Texture2D" uid="uid://cc0uxg71e5lu0" path="res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png" id="2_bwxqq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0gep4"]
+atlas = ExtResource("2_bwxqq")
+region = Rect2(368, 304, 96, 32)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rwf5h"]
+texture = SubResource("AtlasTexture_0gep4")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fujtn"]
+atlas = ExtResource("2_bwxqq")
+region = Rect2(368, 304, 96, 32)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qx0n6"]
+texture = SubResource("AtlasTexture_fujtn")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jnn4j"]
+atlas = ExtResource("2_bwxqq")
+region = Rect2(464, 304, 96, 32)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wojkg"]
+texture = SubResource("AtlasTexture_jnn4j")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ld1pb"]
+
+[node name="MenuButton" type="Button"]
+custom_minimum_size = Vector2(320, 128)
+anchors_preset = -1
+anchor_right = 0.094
+anchor_bottom = 0.05
+offset_right = 75.52
+offset_bottom = 74.0
+theme_override_colors/font_color = Color(0.946069, 0.870109, 0.772281, 1)
+theme_override_colors/font_pressed_color = Color(0.945098, 0.870588, 0.772549, 1)
+theme_override_colors/font_hover_color = Color(0.978819, 0.949679, 0.911683, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.870588, 0.772549, 1)
+theme_override_constants/h_separation = 0
+theme_override_fonts/font = ExtResource("1_gwpbg")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxTexture_rwf5h")
+theme_override_styles/hover = SubResource("StyleBoxTexture_qx0n6")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_wojkg")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ld1pb")
+action_mode = 0
+text = "Empty"
+script = ExtResource("1_i3w7l")

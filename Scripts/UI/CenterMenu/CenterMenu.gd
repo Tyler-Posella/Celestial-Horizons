@@ -1,28 +1,23 @@
 extends VBoxContainer
 
 # Variables
-var current_menu : String = "Inventory"
-var current_menu_obj
+var current_menu
 var moving_item
 
 # Functions
 func _ready():
-	const inventory_scene = preload("res://Scenes/UI/CenterMenu/InventoryMenu.tscn")
-	var scene = inventory_scene.instantiate()
-	setMenuScene(scene)
-	current_menu_obj = scene
+		$MenuBar.buttons[0].pressed.emit()
 	
 	
-func setMenuScene(scene_passed):
-	if(current_menu_obj != null):
-		current_menu_obj.queue_free()
-		current_menu_obj = null
-	$MenuRect.add_child(scene_passed)
-	current_menu_obj = scene_passed
+func setMenu(new_menu):
+	if(current_menu != null):
+		current_menu.queue_free()
+		$MenuRect.add_child(new_menu)
+		current_menu = new_menu
+	else:
+		$MenuRect.add_child(new_menu)
+		current_menu = new_menu
 	
 	
-	
-
-
-	
-	
+func _on_menu_bar_update_menu(new_menu: Variant) -> void:
+	setMenu(new_menu)

@@ -1,76 +1,47 @@
 extends HBoxContainer
 
+# Constants
+var top_button_scene = preload("res://Scenes/UI/GameUI/CenterMenu/TopBarButton.tscn")
 # Variables
-@onready var selected_button : TopBarButton
-@onready var old_button : TopBarButton
-var button_array = []
-
+@onready var selected_button : GuiMenuButton
+@onready var old_button : GuiMenuButton
+var buttons = []
+var current_button : GuiMenuButton
+var current_menu
+# Signals
+signal updateMenu(new_menu)
 # Functions
 func _ready():
-	button_array.append($InventoryButton)
-	button_array.append($CraftingButton)
-	button_array.append($PlayerInfoButton)
-	button_array.append($RelationsButton)
-	button_array.append($QuestsButton)
-	button_array.append($OptionsButton)
-	button_array.append($ExitButton)
-	$InventoryButton.press()
-
-
-func _on_exit_button_pressed() -> void:
-	const exit_scene = preload("res://Scenes/UI/CenterMenu/ExitMenu.tscn")
-	var new_scene = exit_scene.instantiate()
-	get_parent().setMenuScene(new_scene)
-	buttonPress($ExitButton)
-
-
-func _on_options_button_pressed() -> void:
-	const options_scene = preload("res://Scenes/UI/CenterMenu/OptionsMenu.tscn")
-	var new_scene = options_scene.instantiate()
-	get_parent().setMenuScene(new_scene)
-	buttonPress($OptionsButton)
-
-
-func _on_quests_button_pressed() -> void:
-	const quests_scene = preload("res://Scenes/UI/CenterMenu/QuestsMenu.tscn")
-	var new_scene = quests_scene.instantiate()
-	get_parent().setMenuScene(new_scene)
-	buttonPress($QuestsButton)
-
-
-func _on_relations_button_pressed() -> void:
-	const relations_scene = preload("res://Scenes/UI/CenterMenu/RelationsMenu.tscn")
-	var new_scene = relations_scene.instantiate()
-	get_parent().setMenuScene(new_scene)
-	buttonPress($RelationsButton)
-
-
-func _on_player_info_button_pressed() -> void:
-	const player_info_scene = preload("res://Scenes/UI/CenterMenu/PlayerInfoMenu.tscn")
-	var new_scene = player_info_scene.instantiate()
-	get_parent().setMenuScene(new_scene)
-	buttonPress($PlayerInfoButton)
-
-
-func _on_crafting_button_pressed() -> void:
-	const crafting_scene = preload("res://Scenes/UI/CenterMenu/CraftingMenu.tscn")
-	var new_scene = crafting_scene.instantiate()
-	get_parent().setMenuScene(new_scene)
-	buttonPress($CraftingButton)
-
-
-func _on_inventory_button_pressed() -> void:
-	const inventory_scene = preload("res://Scenes/UI/CenterMenu/InventoryMenu.tscn")
-	var new_scene = inventory_scene.instantiate()
-	get_parent().setMenuScene(new_scene)
-	buttonPress($InventoryButton)
+	for i in 7:
+		var button = top_button_scene.instantiate()
+		button.buttonpress.connect(_on_button_press)
+		buttons.append(button)
+		add_child(button)
 	
-	
-func buttonPress(button):
-	button.press()
-	for i in button_array.size():
-		if(button == button_array[i]):
-			pass
-		else:
-			button_array[i].unpress()
+	buttons[6].setResource(load("res://Resoures/UI/GameMenu/Exit.tres"))
+	buttons[5].setResource(load("res://Resoures/UI/GameMenu/Options.tres"))
+	buttons[4].setResource(load("res://Resoures/UI/GameMenu/Quests.tres"))
+	buttons[3].setResource(load("res://Resoures/UI/GameMenu/Relations.tres"))
+	buttons[2].setResource(load("res://Resoures/UI/GameMenu/PlayerInfo.tres"))
+	buttons[1].setResource(load("res://Resoures/UI/GameMenu/Crafting.tres"))
+	buttons[0].setResource(load("res://Resoures/UI/GameMenu/Inventory.tres"))
+
+
+
+func _on_button_press(new_button : GuiMenuButton):
+	if(current_button == null):
+		new_button.press()
+		current_button = new_button
+		var new_scene = current_button.getScene()
+		var new_menu = new_scene.instantiate()
+		updateMenu.emit(new_menu)
+	else:
+		new_button.press()
+		current_button.unpress()
+		var new_scene = new_button.getScene()
+		var new_menu = new_scene.instantiate()
+		current_button = new_button
+		updateMenu.emit(new_menu)
+		
+		
 	

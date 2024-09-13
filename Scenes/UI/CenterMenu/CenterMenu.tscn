@@ -33,3 +33,5 @@ patch_margin_left = 8
 patch_margin_top = 8
 patch_margin_right = 8
 patch_margin_bottom = 8
+
+[connection signal="updateMenu" from="MenuBar" to="." method="_on_menu_bar_update_menu"]

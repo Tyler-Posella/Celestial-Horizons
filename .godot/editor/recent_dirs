@@ -1,6 +1,9 @@
+res://Assets/Fonts
+res://Assets/UI Sprites/Mouse sprites
+res://Resoures/UI/GameMenu/
+res://Scripts/ResourceScripts/
 res://Scripts/UI/InventoryUI
 res://Scenes/UI/GameUI/Inventory
-res://Assets/Fonts
 res://
 res://Scripts/Globals
 res://Scripts/UI
@@ -13,10 +16,7 @@ res://Scenes/Objects
 res://Resoures/Coins
 res://Scripts/Components
 res://Scenes/Components
-res://Scripts/ResourceScripts/
 res://Scenes
 res://Scripts
 res://Resoures/Harvestables/
 res://Scripts/Objects/Trees
-res://Resoures/
-res://Scenes/Audio
