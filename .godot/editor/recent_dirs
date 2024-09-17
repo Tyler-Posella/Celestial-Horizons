@@ -1,3 +1,6 @@
+res://Scenes/UI/Menus/MainMenu
+res://Scripts/UI/Menus
+res://Scripts/Levels
 res://Assets/Fonts
 res://Assets/UI Sprites/Mouse sprites
 res://Resoures/UI/GameMenu/
@@ -17,6 +20,3 @@ res://Resoures/Coins
 res://Scripts/Components
 res://Scenes/Components
 res://Scenes
-res://Scripts
-res://Resoures/Harvestables/
-res://Scripts/Objects/Trees

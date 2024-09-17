@@ -11,6 +11,5 @@ region = Rect2(0, 0, 16, 16)
 script = ExtResource("1_v52uf")
 coin_value = 1
 name = "Coin1"
-ispickupable = true
-has_action = false
 texture = SubResource("AtlasTexture_8keux")
+description = "None"

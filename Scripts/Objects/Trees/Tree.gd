@@ -11,6 +11,7 @@ const twig_resource = preload("res://Resoures/Harvestables/Tree/Twig.tres")
 # Export Variables
 @export var health_component : HealthComponent
 @export var growable_component : GrowableComponent
+@export var audio_component : AudioMachine
 @export var tree_texture : Texture
 @export var growable : Item
 
@@ -63,12 +64,12 @@ func die():
 	$TreeSprite.hide()
 	$FallSprite.show()
 	state_machine.travel("fall")
-	Utils.getGameAudio().playSound("res://Audio/SFX/Tree/TreeFall.wav")
+	audio_component.playSound("res://Audio/SFX/Tree/TreeFall.wav")
 	
 	
 func shake():
 	state_machine.travel("shake_long")
-	Utils.getGameAudio().playSound("res://Audio/SFX/Tree/TreeShake.wav")
+	audio_component.playSound("res://Audio/SFX/Tree/TreeShake.wav")
 
 
 func _on_animation_tree_animation_finished(anim_name):
@@ -117,7 +118,7 @@ func _on_chop_area_area_entered(area):
 	health_component.damage(1)
 	if(health_component.getHealth() > 0):
 		state_machine.travel("shake_short")
-	Utils.getGameAudio().playSound("res://Audio/SFX/Tree/TreeHit.wav")
+	audio_component.playSound("res://Audio/SFX/Tree/TreeHit.wav")
 	
 	
 func getBaseTexture():

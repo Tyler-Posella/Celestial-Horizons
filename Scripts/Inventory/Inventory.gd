@@ -15,7 +15,7 @@ var selected_num = 0
 
 # Signals
 signal healthChanged(count : int)
-
+signal soundEmitted(sound)
 # Functions
 func _ready():
 	for i in size_y:
@@ -50,7 +50,7 @@ func pickupItem(item_to_add : Item):
 		for j in size_x:
 			if(slots[i][j].getItem() == item_to_add):
 				slots[i][j].increment()
-				Utils.getGameAudio().playSound("res://Audio/SFX/Inventory/CollectItem.wav")
+				soundEmitted.emit("res://Audio/SFX/Inventory/CollectItem.wav")
 				return true
 	
 	
@@ -59,7 +59,7 @@ func pickupItem(item_to_add : Item):
 			if(slots[i][j].getItem() == null):
 				slots[i][j].setItem(item_to_add)
 				slots[i][j].increment()
-				Utils.getGameAudio().playSound("res://Audio/SFX/Inventory/CollectItem.wav")
+				soundEmitted.emit("res://Audio/SFX/Inventory/CollectItem.wav")
 				return true
 	
 	
