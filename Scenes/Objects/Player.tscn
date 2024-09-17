@@ -1,11 +1,11 @@
-[gd_scene load_steps=31 format=3 uid="uid://bg3ew1uuh21o2"]
+[gd_scene load_steps=32 format=3 uid="uid://bg3ew1uuh21o2"]
 
 [ext_resource type="Script" path="res://Scripts/Objects/Player.gd" id="1_6d1b7"]
 [ext_resource type="Texture2D" uid="uid://idajb5n31743" path="res://Assets/Characters/Character.png" id="2_5sico"]
 [ext_resource type="PackedScene" uid="uid://dlo4ny25kmrga" path="res://Scenes/Components/InventoryComponent.tscn" id="3_jevo3"]
 [ext_resource type="PackedScene" uid="uid://tf88mpduami1" path="res://Scenes/Components/CurrencyComponent.tscn" id="4_0b2gy"]
 [ext_resource type="PackedScene" uid="uid://bna0blnh7t1ky" path="res://Scenes/Components/HealthComponent.tscn" id="5_86ime"]
-
+[ext_resource type="PackedScene" uid="uid://dsj5jii06d4rf" path="res://Scenes/Audio/AudioMachine.tscn" id="6_od5k8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_garu8"]
 size = Vector2(8, 6)
@@ -531,12 +531,13 @@ _data = {
 [sub_resource type="CircleShape2D" id="CircleShape2D_qddfx"]
 radius = 5.09902
 
-[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("inventory_component", "currency_component", "health_component") groups=["Player"]]
+[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("inventory_component", "currency_component", "health_component", "audio_component") groups=["Player"]]
 collision_layer = 17
 script = ExtResource("1_6d1b7")
 inventory_component = NodePath("InventoryComponent")
 currency_component = NodePath("CurrencyComponent")
 health_component = NodePath("HealthComponent")
+audio_component = NodePath("AudioMachine")
 
 [node name="Player_Sprite" type="Sprite2D" parent="."]
 texture = ExtResource("2_5sico")
@@ -587,4 +588,7 @@ shape = SubResource("RectangleShape2D_na48r")
 [node name="HealthComponent" parent="." instance=ExtResource("5_86ime")]
 max_health = 10
 
+[node name="AudioMachine" parent="." instance=ExtResource("6_od5k8")]
+
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="soundEmitted" from="InventoryComponent" to="." method="_on_inventory_component_sound_emitted"]

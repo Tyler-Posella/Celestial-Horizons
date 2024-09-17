@@ -5,7 +5,7 @@ class_name Player
 @export var inventory_component : InventoryComponent
 @export var currency_component : CurrencyComponent
 @export var health_component : HealthComponent
-
+@export var audio_component : AudioMachine
 # Variables
 var movement_speed : int = 100
 var state : String = "Idle"
@@ -144,7 +144,7 @@ func useItem():
 			elif(last_direction == "Up"):
 				$AnimationPlayer.play("axe_up")
 			await get_tree().create_timer(0.35).timeout
-			Utils.getGameAudio().playSound("res://Audio/SFX/Player/AxeSwing.wav")
+			audio_component.playSound("res://Audio/SFX/Player/AxeSwing.wav")
 		elif(inventory.selected.getItem().getName() == "Hoe"):
 			movement_speed = 0
 			state = "Hoe"
@@ -156,7 +156,7 @@ func useItem():
 				$AnimationPlayer.play("hoe_right")
 			elif(last_direction == "Up"):
 				$AnimationPlayer.play("hoe_up")
-			Utils.getGameAudio().playSound("res://Audio/SFX/Player/DirtDig.mp3")
+			audio_component.playSound("res://Audio/SFX/Player/DirtDig.mp3")
 		elif(inventory.selected.getItem().getName() == "Watering Can"):
 			movement_speed = 0
 			state = "Watering"
@@ -197,6 +197,6 @@ func _on_coin_update(count : int):
 func _on_health_update(count : int):
 	healthChanged.emit(count)
 	
-	
-func _on_inventory_update():
-	pass
+
+func _on_inventory_component_sound_emitted(sound: Variant) -> void:
+	audio_component.playSound(sound)

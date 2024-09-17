@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dsj5jii06d4rf"]
 
-[ext_resource type="Script" path="res://Scripts/AudioMachine.gd" id="1_yihhn"]
+[ext_resource type="Script" path="res://Scripts/Audio/AudioMachine.gd" id="1_yihhn"]
 
 [node name="AudioMachine" type="Node2D" groups=["GameAudio"]]
 script = ExtResource("1_yihhn")

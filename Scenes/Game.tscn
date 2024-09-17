@@ -17,3 +17,4 @@ y_sort_enabled = true
 y_sort_enabled = true
 
 [node name="AudioMachine" parent="." instance=ExtResource("2_cmana")]
+script = null
