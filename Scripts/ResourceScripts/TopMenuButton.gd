@@ -1,5 +1,6 @@
-extends Resource
 class_name UiMenuButton
+extends Resource
+
 # Exports
 @export var scene : PackedScene
 @export var normal_texture : AtlasTexture
@@ -10,25 +11,25 @@ class_name UiMenuButton
 
 
 # Functions
-func getNormalTexture():
+func get_normal_texture():
 	return normal_texture
 	
 	
-func getPressedTexture():
+func get_pressed_texture():
 	return pressed_texture
 	
 	
-func getHoveredTexture():
+func get_hovered_texture():
 	return hovered_texture
 	
 	
-func getDisabledTexture():
+func get_disabled_texture():
 	return disabled_texture
 	
 	
-func getFocusedTexture():
+func get_focused_texture():
 	return focused_texture
 	
 
-func getScene():
+func get_scene():
 	return scene

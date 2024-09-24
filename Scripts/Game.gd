@@ -1,7 +1,7 @@
-extends Node2D
 class_name BaseGame
+extends Node2D
 
-# Variables
+# Onready Variables
 @onready var ui_node = $GUI
 @onready var level_node = $GameLevel
 @onready var player_node = $GamePlayer

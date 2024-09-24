@@ -1,42 +1,43 @@
-extends Node2D
 class_name HealthComponent
+extends Node2D
+
+
+# Signals
+signal health_changed(count : int)
 
 # Export Variables
 @export var max_health : int
 
-# Instance Variables
+# Variables
 var health : int = max_health
-
-# Signals
-signal healthChanged(count : int)
 
 # Functions
 func _ready():
-	healthChanged.emit(health)
+	health_changed.emit(health)
 	
-# Lowers the health by the damage parameter
-func damage(dmg : int):
+
+func damage(dmg : int): # Lowers the health by the damage parameter
 	health = health - dmg
-	healthChanged.emit(health)
+	health_changed.emit(health)
 	if(0 == health):
 		get_parent().die()
 
-# Adds health using the hp parameter
-func heal(hp : int):
+
+func heal(hp : int): # Adds health using the hp parameter
 	health = health + hp
 	
-# Returns the health
-func getHealth():
+
+func get_health(): # Returns the health
 	return health
 	
-# Sets the health to the hp parameter
-func setHealth(hp : int):
+
+func set_health(hp : int): # Sets the health to the hp parameter
 	health = hp
 	
-# Sets the max health to the hp parameter
-func setMaxHealth(hp : int):
+
+func set_max_health(hp : int): # Sets the max health to the hp parameter
 	max_health = hp
 	
 # Returns the max health
-func getMaxHealth():
+func get_max_health():
 	return max_health

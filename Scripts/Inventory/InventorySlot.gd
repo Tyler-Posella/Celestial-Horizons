@@ -1,78 +1,67 @@
-extends Node2D
 class_name InventorySlot
+extends Node2D
+
+# Signals
+signal slot_updated(x_num : int, y_num : int)
 
 # Export Variables
 @export var item : Item
 
-# Instance Variables
+# Variables
 var count : int = 0
 var is_selected = false
 var x : int
 var y : int
 var ui_slot
 
-# Signals
-signal updateUI(x_num : int, y_num : int)
-
 # Functions
-# Increments the count by 1
-func increment():
+func increment(): # Increments the count by 1
 	count = count + 1
-	updateUI.emit(x,y)
+	slot_updated.emit(x,y)
 	
-# Deincrmeents the count by 1
-func deincrement():
-	count = count - 1
-	updateUI.emit(x,y)
 
-# Returns the slot in string format
-func toString():
-	var string = ""
-	if(item == null):
-		string = string + "None "
-	else:
-		string = string + str(item.getName())
-	string = string + ", " + str(count)
-	return string
-	
-# Sets the item of the slot using the Item parameter
-func setItem(new_item : Item):
+func deincrement(): # Deincrmeents the count by 1
+	count = count - 1
+	slot_updated.emit(x,y)
+
+
+func set_item(new_item : Item): # Sets the item of the slot using the Item parameter
 	item = new_item
-	updateUI.emit(x,y)
+	slot_updated.emit(x,y)
 	
-# Returns the item contained in the slot
-func getItem():
+
+func get_item(): # Returns the item contained in the slot
 	return item
 	
-# Sets the count of the slot using the int parameter
-func setCount(new_count : int):
+
+func set_count(new_count : int): # Sets the count of the slot using the int parameter
 	count = new_count
-	updateUI.emit(x,y)
+	slot_updated.emit(x,y)
 	
-# Returns the count of the slot
-func getCount():
+
+func get_count(): # Returns the count of the slot
 	return count
 	
-# Selects the slot
-func select():
-	is_selected = true
-	updateUI.emit(x,y)
 
-# Deselects the slot
-func deselect():
+func select(): # Selects the slot
+	is_selected = true
+	slot_updated.emit(x,y)
+
+
+func deselect(): # Deselects the slot
 	is_selected = false
-	updateUI.emit(x,y)
+	slot_updated.emit(x,y)
 	
-# Returns true if the slot has a count == 0, else returns false
-func isEmpty():
+
+func is_empty(): # Returns true if the slot has a count == 0, else returns false
 	if(item == null):
 		return true
 	else:
 		return false
 		
-# Clears the slot, setting its count = 0, item = null
-func clear():
+
+func clear(): # Clears the slot, setting its count = 0, item = null
 	count = 0
 	item = null
-	updateUI.emit(x, y)
+	slot_updated.emit(x, y)
 	

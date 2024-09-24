@@ -1,13 +1,16 @@
-extends TextureButton
 class_name GuiMenuButton
+extends TextureButton
+
+# Signals
+signal buttonpress(button : GuiMenuButton)
+
 # Export variables
 @export var default_texture : Texture
 @export var default_pressed_texture : Texture
-# Instance variables
+
+# Variables
 var scene : PackedScene
 var resource : UiMenuButton
-# Signals
-signal buttonpress(button : GuiMenuButton)
 
 # Functions
 func _ready():
@@ -19,18 +22,18 @@ func _on_press() -> void:
 	buttonpress.emit(self)
 	
 	
-func setResource(new_resource : UiMenuButton):
+func set_resource(new_resource : UiMenuButton):
 	resource = new_resource
 	scene = resource.scene
 	
-func setTexture():
-	if(resource.getNormalTexture() != null):
-		texture_normal = resource.getNormalTexture()
-	if(resource.getPressedTexture() != null):
-		texture_pressed = resource.getPressedTexture()
+func set_texture():
+	if(resource.get_normal_texture() != null):
+		texture_normal = resource.get_normal_texture()
+	if(resource.get_pressed_texture() != null):
+		texture_pressed = resource.get_pressed_texture()
 	
 	
-func getScene():
+func get_scene():
 	return scene
 	
 	

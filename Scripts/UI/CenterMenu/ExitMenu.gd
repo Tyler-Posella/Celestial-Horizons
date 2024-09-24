@@ -10,4 +10,4 @@ func _on_load_button_pressed() -> void:
 
 
 func _on_exit_button_pressed() -> void:
-	GameManager.returnToMenu()
+	GameManager.return_to_menu()

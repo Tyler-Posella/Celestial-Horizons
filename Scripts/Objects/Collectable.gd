@@ -1,47 +1,47 @@
-extends RigidBody2D
 class_name Collectable
+extends RigidBody2D
 
 # Export Variables
 @export var item : Item
 
-# Scene Variables
-@onready var sprite : Sprite2D = $Sprite2D
-@onready var texture : Texture = sprite.texture
-@onready var default_pos = sprite.position
-
-# Instance Variables
+# Variables
 var time : float = 0.0
 var amplitude = 1.0
 var frequency = 2.5
 
+# Onready Variables
+@onready var sprite : Sprite2D = $Sprite2D
+@onready var texture : Texture = sprite.texture
+@onready var default_pos = sprite.position
+
 # Functions
 func _ready():
-	sprite.texture = item.getTexture()
+	sprite.texture = item.get_texture()
 
-# Plays the animation to move the items while sitting on the ground
-func _physics_process(delta : float):
+
+func _physics_process(delta : float): # Plays the animation to move the items while sitting on the ground
 	time += delta * frequency
 	sprite.position = (default_pos + Vector2(0, sin(time * frequency	) * amplitude))
 
-# Deletes the item
-func deleteItem():
+
+func delete_item(): # Deletes the item
 	queue_free()
 	
-# Sets the collectables item type
-func setItem(itm):
+
+func set_item(itm): # Sets the collectables item type
 	item = itm
 	
-# Returns the collectables item type
-func getItem():
+
+func get_item(): # Returns the collectables item type
 	return item
 
-# On interaction body entering the interaction radius, do the appropriate action
-func _on_interaction_component_body_entered(body):
+
+func _on_interaction_component_body_entered(body): # On interaction body entering the interaction radius, do the appropriate action
 	if(body.is_in_group("Player")):
 		if(item is Coin):
-			Utils.getPlayer().getCurrencyComponent().addCoins(item.coin_value)
-			deleteItem()
+			Utils.get_player().get_currency_component().add_coins(item.coin_value)
+			delete_item()
 		elif(item is Item):
-			Utils.getPlayer().getInventoryComponent().pickupItem(item)
-			deleteItem()
+			Utils.get_player().get_inventory_component().pickup_item(item)
+			delete_item()
 		

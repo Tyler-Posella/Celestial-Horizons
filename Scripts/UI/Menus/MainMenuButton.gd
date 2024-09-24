@@ -1,11 +1,11 @@
-extends Button
 class_name MainMenuButton
+extends Button
 	
 # Functions
-func setContent(txt : String):
+func set_content(txt : String):
 	text = txt
 	
 	
-func getContent():
+func get_content():
 	return text
 	

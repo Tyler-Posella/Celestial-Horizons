@@ -9,55 +9,55 @@ var audio_player
 var level
 
 # Functions
-func getGameLevel():
+func get_level_node():
 	return get_tree().get_first_node_in_group("LevelNode")
 	
 	
-func getLevel():
+func get_level():
 	return level
 	
 	
-func setLevel(obj):
+func set_level(obj):
 	level = obj
 	
 	
-func getGamePlayer():
+func get_game_player():
 	return get_tree().get_first_node_in_group("PlayerNode")
 	
 	
-func getPlayer():
+func get_player():
 	return player
 	
 	
-func setPlayer(obj):
+func set_player(obj):
 	player = obj
 
 
-func getGameInventory():
+func get_inventory_node():
 	return get_tree().get_first_node_in_group("PlayerInventory")
 	
 	
-func getInventory():
+func get_inventory():
 	return inventory
 	
 	
-func setInventory(obj):
+func set_inventory(obj):
 	inventory = obj
 
 
-func getGameUi():
+func get_ui_node():
 	return get_tree().get_first_node_in_group("UINode")
 	
 	
-func getUI():
+func get_ui():
 	return ui
 	
 	
-func setUI(obj):
+func set_ui(obj):
 	ui = obj
 	
 	
-func getGameAudio():
+func get_game_audio():
 	return get_tree().get_first_node_in_group("GameAudio")
 	
 

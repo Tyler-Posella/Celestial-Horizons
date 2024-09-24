@@ -1,10 +1,10 @@
-extends Node2D
 class_name AudioMachine
+extends Node2D
 
 # Constants
-const self_scene = preload("res://Scenes/Audio/AudioMachine.tscn")
+const SELF_SCENE = preload("res://Scenes/Audio/AudioMachine.tscn")
 
-# Instance Variables
+# Variables
 var stream_array = []
 
 # Functions	
@@ -16,8 +16,8 @@ func _ready():
 		add_child(new_audio_player)
 	
 # Plays a sound
-func playSound(path : String):
-	var player = getOpenPlayer()
+func play_sound(path : String):
+	var player = get_open_player()
 	if(player == null):
 		pass
 	else:
@@ -25,7 +25,7 @@ func playSound(path : String):
 		player.play()
 	
 # Finds the first avaliabile AudioStreamPlayer2D that is not currently being used
-func getOpenPlayer():
+func get_open_player():
 	for i in stream_array.size():
 		if(stream_array[i].is_playing() == false):
 			return stream_array[i]

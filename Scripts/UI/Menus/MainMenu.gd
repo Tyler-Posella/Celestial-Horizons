@@ -1,8 +1,9 @@
-extends Control
 class_name MainMenu
+extends Control
+
 #Constants
-const menu_button = preload("res://Scenes/UI/Menus/MainMenu/MainMenuButton.tscn")
-const music = preload("res://Audio/Music/Menu.wav")
+const MENU_BUTTON = preload("res://Scenes/UI/Menus/MainMenu/MainMenuButton.tscn")
+const MUSIC = preload("res://Audio/Music/Menu.wav")
 
 #Functions
 func _ready():

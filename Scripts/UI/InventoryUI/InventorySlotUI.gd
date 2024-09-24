@@ -1,59 +1,56 @@
-extends Control
 class_name GuiInventorySlot
-# Constant Variables
-const inventory_slot_scene = preload("res://Scenes/UI/GameUI/Inventory/InventorySlotUI.tscn")
-const hover_slot_scene = preload("res://Scenes/UI/GameUI/Inventory/ItemHoverMenu.tscn")
-const moving_item_scene = preload("res://Scenes/UI/GameUI/Inventory/MovingItem.tscn")
-# Export Variables
-@export var inventory_slot : InventorySlot
-@export var selected_texture : Texture
-@export var unselected_texture : Texture
-
-# Instance Variables
-@onready var sprite = $NinePatchRect/ItemSprite
-@onready var text_edit = $NinePatchRect/CountText
-var hover_menu
-var hovering : bool = false
+extends Control
 
 # Signals
 signal hovered(node)
 signal unhovered(node)
 signal movingItem(slot)
+
+# Constant Variables
+const INVENTORY_SLOT_SCENE = preload("res://Scenes/UI/GameUI/Inventory/InventorySlotUI.tscn")
+const HOVER_SLOT_SCENE = preload("res://Scenes/UI/GameUI/Inventory/ItemHoverMenu.tscn")
+const MOVING_ITEM_SCENE = preload("res://Scenes/UI/GameUI/Inventory/MovingItem.tscn")
+
+# Export Variables
+@export var inventory_slot : InventorySlot
+@export var selected_texture : Texture
+@export var unselected_texture : Texture
+
+# Variables
+@onready var sprite = $NinePatchRect/ItemSprite
+@onready var text_edit = $NinePatchRect/CountText
+var hover_menu
+var hovering : bool = false
+
+
 # Functions
-func debug():
-	if(inventory_slot == null):
-		var new_slot_scene = inventory_slot_scene.instantiate()
-		inventory_slot = new_slot_scene
-		
-		
 func _ready():
-	debug()
 	$NinePatchRect.texture = unselected_texture
-	updateSlot()
+	update_slot()
 
 func _process(delta: float) -> void:
 	if(hovering == true 
 		and Input.is_action_pressed("Keyboard-Shift")
-		and inventory_slot.isEmpty() == false 
+		and inventory_slot.is_empty() == false 
 		and hover_menu == null
 		):
-		addTooltip()
+		add_tooltip()
 	elif(hovering == false
 		or Input.is_action_just_released("Keyboard-Shift")
 		):
-		removeTooltip()
+		remove_tooltip()
 		
-func updateSlot():
+func update_slot():
 	if(inventory_slot.count == 0):
 		sprite.texture = null
 		text_edit.text = str(0)
 		
-	if(inventory_slot.getItem() != null):
-		sprite.texture = inventory_slot.getItem().texture
-		text_edit.text = str(inventory_slot.getCount())
+	if(inventory_slot.get_item() != null):
+		sprite.texture = inventory_slot.get_item().texture
+		text_edit.text = str(inventory_slot.get_count())
 		
 		
-func updateSelection():
+func update_selection():
 	if(inventory_slot.is_selected):
 		$NinePatchRect.texture = selected_texture
 		
@@ -69,21 +66,21 @@ func _on_mouse_exited() -> void:
 	unhovered.emit(self)
 			
 			
-func addTooltip():
-	var new_hover_menu = hover_slot_scene.instantiate()
+func add_tooltip():
+	var new_hover_menu = HOVER_SLOT_SCENE.instantiate()
 	hover_menu = new_hover_menu
 	new_hover_menu.z_index = self.z_index + 1
-	if(inventory_slot.getItem() != null):
-		hover_menu.item = inventory_slot.getItem()
+	if(inventory_slot.get_item() != null):
+		hover_menu.item = inventory_slot.get_item()
 	add_child(new_hover_menu)
 	
 	
-func removeTooltip():
+func remove_tooltip():
 	if(hover_menu != null):
 		hover_menu.queue_free()
 	
 	
-func hasTooltip():
+func has_tooltip():
 	if(hover_menu != null):
 		return true
 	else:
@@ -93,24 +90,24 @@ func hasTooltip():
 func _on_gui_input(event: InputEvent) -> void:
 	if(event.is_action_pressed("click_primary")):
 		print("CLick")
-		if(inventory_slot.isEmpty() == false and Utils.getUI().moving_item == null):
-			var moving_item = moving_item_scene.instantiate()
-			moving_item.setObject(inventory_slot)
-			Utils.getGameUi().add_child(moving_item)
+		if(inventory_slot.is_empty() == false and Utils.get_ui().moving_item == null):
+			var moving_item = MOVING_ITEM_SCENE.instantiate()
+			moving_item.set_object(inventory_slot)
+			Utils.get_ui_node().add_child(moving_item)
 			#Make better
-			Utils.getUI().moving_item = moving_item
-			inventory_slot.setCount(0)
-			inventory_slot.setItem(null)
-		elif(inventory_slot.isEmpty() and Utils.getUI().moving_item != null):
-			inventory_slot.setItem(Utils.getUI().moving_item.item)
-			inventory_slot.setCount(Utils.getUI().moving_item.count)
-			Utils.getUI().moving_item.queue_free()
-		elif(inventory_slot.isEmpty() == false and Utils.getUI().moving_item != null):
-			var moving_item = moving_item_scene.instantiate()
-			moving_item.setObject(inventory_slot)
-			Utils.getGameUi().add_child(moving_item)
+			Utils.get_ui().moving_item = moving_item
+			inventory_slot.set_count(0)
+			inventory_slot.set_item(null)
+		elif(inventory_slot.is_empty() and Utils.get_ui().moving_item != null):
+			inventory_slot.set_item(Utils.get_ui().moving_item.item)
+			inventory_slot.setCount(Utils.get_ui().moving_item.count)
+			Utils.get_ui().moving_item.queue_free()
+		elif(inventory_slot.is_empty() == false and Utils.get_ui().moving_item != null):
+			var moving_item = MOVING_ITEM_SCENE.instantiate()
+			moving_item.set_object(inventory_slot)
+			Utils.get_ui_node().add_child(moving_item)
 			#Make better
-			inventory_slot.setItem(Utils.getUI().moving_item.item)
-			inventory_slot.setCount(Utils.getUI().moving_item.count)
-			Utils.getUI().moving_item.queue_free()
-			Utils.getUI().moving_item = moving_item
+			inventory_slot.set_item(Utils.gget_ui().moving_item.item)
+			inventory_slot.set_count(Utils.get_ui().moving_item.count)
+			Utils.get_ui().moving_item.queue_free()
+			Utils.get_ui().moving_item = moving_item

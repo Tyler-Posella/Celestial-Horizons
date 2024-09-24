@@ -1,12 +1,14 @@
 extends Control
+
+# Variables
 var count : int
 var item : Item
 
-func setObject(inventory_slot: InventorySlot):
-	item = inventory_slot.getItem()
-	count = inventory_slot.getCount()
-	$PanelContainer/TextureRect.texture = inventory_slot.getItem().getTexture()
-	$PanelContainer/Count.text = str(inventory_slot.getCount())
+func set_object(inventory_slot: InventorySlot):
+	item = inventory_slot.get_item()
+	count = inventory_slot.get_count()
+	$PanelContainer/TextureRect.texture = inventory_slot.get_item().get_texture()
+	$PanelContainer/Count.text = str(inventory_slot.get_count())
 
 
 func _process(delta: float) -> void:

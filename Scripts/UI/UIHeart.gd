@@ -1,6 +1,7 @@
-extends NinePatchRect
 class_name UIHeart
-# Variables
+extends NinePatchRect
+
+# Onready Variables
 @onready var heart_texture : Texture
 @onready var player_health
 

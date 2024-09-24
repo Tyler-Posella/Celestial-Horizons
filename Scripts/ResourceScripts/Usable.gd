@@ -1,2 +1,2 @@
-extends Item
 class_name Usable
+extends Item

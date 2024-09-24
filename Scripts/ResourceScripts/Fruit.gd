@@ -1,5 +1,6 @@
-extends Item
 class_name Fruit
+extends Item
+
 # Exports
 @export var growth_time : int
 @export var decay_time : int
@@ -8,5 +9,5 @@ class_name Fruit
 @export var grown_texture : Texture
 
 # Functions
-func getGrownTexture():
+func get_grown_texture():
 	return grown_texture

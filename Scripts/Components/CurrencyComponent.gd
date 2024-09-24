@@ -1,27 +1,26 @@
-extends Node2D
 class_name CurrencyComponent
-
-# Instance Variables
-var coin_count : int = 0
+extends Node2D
 
 # Signals
-signal coinsChanged(count : int)
+signal coins_changed(count : int)
 
+# Variables
+var coin_count : int = 0
 # Functions
-# Returns the coin count
-func getCoinCount():
+
+func get_coin_count(): # Returns the coin count
 	return coin_count
 
-# Sets the coin count
-func setCoinCount(count : int):
+
+func set_coin_count(count : int): # Sets the coin count
 	coin_count = count
-	coinsChanged.emit(coin_count)
+	coins_changed.emit(coin_count)
 	
-# Adds a flat number of coins to the existing coin count
-func addCoins(count : int):
+
+func add_coins(count : int): # Adds a flat number of coins to the existing coin count
 	coin_count = coin_count + count
-	Utils.getGameAudio().playSound("res://Audio/SFX/Inventory/CoinPickup.wav")
-	coinsChanged.emit(coin_count)
+	Utils.get_game_audio().play_sound("res://Audio/SFX/Inventory/CoinPickup.wav")
+	coins_changed.emit(coin_count)
 	
 
 func save():

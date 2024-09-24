@@ -1,9 +1,12 @@
-extends Control
 class_name ItemHoverMenu
+extends Control
+
 # Variables
 var item : Item
 var item_label_template : String
 var item_description : String
+
+# Onready Variables
 @onready var item_label = $PanelContainer/PanelMarginRect/PanelContainer/LabelVBoxContainer/ItemLabel
 @onready var description_label = $PanelContainer/PanelMarginRect/PanelContainer/LabelVBoxContainer/DescriptionLabel
 
@@ -15,9 +18,9 @@ func _ready():
 		var new_description_label = "None"
 		description_label = new_description_label
 	else:
-		item = get_parent().inventory_slot.getItem()
-		item_label.text = item.getName()
-		description_label.text = item.getDescription()
+		item = get_parent().inventory_slot.get_item()
+		item_label.text = item.get_name()
+		description_label.text = item.get_description()
 
 
 	
