@@ -42,19 +42,18 @@ func _on_game_start():
 func _on_game_load():
 	# Step 1: Load all of the levels
 	# Step 2: Load the level the game left off on
-	var current_level = load("/Users/tylerposella/Desktop/Nekowind-Adventures/LocalData/StartLevel.json")
-	GameManager.load_level(current_level)
+	var current_level_scene = load("res://Scenes/Levels/Start.tscn")
+	var current_level = current_level_scene.instantiate()
+	load_level(current_level)
 	# Step 3: Load the contents of the level dynamically, and include saved data if it is needed
 	# Step 4: Load the player onto the current level
-	var current_player = SaveManager.load_node("/Users/tylerposella/Desktop/Nekowind-Adventures/LocalData/PlayerData.json")
-	print(current_player.position)
-	#var current_player = SaveManager.load_node("/Users/tylerposella/Desktop/Nekowind-Adventures/LocalData/PlayerData.json")
-	#GameManager.loadPlayer(current_player)
+	var current_player = SaveManager.load_node("res://LocalData/PlayerData.json")
+	load_player(current_player)
 	# Step 5: Only load the UI after the entire scene for the first level is completed
-	#var current_ui_scene = load("res://Scenes/UI/GameUI/PlayerUI.tscn")
-	#var current_ui = current_ui_scene.instantiate()
-	#get_tree().get_first_node_in_group("UINode").add_child(current_ui)
-	#Utils.setUI(current_ui)
+	var current_ui_scene = load("res://Scenes/UI/GameUI/PlayerUI.tscn")
+	var current_ui = current_ui_scene.instantiate()
+	get_tree().get_first_node_in_group("UINode").add_child(current_ui)
+	Utils.set_ui(current_ui)
 
 func _on_game_options():
 	print("Options")

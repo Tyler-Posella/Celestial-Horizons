@@ -9,8 +9,8 @@
 		}
 	],
 	"properties": {
-		"position": "(0, 0)"
+		"position": "(-91.66664, 0)"
 	},
-	"save_file_path": "/Users/tylerposella/Desktop/Nekowind-Adventures/LocalData/PlayerData.json",
+	"save_file_path": "res://LocalData/PlayerData.json",
 	"scene": "res://Scenes/Objects/Player.tscn"
 }

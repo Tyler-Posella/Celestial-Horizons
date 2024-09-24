@@ -77,16 +77,9 @@ func apply_loaded_properties_to_node(node: Node, loaded_data: Dictionary):
 		# Check if the node has the property using `has_method()`
 		if node.has_method("set"):
 			# Set the property dynamically using `set()`
-			var value = loaded_properties[property_name]
-			print("Value: " + str(value))
-			var new_position = Vector2()
-			print("Position Vector Pre-Val: " + str(new_position))
-			new_position = value
-			print("Position Vector Post-Val: " + str(new_position))
-			print("Node Value for Pre-Set: " + (str(node.get(property_name))))
-			print(node.get(property_name))
-			node.set(property_name, value)
-			print("Node Value Post-Set: " + (str(node.get(property_name))))
+			var string_value = loaded_properties[property_name]
+			var vector_value = parse_vector_string(string_value)
+			node.set(property_name, vector_value)
 		else:
 			print("Node does not support setting property:", property_name)
 			
@@ -106,3 +99,20 @@ func load_node_data(file_path: String):
 	else: # Error! Print error to console
 		print("JSON Parse Error: ", json.get_error_message(), " in ", json_string, " at line ", json.get_error_line())
 		return {}
+		
+
+func parse_vector_string(vector_string: String) -> Vector2:
+	# Remove parentheses
+	vector_string = vector_string.strip_edges().replace("(", "").replace(")", "")
+	
+	# Split the string by the comma
+	var components = vector_string.split(",")
+	
+	# Convert to floats and create a Vector2
+	if components.size() == 2:
+		var x = float(components[0])
+		var y = float(components[1])
+		return Vector2(x, y)
+	else:
+		print("Error: Invalid vector format")
+		return Vector2() # or handle the error as needed
