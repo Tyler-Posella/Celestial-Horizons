@@ -1,3 +1,4 @@
+class_name MovingInvItem
 extends Control
 
 # Variables

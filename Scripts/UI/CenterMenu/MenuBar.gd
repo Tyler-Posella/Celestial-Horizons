@@ -1,3 +1,4 @@
+class_name CenterMenuTopNav
 extends HBoxContainer
 
 # Signals

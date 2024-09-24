@@ -19,8 +19,7 @@ func _ready():
 		description_label = new_description_label
 	else:
 		item = get_parent().inventory_slot.get_item()
-		item_label.text = item.get_name()
+		item_label.text = item.get_item_name()
 		description_label.text = item.get_description()
-
 
 	

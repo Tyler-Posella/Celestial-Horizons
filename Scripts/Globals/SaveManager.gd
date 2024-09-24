@@ -73,16 +73,20 @@ func apply_loaded_properties_to_node(node: Node, loaded_data: Dictionary):
 	# Get the node's property list (includes all properties of the node)
 	var node_properties = node.get_property_list()
 	var loaded_properties = loaded_data["properties"]
-	print(loaded_properties)
 	for property_name in loaded_properties.keys():
-		print(property_name)
-		print(loaded_properties[property_name])
 		# Check if the node has the property using `has_method()`
 		if node.has_method("set"):
 			# Set the property dynamically using `set()`
 			var value = loaded_properties[property_name]
-			node.set(property_name, value)
+			print("Value: " + str(value))
+			var new_position = Vector2()
+			print("Position Vector Pre-Val: " + str(new_position))
+			new_position = value
+			print("Position Vector Post-Val: " + str(new_position))
+			print("Node Value for Pre-Set: " + (str(node.get(property_name))))
 			print(node.get(property_name))
+			node.set(property_name, value)
+			print("Node Value Post-Set: " + (str(node.get(property_name))))
 		else:
 			print("Node does not support setting property:", property_name)
 			

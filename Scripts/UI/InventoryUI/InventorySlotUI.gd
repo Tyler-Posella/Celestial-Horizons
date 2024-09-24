@@ -100,14 +100,14 @@ func _on_gui_input(event: InputEvent) -> void:
 			inventory_slot.set_item(null)
 		elif(inventory_slot.is_empty() and Utils.get_ui().moving_item != null):
 			inventory_slot.set_item(Utils.get_ui().moving_item.item)
-			inventory_slot.setCount(Utils.get_ui().moving_item.count)
+			inventory_slot.set_count(Utils.get_ui().moving_item.count)
 			Utils.get_ui().moving_item.queue_free()
 		elif(inventory_slot.is_empty() == false and Utils.get_ui().moving_item != null):
 			var moving_item = MOVING_ITEM_SCENE.instantiate()
 			moving_item.set_object(inventory_slot)
 			Utils.get_ui_node().add_child(moving_item)
 			#Make better
-			inventory_slot.set_item(Utils.gget_ui().moving_item.item)
+			inventory_slot.set_item(Utils.get_ui().moving_item.item)
 			inventory_slot.set_count(Utils.get_ui().moving_item.count)
 			Utils.get_ui().moving_item.queue_free()
 			Utils.get_ui().moving_item = moving_item

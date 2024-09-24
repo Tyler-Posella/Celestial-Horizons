@@ -1,5 +1,6 @@
-extends Control
 class_name InventoryMenu
+extends Control
+
 # Constants
 const UI_SLOT_SCENE = preload("res://Scenes/UI/GameUI/Inventory/InventorySlotUI.tscn")
 # Instance Data
