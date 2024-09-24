@@ -13,7 +13,7 @@
 [ext_resource type="Resource" uid="uid://del5xkhbu3ywb" path="res://Resoures/Tools/WateringCan.tres" id="11_44hkk"]
 [ext_resource type="Resource" uid="uid://c2emo5d7yw57r" path="res://Resoures/Coins/Coin5.tres" id="12_ntxdo"]
 
-[node name="Game_Level" type="Node2D" groups=["Level"]]
+[node name="Game_Level" type="Node2D" groups=["Level", "Persist"]]
 y_sort_enabled = true
 script = ExtResource("1_wfjas")
 

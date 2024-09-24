@@ -1,28 +1,21 @@
 extends Node2D
 class_name AudioMachine
-# Variables
-@onready var stream_1 = $AudioStream1
-@onready var stream_2 = $AudioStream2
-@onready var stream_3 = $AudioStream3
-@onready var stream_4 = $AudioStream4
-@onready var stream_5 = $AudioStream5
-@onready var stream_6 = $AudioStream6
-@onready var stream_7 = $AudioStream7
-@onready var stream_8 = $AudioStream8
+
+# Constants
+const self_scene = preload("res://Scenes/Audio/AudioMachine.tscn")
+
+# Instance Variables
 var stream_array = []
 
-# Functions
+# Functions	
+# Creates 8 new AudioStreamPlayer2D, adds them to array to be accessed
 func _ready():
-	stream_array.append(stream_1)
-	stream_array.append(stream_2)
-	stream_array.append(stream_3)
-	stream_array.append(stream_4)
-	stream_array.append(stream_5)
-	stream_array.append(stream_6)
-	stream_array.append(stream_7)
-	stream_array.append(stream_8)
+	for i in 8:
+		var new_audio_player = AudioStreamPlayer2D.new()
+		stream_array.append(new_audio_player)
+		add_child(new_audio_player)
 	
-	
+# Plays a sound
 func playSound(path : String):
 	var player = getOpenPlayer()
 	if(player == null):
@@ -31,7 +24,7 @@ func playSound(path : String):
 		player.stream = load(path)
 		player.play()
 	
-	
+# Finds the first avaliabile AudioStreamPlayer2D that is not currently being used
 func getOpenPlayer():
 	for i in stream_array.size():
 		if(stream_array[i].is_playing() == false):

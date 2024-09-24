@@ -1,3 +1,3 @@
-[gd_scene format=3 uid="uid://4fprxvxfmy18"]
+[gd_scene format=3 uid="uid://cqu0tfh01oo8f"]
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" groups=["Audio"]]

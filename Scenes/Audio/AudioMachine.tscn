@@ -4,24 +4,3 @@
 
 [node name="AudioMachine" type="Node2D" groups=["GameAudio"]]
 script = ExtResource("1_yihhn")
-
-[node name="AudioStream1" type="AudioStreamPlayer2D" parent="."]
-
-[node name="AudioStream2" type="AudioStreamPlayer2D" parent="."]
-
-[node name="AudioStream3" type="AudioStreamPlayer2D" parent="."]
-
-[node name="AudioStream4" type="AudioStreamPlayer2D" parent="."]
-
-[node name="AudioStream5" type="AudioStreamPlayer2D" parent="."]
-
-[node name="AudioStream6" type="AudioStreamPlayer2D" parent="."]
-
-[node name="AudioStream7" type="AudioStreamPlayer2D" parent="."]
-
-[node name="AudioStream8" type="AudioStreamPlayer2D" parent="."]
-
-[node name="AmbienceAudioStream" type="AudioStreamPlayer2D" parent="."]
-
-[node name="MusicAudioStream" type="AudioStreamPlayer2D" parent="."]
-volume_db = -20.0

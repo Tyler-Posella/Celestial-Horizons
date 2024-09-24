@@ -6,14 +6,19 @@ class_name Player
 @export var currency_component : CurrencyComponent
 @export var health_component : HealthComponent
 @export var audio_component : AudioMachine
-# Variables
+
+# Scene Variables
+@onready var animator = $AnimationPlayer
+@onready var inventory : InventoryComponent = $InventoryComponent
+@onready var currency : CurrencyComponent = $CurrencyComponent
+@onready var audio_player : AudioMachine = $AudioMachine
+
+# Instance Variables
 var movement_speed : int = 100
 var state : String = "Idle"
 var isAction : bool = false
-@onready var animator = $AnimationPlayer
 var last_direction : String = "Down"
 var direction : Vector2 = Vector2.ZERO
-@onready var inventory : InventoryComponent = $InventoryComponent
 
 # Signals
 signal coinsChanged(count : int)
@@ -22,6 +27,7 @@ signal healthChanged(count : int)
 
 # Functions
 func _ready():
+	Utils.setPlayer(self)
 	$ToolArea/Tool.set_disabled(true)
 	$ToolArea.monitorable = false
 	#Signals
@@ -31,7 +37,8 @@ func _ready():
 	
 	
 func _physics_process(delta):
-	if(Utils.getUI().isOpen() == false):
+	
+	if(false == false):
 		#Get input direction
 		var direction_input = Vector2(
 			Input.get_action_strength("right") - Input.get_action_strength("left"),
@@ -200,3 +207,19 @@ func _on_health_update(count : int):
 
 func _on_inventory_component_sound_emitted(sound: Variant) -> void:
 	audio_component.playSound(sound)
+	
+func save():
+	var children_data = []
+	for child in get_children():
+		if child.has_method("save"):
+			children_data.append(child.save())  # Recursively save child nodes
+	var save_dict = {
+		"scene" : get_scene_file_path(),
+		"save_file_path" : "/Users/tylerposella/Desktop/Nekowind-Adventures/LocalData/PlayerData.json",
+		"properties" : {
+			"position" : position
+		},
+		"children": children_data
+	}
+	return save_dict
+	

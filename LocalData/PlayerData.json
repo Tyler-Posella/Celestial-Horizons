@@ -1,0 +1,16 @@
+{
+	"children": [
+		{
+			"children": [],
+			"properties": {
+				"coin_count": 0
+			},
+			"scene": "res://Scenes/Components/CurrencyComponent.tscn"
+		}
+	],
+	"properties": {
+		"position": "(14.14214, -24.14214)"
+	},
+	"save_file_path": "/Users/tylerposella/Desktop/Nekowind-Adventures/LocalData/PlayerData.json",
+	"scene": "res://Scenes/Objects/Player.tscn"
+}

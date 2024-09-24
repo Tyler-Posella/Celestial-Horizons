@@ -1,14 +1,15 @@
 extends RigidBody2D
 class_name Collectable
 
-# Exports
+# Export Variables
 @export var item : Item
 
-# Variables
-@onready var pickupable : bool = true
+# Scene Variables
 @onready var sprite : Sprite2D = $Sprite2D
 @onready var texture : Texture = sprite.texture
 @onready var default_pos = sprite.position
+
+# Instance Variables
 var time : float = 0.0
 var amplitude = 1.0
 var frequency = 2.5
@@ -17,72 +18,24 @@ var frequency = 2.5
 func _ready():
 	sprite.texture = item.getTexture()
 
-
+# Plays the animation to move the items while sitting on the ground
 func _physics_process(delta : float):
 	time += delta * frequency
-	getSprite().set_position(default_pos + Vector2(0, sin(time * frequency	) * amplitude))
+	sprite.position = (default_pos + Vector2(0, sin(time * frequency	) * amplitude))
 
-
+# Deletes the item
 func deleteItem():
 	queue_free()
 	
-	
-func setPickupable(set):
-	pickupable = set
-
-
-func getPickupable():
-	return pickupable
-	
-	
-func setSprite(sprt):
-	sprite = sprt
-	
-	
-func getSprite():
-	return sprite
-	
-	
+# Sets the collectables item type
 func setItem(itm):
 	item = itm
 	
-	
+# Returns the collectables item type
 func getItem():
 	return item
-	
-	
-func setTexture(txt):
-	$Sprite2D.texture = item.texture
-	
-	
-func getTexture():
-	return texture
-	
-	
-func setTime(num : float):
-	time = num
-	
-	
-func getTime():
-	return time
-	
-	
-func setAmplitude(num : float):
-	amplitude = num
 
-
-func getAmplitude():
-	return amplitude
-	
-	
-func setFrequency(num : float):
-	frequency = num
-
-
-func getFrequency():
-	return frequency
-
-
+# On interaction body entering the interaction radius, do the appropriate action
 func _on_interaction_component_body_entered(body):
 	if(body.is_in_group("Player")):
 		if(item is Coin):

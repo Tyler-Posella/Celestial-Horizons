@@ -1,3 +1,4 @@
+res://Scripts/Globals
 res://Scenes/UI/Menus/MainMenu
 res://Scripts/UI/Menus
 res://Scripts/Levels
@@ -8,7 +9,6 @@ res://Scripts/ResourceScripts/
 res://Scripts/UI/InventoryUI
 res://Scenes/UI/GameUI/Inventory
 res://
-res://Scripts/Globals
 res://Scripts/UI
 res://Scenes/UI
 res://Scripts/UI/CenterMenu

@@ -22,7 +22,7 @@ Utils="*res://Scripts/Globals/Utils.gd"
 GameManager="*res://Scripts/Globals/GameManager.gd"
 SaveManager="*res://Scripts/Globals/SaveManager.gd"
 SignalManager="*res://Scripts/Globals/SignalManager.gd"
-Debug="*res://Scripts/Globals/Debug.gd"
+DebugManager="*res://Scripts/Globals/DebugManager.gd"
 
 [display]
 
@@ -35,6 +35,10 @@ mouse_cursor/name="NekoNekoLands"
 [dotnet]
 
 project/assembly_name="NekoNekoLands"
+
+[global_group]
+
+Persist="Nodes to be saved by the SaveManager"
 
 [gui]
 

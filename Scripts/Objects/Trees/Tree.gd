@@ -1,6 +1,5 @@
 extends Node2D
 class_name TreeInteractable
-
 # Constant Variables
 const stump_scene = preload("res://Scenes/Objects/Trees/Stump.tscn")
 const collectable_scene = preload("res://Scenes/Objects/Collectable.tscn")
@@ -15,15 +14,18 @@ const twig_resource = preload("res://Resoures/Harvestables/Tree/Twig.tres")
 @export var tree_texture : Texture
 @export var growable : Item
 
-# Variables
-var player_present : bool = false
-var markers = []
+# Scene Variables
 @onready var health = $HealthComponent
 @onready var sprite = $TreeSprite
 @onready var animation_tree = $AnimationTree
 @onready var state_machine = animation_tree.get("parameters/playback")
 
+# Instance Variables
+var player_present : bool = false
+var markers = []
+
 # Functions
+# Initializes the default values and configures the markers and arrays
 func _ready():
 	$TreeSprite.texture = tree_texture
 	$FallSprite.hide()
@@ -35,12 +37,12 @@ func _ready():
 		markers.append($Marker3)
 		setMarkers()
 	
-	
+# Checks if the player is interacting inside the radius 
 func _process(delta):
 	if(Input.is_action_just_pressed("interact") and player_present):
 		shake()
 
-
+# Sets the markers to the proper positions for each fruit
 func setMarkers():
 	if(growable.getName() == "Apple"):
 		markers[0].position = Vector2(-20, -5)
@@ -59,19 +61,19 @@ func setMarkers():
 		markers[1].position = Vector2(16, -1)
 		markers[2].position = Vector2(-17, 3)
 		
-		
+# Kills the tree	
 func die():
 	$TreeSprite.hide()
 	$FallSprite.show()
 	state_machine.travel("fall")
 	audio_component.playSound("res://Audio/SFX/Tree/TreeFall.wav")
 	
-	
+# Shakes the tree
 func shake():
 	state_machine.travel("shake_long")
 	audio_component.playSound("res://Audio/SFX/Tree/TreeShake.wav")
 
-
+# On animation finish, do the appropriate action
 func _on_animation_tree_animation_finished(anim_name):
 	if(anim_name == "fall"):
 		var stump = stump_scene.instantiate()
@@ -82,7 +84,7 @@ func _on_animation_tree_animation_finished(anim_name):
 	if(anim_name == "shake_long"):
 		growable_component.harvest()
 
-
+# Drops items from the tree
 func dropItems():
 	#Note: Eventually replace marker location drops with randomized item dropping on tree death
 	var dropped_item
@@ -113,23 +115,23 @@ func dropItems():
 			dropped_item.global_position = global_position
 			get_parent().add_child(dropped_item)
 				
-				
+# On axe hitbox entered tree hitbox	
 func _on_chop_area_area_entered(area):
 	health_component.damage(1)
 	if(health_component.getHealth() > 0):
 		state_machine.travel("shake_short")
 	audio_component.playSound("res://Audio/SFX/Tree/TreeHit.wav")
 	
-	
+# Returns the trees texture
 func getBaseTexture():
 	return tree_texture
 
-
+# On player entry, set player present to true
 func _on_interaction_component_body_entered(body):
 	if(body.is_in_group("Player")):
 		player_present = true
 
-
+# On player exit, set player present to false
 func _on_interaction_component_body_exited(body):
 	if(body.is_in_group("Player")):
 		player_present = false
