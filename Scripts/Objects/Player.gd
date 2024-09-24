@@ -37,7 +37,6 @@ func _ready():
 	
 	
 func _physics_process(delta):
-	
 	if(false == false):
 		#Get input direction
 		var direction_input = Vector2(
@@ -215,7 +214,7 @@ func save():
 			children_data.append(child.save())  # Recursively save child nodes
 	var save_dict = {
 		"scene" : get_scene_file_path(),
-		"save_file_path" : "/Users/tylerposella/Desktop/Nekowind-Adventures/LocalData/PlayerData.json",
+		"save_file_path" : "res://LocalData/PlayerData.json",
 		"properties" : {
 			"position" : position
 		},
