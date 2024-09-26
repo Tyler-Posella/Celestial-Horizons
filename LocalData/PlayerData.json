@@ -3,14 +3,16 @@
 		{
 			"children": [],
 			"properties": {
-				"coin_count": 0
+				"coin_count": 10
 			},
-			"scene": "res://Scenes/Components/CurrencyComponent.tscn"
+			"scene": "res://Scenes/Components/CurrencyComponent.tscn",
+			"unique": true
 		}
 	],
 	"properties": {
-		"position": "(-91.66664, 0)"
+		"position": "(52.39173, -22.39171)"
 	},
 	"save_file_path": "res://LocalData/PlayerData.json",
-	"scene": "res://Scenes/Objects/Player.tscn"
+	"scene": "res://Scenes/Objects/Player.tscn",
+	"unique": true
 }

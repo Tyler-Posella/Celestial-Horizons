@@ -27,6 +27,10 @@ var direction : Vector2 = Vector2.ZERO
 
 # Functions
 func _ready():
+	for child in get_children():
+		if child is CurrencyComponent:
+			currency_component = child
+			
 	Utils.set_player(self)
 	$ToolArea/Tool.set_disabled(true)
 	$ToolArea.monitorable = false
@@ -218,7 +222,8 @@ func save():
 		"properties" : {
 			"position" : position
 		},
-		"children": children_data
+		"children": children_data,
+		"unique" : true
 	}
 	return save_dict
 	
