@@ -33,7 +33,8 @@ func save():
 		"properties" : {
 			"coin_count" : coin_count
 		},
-		"children": children_data
+		"children": children_data,
+		"unique" : true
 	}
 	return save_dict
 
