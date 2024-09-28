@@ -13,6 +13,8 @@ var state : String = "Idle"
 var is_action : bool = false
 var last_direction : String = "Down"
 var direction : Vector2 = Vector2.ZERO
+var position_x : float
+var position_y : float
 
 # Onready Variables
 @onready var animator = $AnimationPlayer
@@ -23,6 +25,8 @@ var direction : Vector2 = Vector2.ZERO
 
 # Functions
 func _ready():
+	position.x = position_x
+	position.y = position_y
 	# Reassign currency component
 	for child in get_children():
 		if child is CurrencyComponent:
@@ -232,7 +236,8 @@ func save():
 		"scene" : get_scene_file_path(),
 		"save_file_path" : "res://LocalData/PlayerData.json",
 		"properties" : {
-			"position" : position
+			"position_x" : position.x,
+			"position_y" : position.y
 		},
 		"children": children_data,
 		"unique" : true
