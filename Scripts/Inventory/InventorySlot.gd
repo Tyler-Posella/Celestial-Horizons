@@ -12,7 +12,6 @@ var count : int = 0
 var is_selected = false
 var x : int
 var y : int
-var ui_slot
 
 # Functions
 func increment(): # Increments the count by 1
@@ -65,3 +64,16 @@ func clear(): # Clears the slot, setting its count = 0, item = null
 	item = null
 	slot_updated.emit(x, y)
 	
+
+func save():
+	var save_dict = {
+		"scene" : get_scene_file_path(),
+		"properties" : {
+			"count" : count,
+			"item" : item,
+			"x" : x,
+			"y" : y
+		},
+		"unique" : true
+	}
+	return save_dict

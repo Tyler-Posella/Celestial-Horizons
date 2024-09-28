@@ -1,16 +1,474 @@
 {
 	"children": [
 		{
+			"children": [
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 0,
+						"y": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 1,
+						"y": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 2,
+						"y": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 3,
+						"y": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 4,
+						"y": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 5,
+						"y": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 6,
+						"y": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 7,
+						"y": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 8,
+						"y": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 9,
+						"y": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 0,
+						"y": 1
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 1,
+						"y": 1
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 2,
+						"y": 1
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 3,
+						"y": 1
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 4,
+						"y": 1
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 5,
+						"y": 1
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 6,
+						"y": 1
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 7,
+						"y": 1
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 8,
+						"y": 1
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 9,
+						"y": 1
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 0,
+						"y": 2
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 1,
+						"y": 2
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 2,
+						"y": 2
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 3,
+						"y": 2
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 4,
+						"y": 2
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 5,
+						"y": 2
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 6,
+						"y": 2
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 7,
+						"y": 2
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 8,
+						"y": 2
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 9,
+						"y": 2
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 0,
+						"y": 3
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 1,
+						"y": 3
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 2,
+						"y": 3
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 3,
+						"y": 3
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 4,
+						"y": 3
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 5,
+						"y": 3
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 6,
+						"y": 3
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 7,
+						"y": 3
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 8,
+						"y": 3
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item": null,
+						"x": 9,
+						"y": 3
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": true
+				}
+			],
+			"properties": {
+				"size_x": 10,
+				"size_y": 4
+			},
+			"scene": "res://Scenes/Components/InventoryComponent.tscn",
+			"unique": true
+		},
+		{
 			"children": [],
 			"properties": {
-				"coin_count": 10
+				"coin_count": 0
 			},
-			"scene": "res://Scenes/Components/CurrencyComponent.tscn",
+			"scene": "res://Scenes/Components/CurrencyComponent.tscn"
+		},
+		{
+			"children": [],
+			"properties": {
+				"health": 10,
+				"max_health": 10
+			},
+			"scene": "res://Scenes/Components/HealthComponent.tscn",
 			"unique": true
 		}
 	],
 	"properties": {
-		"position": "(52.39173, -22.39171)"
+		"position": "(0, 0)"
 	},
 	"save_file_path": "res://LocalData/PlayerData.json",
 	"scene": "res://Scenes/Objects/Player.tscn",

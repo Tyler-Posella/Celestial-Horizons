@@ -586,7 +586,6 @@ shape = SubResource("RectangleShape2D_na48r")
 [node name="CurrencyComponent" parent="." groups=["Persist"] instance=ExtResource("4_0b2gy")]
 
 [node name="HealthComponent" parent="." instance=ExtResource("5_86ime")]
-max_health = 10
 
 [node name="AudioMachine" parent="." instance=ExtResource("6_od5k8")]
 

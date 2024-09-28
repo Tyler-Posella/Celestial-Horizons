@@ -13,7 +13,6 @@ const COLLECTABLE_SCENE = preload("res://Scenes/Objects/Collectable.tscn")
 # Variables
 var size_y : int = 4
 var size_x : int = 10
-var total_size : int = size_y * size_x
 var slots : Array = [[]]
 var selected_num = 0
 
@@ -124,3 +123,19 @@ func select_slot(x_num : int, y_num : int): # Selects the slot at (x,y)
 	selected = slots[y_num][x_num]
 	selected_num = x_num
 	
+
+func save():
+	var children_data = []
+	for child in get_children():
+		if child.has_method("save"):
+			children_data.append(child.save())  # Recursively save child nodes
+	var save_dict = {
+		"scene" : get_scene_file_path(),
+		"properties" : {
+			"size_x" : size_x,
+			"size_y" : size_y
+		},
+		"children": children_data,
+		"unique" : true
+	}
+	return save_dict

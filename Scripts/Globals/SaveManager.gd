@@ -5,6 +5,8 @@ func save_game():
 	var player = get_tree().get_first_node_in_group("Player")
 	# Step 2: Save the player node
 	save_node(player)
+	var inventory = player.get_inventory_component()
+	save_node(inventory)
 
 
 func save_node(node: Node) -> void:
@@ -89,9 +91,8 @@ func apply_loaded_properties_to_node(node: Node, loaded_data: Dictionary):
 		if node.has_method("set"):
 			# Set the property dynamically using `set()`
 			if(typeof(node.get(property_name)) != typeof(loaded_properties[property_name])):
-				var value = cast_to_type(node.get(property_name), loaded_properties[property_name])
-				node.set(property_name, value)
-				print("Set " + str(property_name) + " to " + str(value))
+				node.set(property_name, cast_to_type(node.get(property_name), loaded_properties[property_name]))
+				print("Set " + str(property_name) + " to " + str(cast_to_type(node.get(property_name), loaded_properties[property_name])))
 			else:
 				node.set(property_name, loaded_properties[property_name])
 		else:
@@ -147,4 +148,5 @@ func cast_to_type(value: Variant, to_cast: Variant) -> Variant:
 		TYPE_DICTIONARY:
 			return Dictionary(to_cast) if typeof(to_cast) == TYPE_ARRAY else null
 		_:
+			print("Error casting value")
 			return null  # Unsupported type for casting
