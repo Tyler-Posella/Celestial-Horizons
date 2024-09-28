@@ -31,6 +31,7 @@ func _ready():
 			slots[i].append(slot)
 			add_child(slot)
 	selected = slots[0][0]
+	print(selected)
 	
 
 func add_item(item_to_add : Item, amount : int): # Adds a number of items to the inventory
@@ -122,4 +123,8 @@ func select_slot(x_num : int, y_num : int): # Selects the slot at (x,y)
 	slots[y_num][x_num].select()
 	selected = slots[y_num][x_num]
 	selected_num = x_num
+	
+
+func get_selected_slot():
+	return selected
 	

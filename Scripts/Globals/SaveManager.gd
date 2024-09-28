@@ -5,8 +5,7 @@ func save_game():
 	var player = get_tree().get_first_node_in_group("Player")
 	# Step 2: Save the player node
 	save_node(player)
-	var inventory = player.get_inventory_component()
-	save_node(inventory)
+
 
 
 func save_node(node: Node) -> void:

@@ -3,6 +3,7 @@ extends Node2D
 
 # Signals
 signal coins_changed(count : int)
+signal sound_emitted(sound)
 
 # Variables
 var coin_count : int = 0
@@ -19,7 +20,7 @@ func set_coin_count(count : int): # Sets the coin count
 
 func add_coins(count : int): # Adds a flat number of coins to the existing coin count
 	coin_count = coin_count + count
-	Utils.get_game_audio().play_sound("res://Audio/SFX/Inventory/CoinPickup.wav")
+	sound_emitted.emit("res://Audio/SFX/Inventory/CoinPickup.wav")
 	coins_changed.emit(coin_count)
 	
 
@@ -28,7 +29,8 @@ func save():
 		"scene" : get_scene_file_path(),
 		"properties" : {
 			"coin_count" : coin_count
-		}
+		},
+		"unique" : true
 	}
 	return save_dict
 

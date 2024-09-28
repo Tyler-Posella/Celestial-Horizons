@@ -24,6 +24,7 @@ func _on_game_start():
 	#Instantiate start level
 	var level_scene = preload("res://Scenes/Levels/Start.tscn")
 	var level = level_scene.instantiate()
+	Utils.set_level(level)
 	get_tree().get_first_node_in_group("LevelNode").add_child(level)
 	#Instantiate player
 	var player_scene = preload("res://Scenes/Objects/Player.tscn")
