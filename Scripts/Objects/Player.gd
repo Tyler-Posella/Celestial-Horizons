@@ -101,25 +101,25 @@ func _physics_process(delta):
 
 func check_for_button_press():
 	if(Input.is_action_just_pressed("1")):
-		inventory_component.select_slot(0,0)
+		inventory_component.select_slot(0)
 	if(Input.is_action_just_pressed("2")):
-		inventory_component.select_slot(1,0)
+		inventory_component.select_slot(1)
 	if(Input.is_action_just_pressed("3")):
-		inventory_component.select_slot(2,0)
+		inventory_component.select_slot(2)
 	if(Input.is_action_just_pressed("4")):
-		inventory_component.select_slot(3,0)
+		inventory_component.select_slot(3)
 	if(Input.is_action_just_pressed("5")):
-		inventory_component.select_slot(4,0)
+		inventory_component.select_slot(4)
 	if(Input.is_action_just_pressed("6")):
-		inventory_component.select_slot(5,0)
+		inventory_component.select_slot(5)
 	if(Input.is_action_just_pressed("7")):
-		inventory_component.select_slot(6,0)
+		inventory_component.select_slot(6)
 	if(Input.is_action_just_pressed("8")):
-		inventory_component.select_slot(7,0)
+		inventory_component.select_slot(7)
 	if(Input.is_action_just_pressed("9")):
-		inventory_component.select_slot(8,0)
+		inventory_component.select_slot(8)
 	if(Input.is_action_just_pressed("0")):
-		inventory_component.select_slot(9,0)
+		inventory_component.select_slot(9)
 	if(Input.is_action_just_pressed("drop")):
 		inventory_component.drop_item()
 	if(Input.is_action_pressed("click_primary")):
