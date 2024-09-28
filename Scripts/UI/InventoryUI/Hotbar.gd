@@ -11,12 +11,9 @@ func _ready():
 	var player = Utils.get_player()
 	for i in 10:
 		var slot = UI_SLOT_SCENE.instantiate()
-		player.get_inventory_component().get_slot(i,0).slot_updated.connect(_on_ui_slot_update)
-		slot.inventory_slot = player.get_inventory_component().get_slot(i, 0)
+		player.get_inventory_component().get_slot(i).slot_updated.connect(slot.update_slot)
+		slot.inventory_slot = player.get_inventory_component().get_slot(i)
 		hotbar_slots.append(slot)
 		add_child(slot)
+	
 		
-		
-func _on_ui_slot_update(x_num : int, y_num : int):
-	hotbar_slots[x_num].update_slot()
-	hotbar_slots[x_num].update_selection()
