@@ -64,16 +64,3 @@ func clear(): # Clears the slot, setting its count = 0, item = null
 	item = null
 	slot_updated.emit(x, y)
 	
-
-func save():
-	var save_dict = {
-		"scene" : get_scene_file_path(),
-		"properties" : {
-			"count" : count,
-			"item" : item,
-			"x" : x,
-			"y" : y
-		},
-		"unique" : true
-	}
-	return save_dict
