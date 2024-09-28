@@ -455,7 +455,8 @@
 			"properties": {
 				"coin_count": 0
 			},
-			"scene": "res://Scenes/Components/CurrencyComponent.tscn"
+			"scene": "res://Scenes/Components/CurrencyComponent.tscn",
+			"unique": true
 		},
 		{
 			"children": [],

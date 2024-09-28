@@ -31,6 +31,7 @@ func _ready():
 			slots[i].append(slot)
 			add_child(slot)
 	selected = slots[0][0]
+	print(selected)
 	
 
 func add_item(item_to_add : Item, amount : int): # Adds a number of items to the inventory
@@ -124,6 +125,7 @@ func select_slot(x_num : int, y_num : int): # Selects the slot at (x,y)
 	selected_num = x_num
 	
 
+<<<<<<< Updated upstream
 func save():
 	var children_data = []
 	for child in get_children():
@@ -139,3 +141,8 @@ func save():
 		"unique" : true
 	}
 	return save_dict
+=======
+func get_selected_slot():
+	return selected
+	
+>>>>>>> Stashed changes
