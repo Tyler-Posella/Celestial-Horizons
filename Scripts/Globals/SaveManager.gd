@@ -80,8 +80,6 @@ func load_node(file_path):
 		print("Error! Node JSON data has no scene stored")
 			
 func apply_loaded_properties_to_node(node: Node, loaded_data: Dictionary):
-	print("Assigning the following data to " + str(node))
-	print(loaded_data)
 	# Get the node's property list (includes all properties of the node)
 	var node_properties = node.get_property_list()
 	var loaded_properties = loaded_data["properties"]
@@ -94,6 +92,7 @@ func apply_loaded_properties_to_node(node: Node, loaded_data: Dictionary):
 				print("Set " + str(property_name) + " to " + str(cast_to_type(node.get(property_name), loaded_properties[property_name])))
 			else:
 				node.set(property_name, loaded_properties[property_name])
+				print("Set " + str(property_name) + " to " + str(loaded_properties[property_name]))
 		else:
 			print("Node does not support setting property:", property_name)
 			
