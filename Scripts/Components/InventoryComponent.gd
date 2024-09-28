@@ -13,7 +13,6 @@ const COLLECTABLE_SCENE = preload("res://Scenes/Objects/Collectable.tscn")
 # Variables
 var size_y : int = 4
 var size_x : int = 10
-var total_size : int = size_y * size_x
 var slots : Array = [[]]
 var selected_num = 0
 
@@ -68,12 +67,12 @@ func pickup_item(item_to_add : Item): # Picks an item up
 				return true
 	
 
-func dropItem(): # Drops the item currently selected
+func drop_item(): # Drops the item currently selected
 	if(selected.get_count() == 1):
 		var item_dropped = COLLECTABLE_SCENE.instantiate()
 		item_dropped.item = selected.get_item()
 		selected.deincrement()
-		selected.setItem(null)
+		selected.set_item(null)
 		item_dropped.global_position = get_parent().get_drop_marker().global_position
 		Utils.get_level().add_child(item_dropped)
 	if(selected.get_count() > 1):

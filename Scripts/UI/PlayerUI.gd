@@ -13,13 +13,17 @@ var moving_item
 
 # Functions
 func _ready():
+	# Setup currency component UI
 	player_currency = Utils.get_player().get_currency_component()
-	#Signal connections
 	Utils.get_player().coins_changed.connect(_on_coin_update)
+	$PlayerInfo/CoinContainer/CoinCounter.text = str(player_currency.get_coin_count())
+	# Setup health component UI
+	player_health = Utils.get_player().get_health_component()
+	$PlayerInfo/HealthContainer/HealthCounter.text = (str(player_health.get_health()) + "/" + str(player_health.get_max_health()))
 	Utils.get_player().health_changed.connect(_on_hp_update)
+
 	$CenterMenu.hide()
 	$HotbarRect.show()
-	$PlayerInfo/CoinContainer/CoinCounter.text = str(player_currency.get_coin_count())
 	
 	
 func menu_toggle():

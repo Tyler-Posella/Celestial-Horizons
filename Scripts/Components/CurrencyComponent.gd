@@ -24,17 +24,11 @@ func add_coins(count : int): # Adds a flat number of coins to the existing coin 
 	
 
 func save():
-	var children_data = []
-	for child in get_children():
-		if child.has_method("save"):
-			children_data.append(child.save())  # Recursively save child nodes
 	var save_dict = {
 		"scene" : get_scene_file_path(),
 		"properties" : {
 			"coin_count" : coin_count
-		},
-		"children": children_data,
-		"unique" : true
+		}
 	}
 	return save_dict
 

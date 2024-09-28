@@ -27,10 +27,21 @@ var direction : Vector2 = Vector2.ZERO
 
 # Functions
 func _ready():
+	# Reassign currency component
 	for child in get_children():
 		if child is CurrencyComponent:
 			currency_component = child
+	
+	# Reassign health component
+	for child in get_children():
+		if child is HealthComponent:
+			health_component = child
 			
+	# Reassign inventory component
+	#for child in get_children():
+	#	if child is InventoryComponent:
+	#		inventory_component = child
+	#		
 	Utils.set_player(self)
 	$ToolArea/Tool.set_disabled(true)
 	$ToolArea.monitorable = false
@@ -116,9 +127,10 @@ func check_for_button_press():
 	if(Input.is_action_just_pressed("drop")):
 		inventory.drop_item()
 	if(Input.is_action_pressed("click_primary")):
-		if(inventory.selected.item != null):
-			if(inventory.selected.item is Usable and is_actioning() == false):
-				use_item()
+		if(inventory != null):
+			if(inventory.selected.item != null):
+				if(inventory.selected.item is Usable and is_actioning() == false):
+					use_item()
 		
 		
 func get_inventory_component():

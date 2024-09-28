@@ -12,7 +12,6 @@ var count : int = 0
 var is_selected = false
 var x : int
 var y : int
-var ui_slot
 
 # Functions
 func increment(): # Increments the count by 1

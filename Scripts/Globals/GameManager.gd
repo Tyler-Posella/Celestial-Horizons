@@ -49,6 +49,7 @@ func _on_game_load():
 	# Step 4: Load the player onto the current level
 	var current_player = SaveManager.load_node("res://LocalData/PlayerData.json")
 	load_player(current_player)
+
 	# Step 5: Only load the UI after the entire scene for the first level is completed
 	var current_ui_scene = load("res://Scenes/UI/GameUI/PlayerUI.tscn")
 	var current_ui = current_ui_scene.instantiate()
