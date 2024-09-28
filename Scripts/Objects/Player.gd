@@ -6,23 +6,19 @@ signal coins_changed(count : int)
 signal inventory_changed()
 signal health_changed(count : int)
 
-# Export Variables
-@export var inventory_component : InventoryComponent
-@export var currency_component : CurrencyComponent
-@export var health_component : HealthComponent
-@export var audio_component : AudioMachine
 
 # Variables
 var movement_speed : int = 100
 var state : String = "Idle"
-var isAction : bool = false
+var is_action : bool = false
 var last_direction : String = "Down"
 var direction : Vector2 = Vector2.ZERO
 
 # Onready Variables
 @onready var animator = $AnimationPlayer
-@onready var inventory : InventoryComponent = $InventoryComponent
-@onready var currency : CurrencyComponent = $CurrencyComponent
+@onready var inventory_component : InventoryComponent = $InventoryComponent
+@onready var health_component : HealthComponent = $HealthComponent
+@onready var currency_component : CurrencyComponent = $CurrencyComponent
 @onready var audio_player : AudioMachine = $AudioMachine
 
 # Functions
@@ -31,28 +27,28 @@ func _ready():
 	for child in get_children():
 		if child is CurrencyComponent:
 			currency_component = child
+			currency_component.coins_changed.connect(_on_coin_update)
+			currency_component.sound_emitted.connect(_on_currency_component_sound_emitted)
 	
 	# Reassign health component
 	for child in get_children():
 		if child is HealthComponent:
 			health_component = child
+			health_component.health_changed.connect(_on_health_update)
 			
 	# Reassign inventory component
 	#for child in get_children():
 	#	if child is InventoryComponent:
 	#		inventory_component = child
-	#		
+	inventory_component.sound_emitted.connect(_on_inventory_component_sound_emitted)
+	
 	Utils.set_player(self)
 	$ToolArea/Tool.set_disabled(true)
 	$ToolArea.monitorable = false
-	#Signals
-	currency_component.coins_changed.connect(_on_coin_update)
-	#inventory_component.inventoryChanged.connect(_on_inventory_update)
-	health_component.health_changed.connect(_on_health_update)
 	
 	
 func _physics_process(delta):
-	if(false == false):
+	if(Utils.get_ui().is_open() == false):
 		#Get input direction
 		var direction_input = Vector2(
 			Input.get_action_strength("right") - Input.get_action_strength("left"),
@@ -105,36 +101,35 @@ func _physics_process(delta):
 
 func check_for_button_press():
 	if(Input.is_action_just_pressed("1")):
-		inventory.select_slot(0,0)
+		inventory_component.select_slot(0,0)
 	if(Input.is_action_just_pressed("2")):
-		inventory.select_slot(1,0)
+		inventory_component.select_slot(1,0)
 	if(Input.is_action_just_pressed("3")):
-		inventory.select_slot(2,0)
+		inventory_component.select_slot(2,0)
 	if(Input.is_action_just_pressed("4")):
-		inventory.select_slot(3,0)
+		inventory_component.select_slot(3,0)
 	if(Input.is_action_just_pressed("5")):
-		inventory.select_slot(4,0)
+		inventory_component.select_slot(4,0)
 	if(Input.is_action_just_pressed("6")):
-		inventory.select_slot(5,0)
+		inventory_component.select_slot(5,0)
 	if(Input.is_action_just_pressed("7")):
-		inventory.select_slot(6,0)
+		inventory_component.select_slot(6,0)
 	if(Input.is_action_just_pressed("8")):
-		inventory.select_slot(7,0)
+		inventory_component.select_slot(7,0)
 	if(Input.is_action_just_pressed("9")):
-		inventory.select_slot(8,0)
+		inventory_component.select_slot(8,0)
 	if(Input.is_action_just_pressed("0")):
-		inventory.select_slot(9,0)
+		inventory_component.select_slot(9,0)
 	if(Input.is_action_just_pressed("drop")):
-		inventory.drop_item()
+		inventory_component.drop_item()
 	if(Input.is_action_pressed("click_primary")):
-		if(inventory != null):
-			if(inventory.selected.item != null):
-				if(inventory.selected.item is Usable and is_actioning() == false):
-					use_item()
+		if(inventory_component.selected.item != null):
+			if(inventory_component.selected.item is Usable and is_actioning() == false):
+				use_item()
 		
 		
 func get_inventory_component():
-	return inventory
+	return inventory_component
 	
 	
 func get_currency_component():
@@ -150,9 +145,9 @@ func get_drop_marker():
 	
 	
 func use_item():
-	if(inventory.selected.get_item() is Usable):
-		isAction = true
-		if(inventory.selected.get_item().get_name() == "Axe"):
+	if(inventory_component.selected.get_item() is Usable):
+		is_action = true
+		if(inventory_component.get_selected_slot().get_item().get_item_name() == "Axe"):
 			movement_speed = 0
 			$ToolArea/Tool.set_disabled(false)
 			$ToolArea.monitorable = true
@@ -166,8 +161,8 @@ func use_item():
 			elif(last_direction == "Up"):
 				$AnimationPlayer.play("axe_up")
 			await get_tree().create_timer(0.35).timeout
-			audio_component.play_sound("res://Audio/SFX/Player/AxeSwing.wav")
-		elif(inventory.selected.get_item().get_name() == "Hoe"):
+			audio_player.play_sound("res://Audio/SFX/Player/AxeSwing.wav")
+		elif(inventory_component.get_selected_slot().get_item().get_item_name() == "Hoe"):
 			movement_speed = 0
 			state = "Hoe"
 			if(last_direction == "Left"):
@@ -178,8 +173,8 @@ func use_item():
 				$AnimationPlayer.play("hoe_right")
 			elif(last_direction == "Up"):
 				$AnimationPlayer.play("hoe_up")
-			audio_component.play_sound("res://Audio/SFX/Player/DirtDig.mp3")
-		elif(inventory.selected.get_item().get_name() == "Watering Can"):
+			audio_player.play_sound("res://Audio/SFX/Player/DirtDig.mp3")
+		elif(inventory_component.get_selected_slot().get_item().get_item_name() == "Watering Can"):
 			movement_speed = 0
 			state = "Watering"
 			if(last_direction == "Left"):
@@ -196,7 +191,7 @@ func use_item_end():
 	$ToolArea/Tool.set_disabled(true)
 	$ToolArea.monitorable = false
 	movement_speed = 100
-	isAction = false
+	is_action = false
 
 
 func _on_animation_player_animation_finished(anim_name):
@@ -209,7 +204,7 @@ func _on_animation_player_animation_finished(anim_name):
 		
 		
 func is_actioning():
-	return isAction
+	return is_action
 	
 	
 func _on_coin_update(count : int):
@@ -221,7 +216,12 @@ func _on_health_update(count : int):
 	
 
 func _on_inventory_component_sound_emitted(sound: Variant) -> void:
-	audio_component.play_sound(sound)
+	audio_player.play_sound(sound)
+	
+	
+func _on_currency_component_sound_emitted(sound: Variant) -> void:
+	audio_player.play_sound(sound)
+	
 	
 func save():
 	var children_data = []

@@ -531,13 +531,9 @@ _data = {
 [sub_resource type="CircleShape2D" id="CircleShape2D_qddfx"]
 radius = 5.09902
 
-[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("inventory_component", "currency_component", "health_component", "audio_component") groups=["Persist", "Player"]]
+[node name="Player" type="CharacterBody2D" groups=["Persist", "Player"]]
 collision_layer = 17
 script = ExtResource("1_6d1b7")
-inventory_component = NodePath("InventoryComponent")
-currency_component = NodePath("CurrencyComponent")
-health_component = NodePath("HealthComponent")
-audio_component = NodePath("AudioMachine")
 
 [node name="Player_Sprite" type="Sprite2D" parent="."]
 texture = ExtResource("2_5sico")
@@ -590,3 +586,5 @@ shape = SubResource("RectangleShape2D_na48r")
 [node name="AudioMachine" parent="." instance=ExtResource("6_od5k8")]
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="sound_emitted" from="InventoryComponent" to="." method="_on_inventory_component_sound_emitted"]
+[connection signal="sound_emitted" from="CurrencyComponent" to="." method="_on_currency_component_sound_emitted"]
