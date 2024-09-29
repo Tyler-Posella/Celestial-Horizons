@@ -7,6 +7,7 @@ var ui
 var music_player
 var audio_player
 var level
+var popup
 
 # Functions
 func get_level_node():
@@ -21,7 +22,7 @@ func set_level(obj):
 	level = obj
 	
 	
-func get_game_player():
+func get_player_node():
 	return get_tree().get_first_node_in_group("PlayerNode")
 	
 	
@@ -60,6 +61,5 @@ func set_ui(obj):
 func get_game_audio():
 	return get_tree().get_first_node_in_group("GameAudio")
 	
-
 
 	

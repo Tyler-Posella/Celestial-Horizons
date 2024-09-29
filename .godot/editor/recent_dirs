@@ -1,3 +1,6 @@
+res://Scenes/UI/GamePrompt
+res://Scripts/UI/GamePrompt/NewGame
+res://Styles
 res://Scripts/UI/Menus
 res://Scripts/Globals
 res://Scenes/UI/Menus/MainMenu
@@ -17,6 +20,3 @@ res://Resoures/Harvestables
 res://Scripts/Objects
 res://Scenes/Objects
 res://Resoures/Coins
-res://Scripts/Components
-res://Scenes/Components
-res://Scenes

@@ -7,7 +7,7 @@ var player_currency : CurrencyComponent
 var player_health : HealthComponent
 var menu_open : bool
 var moving_item
-
+var popup
 # Onready Variables
 @onready var hotbar = $HotbarRect/Hotbar
 
@@ -50,3 +50,15 @@ func _on_hp_update(count: int):
 
 func is_open():
 	return menu_open
+	
+
+func set_popup(new_popup):
+	popup = new_popup
+	add_child(popup)
+	
+
+func has_popup():
+	if(popup == null):
+		return false
+	else:
+		return true

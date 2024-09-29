@@ -1,11 +1,23 @@
 extends Node
 
+# Variables
+var current_save
+var current_save_temp
+
+# Functions
+func set_current_save(save_file):
+	current_save = save_file
+	
+	
+func get_current_save():
+	return current_save
+	
+	
 func save_game():
 	# Step 1: Retrieve the player node
 	var player = get_tree().get_first_node_in_group("Player")
 	# Step 2: Save the player node
 	save_node(player)
-
 
 
 func save_node(node: Node) -> void:
@@ -27,7 +39,8 @@ func save_node(node: Node) -> void:
 	var json_string = JSON.stringify(node_data, "\t")  # "\t" adds indentation for readability
 	
 	# Write the JSON string to the specified file
-	var file = FileAccess.open(node_data["save_file_path"], FileAccess.WRITE)
+	var save_dir = (current_save + "/" + node_data["save_file_path"])
+	var file = FileAccess.open(save_dir, FileAccess.WRITE)
 	if file != null:
 		file.store_string(json_string)
 		file.close()
