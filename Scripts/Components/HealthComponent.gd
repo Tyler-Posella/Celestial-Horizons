@@ -44,10 +44,6 @@ func get_max_health(): # Returns the max health
 	
 	
 func save():
-	var children_data = []
-	for child in get_children():
-		if child.has_method("save"):
-			children_data.append(child.save())  # Recursively save child nodes
 	var save_dict = {
 		"scene" : get_scene_file_path(),
 		"properties" : {

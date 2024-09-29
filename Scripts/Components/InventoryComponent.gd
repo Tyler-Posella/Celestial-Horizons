@@ -11,61 +11,59 @@ const SLOT_BASE = preload("res://Scenes/Inventory/InventorySlot.tscn")
 const COLLECTABLE_SCENE = preload("res://Scenes/Objects/Collectable.tscn")
 
 # Variables
-var size_y : int = 4
-var size_x : int = 10
-var slots : Array = [[]]
+var size : int = 40
+var slots : Array = []
 var selected_num = 0
-
-# Onready Variables
-@onready var selected : InventorySlot
+var selected : InventorySlot
 
 # Functions
 func _ready():
-	for i in size_y:
-		slots.append([])
-		for j in size_x:
+	if(get_children().size() == size):
+		for child in get_children():
+			var item_to_load = ResourceMaps.get_item_path(child.get_item_id())
+			child.set_item(load(item_to_load))
+			slots.append(child)
+	else:
+		for i in size:
 			var slot = SLOT_BASE.instantiate()
 			slot.item = null
-			slot.x = j
-			slot.y = i
-			slots[i].append(slot)
+			slots.append(slot)
 			add_child(slot)
-	selected = slots[0][0]
-	print(selected)
+	slots[0].select()
+	selected = slots[0]
+			
+
 	
 
 func add_item(item_to_add : Item, amount : int): # Adds a number of items to the inventory
 	# First attempt to find a slot already holding the item to add the new items to
-	for i in size_y:
-		for j in size_x:
-			if(slots[i][j].get_item() == item_to_add):
-				slots[i][j].set_count(slots[i][j].get_count() + amount)
-				return true
+	for i in size:
+		if(slots[i].get_item() == item_to_add):
+			slots[i].set_count(slots[i].get_count() + amount)
+			return true
+			
 	# Otherwise add the items to the first empty inventory slot
-	for i in size_y:
-		for j in size_x:
-			if(slots[i][j].get_item() == null):
-				slots[i][j].set_item(item_to_add)
-				slots[i][j].set_count(amount)
+	for i in size:
+			if(slots[i].get_item() == null):
+				slots[i].set_item(item_to_add)
+				slots[i].set_count(amount)
 				return true
 	
 
 func pickup_item(item_to_add : Item): # Picks an item up 
 	# First attempt to find a slot already holding the item to add the new items to
-	for i in size_y:
-		for j in size_x:
-			if(slots[i][j].get_item() == item_to_add):
-				slots[i][j].increment()
-				sound_emitted.emit("res://Audio/SFX/Inventory/CollectItem.wav")
-				return true
+	for i in size:
+		if(slots[i].get_item() == item_to_add):
+			slots[i].increment()
+			sound_emitted.emit("res://Audio/SFX/Inventory/CollectItem.wav")
+			return true
 	# Otherwise add the items to the first empty inventory slot
-	for i in size_y:
-		for j in size_x:
-			if(slots[i][j].get_item() == null):
-				slots[i][j].set_item(item_to_add)
-				slots[i][j].increment()
-				sound_emitted.emit("res://Audio/SFX/Inventory/CollectItem.wav")
-				return true
+	for i in size:
+		if(slots[i].get_item() == null):
+			slots[i].set_item(item_to_add)
+			slots[i].increment()
+			sound_emitted.emit("res://Audio/SFX/Inventory/CollectItem.wav")
+			return true
 	
 
 func drop_item(): # Drops the item currently selected
@@ -82,49 +80,49 @@ func drop_item(): # Drops the item currently selected
 		selected.deincrement()
 		item_dropped.global_position = get_parent().get_drop_marker().global_position
 		Utils.get_level().add_child(item_dropped)
-		
-
-func remove_item(obj : Item, num : int): # Removes a set number of a specific item from the inventory
-	if(has_item(obj) == true):
-		var slot = find_item(obj)
-		var slot_x = slot[0]
-		var slot_y = slot[1]
-		if(slots[slot_x][slot_y].get_count() < num):
-			return false
-		else:
-			slots[slot_x][slot_y].set_count(slots[slot_x][slot_y].get_count() - num)
-			return true
 	
 
 func has_item(obj : Item): # Returns true if the item is in the inventory, else returns false
-	for i in size_y:
-		for j in size_x:
-			if(slots[i][j].get_item() == obj):
-				return true
+	for i in size:
+		if(slots[i].get_item() == obj):
+			return true
 	return false
 	
-# Finds a slot containing the specified item
-func find_item(obj : Item):
-	var found_slot = []
-	for i in size_y:
-		for j in size_x:
-			if(slots[i][j].get_item() == obj):
-				found_slot.append(i)
-				found_slot.append(j)
-				return found_slot
+
+func find_slots_with_item(obj : Item): # Finds a slot containing the specified item
+	var found_slots = []
+	for i in size:
+		if(slots[i].get_item() == obj):
+			found_slots.append(slots[i])
+	return found_slots
 				
 
-func get_slot(x_num : int, y_num : int): # Returns the slot at (x,y)
-	return slots[y_num][x_num]
+func get_slot(slot_num : int): # Returns the slot at slot_num
+	return slots[slot_num]
 	
 
-func select_slot(x_num : int, y_num : int): # Selects the slot at (x,y)
+func select_slot(slot_num : int): # Selects the slot at slot_num
 	selected.deselect()
-	slots[y_num][x_num].select()
-	selected = slots[y_num][x_num]
-	selected_num = x_num
+	slots[slot_num].select()
+	selected = slots[slot_num]
+	selected_num = slot_num
 	
 
 func get_selected_slot():
 	return selected
 	
+
+
+func save():
+	var children_data = []
+	for child in get_children():
+		if child.has_method("save"):
+			children_data.append(child.save())  # Recursively save child nodes
+	var save_dict = {
+		"scene" : get_scene_file_path(),
+		"properties" : {
+			"size" : size
+		},
+		"unique" : true
+	}
+	return save_dict

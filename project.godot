@@ -21,6 +21,7 @@ config/icon="res://icon.svg"
 Utils="*res://Scripts/Globals/Utils.gd"
 GameManager="*res://Scripts/Globals/GameManager.gd"
 SaveManager="*res://Scripts/Globals/SaveManager.gd"
+ResourceMaps="*res://Scripts/Globals/ResourceMaps.gd"
 
 [display]
 
