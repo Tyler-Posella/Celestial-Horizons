@@ -15,6 +15,7 @@ var last_direction : String = "Down"
 var direction : Vector2 = Vector2.ZERO
 var position_x : float
 var position_y : float
+var player_name : String
 
 
 # Onready Variables
@@ -237,7 +238,7 @@ func save():
 			children_data.append(child.save())  # Recursively save child nodes
 	var save_dict = {
 		"scene" : get_scene_file_path(),
-		"save_file_path" : "res://LocalData/PlayerData.json",
+		"save_file_path" : "res://LocalData/Saves/SaveFile1/PlayerData.json",
 		"properties" : {
 			"position_x" : position.x,
 			"position_y" : position.y
