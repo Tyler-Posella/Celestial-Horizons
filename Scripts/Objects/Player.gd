@@ -16,6 +16,7 @@ var direction : Vector2 = Vector2.ZERO
 var position_x : float
 var position_y : float
 
+
 # Onready Variables
 @onready var animator = $AnimationPlayer
 @onready var inventory_component : InventoryComponent = $InventoryComponent
@@ -30,6 +31,7 @@ func _ready():
 	# Reassign currency component
 	for child in get_children():
 		if child is CurrencyComponent:
+			print(child)
 			currency_component = child
 			currency_component.coins_changed.connect(_on_coin_update)
 			currency_component.sound_emitted.connect(_on_currency_component_sound_emitted)
@@ -37,13 +39,14 @@ func _ready():
 	# Reassign health component
 	for child in get_children():
 		if child is HealthComponent:
+			print(child)
 			health_component = child
 			health_component.health_changed.connect(_on_health_update)
 			
 	# Reassign inventory component
-	#for child in get_children():
-	#	if child is InventoryComponent:
-	#		inventory_component = child
+	for child in get_children():
+		if child is InventoryComponent:
+			inventory_component = child
 	inventory_component.sound_emitted.connect(_on_inventory_component_sound_emitted)
 	
 	Utils.set_player(self)

@@ -18,16 +18,20 @@ var selected : InventorySlot
 
 # Functions
 func _ready():
-	if(slots.size() == size):
-		pass
+	if(get_children().size() == size):
+		for child in get_children():
+			var item_to_load = ResourceMaps.get_item_path(child.get_item_id())
+			child.set_item(load(item_to_load))
+			slots.append(child)
 	else:
 		for i in size:
 			var slot = SLOT_BASE.instantiate()
 			slot.item = null
 			slots.append(slot)
 			add_child(slot)
-			selected = slots[0]
+	selected = slots[0]
 	slots[0].select()
+
 	
 
 func add_item(item_to_add : Item, amount : int): # Adds a number of items to the inventory
@@ -106,3 +110,18 @@ func select_slot(slot_num : int): # Selects the slot at slot_num
 func get_selected_slot():
 	return selected
 	
+
+
+func save():
+	var children_data = []
+	for child in get_children():
+		if child.has_method("save"):
+			children_data.append(child.save())  # Recursively save child nodes
+	var save_dict = {
+		"scene" : get_scene_file_path(),
+		"properties" : {
+			"size" : size
+		},
+		"unique" : true
+	}
+	return save_dict

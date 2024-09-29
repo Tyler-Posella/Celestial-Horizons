@@ -36,7 +36,6 @@ func save_node(node: Node) -> void:
 
 # Helper function to save a node and return its data
 func save_node_data(node: Node) -> Dictionary:
-	
 	# Call the node's save method to get its data
 	var node_data = node.save()
 	
@@ -52,33 +51,55 @@ func save_node_data(node: Node) -> Dictionary:
 	return node_data
 	
 func load_node(file_path):
-	var node_data = load_node_data(file_path) 
+	var node_data = load_node_data(file_path)
 	var node
 	
 	# Step 1: Using the loaded JSON data, obtain the type of node and instantiate it
-	if(node_data["scene"] != null):
-		var new_node_scene = load(node_data["scene"]) # Get the root nodes type
+	if node_data["scene"] != null:
+		var new_node_scene = load(node_data["scene"])
 		node = new_node_scene.instantiate()
 		apply_loaded_properties_to_node(node, node_data)
 	else:
-		print("Erorr! Node JSON data has no scene stored")
-		
-	# Step 2: Load children nodes
+		print("Error! Node JSON data has no scene stored")
+		return null
+	
+	# Step 2: Load children nodes recursively
+	load_children(node, node_data)
+	return node
+	
+	
+func load_children(parent_node: Node, node_data: Dictionary):
 	if node_data.has("children"):
 		for child_data in node_data["children"]:
-			if(child_data["unique"] == true):
+			if child_data["unique"] == true:
 				var child_scene_string = child_data["scene"]
 				var child_scene = load(child_scene_string)
 				var child_instance = child_scene.instantiate()
-				for child in node.get_children():
+				
+				# Remove existing children if necessary
+				for child in parent_node.get_children():
 					if child_instance.get_script() == child.get_script():
+						parent_node.remove_child(child)
 						child.queue_free()
+
 				apply_loaded_properties_to_node(child_instance, child_data)
-				node.add_child(child_instance) # Add child instance to the parent node		
-		return node
-	else:
-		print("Error! Node JSON data has no scene stored")
-			
+				parent_node.add_child(child_instance) # Add child instance to the parent node
+				
+				# Recursively load the children's children
+				load_children(child_instance, child_data)
+				
+			if child_data["unique"] == false:
+				var child_scene_string = child_data["scene"]
+				var child_scene = load(child_scene_string)
+				var child_instance = child_scene.instantiate()
+
+				apply_loaded_properties_to_node(child_instance, child_data)
+				parent_node.add_child(child_instance) # Add child instance to the parent node
+				
+				# Recursively load the children's children
+				load_children(child_instance, child_data)
+
+
 func apply_loaded_properties_to_node(node: Node, loaded_data: Dictionary):
 	# Get the node's property list (includes all properties of the node)
 	var node_properties = node.get_property_list()
@@ -89,6 +110,7 @@ func apply_loaded_properties_to_node(node: Node, loaded_data: Dictionary):
 			# Set the property dynamically using `set()`
 			if(typeof(node.get(property_name)) != typeof(loaded_properties[property_name])):
 				node.set(property_name, cast_to_type(node.get(property_name), loaded_properties[property_name]))
+				print(node)
 				print("Set " + str(property_name) + " to " + str(cast_to_type(node.get(property_name), loaded_properties[property_name])))
 			else:
 				node.set(property_name, loaded_properties[property_name])
