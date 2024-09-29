@@ -15,7 +15,7 @@ var last_direction : String = "Down"
 var direction : Vector2 = Vector2.ZERO
 var position_x : float
 var position_y : float
-var children
+
 
 # Onready Variables
 @onready var animator = $AnimationPlayer
@@ -26,7 +26,6 @@ var children
 
 # Functions
 func _ready():
-	children = get_children()
 	position.x = position_x
 	position.y = position_y
 	# Reassign currency component

@@ -67,8 +67,8 @@ func clear(): # Clears the slot, setting its count = 0, item = null
 	count = 0
 	item = null
 	slot_updated.emit()
-	
-
+  
+  
 func save():
 	if(item != null):
 		item_id = ResourceMaps.get_item_id(item.get_item_name())
@@ -82,4 +82,5 @@ func save():
 		"unique" : false
 	}
 	return save_dict
+
 	

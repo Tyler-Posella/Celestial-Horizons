@@ -23,15 +23,15 @@ func _ready():
 			var item_to_load = ResourceMaps.get_item_path(child.get_item_id())
 			child.set_item(load(item_to_load))
 			slots.append(child)
+
 	else:
 		for i in size:
 			var slot = SLOT_BASE.instantiate()
 			slot.item = null
 			slots.append(slot)
 			add_child(slot)
+			selected = slots[0]
 	slots[0].select()
-	selected = slots[0]
-			
 
 	
 

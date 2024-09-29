@@ -49,13 +49,11 @@ func update_slot():
 		sprite.texture = inventory_slot.get_item().texture
 		text_edit.text = str(inventory_slot.get_count())
 		
-		
-func update_selection():
 	if(inventory_slot.is_selected):
 		$NinePatchRect.texture = selected_texture
-		
+	
 	if(inventory_slot.is_selected == false):
-		$NinePatchRect.texture = unselected_texture
+		$NinePatchRect.texture = unselected_texture	
 
 
 func _on_mouse_entered() -> void:
@@ -85,11 +83,10 @@ func has_tooltip():
 		return true
 	else:
 		return false
-		
+
 
 func _on_gui_input(event: InputEvent) -> void:
 	if(event.is_action_pressed("click_primary")):
-		print("CLick")
 		if(inventory_slot.is_empty() == false and Utils.get_ui().moving_item == null):
 			var moving_item = MOVING_ITEM_SCENE.instantiate()
 			moving_item.set_object(inventory_slot)

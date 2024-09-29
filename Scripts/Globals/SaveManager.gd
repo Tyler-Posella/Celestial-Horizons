@@ -115,7 +115,6 @@ func apply_loaded_properties_to_node(node: Node, loaded_data: Dictionary):
 			else:
 				node.set(property_name, loaded_properties[property_name])
 				print("Set " + str(property_name) + " to " + str(loaded_properties[property_name]))
-				
 		else:
 			print("Node does not support setting property:", property_name)
 			
