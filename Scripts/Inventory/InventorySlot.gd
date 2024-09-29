@@ -12,7 +12,7 @@ var is_selected = false
 
 # Functions
 func _ready():
-	pass
+	slot_updated.emit()
 	
 func increment(): # Increments the count by 1
 	count = count + 1
@@ -21,6 +21,8 @@ func increment(): # Increments the count by 1
 
 func deincrement(): # Deincrmeents the count by 1
 	count = count - 1
+	if(count == 0):
+		clear()
 	slot_updated.emit()
 
 
@@ -67,6 +69,7 @@ func clear(): # Clears the slot, setting its count = 0, item = null
 	count = 0
 	item = null
 	slot_updated.emit()
+	item_id = 0
   
   
 func save():

@@ -23,3 +23,21 @@ mono_crash.*.json
 LocalData/
 # End of https://www.toptal.com/developers/gitignore/api/godot
 /LocalData
+.godot/editor/editor_layout.cfg
+.godot/editor/editor_layout.cfg
+.godot/editor/filesystem_cache8
+.godot/editor/script_editor_cache.cfg
+.godot/editor/project_metadata.cfg
+.godot/editor/Game.tscn-editstate-8ec1ce4394550eef6b399142f35b815f.cfg
+.godot/editor/filesystem_cache8
+.godot/editor/editor_layout.cfg
+.godot/editor/script_editor_cache.cfg
+.godot/editor/project_metadata.cfg
+.godot/editor/Game.tscn-editstate-8ec1ce4394550eef6b399142f35b815f.cfg
+.godot/editor/filesystem_cache8
+.godot/editor/editor_layout.cfg
+.godot/editor/editor_layout.cfg
+.godot/editor/editor_layout.cfg
+.godot/editor/editor_layout.cfg
+.godot/editor/filesystem_cache8
+.godot/editor/Game.tscn-editstate-8ec1ce4394550eef6b399142f35b815f.cfg
