@@ -5,7 +5,7 @@ Welcome to **Celestial Horizons**, a 2D RPG survival game where you play as a ca
 ![Game Screenshot](link-to-screenshot-or-gif)
 
 ## 🌟 **Planned Features**
-- **Play as a cat**: Explore the world through the eyes of a feline adventurer.
+- **Play a variety of species**: Explore the world through the eyes of a a wide variety of races.
 - **Open world exploration**: Discover diverse environments, from lush forests to treacherous caves.
 - **Resource management**: Gather materials, craft tools, and maintain your health, stamina, and hunger levels.
 - **Story-driven quests**: Unravel a storyline filled with NPCs, puzzles, and hidden treasures.
@@ -21,7 +21,7 @@ Welcome to **Celestial Horizons**, a 2D RPG survival game where you play as a ca
 - **Seasonal events**: Special quests, items, and events that change based on the in-game calendar.
 
 ## 🎮 **How to Play**
-1. **Move** your cat character using WASD.
+1. **Move** your character using WASD.
 2. **Interact** with NPCs, objects, and crafting stations by pressing `E`.
 3. **Open your inventory** using `Esc` to manage items, craft tools, and build structures.
 4. **Survive** by gathering resources, crafting tools, building shelters, and fending off enemies.
