@@ -39,9 +39,9 @@ func get_item(): # Returns the collectables item type
 func _on_interaction_component_body_entered(body): # On interaction body entering the interaction radius, do the appropriate action
 	if(body.is_in_group("Player")):
 		if(item is Coin):
-			Utils.get_player().get_currency_component().add_coins(item.coin_value)
+			Game.get_player().get_currency_component().add_coins(item.coin_value)
 			delete_item()
 		elif(item is Item):
-			Utils.get_player().get_inventory_component().pickup_item(item)
+			Game.get_player().get_inventory_component().pickup_item(item)
 			delete_item()
 		

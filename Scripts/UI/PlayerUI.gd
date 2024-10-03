@@ -13,14 +13,15 @@ var popup
 
 # Functions
 func _ready():
+	Game.set_ui(self)
 	# Setup currency component UI
-	player_currency = Utils.get_player().get_currency_component()
-	Utils.get_player().coins_changed.connect(_on_coin_update)
+	player_currency = Game.get_player().get_currency_component()
+	Game.get_player().coins_changed.connect(_on_coin_update)
 	$PlayerInfo/CoinContainer/CoinCounter.text = str(player_currency.get_coin_count())
 	# Setup health component UI
-	player_health = Utils.get_player().get_health_component()
+	player_health = Game.get_player().get_health_component()
 	$PlayerInfo/HealthContainer/HealthCounter.text = (str(player_health.get_health()) + "/" + str(player_health.get_max_health()))
-	Utils.get_player().health_changed.connect(_on_hp_update)
+	Game.get_player().health_changed.connect(_on_hp_update)
 
 	$CenterMenu.hide()
 	$HotbarRect.show()
@@ -31,12 +32,12 @@ func menu_toggle():
 		$CenterMenu.show()
 		$HotbarRect.hide()
 		menu_open = true
-		Utils.get_game_audio().play_sound("res://Audio/SFX/Inventory/InventoryOpen.wav")
+		Game.get_game_audio().play_sound("res://Audio/SFX/Inventory/InventoryOpen.wav")
 	else:
 		$CenterMenu.hide()
 		$HotbarRect.show()
 		menu_open = false
-		Utils.get_game_audio().play_sound("res://Audio/SFX/Inventory/InventoryClose.wav")
+		Game.get_game_audio().play_sound("res://Audio/SFX/Inventory/InventoryClose.wav")
 	
 	
 func _on_coin_update(count: int):

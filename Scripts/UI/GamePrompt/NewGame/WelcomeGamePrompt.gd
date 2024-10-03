@@ -12,5 +12,5 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_close_prompt_button_pressed() -> void:
-	Utils.get_player().set_player_name($PanelContainer/NinePatchRect/VBoxContainer/NameEntry.text)
+	Game.get_player().set_player_name($PanelContainer/NinePatchRect/VBoxContainer/NameEntry.text)
 	self.queue_free()

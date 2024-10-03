@@ -72,13 +72,13 @@ func drop_item(): # Drops the item currently selected
 		selected.deincrement()
 		selected.set_item(null)
 		item_dropped.global_position = get_parent().get_drop_marker().global_position
-		Utils.get_level().add_child(item_dropped)
+		Game.get_level().add_child(item_dropped)
 	if(selected.get_count() > 1):
 		var item_dropped = COLLECTABLE_SCENE.instantiate()
 		item_dropped.item = selected.get_item()
 		selected.deincrement()
 		item_dropped.global_position = get_parent().get_drop_marker().global_position
-		Utils.get_level().add_child(item_dropped)
+		Game.get_level().add_child(item_dropped)
 	
 
 func has_item(obj : Item): # Returns true if the item is in the inventory, else returns false

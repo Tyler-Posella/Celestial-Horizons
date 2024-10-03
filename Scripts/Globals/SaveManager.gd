@@ -14,8 +14,21 @@ func get_current_save():
 	
 	
 func save_game():
+	if(current_save == null):
+		# Open save directory to find where to save
+		var dir = DirAccess.open("res://LocalData/Saves/")
+		var save_index = 1
+		var save_name = "Save" + str(save_index)
+
+		# Loop until a non-existing save file is found
+		while dir.dir_exists(save_name):
+			save_index += 1
+			save_name = "Save" + str(save_index)
+		current_save = "res://LocalData/Saves/" + save_name
+		dir.make_dir(save_name)
+
 	# Step 1: Retrieve the player node
-	var player = get_tree().get_first_node_in_group("Player")
+	var player = Game.get_player()
 	# Step 2: Save the player node
 	save_node(player)
 
@@ -37,7 +50,6 @@ func save_node(node: Node) -> void:
 	
 	# Convert the node data (including children) to a JSON string.
 	var json_string = JSON.stringify(node_data, "\t")  # "\t" adds indentation for readability
-	
 	# Write the JSON string to the specified file
 	var save_dir = (current_save + "/" + node_data["save_file_path"])
 	var file = FileAccess.open(save_dir, FileAccess.WRITE)
@@ -183,3 +195,34 @@ func cast_to_type(value: Variant, to_cast: Variant) -> Variant:
 		_:
 			print("Error casting value")
 			return null  # Unsupported type for casting
+			
+
+func delete_save(save_directory: String):
+	var dir = DirAccess.open(save_directory)
+	dir.list_dir_begin()  # Start listing files
+	var file_name = dir.get_next()
+
+	while file_name != "":
+	# Ignore "." and ".." which represent current and parent directories
+		if file_name != "." and file_name != "..":
+			var file_path = save_directory + "/" + file_name
+			if not dir.current_is_dir():  # Check if it's a file
+				var error = dir.remove(file_path)
+				if error != OK:
+					print("Failed to delete file: ", file_path)
+				else:
+					print("Deleted file: ", file_path)
+		file_name = dir.get_next()  # Get the next file/directory
+
+	dir.list_dir_end()  # End the directory listing
+	print("All files deleted in directory: ", save_directory)
+	
+	# Now delete the directory itself
+	var dir_delete_error = dir.remove(save_directory)
+	if dir_delete_error != OK:
+		print("Failed to delete directory: ", save_directory)
+	else:
+		print("Deleted directory: ", save_directory)
+		
+	
+	

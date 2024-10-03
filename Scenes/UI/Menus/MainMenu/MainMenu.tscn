@@ -31,6 +31,10 @@ theme_override_constants/v_separation = 64
 layout_mode = 2
 text = "Start"
 
+[node name="LoadButton" parent="ButtonGrid" instance=ExtResource("2_scttg")]
+layout_mode = 2
+text = "Load"
+
 [node name="OptionsButton" parent="ButtonGrid" instance=ExtResource("2_scttg")]
 layout_mode = 2
 text = "Options"
@@ -40,5 +44,6 @@ layout_mode = 2
 text = "Quit"
 
 [connection signal="pressed" from="ButtonGrid/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="ButtonGrid/LoadButton" to="." method="_on_load_button_pressed"]
 [connection signal="pressed" from="ButtonGrid/OptionsButton" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="ButtonGrid/QuitButton" to="." method="_on_quit_button_pressed"]

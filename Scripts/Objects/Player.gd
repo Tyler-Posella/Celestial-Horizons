@@ -17,6 +17,7 @@ var position_x : float
 var position_y : float
 var player_name : String
 var playtime : int
+var if_check
 
 
 # Onready Variables
@@ -51,13 +52,13 @@ func _ready():
 			inventory_component = child
 	inventory_component.sound_emitted.connect(_on_inventory_component_sound_emitted)
 	
-	Utils.set_player(self)
+	Game.set_player(self)
 	$ToolArea/Tool.set_disabled(true)
 	$ToolArea.monitorable = false
 	
 	
 func _physics_process(delta):
-	if(Utils.get_ui().is_open() == false and Utils.get_ui().has_popup() == false):
+	if(1 == 1):
 		#Get input direction
 		var direction_input = Vector2(
 			Input.get_action_strength("right") - Input.get_action_strength("left"),
@@ -105,7 +106,7 @@ func _physics_process(delta):
 		move_and_slide()
 		check_for_button_press()
 	if(Input.is_action_just_pressed("Menu")):
-		Utils.get_ui().menu_toggle()
+		Game.get_ui().menu_toggle()
 
 
 func check_for_button_press():

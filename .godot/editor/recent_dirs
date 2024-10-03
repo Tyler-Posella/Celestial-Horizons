@@ -1,8 +1,8 @@
-res://Scenes/UI/GamePrompt
+res://Scripts/Globals
+res://Scripts
 res://Scripts/UI/GamePrompt/NewGame
 res://Styles
 res://Scripts/UI/Menus
-res://Scripts/Globals
 res://Scenes/UI/Menus/MainMenu
 res://Scripts/Levels
 res://Assets/Fonts
