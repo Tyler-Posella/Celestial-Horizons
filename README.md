@@ -1,4 +1,4 @@
-# 🐾 **Celestial Horizons**
+# **Celestial Horizons**
 
 Welcome to **Celestial Horizons**, a 2D RPG survival game where you play as a cat in a beautifully crafted open world! Inspired by titles like *Stardew Valley* and *The Legend of Zelda*, this game combines elements of exploration, resource management, crafting, and combat into a cozy yet thrilling experience.
 
