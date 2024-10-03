@@ -585,6 +585,10 @@ shape = SubResource("RectangleShape2D_na48r")
 
 [node name="AudioMachine" parent="." instance=ExtResource("6_od5k8")]
 
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
 [connection signal="sound_emitted" from="InventoryComponent" to="." method="_on_inventory_component_sound_emitted"]
 [connection signal="sound_emitted" from="CurrencyComponent" to="." method="_on_currency_component_sound_emitted"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

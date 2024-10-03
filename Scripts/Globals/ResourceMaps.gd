@@ -13,6 +13,9 @@ var items = {
 	"103": {"name": "Pear", "path": "res://Resoures/Fruit/Pear.tres"},
 	# Vegtables [200-299]
 	# Harvestables [300-399]
+	"300": {"name": "Branch", "path": "res://Resoures/Harvestables/Tree/Branch.tres"},
+	"301": {"name": "Log", "path": "res://Resoures/Harvestables/Tree/Log.tres"},
+	"302": {"name": "Twig", "path": "res://Resoures/Harvestables/Tree/Twig.tres"},
 }
 
 func get_item_data(item_id : int):

@@ -87,24 +87,24 @@ func has_tooltip():
 
 func _on_gui_input(event: InputEvent) -> void:
 	if(event.is_action_pressed("click_primary")):
-		if(inventory_slot.is_empty() == false and Utils.get_ui().moving_item == null):
+		if(inventory_slot.is_empty() == false and Game.get_ui().moving_item == null):
 			var moving_item = MOVING_ITEM_SCENE.instantiate()
 			moving_item.set_object(inventory_slot)
-			Utils.get_ui_node().add_child(moving_item)
+			Game.get_ui_node().add_child(moving_item)
 			#Make better
-			Utils.get_ui().moving_item = moving_item
+			Game.get_ui().moving_item = moving_item
 			inventory_slot.set_count(0)
 			inventory_slot.set_item(null)
-		elif(inventory_slot.is_empty() and Utils.get_ui().moving_item != null):
-			inventory_slot.set_item(Utils.get_ui().moving_item.item)
-			inventory_slot.set_count(Utils.get_ui().moving_item.count)
-			Utils.get_ui().moving_item.queue_free()
-		elif(inventory_slot.is_empty() == false and Utils.get_ui().moving_item != null):
+		elif(inventory_slot.is_empty() and Game.get_ui().moving_item != null):
+			inventory_slot.set_item(Game.get_ui().moving_item.item)
+			inventory_slot.set_count(Game.get_ui().moving_item.count)
+			Game.get_ui().moving_item.queue_free()
+		elif(inventory_slot.is_empty() == false and Game.get_ui().moving_item != null):
 			var moving_item = MOVING_ITEM_SCENE.instantiate()
 			moving_item.set_object(inventory_slot)
-			Utils.get_ui_node().add_child(moving_item)
+			Game.get_ui_node().add_child(moving_item)
 			#Make better
-			inventory_slot.set_item(Utils.get_ui().moving_item.item)
-			inventory_slot.set_count(Utils.get_ui().moving_item.count)
-			Utils.get_ui().moving_item.queue_free()
-			Utils.get_ui().moving_item = moving_item
+			inventory_slot.set_item(Game.get_ui().moving_item.item)
+			inventory_slot.set_count(Game.get_ui().moving_item.count)
+			Game.get_ui().moving_item.queue_free()
+			Game.get_ui().moving_item = moving_item

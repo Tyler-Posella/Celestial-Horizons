@@ -8,7 +8,7 @@ var hotbar_slots = []
 
 # Functions
 func _ready():
-	var player = Utils.get_player()
+	var player = Game.get_player()
 	for i in 10:
 		var slot = UI_SLOT_SCENE.instantiate()
 		player.get_inventory_component().get_slot(i).slot_updated.connect(slot.update_slot)

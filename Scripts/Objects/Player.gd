@@ -15,6 +15,9 @@ var last_direction : String = "Down"
 var direction : Vector2 = Vector2.ZERO
 var position_x : float
 var position_y : float
+var player_name : String
+var playtime : int
+var if_check
 
 
 # Onready Variables
@@ -49,13 +52,13 @@ func _ready():
 			inventory_component = child
 	inventory_component.sound_emitted.connect(_on_inventory_component_sound_emitted)
 	
-	Utils.set_player(self)
+	Game.set_player(self)
 	$ToolArea/Tool.set_disabled(true)
 	$ToolArea.monitorable = false
 	
 	
 func _physics_process(delta):
-	if(Utils.get_ui().is_open() == false):
+	if(1 == 1):
 		#Get input direction
 		var direction_input = Vector2(
 			Input.get_action_strength("right") - Input.get_action_strength("left"),
@@ -103,7 +106,7 @@ func _physics_process(delta):
 		move_and_slide()
 		check_for_button_press()
 	if(Input.is_action_just_pressed("Menu")):
-		Utils.get_ui().menu_toggle()
+		Game.get_ui().menu_toggle()
 
 
 func check_for_button_press():
@@ -237,13 +240,24 @@ func save():
 			children_data.append(child.save())  # Recursively save child nodes
 	var save_dict = {
 		"scene" : get_scene_file_path(),
-		"save_file_path" : "res://LocalData/PlayerData.json",
+		"save_file_path" : "PlayerData.json",
 		"properties" : {
 			"position_x" : position.x,
-			"position_y" : position.y
+			"position_y" : position.y,
+			"name" : player_name,
+			"playtime" : playtime
 		},
 		"children": children_data,
 		"unique" : true
 	}
 	return save_dict
 	
+
+func set_player_name(new_name : String):
+	player_name = new_name
+	
+	
+func _on_timer_timeout() -> void:
+	playtime = playtime + 1
+	$Timer.start()
+	print(str(playtime))

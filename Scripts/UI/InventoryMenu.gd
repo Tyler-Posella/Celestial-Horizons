@@ -10,7 +10,7 @@ var hover_menu
 
 # Functions
 func _ready():
-	var player_inventory = Utils.get_player().get_inventory_component()
+	var player_inventory = Game.get_player().get_inventory_component()
 	for i in 40:
 		var slot = UI_SLOT_SCENE.instantiate()
 		slot.inventory_slot = player_inventory.get_slot(i)

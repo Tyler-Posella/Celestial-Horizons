@@ -42,3 +42,8 @@ text = "Options"
 [node name="QuitButton" parent="ButtonGrid" instance=ExtResource("2_scttg")]
 layout_mode = 2
 text = "Quit"
+
+[connection signal="pressed" from="ButtonGrid/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="ButtonGrid/LoadButton" to="." method="_on_load_button_pressed"]
+[connection signal="pressed" from="ButtonGrid/OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="ButtonGrid/QuitButton" to="." method="_on_quit_button_pressed"]
