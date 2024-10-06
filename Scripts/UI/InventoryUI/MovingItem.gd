@@ -3,7 +3,7 @@ extends Control
 
 # Variables
 var count : int
-var item : Item
+var item : ItemRes
 
 func set_object(inventory_slot: InventorySlot):
 	item = inventory_slot.get_item()

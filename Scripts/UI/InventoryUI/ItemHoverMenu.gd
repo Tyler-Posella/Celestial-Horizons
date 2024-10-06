@@ -2,7 +2,7 @@ class_name ItemHoverMenu
 extends Control
 
 # Variables
-var item : Item
+var item : ItemRes
 var item_label_template : String
 var item_description : String
 

@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://b2ylp0tgjl1sv"]
+[gd_resource type="Resource" script_class="ItemRes" load_steps=4 format=3 uid="uid://b2ylp0tgjl1sv"]
 
-[ext_resource type="Script" path="res://Scripts/ResourceScripts/Item.gd" id="1_lta63"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/ItemRes.gd" id="1_lta63"]
 [ext_resource type="Texture2D" uid="uid://d0vkukchi2y8g" path="res://Assets/Items/Tools-Materials.png" id="2_qp0ty"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gnd8o"]
@@ -12,3 +12,4 @@ script = ExtResource("1_lta63")
 name = "Branch"
 texture = SubResource("AtlasTexture_gnd8o")
 description = "A sturdy piece of wood, useful for crafting or fuel. Not too big, not too small."
+sell_price = 0

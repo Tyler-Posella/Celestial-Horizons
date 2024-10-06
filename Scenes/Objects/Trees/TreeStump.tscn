@@ -1,0 +1,33 @@
+[gd_scene load_steps=7 format=3 uid="uid://dota8iclme86g"]
+
+[ext_resource type="Script" path="res://Scripts/Objects/Trees/Stump.gd" id="1_2t4oq"]
+[ext_resource type="PackedScene" uid="uid://deul1bv5u0yng" path="res://Scenes/Components/HarvestComponent.tscn" id="2_i10y1"]
+[ext_resource type="Texture2D" uid="uid://c8dawhes5jwpg" path="res://Assets/Tilesets/SubTileSets/Trees.png" id="2_lwwbm"]
+[ext_resource type="PackedScene" uid="uid://dsj5jii06d4rf" path="res://Scenes/Audio/AudioMachine.tscn" id="3_pwhsr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m1qmn"]
+atlas = ExtResource("2_lwwbm")
+region = Rect2(16, 96, 16, 16)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ewxbc"]
+radius = 4.0
+
+[node name="TreeStump" type="Node2D"]
+script = ExtResource("1_2t4oq")
+
+[node name="AudioMachine" parent="." instance=ExtResource("3_pwhsr")]
+
+[node name="HarvestComponent" parent="." instance=ExtResource("2_i10y1")]
+
+[node name="StumpSprite" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_m1qmn")
+offset = Vector2(0, -6)
+
+[node name="CollisionZone" type="StaticBody2D" parent="."]
+position = Vector2(0, -4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionZone"]
+shape = SubResource("CircleShape2D_ewxbc")
+
+[connection signal="died" from="HarvestComponent" to="." method="_on_harvest_component_died"]
+[connection signal="hit" from="HarvestComponent" to="." method="_on_harvest_component_hit"]

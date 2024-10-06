@@ -1,8 +1,9 @@
 [gd_resource type="Resource" script_class="UiMenuButton" load_steps=6 format=3 uid="uid://cw137mtdclsl5"]
 
-[ext_resource type="Script" path="res://Scripts/ResourceScripts/TopMenuButton.gd" id="1_0w1d0"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/TopmenubuttonRes.gd" id="1_0w1d0"]
 [ext_resource type="Texture2D" uid="uid://dfublfalq30f7" path="res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png" id="1_2d58n"]
 [ext_resource type="PackedScene" uid="uid://u1ai243xqkh1" path="res://Scenes/UI/CenterMenu/QuestsMenu.tscn" id="2_qpelb"]
+
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x02pl"]
 atlas = ExtResource("1_2d58n")
