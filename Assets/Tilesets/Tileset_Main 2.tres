@@ -1,13 +1,14 @@
 [gd_resource type="TileSet" load_steps=17 format=3 uid="uid://cuhlrvbbaqqsk"]
 
-[ext_resource type="Texture2D" uid="uid://kyokxtv2lr0k" path="res://Assets/Tilesets/SubTileSets/Mushrooms.png" id="1_vas0w"]
-[ext_resource type="Texture2D" uid="uid://c8dawhes5jwpg" path="res://Assets/Tilesets/SubTileSets/Trees.png" id="2_r1ffq"]
+[ext_resource type="Texture2D" uid="uid://kyokxtv2lr0k" path="res://Assets/Objects/Ground-Objects.png" id="1_vas0w"]
+[ext_resource type="Texture2D" uid="uid://c8dawhes5jwpg" path="res://Assets/Objects/Trees.png" id="2_r1ffq"]
 [ext_resource type="Texture2D" uid="uid://bxexduqeicxgv" path="res://Assets/Tilesets/SubTileSets/Water.png" id="3_dihn3"]
 [ext_resource type="Texture2D" uid="uid://40cge1nvl8mi" path="res://Assets/Tilesets/SubTileSets/Light_Dirt.png" id="4_gvl1a"]
 [ext_resource type="Texture2D" uid="uid://plyr0nsndh8n" path="res://Assets/Tilesets/SubTileSets/Stone.png" id="5_pb4fl"]
 [ext_resource type="Texture2D" uid="uid://g6m8f86yo4np" path="res://Assets/Tilesets/SubTileSets/Dark_Grass.png" id="6_8j1s5"]
 [ext_resource type="Texture2D" uid="uid://s1l8w6s40jet" path="res://Assets/Tilesets/SubTileSets/Dark_Dirt.png" id="7_2m0v1"]
 [ext_resource type="Texture2D" uid="uid://dc8sqr53sn08s" path="res://Assets/Tilesets/SubTileSets/Light_Grass.png" id="8_asb0k"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ehi6k"]
 resource_name = "Mushrooms"

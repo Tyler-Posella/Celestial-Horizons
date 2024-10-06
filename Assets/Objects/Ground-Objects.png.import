@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://kyokxtv2lr0k"
-path="res://.godot/imported/Mushrooms.png-4df167edbecc6b88af93dcc1d7cc4c3d.ctex"
+path="res://.godot/imported/Ground-Objects.png-8f0ef31ebe04797a664f97834724b7ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tilesets/SubTileSets/Mushrooms.png"
-dest_files=["res://.godot/imported/Mushrooms.png-4df167edbecc6b88af93dcc1d7cc4c3d.ctex"]
+source_file="res://Assets/Objects/Ground-Objects.png"
+dest_files=["res://.godot/imported/Ground-Objects.png-8f0ef31ebe04797a664f97834724b7ac.ctex"]
 
 [params]
 

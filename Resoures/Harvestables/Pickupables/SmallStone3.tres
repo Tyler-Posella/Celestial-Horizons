@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PickupableRes" load_steps=5 format=3 uid="uid://urwn723rqjwh"]
+
+[ext_resource type="Resource" uid="uid://tn6e04v71801" path="res://Resoures/Items/Rocks/SmallStone.tres" id="1_gq68s"]
+[ext_resource type="Texture2D" uid="uid://kyokxtv2lr0k" path="res://Assets/Objects/Ground-Objects.png" id="2_tg3to"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/Objects/PickupableRes.gd" id="3_u7b3x"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6nemm"]
+atlas = ExtResource("2_tg3to")
+region = Rect2(32, 16, 16, 16)
+
+[resource]
+script = ExtResource("3_u7b3x")
+normal_texture = SubResource("AtlasTexture_6nemm")
+item = ExtResource("1_gq68s")

@@ -1,7 +1,7 @@
 [gd_resource type="TileSet" load_steps=17 format=3 uid="uid://cuhlrvbbaqqsk"]
 
-[ext_resource type="Texture2D" uid="uid://kyokxtv2lr0k" path="res://Assets/Tilesets/SubTileSets/Mushrooms.png" id="1_vas0w"]
-[ext_resource type="Texture2D" uid="uid://c8dawhes5jwpg" path="res://Assets/Tilesets/SubTileSets/Trees.png" id="2_r1ffq"]
+[ext_resource type="Texture2D" uid="uid://kyokxtv2lr0k" path="res://Assets/Objects/Ground-Objects.png" id="1_1lmx2"]
+[ext_resource type="Texture2D" uid="uid://c8dawhes5jwpg" path="res://Assets/Objects/Trees.png" id="2_qrmaq"]
 [ext_resource type="Texture2D" uid="uid://bxexduqeicxgv" path="res://Assets/Tilesets/SubTileSets/Water.png" id="3_dihn3"]
 [ext_resource type="Texture2D" uid="uid://40cge1nvl8mi" path="res://Assets/Tilesets/SubTileSets/Light_Dirt.png" id="4_gvl1a"]
 [ext_resource type="Texture2D" uid="uid://plyr0nsndh8n" path="res://Assets/Tilesets/SubTileSets/Stone.png" id="5_pb4fl"]
@@ -11,7 +11,7 @@
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ehi6k"]
 resource_name = "Mushrooms"
-texture = ExtResource("1_vas0w")
+texture = ExtResource("1_1lmx2")
 0:0/0 = 0
 0:0/0/y_sort_origin = 5
 1:0/0 = 0
@@ -108,7 +108,7 @@ texture = ExtResource("1_vas0w")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ldn6q"]
 resource_name = "Trees_Stumps"
-texture = ExtResource("2_r1ffq")
+texture = ExtResource("2_qrmaq")
 0:2/0 = 0
 0:2/0/y_sort_origin = 4
 1:2/0 = 0

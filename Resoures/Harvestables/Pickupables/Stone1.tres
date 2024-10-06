@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PickupableRes" load_steps=5 format=3 uid="uid://dd84jl0bkeefk"]
+
+[ext_resource type="Resource" uid="uid://78k8av702gmf" path="res://Resoures/Items/Rocks/Stone.tres" id="1_ab824"]
+[ext_resource type="Texture2D" uid="uid://kyokxtv2lr0k" path="res://Assets/Objects/Ground-Objects.png" id="2_gy0ey"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/Objects/PickupableRes.gd" id="3_mbui7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dym65"]
+atlas = ExtResource("2_gy0ey")
+region = Rect2(64, 16, 16, 16)
+
+[resource]
+script = ExtResource("3_mbui7")
+normal_texture = SubResource("AtlasTexture_dym65")
+item = ExtResource("1_ab824")

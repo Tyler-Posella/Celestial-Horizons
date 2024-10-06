@@ -1,8 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://dota8iclme86g"]
+[gd_scene load_steps=7 format=3 uid="uid://qsuul1le3p1i"]
 
 [ext_resource type="Script" path="res://Scripts/Objects/Trees/Stump.gd" id="1_2t4oq"]
-[ext_resource type="PackedScene" uid="uid://deul1bv5u0yng" path="res://Scenes/Components/HarvestComponent.tscn" id="2_i10y1"]
-[ext_resource type="Texture2D" uid="uid://c8dawhes5jwpg" path="res://Assets/Tilesets/SubTileSets/Trees.png" id="2_lwwbm"]
+[ext_resource type="PackedScene" uid="uid://b7b5mk8jjsywi" path="res://Scenes/Components/HarvestComponent.tscn" id="2_i10y1"]
+[ext_resource type="Texture2D" uid="uid://c8dawhes5jwpg" path="res://Assets/Objects/Trees.png" id="2_lwwbm"]
 [ext_resource type="PackedScene" uid="uid://dsj5jii06d4rf" path="res://Scenes/Audio/AudioMachine.tscn" id="3_pwhsr"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m1qmn"]

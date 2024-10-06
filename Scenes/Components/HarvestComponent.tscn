@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://deul1bv5u0yng"]
+[gd_scene load_steps=3 format=3 uid="uid://b7b5mk8jjsywi"]
 
 [ext_resource type="Script" path="res://Scripts/Components/HarvestComponent.gd" id="1_11io4"]
 

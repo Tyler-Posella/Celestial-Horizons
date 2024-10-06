@@ -1,3 +1,5 @@
+PickupableRes
+ItemRes
 GrowableTreeRes
 TreeRes
 Resource
