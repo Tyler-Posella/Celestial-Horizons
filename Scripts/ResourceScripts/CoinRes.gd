@@ -1,5 +1,5 @@
-class_name Coin
-extends Item
+class_name CoinRes
+extends ItemRes
 
 # Exports
 @export var coin_value : int

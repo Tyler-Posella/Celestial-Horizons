@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TreeRes" load_steps=4 format=3 uid="uid://h041qntemutu"]
+
+[ext_resource type="Texture2D" uid="uid://dgrowgmovs0fi" path="res://Assets/Trees/tree_none.png" id="1_a530a"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/Trees/TreeRes.gd" id="1_vlfy3"]
+[ext_resource type="Texture2D" uid="uid://bbc4f518t1x12" path="res://Assets/Trees/tree_fall.png" id="2_6xtqi"]
+
+[resource]
+script = ExtResource("1_vlfy3")
+normal_texture = ExtResource("1_a530a")
+fall_texture = ExtResource("2_6xtqi")
+hitpoints = 5

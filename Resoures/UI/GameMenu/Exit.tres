@@ -2,7 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://dfublfalq30f7" path="res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png" id="1_lbhtr"]
 [ext_resource type="PackedScene" uid="uid://bpm645y0841i6" path="res://Scenes/UI/CenterMenu/ExitMenu.tscn" id="2_tbnaj"]
-[ext_resource type="Script" path="res://Scripts/ResourceScripts/TopMenuButton.gd" id="3_ofnb2"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/TopmenubuttonRes.gd" id="3_ofnb2"]
+
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nb4fy"]
 atlas = ExtResource("1_lbhtr")

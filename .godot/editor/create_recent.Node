@@ -1,3 +1,6 @@
+HealthComponent
+CollisionShape2D
+Area2D
 TextureButton
 MarginContainer
 PanelContainer
@@ -10,5 +13,3 @@ VBoxContainer
 Panel
 Control
 HBoxContainer
-AspectRatioContainer
-TextureRect

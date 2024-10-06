@@ -6,8 +6,8 @@ extends Node2D
 signal health_changed(count : int)
 
 # Variables
-var max_health : int = 10
-var health : int = 10
+var max_health : int
+var health : int
 
 # Functions
 func _ready():

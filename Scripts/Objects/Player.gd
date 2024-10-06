@@ -34,7 +34,6 @@ func _ready():
 	# Reassign currency component
 	for child in get_children():
 		if child is CurrencyComponent:
-			print(child)
 			currency_component = child
 			currency_component.coins_changed.connect(_on_coin_update)
 			currency_component.sound_emitted.connect(_on_currency_component_sound_emitted)
@@ -134,7 +133,7 @@ func check_for_button_press():
 		inventory_component.drop_item()
 	if(Input.is_action_pressed("click_primary")):
 		if(inventory_component.selected.item != null):
-			if(inventory_component.selected.item is Usable and is_actioning() == false):
+			if(inventory_component.selected.item is UsableRes and is_actioning() == false):
 				use_item()
 		
 		
@@ -155,7 +154,7 @@ func get_drop_marker():
 	
 	
 func use_item():
-	if(inventory_component.selected.get_item() is Usable):
+	if(inventory_component.selected.get_item() is UsableRes):
 		is_action = true
 		if(inventory_component.get_selected_slot().get_item().get_item_name() == "Axe"):
 			movement_speed = 0
@@ -260,4 +259,3 @@ func set_player_name(new_name : String):
 func _on_timer_timeout() -> void:
 	playtime = playtime + 1
 	$Timer.start()
-	print(str(playtime))

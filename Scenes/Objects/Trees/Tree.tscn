@@ -1,11 +1,9 @@
-[gd_scene load_steps=29 format=3 uid="uid://bvcypkp2xfprc"]
+[gd_scene load_steps=26 format=3 uid="uid://bvcypkp2xfprc"]
 
 [ext_resource type="Script" path="res://Scripts/Objects/Trees/Tree.gd" id="1_my5rv"]
-[ext_resource type="Texture2D" uid="uid://bbc4f518t1x12" path="res://Assets/Trees/tree_fall.png" id="2_cfbcm"]
 [ext_resource type="PackedScene" uid="uid://bls6ftfun40dh" path="res://Scenes/Components/GrowableComponent.tscn" id="2_olac1"]
 [ext_resource type="Texture2D" uid="uid://dgrowgmovs0fi" path="res://Assets/Trees/tree_none.png" id="3_hf4k2"]
-[ext_resource type="PackedScene" uid="uid://bna0blnh7t1ky" path="res://Scenes/Components/HealthComponent.tscn" id="5_0o8wd"]
-[ext_resource type="Texture2D" uid="uid://bn31tfimxoo77" path="res://Assets/Trees/tree_apple.png" id="6_sjwxk"]
+[ext_resource type="PackedScene" uid="uid://deul1bv5u0yng" path="res://Scenes/Components/HarvestComponent.tscn" id="5_wpchc"]
 [ext_resource type="PackedScene" uid="uid://dsj5jii06d4rf" path="res://Scenes/Audio/AudioMachine.tscn" id="7_2o7qw"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_li5pf"]
@@ -162,17 +160,14 @@ _data = {
 [sub_resource type="CircleShape2D" id="CircleShape2D_bvtk3"]
 radius = 7.0
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_dq76t"]
-radius = 5.0
-
-[node name="Tree" type="Node2D" node_paths=PackedStringArray("health_component", "growable_component", "audio_component") groups=["Tree"]]
+[node name="Tree" type="Node2D" groups=["Tree"]]
 script = ExtResource("1_my5rv")
-health_component = NodePath("HealthComponent")
-growable_component = NodePath("GrowableComponent")
-audio_component = NodePath("AudioMachine")
-tree_texture = ExtResource("3_hf4k2")
 
 [node name="GrowableComponent" parent="." instance=ExtResource("2_olac1")]
+
+[node name="HarvestComponent" parent="." instance=ExtResource("5_wpchc")]
+
+[node name="AudioMachine" parent="." instance=ExtResource("7_2o7qw")]
 
 [node name="InteractionComponent" type="Area2D" parent="."]
 position = Vector2(2.08165e-12, -5)
@@ -194,32 +189,20 @@ libraries = {
 }
 
 [node name="FallSprite" type="Sprite2D" parent="."]
-texture = ExtResource("2_cfbcm")
 offset = Vector2(-8, -19)
 hframes = 13
 
 [node name="TreeSprite" type="Sprite2D" parent="."]
-texture = ExtResource("6_sjwxk")
+texture = ExtResource("3_hf4k2")
 offset = Vector2(0, -19)
 hframes = 12
 vframes = 4
-
-[node name="HealthComponent" parent="." instance=ExtResource("5_0o8wd")]
-max_health = 3
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(0, -4)
 shape = SubResource("CircleShape2D_bvtk3")
-
-[node name="ChopArea" type="Area2D" parent="."]
-collision_layer = 0
-collision_mask = 16
-
-[node name="Chop" type="CollisionShape2D" parent="ChopArea"]
-position = Vector2(0, -4)
-shape = SubResource("CircleShape2D_dq76t")
 
 [node name="Marker1" type="Marker2D" parent="."]
 position = Vector2(-20, -5)
@@ -230,9 +213,10 @@ position = Vector2(16, -1)
 [node name="Marker3" type="Marker2D" parent="."]
 position = Vector2(19, -9)
 
-[node name="AudioMachine" parent="." instance=ExtResource("7_2o7qw")]
-
+[connection signal="grown" from="GrowableComponent" to="." method="_on_growable_component_grown"]
+[connection signal="harvested" from="GrowableComponent" to="." method="_on_growable_component_harvested"]
+[connection signal="died" from="HarvestComponent" to="." method="_on_harvest_component_died"]
+[connection signal="hit_by_tool" from="HarvestComponent" to="." method="_on_harvest_component_hit_by_tool"]
 [connection signal="body_entered" from="InteractionComponent" to="." method="_on_interaction_component_body_entered"]
 [connection signal="body_exited" from="InteractionComponent" to="." method="_on_interaction_component_body_exited"]
 [connection signal="animation_finished" from="AnimationTree" to="." method="_on_animation_tree_animation_finished"]
-[connection signal="area_entered" from="ChopArea" to="." method="_on_chop_area_area_entered"]

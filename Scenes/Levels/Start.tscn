@@ -1,14 +1,15 @@
-[gd_scene load_steps=13 format=3 uid="uid://bh1o1y67pi8du"]
+[gd_scene load_steps=14 format=3 uid="uid://bh1o1y67pi8du"]
 
 [ext_resource type="Script" path="res://Scripts/Levels/Start.gd" id="1_wfjas"]
 [ext_resource type="TileSet" uid="uid://cuhlrvbbaqqsk" path="res://Assets/Tilesets/Tileset_Main.tres" id="2_x3dv7"]
 [ext_resource type="PackedScene" uid="uid://bhmrogi0cr2f3" path="res://Scenes/Objects/Collectable.tscn" id="3_1r330"]
+[ext_resource type="Resource" uid="uid://h041qntemutu" path="res://Resoures/Trees/DefaultTree.tres" id="4_3v22f"]
+[ext_resource type="Resource" uid="uid://ueq3awjcr8oc" path="res://Resoures/Trees/AppleTree.tres" id="5_m4hy1"]
 [ext_resource type="PackedScene" uid="uid://bvcypkp2xfprc" path="res://Scenes/Objects/Trees/Tree.tscn" id="5_sioew"]
-[ext_resource type="Resource" uid="uid://dx8pjxwvtcnw7" path="res://Resoures/Fruit/Apple.tres" id="6_idlr6"]
-[ext_resource type="Resource" uid="uid://busganook08a8" path="res://Resoures/Fruit/Orange.tres" id="7_080y8"]
-[ext_resource type="Resource" uid="uid://b50obduc44hn4" path="res://Resoures/Fruit/Peach.tres" id="8_5jfaq"]
+[ext_resource type="Resource" uid="uid://di8kno6cp4ovj" path="res://Resoures/Trees/OrangeTree.tres" id="6_gp5es"]
+[ext_resource type="Resource" uid="uid://xenbyuir35vw" path="res://Resoures/Trees/PeachTree.tres" id="7_qxybd"]
+[ext_resource type="Resource" uid="uid://clwlgyka6o3sx" path="res://Resoures/Trees/PearTree.tres" id="8_qqsbr"]
 [ext_resource type="Resource" uid="uid://cum57os15y7i0" path="res://Resoures/Tools/Axe.tres" id="9_kx8yr"]
-[ext_resource type="Resource" uid="uid://btrrqpk15yphg" path="res://Resoures/Fruit/Pear.tres" id="9_tcsl5"]
 [ext_resource type="Resource" uid="uid://rq0qxv1gksng" path="res://Resoures/Tools/Hoe.tres" id="10_2knyr"]
 [ext_resource type="Resource" uid="uid://del5xkhbu3ywb" path="res://Resoures/Tools/WateringCan.tres" id="11_44hkk"]
 [ext_resource type="Resource" uid="uid://c2emo5d7yw57r" path="res://Resoures/Coins/Coin5.tres" id="12_ntxdo"]
@@ -41,22 +42,23 @@ metadata/_edit_lock_ = true
 
 [node name="Tree" parent="." instance=ExtResource("5_sioew")]
 position = Vector2(111, 93)
-growable = ExtResource("6_idlr6")
+type = ExtResource("4_3v22f")
 
 [node name="Tree2" parent="." instance=ExtResource("5_sioew")]
 position = Vector2(-88, 109)
-growable = ExtResource("7_080y8")
+type = ExtResource("5_m4hy1")
 
 [node name="Tree3" parent="." instance=ExtResource("5_sioew")]
 position = Vector2(148, -88)
-growable = ExtResource("8_5jfaq")
+type = ExtResource("6_gp5es")
 
 [node name="Tree4" parent="." instance=ExtResource("5_sioew")]
 position = Vector2(34, -60)
+type = ExtResource("7_qxybd")
 
 [node name="Tree5" parent="." instance=ExtResource("5_sioew")]
 position = Vector2(-86, -89)
-growable = ExtResource("9_tcsl5")
+type = ExtResource("8_qqsbr")
 
 [node name="Item" parent="." instance=ExtResource("3_1r330")]
 position = Vector2(117, -43)

@@ -10,7 +10,7 @@ signal buttonpress(button : GuiMenuButton)
 
 # Variables
 var scene : PackedScene
-var resource : UiMenuButton
+var resource : UiMenuButtonRes
 
 # Functions
 func _ready():
@@ -22,7 +22,7 @@ func _on_press() -> void:
 	buttonpress.emit(self)
 	
 	
-func set_resource(new_resource : UiMenuButton):
+func set_resource(new_resource : UiMenuButtonRes):
 	resource = new_resource
 	scene = resource.scene
 	
