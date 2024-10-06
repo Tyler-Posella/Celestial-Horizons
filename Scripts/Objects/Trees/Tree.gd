@@ -112,16 +112,9 @@ func drop_items() -> void: # Drops items from the tree
 	if(growable_component.is_grown()):
 		for i in 3:
 			dropped_item = COLLECTABLE_SCENE.instantiate()
-			dropped_item.set_item(growable_component.get_growable_item())
+			dropped_item.set_item(growable_component.get_growable())
 			dropped_item.global_position = global_position
 			get_parent().add_child(dropped_item)
-
-
-func _on_harvest_component_hit_by_tool(tool_damage: int) -> void:
-	harvest_component.damage(tool_damage)
-	if(harvest_component.get_hit_points() > 0):
-		state_machine.travel("shake_short")
-	audio_component.play_sound("res://Audio/SFX/Tree/TreeHit.wav")
 
 
 func _on_interaction_component_body_entered(body) -> void: # On player entry, set player present to true
@@ -145,3 +138,9 @@ func _on_growable_component_harvested() -> void:
 
 func _on_growable_component_grown() -> void:
 	$TreeSprite.texture = type.get_fruity_texture()
+
+
+func _on_harvest_component_hit() -> void:
+	if(harvest_component.get_hitpoints() > 0):
+		state_machine.travel("shake_short")
+	audio_component.play_sound("res://Audio/SFX/Tree/TreeHit.wav")

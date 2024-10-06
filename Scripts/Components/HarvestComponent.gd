@@ -3,19 +3,18 @@ extends Node2D
 
 #Signals 
 signal died()
+signal hit()
 
 # Variables
 var hitpoints : int
 
-# Signals
-signal hit_by_tool(tool_damage : int)
-
 # Functions
 func _on_harvester_area_entered(area): # On axe hitbox entered tree hitbox	
-	hit_by_tool.emit(1)
+	hit.emit()
+	damage(1)
 	
 
-func get_hit_points():
+func get_hitpoints():
 	return hitpoints
 	
 	

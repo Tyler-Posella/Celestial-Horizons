@@ -216,7 +216,7 @@ position = Vector2(19, -9)
 [connection signal="grown" from="GrowableComponent" to="." method="_on_growable_component_grown"]
 [connection signal="harvested" from="GrowableComponent" to="." method="_on_growable_component_harvested"]
 [connection signal="died" from="HarvestComponent" to="." method="_on_harvest_component_died"]
-[connection signal="hit_by_tool" from="HarvestComponent" to="." method="_on_harvest_component_hit_by_tool"]
+[connection signal="hit" from="HarvestComponent" to="." method="_on_harvest_component_hit"]
 [connection signal="body_entered" from="InteractionComponent" to="." method="_on_interaction_component_body_entered"]
 [connection signal="body_exited" from="InteractionComponent" to="." method="_on_interaction_component_body_exited"]
 [connection signal="animation_finished" from="AnimationTree" to="." method="_on_animation_tree_animation_finished"]
