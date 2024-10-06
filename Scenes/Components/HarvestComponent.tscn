@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://deul1bv5u0yng"]
+
+[ext_resource type="Script" path="res://Scripts/Components/HarvestComponent.gd" id="1_11io4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n66jq"]
+radius = 5.0
+
+[node name="HarvestComponent" type="Node2D"]
+script = ExtResource("1_11io4")
+
+[node name="HarvestArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 16
+
+[node name="HarvestCollision" type="CollisionShape2D" parent="HarvestArea"]
+position = Vector2(0, -4)
+shape = SubResource("CircleShape2D_n66jq")
+
+[connection signal="area_entered" from="HarvestArea" to="." method="_on_harvester_area_entered"]

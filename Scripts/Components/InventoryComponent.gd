@@ -4,7 +4,7 @@ extends Node2D
 # Signals
 signal health_changed(count : int)
 signal sound_emitted(sound)
-signal item_dropped(item : Item)
+signal item_dropped(item : ItemRes)
 
 # Constants
 const SLOT_BASE = preload("res://Scenes/Inventory/InventorySlot.tscn")
@@ -34,7 +34,7 @@ func _ready():
 
 	
 
-func add_item(item_to_add : Item, amount : int): # Adds a number of items to the inventory
+func add_item(item_to_add : ItemRes, amount : int): # Adds a number of items to the inventory
 	# First attempt to find a slot already holding the item to add the new items to
 	for i in size:
 		if(slots[i].get_item() == item_to_add):
@@ -49,7 +49,7 @@ func add_item(item_to_add : Item, amount : int): # Adds a number of items to the
 				return true
 	
 
-func pickup_item(item_to_add : Item): # Picks an item up 
+func pickup_item(item_to_add : ItemRes): # Picks an item up 
 	# First attempt to find a slot already holding the item to add the new items to
 	for i in size:
 		if(slots[i].get_item() == item_to_add):
@@ -81,14 +81,14 @@ func drop_item(): # Drops the item currently selected
 		Game.get_level().add_child(item_dropped)
 	
 
-func has_item(obj : Item): # Returns true if the item is in the inventory, else returns false
+func has_item(obj : ItemRes): # Returns true if the item is in the inventory, else returns false
 	for i in size:
 		if(slots[i].get_item() == obj):
 			return true
 	return false
 	
 
-func find_slots_with_item(obj : Item): # Finds a slot containing the specified item
+func find_slots_with_item(obj : ItemRes): # Finds a slot containing the specified item
 	var found_slots = []
 	for i in size:
 		if(slots[i].get_item() == obj):

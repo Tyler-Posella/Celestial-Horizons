@@ -2,7 +2,7 @@ class_name Collectable
 extends RigidBody2D
 
 # Export Variables
-@export var item : Item
+@export var item : ItemRes
 
 # Variables
 var time : float = 0.0
@@ -28,8 +28,8 @@ func delete_item(): # Deletes the item
 	queue_free()
 	
 
-func set_item(itm): # Sets the collectables item type
-	item = itm
+func set_item(new_item : ItemRes): # Sets the collectables item type
+	item = new_item
 	
 
 func get_item(): # Returns the collectables item type
@@ -38,10 +38,10 @@ func get_item(): # Returns the collectables item type
 
 func _on_interaction_component_body_entered(body): # On interaction body entering the interaction radius, do the appropriate action
 	if(body.is_in_group("Player")):
-		if(item is Coin):
+		if(item is CoinRes):
 			Game.get_player().get_currency_component().add_coins(item.coin_value)
 			delete_item()
-		elif(item is Item):
+		elif(item is ItemRes):
 			Game.get_player().get_inventory_component().pickup_item(item)
 			delete_item()
 		

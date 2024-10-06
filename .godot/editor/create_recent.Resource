@@ -1,10 +1,6 @@
-UiMenuButton
+GrowableTreeRes
+TreeRes
 Resource
 GDScript
 PackedScene
-Usable
-Item
-Coin
-Slot
 AtlasTexture
-Fruit

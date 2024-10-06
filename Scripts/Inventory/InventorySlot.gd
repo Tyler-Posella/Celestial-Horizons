@@ -6,7 +6,7 @@ signal slot_updated()
 
 # Variables
 var count : int = 0
-var item : Item
+var item : ItemRes
 var item_id : int
 var is_selected = false
 
@@ -26,7 +26,7 @@ func deincrement(): # Deincrmeents the count by 1
 	slot_updated.emit()
 
 
-func set_item(new_item : Item): # Sets the item of the slot using the Item parameter
+func set_item(new_item : ItemRes): # Sets the item of the slot using the Item parameter
 	item = new_item
 	slot_updated.emit()
 	

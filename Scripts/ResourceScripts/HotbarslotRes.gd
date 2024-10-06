@@ -1,4 +1,4 @@
-class_name Slot
+class_name SlotRes
 extends Resource
 
 # Exports

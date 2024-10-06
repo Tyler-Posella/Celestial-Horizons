@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="Usable" load_steps=4 format=3 uid="uid://cum57os15y7i0"]
+[gd_resource type="Resource" script_class="UsableRes" load_steps=4 format=3 uid="uid://cum57os15y7i0"]
 
-[ext_resource type="Script" path="res://Scripts/ResourceScripts/Usable.gd" id="1_i5yn3"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/UsableRes.gd" id="1_i5yn3"]
 [ext_resource type="Texture2D" uid="uid://d0vkukchi2y8g" path="res://Assets/Items/Tools-Materials.png" id="2_yjjuk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_heis8"]
@@ -12,3 +12,4 @@ script = ExtResource("1_i5yn3")
 name = "Axe"
 texture = SubResource("AtlasTexture_heis8")
 description = "A sturdy tool for chopping down trees and breaking apart logs. Essential for gathering wood."
+sell_price = 0
