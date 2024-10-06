@@ -14,9 +14,18 @@ func get_current_save():
 	
 	
 func save_game():
+	# Ensure the directors for local data exist
+	var dir = DirAccess.open("res://")
+	if(dir.dir_exists("res://LocalData") == false):
+		dir.make_dir("res://LocalData")
+	dir = DirAccess.open("res://LocalData")
+	if(dir.dir_exists("res://LocalData/Saves") == false):
+		dir.make_dir("res://LocalData/Saves")
+		
+	# Find next save slot number
 	if(current_save == null):
 		# Open save directory to find where to save
-		var dir = DirAccess.open("res://LocalData/Saves/")
+		dir = DirAccess.open("res://LocalData/Saves/")
 		var save_index = 1
 		var save_name = "Save" + str(save_index)
 
