@@ -41,7 +41,6 @@ func _ready():
 	# Reassign health component
 	for child in get_children():
 		if child is HealthComponent:
-			print(child)
 			health_component = child
 			health_component.health_changed.connect(_on_health_update)
 			

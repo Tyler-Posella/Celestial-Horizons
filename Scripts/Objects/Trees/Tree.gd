@@ -45,19 +45,19 @@ func _process(delta): # Checks if the player is interacting inside the radius
 
 
 func set_markers() -> void: # Sets the markers to the proper positions for each fruit
-	if(type.get_fruit().get_name() == "Apple"):
+	if(type.get_fruit().get_item_name() == "Apple"):
 		markers[0].position = Vector2(-20, -5)
 		markers[1].position = Vector2(16, -1)
 		markers[2].position = Vector2(19, -9)
-	if(type.get_fruit().get_name() == "Pear"):
+	if(type.get_fruit().get_item_name() == "Pear"):
 		markers[0].position = Vector2(-21, -7)
 		markers[1].position = Vector2(15, 0)
 		markers[2].position = Vector2(-19, 3)
-	if(type.get_fruit().get_name() == "Peach"):
+	if(type.get_fruit().get_item_name() == "Peach"):
 		markers[0].position = Vector2(-19, -6)
 		markers[1].position = Vector2(16, -1)
 		markers[2].position = Vector2(-16, 3)
-	if(type.get_fruit().get_name() == "Orange"):
+	if(type.get_fruit().get_item_name() == "Orange"):
 		markers[0].position = Vector2(-20, -6)
 		markers[1].position = Vector2(16, -1)
 		markers[2].position = Vector2(-17, 3)
@@ -145,4 +145,3 @@ func _on_growable_component_harvested() -> void:
 
 func _on_growable_component_grown() -> void:
 	$TreeSprite.texture = type.get_fruity_texture()
-	print("grown")
