@@ -7,6 +7,7 @@ signal hit()
 
 # Variables
 var hitpoints : int
+var harvest_type : String
 
 # Functions
 func _on_harvester_area_entered(area): # On axe hitbox entered tree hitbox	

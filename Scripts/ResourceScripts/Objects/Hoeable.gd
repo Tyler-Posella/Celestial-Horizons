@@ -1,4 +1,4 @@
-class_name PickupableRes
+class_name HarvestableRes
 extends Resource
 
 # Export Variables

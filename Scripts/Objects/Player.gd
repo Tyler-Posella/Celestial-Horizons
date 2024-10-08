@@ -26,6 +26,7 @@ var if_check
 @onready var health_component : HealthComponent = $HealthComponent
 @onready var currency_component : CurrencyComponent = $CurrencyComponent
 @onready var audio_player : AudioMachine = $AudioMachine
+@onready var item_gravity_component : ItemGravityComponent = $ItemGravityComponent
 
 # Functions
 func _ready():

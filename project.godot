@@ -147,8 +147,9 @@ Keyboard-Shift={
 2d_physics/layer_2="Player"
 2d_physics/layer_3="Enemy"
 2d_physics/layer_4="NPC"
-2d_physics/layer_5="Interact"
+2d_physics/layer_5="Harvest"
 2d_physics/layer_6="Pickups"
+2d_physics/layer_7="Interact"
 
 [physics]
 

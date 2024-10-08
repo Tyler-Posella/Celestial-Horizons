@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cft0wsgi7v4cb"]
+
+[ext_resource type="Script" path="res://Scripts/Components/ItemGravityComponent.gd" id="1_wjnhs"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pex05"]
+
+[node name="ItemGravityComponent" type="Node2D"]
+script = ExtResource("1_wjnhs")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 32
+gravity_space_override = 1
+gravity_point = true
+gravity = 735.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_pex05")

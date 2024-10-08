@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://bg3ew1uuh21o2"]
+[gd_scene load_steps=33 format=3 uid="uid://bg3ew1uuh21o2"]
 
 [ext_resource type="Script" path="res://Scripts/Objects/Player.gd" id="1_6d1b7"]
 [ext_resource type="Texture2D" uid="uid://idajb5n31743" path="res://Assets/Characters/Character.png" id="2_5sico"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://tf88mpduami1" path="res://Scenes/Components/CurrencyComponent.tscn" id="4_0b2gy"]
 [ext_resource type="PackedScene" uid="uid://bna0blnh7t1ky" path="res://Scenes/Components/HealthComponent.tscn" id="5_86ime"]
 [ext_resource type="PackedScene" uid="uid://dsj5jii06d4rf" path="res://Scenes/Audio/AudioMachine.tscn" id="6_od5k8"]
+[ext_resource type="PackedScene" uid="uid://cft0wsgi7v4cb" path="res://Scenes/Components/ItemGravityComponent.tscn" id="7_gxf2s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_garu8"]
 size = Vector2(8, 6)
@@ -532,8 +533,19 @@ _data = {
 radius = 5.09902
 
 [node name="Player" type="CharacterBody2D" groups=["Persist", "Player"]]
-collision_layer = 17
+collision_layer = 2
 script = ExtResource("1_6d1b7")
+
+[node name="ItemGravityComponent" parent="." instance=ExtResource("7_gxf2s")]
+desired_radius = 20.0
+
+[node name="InventoryComponent" parent="." groups=["PlayerInventory"] instance=ExtResource("3_jevo3")]
+
+[node name="CurrencyComponent" parent="." groups=["Persist"] instance=ExtResource("4_0b2gy")]
+
+[node name="HealthComponent" parent="." instance=ExtResource("5_86ime")]
+
+[node name="AudioMachine" parent="." instance=ExtResource("6_od5k8")]
 
 [node name="Player_Sprite" type="Sprite2D" parent="."]
 texture = ExtResource("2_5sico")
@@ -553,8 +565,8 @@ libraries = {
 
 [node name="InteractionArea" type="Area2D" parent="."]
 position = Vector2(0, -3)
-collision_layer = 0
-collision_mask = 32
+collision_layer = 32
+collision_mask = 0
 gravity_space_override = 1
 gravity_point = true
 gravity_point_unit_distance = 10.0
@@ -568,8 +580,6 @@ zoom = Vector2(4, 4)
 [node name="Marker2D" type="Marker2D" parent="."]
 position = Vector2(2.08165e-12, 25)
 
-[node name="InventoryComponent" parent="." groups=["PlayerInventory"] instance=ExtResource("3_jevo3")]
-
 [node name="ToolArea" type="Area2D" parent="."]
 collision_layer = 16
 collision_mask = 0
@@ -579,16 +589,10 @@ position = Vector2(-4.5, 1.5)
 scale = Vector2(1.31821, -1.83987)
 shape = SubResource("RectangleShape2D_na48r")
 
-[node name="CurrencyComponent" parent="." groups=["Persist"] instance=ExtResource("4_0b2gy")]
-
-[node name="HealthComponent" parent="." instance=ExtResource("5_86ime")]
-
-[node name="AudioMachine" parent="." instance=ExtResource("6_od5k8")]
-
 [node name="Timer" type="Timer" parent="."]
 autostart = true
 
-[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
 [connection signal="sound_emitted" from="InventoryComponent" to="." method="_on_inventory_component_sound_emitted"]
 [connection signal="sound_emitted" from="CurrencyComponent" to="." method="_on_currency_component_sound_emitted"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
