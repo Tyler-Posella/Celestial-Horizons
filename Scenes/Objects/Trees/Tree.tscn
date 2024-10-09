@@ -2,12 +2,10 @@
 
 [ext_resource type="Script" path="res://Scripts/Objects/Trees/Tree.gd" id="1_my5rv"]
 [ext_resource type="PackedScene" uid="uid://bls6ftfun40dh" path="res://Scenes/Components/GrowableComponent.tscn" id="2_olac1"]
+[ext_resource type="PackedScene" uid="uid://cjyp74klcqibc" path="res://Scenes/Components/InteractionComponent.tscn" id="2_rxix3"]
 [ext_resource type="Texture2D" uid="uid://dgrowgmovs0fi" path="res://Assets/Trees/tree_none.png" id="3_hf4k2"]
-[ext_resource type="PackedScene" uid="uid://deul1bv5u0yng" path="res://Scenes/Components/HarvestComponent.tscn" id="5_wpchc"]
+[ext_resource type="PackedScene" uid="uid://b7b5mk8jjsywi" path="res://Scenes/Components/HarvestComponent.tscn" id="5_wpchc"]
 [ext_resource type="PackedScene" uid="uid://dsj5jii06d4rf" path="res://Scenes/Audio/AudioMachine.tscn" id="7_2o7qw"]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_li5pf"]
-radius = 15.0
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_qcdl4"]
 animation = &"fall"
@@ -163,19 +161,14 @@ radius = 7.0
 [node name="Tree" type="Node2D" groups=["Tree"]]
 script = ExtResource("1_my5rv")
 
+[node name="InteractableComponent" parent="." instance=ExtResource("2_rxix3")]
+
 [node name="GrowableComponent" parent="." instance=ExtResource("2_olac1")]
 
 [node name="HarvestComponent" parent="." instance=ExtResource("5_wpchc")]
+harvest_layer = 9
 
 [node name="AudioMachine" parent="." instance=ExtResource("7_2o7qw")]
-
-[node name="InteractionComponent" type="Area2D" parent="."]
-position = Vector2(2.08165e-12, -5)
-collision_layer = 0
-collision_mask = 17
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionComponent"]
-shape = SubResource("CircleShape2D_li5pf")
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
 root_node = NodePath(".")
@@ -199,6 +192,7 @@ hframes = 12
 vframes = 4
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(0, -4)
@@ -213,10 +207,9 @@ position = Vector2(16, -1)
 [node name="Marker3" type="Marker2D" parent="."]
 position = Vector2(19, -9)
 
+[connection signal="interacted" from="InteractableComponent" to="." method="_on_interactable_component_interacted"]
 [connection signal="grown" from="GrowableComponent" to="." method="_on_growable_component_grown"]
 [connection signal="harvested" from="GrowableComponent" to="." method="_on_growable_component_harvested"]
 [connection signal="died" from="HarvestComponent" to="." method="_on_harvest_component_died"]
 [connection signal="hit" from="HarvestComponent" to="." method="_on_harvest_component_hit"]
-[connection signal="body_entered" from="InteractionComponent" to="." method="_on_interaction_component_body_entered"]
-[connection signal="body_exited" from="InteractionComponent" to="." method="_on_interaction_component_body_exited"]
 [connection signal="animation_finished" from="AnimationTree" to="." method="_on_animation_tree_animation_finished"]

@@ -1,6 +1,7 @@
-HealthComponent
 CollisionShape2D
 Area2D
+Sprite2D
+HealthComponent
 TextureButton
 MarginContainer
 PanelContainer
@@ -11,5 +12,3 @@ RichTextLabel
 Label
 VBoxContainer
 Panel
-Control
-HBoxContainer

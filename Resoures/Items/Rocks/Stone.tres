@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemRes" load_steps=4 format=3 uid="uid://78k8av702gmf"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/ItemRes.gd" id="1_u0fbo"]
+[ext_resource type="Texture2D" uid="uid://d0vkukchi2y8g" path="res://Assets/Items/Tools-Materials.png" id="2_35d08"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mlmoi"]
+atlas = ExtResource("2_35d08")
+region = Rect2(16, 32, 16, 16)
+
+[resource]
+script = ExtResource("1_u0fbo")
+name = "Stone"
+texture = SubResource("AtlasTexture_mlmoi")
+description = "A solid chunk of rock. Great for crafting or refining into stone slabs."
+sell_price = 0

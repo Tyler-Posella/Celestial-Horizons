@@ -1,6 +1,10 @@
-res://Resoures/Trees
-res://Scripts/Components
+res://Resoures/Tools
+res://Resoures/Harvestables/Pickables
 res://Scenes/Components
+res://Scripts/Components
+res://Resoures/Items/Rocks
+res://Scenes/Objects
+res://Scripts/Objects
 res://Scripts/Objects/Trees
 res://Scripts/Globals
 res://Scripts
@@ -16,7 +20,3 @@ res://Scripts/ResourceScripts/
 res://Scripts/UI/InventoryUI
 res://Scenes/UI/GameUI/Inventory
 res://
-res://Scripts/UI
-res://Scenes/UI
-res://Scripts/UI/CenterMenu
-res://Resoures/Tools

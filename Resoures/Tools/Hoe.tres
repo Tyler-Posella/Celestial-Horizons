@@ -9,6 +9,7 @@ region = Rect2(32, 0, 16, 16)
 
 [resource]
 script = ExtResource("1_j2b7i")
+usable_layer = 9
 name = "Hoe"
 texture = SubResource("AtlasTexture_k6eiy")
 description = "A trusty tool for tilling soil. Creates plots for planting seeds."

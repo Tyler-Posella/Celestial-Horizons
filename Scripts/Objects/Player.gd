@@ -26,6 +26,7 @@ var if_check
 @onready var health_component : HealthComponent = $HealthComponent
 @onready var currency_component : CurrencyComponent = $CurrencyComponent
 @onready var audio_player : AudioMachine = $AudioMachine
+@onready var item_gravity_component : ItemGravityComponent = $ItemGravityComponent
 
 # Functions
 func _ready():
@@ -155,11 +156,12 @@ func get_drop_marker():
 func use_item():
 	if(inventory_component.selected.get_item() is UsableRes):
 		is_action = true
+		movement_speed = 0
+		$ToolArea/Tool.set_disabled(false)
+		$ToolArea.monitorable = true
 		if(inventory_component.get_selected_slot().get_item().get_item_name() == "Axe"):
-			movement_speed = 0
-			$ToolArea/Tool.set_disabled(false)
-			$ToolArea.monitorable = true
 			state = "Axe"
+			$ToolArea.set_collision_layer_value(9, true)
 			if(last_direction == "Left"):
 				$AnimationPlayer.play("axe_left")
 			elif(last_direction == "Down"):
@@ -171,8 +173,8 @@ func use_item():
 			await get_tree().create_timer(0.35).timeout
 			audio_player.play_sound("res://Audio/SFX/Player/AxeSwing.wav")
 		elif(inventory_component.get_selected_slot().get_item().get_item_name() == "Hoe"):
-			movement_speed = 0
 			state = "Hoe"
+			$ToolArea.set_collision_layer_value(10, true)
 			if(last_direction == "Left"):
 				$AnimationPlayer.play("hoe_left")
 			elif(last_direction == "Down"):
@@ -183,7 +185,6 @@ func use_item():
 				$AnimationPlayer.play("hoe_up")
 			audio_player.play_sound("res://Audio/SFX/Player/DirtDig.mp3")
 		elif(inventory_component.get_selected_slot().get_item().get_item_name() == "Watering Can"):
-			movement_speed = 0
 			state = "Watering"
 			if(last_direction == "Left"):
 				$AnimationPlayer.play("water_left")
@@ -204,8 +205,10 @@ func use_item_end():
 
 func _on_animation_player_animation_finished(anim_name):
 	if(anim_name == "axe_down" or anim_name == "axe_left" or anim_name == "axe_up" or anim_name == "axe_right"):
+		$ToolArea.set_collision_layer_value(9, false)
 		use_item_end()
 	elif(anim_name == "hoe_down" or anim_name == "hoe_left" or anim_name == "hoe_up" or anim_name == "hoe_right"):
+		$ToolArea.set_collision_layer_value(10, false)
 		use_item_end()
 	elif(anim_name == "water_down" or anim_name == "water_left" or anim_name == "water_up" or anim_name == "water_right"):
 		use_item_end()

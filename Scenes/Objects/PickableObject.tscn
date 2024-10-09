@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8qtlqw4bwuph"]
+
+[ext_resource type="Script" path="res://Scripts/Objects/PickupableObject.gd" id="1_ngn32"]
+[ext_resource type="PackedScene" uid="uid://b7b5mk8jjsywi" path="res://Scenes/Components/HarvestComponent.tscn" id="2_e4d3g"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_w5kgg"]
+size = Vector2(8, 8)
+
+[node name="Pickupable" type="Node2D"]
+script = ExtResource("1_ngn32")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("PlaceholderTexture2D_w5kgg")
+
+[node name="HarvestComponent" parent="." instance=ExtResource("2_e4d3g")]
+harvest_layer = 10
+
+[connection signal="died" from="HarvestComponent" to="." method="_on_harvest_component_died"]

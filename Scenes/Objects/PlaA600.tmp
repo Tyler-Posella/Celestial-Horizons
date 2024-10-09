@@ -254,30 +254,6 @@ tracks/0/keys = {
 "update": 1,
 "values": [96, 97, 98, 99, 100, 101, 102, 103]
 }
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("ToolArea/Tool:disabled")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.625, 0.75),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [true, false, true]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("ToolArea/Tool:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0.625),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-3, 1)]
-}
 
 [sub_resource type="Animation" id="Animation_3msh4"]
 resource_name = "hoe_left"
@@ -293,30 +269,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [121, 122, 123, 124, 125, 126, 127]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("ToolArea/Tool:disabled")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.5, 0.625),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [true, false, true]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("ToolArea/Tool:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0.5),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-10, -3)]
 }
 
 [sub_resource type="Animation" id="Animation_4f7y4"]
@@ -334,30 +286,6 @@ tracks/0/keys = {
 "update": 1,
 "values": [112, 113, 114, 115, 116, 117, 118, 119]
 }
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("ToolArea/Tool:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0.625),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(11, -4)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("ToolArea/Tool:disabled")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.625, 0.75),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [true, false, true]
-}
 
 [sub_resource type="Animation" id="Animation_url8u"]
 resource_name = "hoe_up"
@@ -373,30 +301,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [104, 105, 106, 107, 108, 109, 110, 111]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("ToolArea/Tool:disabled")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.625, 0.75),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [true, false, true]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("ToolArea/Tool:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0.625),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, -18)]
 }
 
 [sub_resource type="Animation" id="Animation_2lh18"]
@@ -663,7 +567,7 @@ zoom = Vector2(4, 4)
 position = Vector2(2.08165e-12, 25)
 
 [node name="ToolArea" type="Area2D" parent="."]
-collision_layer = 0
+collision_layer = 16
 collision_mask = 0
 
 [node name="Tool" type="CollisionShape2D" parent="ToolArea" groups=["Axe"]]

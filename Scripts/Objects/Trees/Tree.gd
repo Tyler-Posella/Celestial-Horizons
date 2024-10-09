@@ -4,20 +4,20 @@ extends Node2D
 # Constant Variables
 const STUMP_SCENE = preload("res://Scenes/Objects/Trees/TreeStump.tscn")
 const COLLECTABLE_SCENE = preload("res://Scenes/Objects/Collectable.tscn")
-const LOG_RESOURCE = preload("res://Resoures/Harvestables/Tree/Log.tres")
-const BRANCH_RESOURCE = preload("res://Resoures/Harvestables/Tree/Branch.tres")
-const TWIG_RESOURCE = preload("res://Resoures/Harvestables/Tree/Twig.tres")
+const LOG_RESOURCE = preload("res://Resoures/Items/Trees/Log.tres")
+const BRANCH_RESOURCE = preload("res://Resoures/Items/Trees//Branch.tres")
+const TWIG_RESOURCE = preload("res://Resoures/Items/Trees/Twig.tres")
 
 # Export Variables
 @export var type : TreeRes = load("res://Resoures/Trees/DefaultTree.tres")
 
 # Variables
-var player_present : bool = false
 var markers = []
 
 # Onready Variables
 @onready var growable_component = $GrowableComponent
 @onready var harvest_component = $HarvestComponent
+@onready var interaction_component = $InteractionComponent
 @onready var audio_component = $AudioMachine
 @onready var animation_tree = $AnimationTree
 @onready var state_machine = animation_tree.get("parameters/playback")
@@ -39,10 +39,6 @@ func _ready(): # Initializes the default values and configures the markers and a
 	harvest_component.set_hitpoints(type.get_hitpoints())
 	$FallSprite.hide()
 	
-func _process(delta): # Checks if the player is interacting inside the radius 
-	if(Input.is_action_just_pressed("interact") and player_present):
-		shake()
-
 
 func set_markers() -> void: # Sets the markers to the proper positions for each fruit
 	if(type.get_fruit().get_item_name() == "Apple"):
@@ -117,16 +113,6 @@ func drop_items() -> void: # Drops items from the tree
 			get_parent().add_child(dropped_item)
 
 
-func _on_interaction_component_body_entered(body) -> void: # On player entry, set player present to true
-	if(body.is_in_group("Player")):
-		player_present = true
-
-
-func _on_interaction_component_body_exited(body) -> void: # On player exit, set player present to false
-	if(body.is_in_group("Player")):
-		player_present = false
-
-
 func _on_growable_component_harvested() -> void:
 	for i in 3:
 		var collectable = COLLECTABLE_SCENE.instantiate()
@@ -144,3 +130,7 @@ func _on_harvest_component_hit() -> void:
 	if(harvest_component.get_hitpoints() > 0):
 		state_machine.travel("shake_short")
 	audio_component.play_sound("res://Audio/SFX/Tree/TreeHit.wav")
+
+
+func _on_interactable_component_interacted(interacting_body: Node2D) -> void:
+	shake()
