@@ -1,6 +1,7 @@
+res://Resoures/Tools
+res://Resoures/Harvestables/Pickables
 res://Scenes/Components
 res://Scripts/Components
-res://Resoures/Harvestables/Pickupables
 res://Resoures/Items/Rocks
 res://Scenes/Objects
 res://Scripts/Objects
@@ -19,4 +20,3 @@ res://Scripts/ResourceScripts/
 res://Scripts/UI/InventoryUI
 res://Scenes/UI/GameUI/Inventory
 res://
-res://Scripts/UI

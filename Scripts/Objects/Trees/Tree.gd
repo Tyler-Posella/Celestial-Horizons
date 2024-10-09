@@ -38,7 +38,7 @@ func _ready(): # Initializes the default values and configures the markers and a
 		$TreeSprite.texture = type.get_default_texture()
 	harvest_component.set_hitpoints(type.get_hitpoints())
 	$FallSprite.hide()
-
+	
 
 func set_markers() -> void: # Sets the markers to the proper positions for each fruit
 	if(type.get_fruit().get_item_name() == "Apple"):
@@ -132,10 +132,5 @@ func _on_harvest_component_hit() -> void:
 	audio_component.play_sound("res://Audio/SFX/Tree/TreeHit.wav")
 
 
-func _on_interaction_component_interacted(interacting_body: Node2D) -> void:
-	print("inter")
-	shake()
-
-
 func _on_interactable_component_interacted(interacting_body: Node2D) -> void:
-	pass # Replace with function body.
+	shake()

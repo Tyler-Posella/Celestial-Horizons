@@ -1,17 +1,23 @@
-class_name PickupableObject
+class_name PickableObject
 extends Node2D
 
 # Export Variables
-@export var pickupable : PickupableRes
+@export var pickable : PickableRes
 
 # Onready Variables
 @onready var sprite : Sprite2D = $Sprite2D
+@onready var harvest_component : HarvestComponent = $HarvestComponent
 
 # Functions
 func _ready():
-	sprite.texture = pickupable.get_texture()
+	harvest_component.set_hitpoints(1)
+	sprite.texture = pickable.get_texture()
 
 
-func _on_interactable_component_interacted(interacting_body: Node2D) -> void:
-	interacting_body.get_inventory_component().pickup_item(pickupable.get_item())
+func _on_harvest_component_died() -> void:
+	var collectable_scene = load("res://Scenes/Objects/Collectable.tscn")
+	var new_collectable = collectable_scene.instantiate()
+	new_collectable.set_item(pickable.get_item())
+	new_collectable.global_position = self.global_position
+	get_parent().add_child(new_collectable)
 	self.queue_free()

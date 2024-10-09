@@ -9,6 +9,7 @@ region = Rect2(16, 0, 16, 16)
 
 [resource]
 script = ExtResource("1_i5yn3")
+usable_layer = 8
 name = "Axe"
 texture = SubResource("AtlasTexture_heis8")
 description = "A sturdy tool for chopping down trees and breaking apart logs. Essential for gathering wood."

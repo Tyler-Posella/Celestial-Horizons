@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bh1o1y67pi8du"]
+[gd_scene load_steps=14 format=3 uid="uid://bh1o1y67pi8du"]
 
 [ext_resource type="Script" path="res://Scripts/Levels/Start.gd" id="1_wfjas"]
 [ext_resource type="TileSet" uid="uid://cuhlrvbbaqqsk" path="res://Assets/Tilesets/Tileset_Main.tres" id="2_x3dv7"]
@@ -10,6 +10,9 @@
 [ext_resource type="Resource" uid="uid://xenbyuir35vw" path="res://Resoures/Trees/PeachTree.tres" id="7_qxybd"]
 [ext_resource type="Resource" uid="uid://clwlgyka6o3sx" path="res://Resoures/Trees/PearTree.tres" id="8_qqsbr"]
 [ext_resource type="Resource" uid="uid://cum57os15y7i0" path="res://Resoures/Tools/Axe.tres" id="9_kx8yr"]
+[ext_resource type="Resource" uid="uid://rq0qxv1gksng" path="res://Resoures/Tools/Hoe.tres" id="10_2knyr"]
+[ext_resource type="PackedScene" uid="uid://c8qtlqw4bwuph" path="res://Scenes/Objects/PickableObject.tscn" id="11_a2q22"]
+[ext_resource type="Resource" uid="uid://bkqm2vjhhauws" path="res://Resoures/Harvestables/Pickables/SmallStone1.tres" id="12_bl15b"]
 
 [node name="Game_Level" type="Node2D" groups=["Level", "Persist"]]
 y_sort_enabled = true
@@ -60,3 +63,11 @@ type = ExtResource("8_qqsbr")
 [node name="Item" parent="." instance=ExtResource("3_1r330")]
 position = Vector2(117, -43)
 item = ExtResource("9_kx8yr")
+
+[node name="Item2" parent="." instance=ExtResource("3_1r330")]
+position = Vector2(-64, 1)
+item = ExtResource("10_2knyr")
+
+[node name="Pickupable" parent="." instance=ExtResource("11_a2q22")]
+position = Vector2(53, 53)
+pickable = ExtResource("12_bl15b")
