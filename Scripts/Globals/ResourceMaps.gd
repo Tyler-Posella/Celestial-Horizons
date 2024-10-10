@@ -64,6 +64,14 @@ var items = {
 			"name": "Twig",
 			"resource_path": "res://Resoures/Items/Trees/Twig.tres"
 		},
+		"203": {
+			"name": "Small Stone",
+			"resource_path": "res://Resoures/Items/Rocks/SmallStone.tres"
+		},
+		"204": {
+			"name": "Stone",
+			"resource_path": "res://Resoures/Items/Rocks/Stone.tres"
+		},
 	}
 }
 
