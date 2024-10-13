@@ -75,6 +75,23 @@ var items = {
 	}
 }
 
+func get_all_craftable_items():
+	var craftable_items = []
+	
+	# Loop through each category (tools, fruit, etc.)
+	for category_name in items.keys():
+		var category = items[category_name]
+		
+		# Loop through each item in the current category
+		for item_id in category.keys():
+			var item = category[item_id]
+			
+			# Check if the item has a "craftable" field and if it's set to 1
+			if item.has("craftable") and item["craftable"] == 1:
+				craftable_items.append(item)
+	
+	return craftable_items
+
 func get_item_data(item_id : int):
 	# Loop through the subcategories (tools, fruit, etc.)
 	for category in items.values():

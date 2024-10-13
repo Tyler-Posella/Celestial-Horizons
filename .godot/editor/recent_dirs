@@ -1,3 +1,5 @@
+res://Scenes/UI/CenterMenu/CraftingMenu
+res://Scripts/UI/CenterMenu/CraftingMenu
 res://Resoures/Tools
 res://Resoures/Harvestables/Pickables
 res://Scenes/Components
@@ -18,5 +20,3 @@ res://Assets/UI Sprites/Mouse sprites
 res://Resoures/UI/GameMenu/
 res://Scripts/ResourceScripts/
 res://Scripts/UI/InventoryUI
-res://Scenes/UI/GameUI/Inventory
-res://
