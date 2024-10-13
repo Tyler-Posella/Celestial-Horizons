@@ -31,5 +31,6 @@ alignment_vertical = 0
 layout_mode = 2
 stretch_mode = 5
 
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
 [connection signal="mouse_entered" from="MarginContainer/AspectRatioContainer/TextureRect" to="." method="_on_texture_rect_mouse_entered"]
 [connection signal="mouse_exited" from="MarginContainer/AspectRatioContainer/TextureRect" to="." method="_on_texture_rect_mouse_exited"]

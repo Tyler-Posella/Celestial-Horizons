@@ -12,8 +12,8 @@ var items = {
 		"1": {
 			"item_name": "Axe",
 			"ingredients": [
-				{ "item_name": "Small Stone", "count": 3 },
-				{ "item_name": "Stick", "count": 2 }
+				{ "item_name": "Small Stone", "count": 3, "resource_path" : "res://Resoures/Items/Rocks/SmallStone.tres"},
+				{ "item_name": "Stick", "count": 2, "resource_path": "res://Resoures/Craftables/Stick.tres"}
 			],
 			"craftable": 1,
 			"crafting_location": 0,
@@ -23,8 +23,8 @@ var items = {
 			"item_name": "Hoe",
 			"item_type": "Tool",
 			"ingredients": [
-				{ "item_name": "Small Stone", "count": 2 },
-				{ "item_name": "Stick", "count": 2 }
+				{ "item_name": "Small Stone", "count": 2, "resource_path" : "res://Resoures/Items/Rocks/SmallStone.tres"},
+				{ "item_name": "Stick", "count": 2, "resource_path": "res://Resoures/Craftables/Stick.tres"}
 			],
 			"craftable": 1,
 			"crafting_location": 0,
@@ -72,6 +72,17 @@ var items = {
 			"name": "Stone",
 			"resource_path": "res://Resoures/Items/Rocks/Stone.tres"
 		},
+	},
+	"ingredients": {
+		"300": {
+			"item_name": "Stick",
+			"ingredients": [
+				{ "item_name": "Twig", "count": 2 , "resource_path" : "res://Resoures/Items/Trees/Twig.tres"},
+			],
+			"craftable": 1,
+			"crafting_location": 0,
+			"resource_path": "res://Resoures/Craftables/Stick.tres"
+		}
 	}
 }
 
@@ -91,7 +102,33 @@ func get_all_craftable_items():
 				craftable_items.append(item)
 	
 	return craftable_items
-
+	
+	
+func get_craftable_recipie(item_id : int):
+	# Loop through each category (tools, fruit, etc.)
+	for category_name in items.keys():
+		var category = items[category_name]
+		
+		# Check if the item ID exists in this category
+		if category.has(str(item_id)):
+			var item = category[str(item_id)]
+			
+			# Check if the item is craftable and has ingredients
+			if item.has("craftable") and item["craftable"] == 1:
+				if item.has("ingredients"):
+					return item["ingredients"]
+				else:
+					print("Item", item["item_name"], "has no ingredients.")
+					return []
+			else:
+				print("Item with ID", item_id, "is not craftable.")
+				return []
+	
+	# If the item is not found, return an empty array
+	print("Item with ID", item_id, "not found.")
+	return []
+	
+	
 func get_item_data(item_id : int):
 	# Loop through the subcategories (tools, fruit, etc.)
 	for category in items.values():

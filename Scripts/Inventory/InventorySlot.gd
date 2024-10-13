@@ -41,6 +41,8 @@ func get_item_id(): # Returns the item id contained in the slot
 
 func set_count(new_count : int): # Sets the count of the slot using the int parameter
 	count = new_count
+	if(count == 0):
+		clear()
 	slot_updated.emit()
 	
 
