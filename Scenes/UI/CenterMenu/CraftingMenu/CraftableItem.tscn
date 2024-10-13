@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkmuwt2gobuv1"]
+
+[ext_resource type="Script" path="res://Scripts/UI/CenterMenu/CraftingMenu/CraftableItem.gd" id="1_keay2"]
+
+[node name="CraftableItem" type="Control"]
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+script = ExtResource("1_keay2")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 32.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="MarginContainer"]
+layout_mode = 2
+stretch_mode = 0
+alignment_horizontal = 0
+alignment_vertical = 0
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/AspectRatioContainer"]
+layout_mode = 2
+stretch_mode = 5
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="mouse_entered" from="MarginContainer/AspectRatioContainer/TextureRect" to="." method="_on_texture_rect_mouse_entered"]
+[connection signal="mouse_exited" from="MarginContainer/AspectRatioContainer/TextureRect" to="." method="_on_texture_rect_mouse_exited"]

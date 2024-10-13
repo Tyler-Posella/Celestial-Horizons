@@ -14,9 +14,31 @@ func get_current_save():
 	
 	
 func save_game():
+	# Define the paths for "LocalData" and "Saves" directories
+	var local_data_path = "LocalData"
+	var saves_path = local_data_path + "/Saves"
+
+	# Check if "LocalData" directory exists, create if it doesn't
+	var dir = DirAccess.open("res://")
+	if not dir.dir_exists(local_data_path):
+		if dir.make_dir(local_data_path) == OK:
+			print("Created 'LocalData' directory.")
+		else:
+			print("Failed to create 'LocalData' directory.")
+	
+	# Check if "Saves" directory exists, create if it doesn't
+	dir = DirAccess.open("res://LocalData")
+	if not dir.dir_exists(saves_path):
+		if dir.make_dir(saves_path) == OK:
+			print("Created 'Saves' directory.")
+		else:
+			print("Failed to create 'Saves' directory.")
+	else:
+		print("'Saves' directory already exists.")
+		
 	if(current_save == null):
 		# Open save directory to find where to save
-		var dir = DirAccess.open("res://LocalData/Saves/")
+		dir = DirAccess.open("res://LocalData/Saves/")
 		var save_index = 1
 		var save_name = "Save" + str(save_index)
 

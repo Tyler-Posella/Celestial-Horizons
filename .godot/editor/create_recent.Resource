@@ -1,5 +1,5 @@
-PickableRes
 ItemRes
+PickableRes
 GrowableTreeRes
 TreeRes
 Resource

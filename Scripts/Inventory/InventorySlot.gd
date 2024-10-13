@@ -41,6 +41,8 @@ func get_item_id(): # Returns the item id contained in the slot
 
 func set_count(new_count : int): # Sets the count of the slot using the int parameter
 	count = new_count
+	if(count == 0):
+		clear()
 	slot_updated.emit()
 	
 
@@ -74,8 +76,9 @@ func clear(): # Clears the slot, setting its count = 0, item = null
   
 func save():
 	if(item != null):
-		item_id = ResourceMaps.get_item_id(item.get_item_name())
-	print(item_id)
+		item_id = ResourceMaps.get_item_id_by_name(item.get_item_name())
+	else: item_id = 0
+	
 	var save_dict = {
 		"scene" : get_scene_file_path(),
 		"properties" : {

@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://df6q1yneixgrb"]
+
+[ext_resource type="Script" path="res://Scripts/UI/CenterMenu/CraftingMenu/CraftingItemIngredient.gd" id="2_421ay"]
+
+[node name="CraftingItemIngredient" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 16.0
+offset_bottom = 16.0
+size_flags_horizontal = 3
+mouse_filter = 2
+script = ExtResource("2_421ay")
+
+[node name="Control" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 14.0
