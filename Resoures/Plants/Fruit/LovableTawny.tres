@@ -10,7 +10,7 @@ region = Rect2(16, 0, 16, 16)
 [resource]
 script = ExtResource("1_pxtu7")
 noureshment = 0
-name = "Orange"
+name = "Lovable Tawny"
 texture = SubResource("AtlasTexture_57tck")
 description = "A tangy and juicy fruit, packed with vitamin C. Refreshing and boosts health."
 sell_price = 0

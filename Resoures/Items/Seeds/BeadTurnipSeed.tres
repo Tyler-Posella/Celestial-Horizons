@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SeedPackRes" load_steps=5 format=3 uid="uid://cqx2oqvul5iyh"]
+
+[ext_resource type="Resource" uid="uid://bryri0u7cu8yy" path="res://Resoures/Plants/Crops/BeadTurnipCrop.tres" id="1_w5lt4"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/SeedPackRes.gd" id="2_6uqkt"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="3_f4joe"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bxwwx"]
+atlas = ExtResource("3_f4joe")
+region = Rect2(0, 192, 16, 16)
+
+[resource]
+script = ExtResource("2_6uqkt")
+crop_resource = ExtResource("1_w5lt4")
+name = "Bead Turnip Seeds"
+texture = SubResource("AtlasTexture_bxwwx")
+description = "None"
+sell_price = 0

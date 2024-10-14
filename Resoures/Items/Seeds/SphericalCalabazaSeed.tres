@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SeedPackRes" load_steps=5 format=3 uid="uid://df64n6do1vrwc"]
+
+[ext_resource type="Resource" uid="uid://cf1i07go7q2g4" path="res://Resoures/Plants/Crops/SphericalCalabazaCrop.tres" id="1_njs0r"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/SeedPackRes.gd" id="2_gngxo"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="3_uyb2e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sseij"]
+atlas = ExtResource("3_uyb2e")
+region = Rect2(0, 144, 16, 16)
+
+[resource]
+script = ExtResource("2_gngxo")
+crop_resource = ExtResource("1_njs0r")
+name = "Spherical Calabaza Seeds"
+texture = SubResource("AtlasTexture_sseij")
+description = "None"
+sell_price = 0

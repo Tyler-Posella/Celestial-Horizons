@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SeedPackRes" load_steps=5 format=3 uid="uid://coykjjgfagqmi"]
+
+[ext_resource type="Resource" uid="uid://b2t7ukhkwio5w" path="res://Resoures/Plants/Crops/ChalkBroccoliCrop.tres" id="1_u3t0r"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/SeedPackRes.gd" id="2_76nje"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="3_36ft2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ch8q"]
+atlas = ExtResource("3_36ft2")
+region = Rect2(0, 48, 16, 16)
+
+[resource]
+script = ExtResource("2_76nje")
+crop_resource = ExtResource("1_u3t0r")
+name = "Chalk Broccoli Seeds"
+texture = SubResource("AtlasTexture_3ch8q")
+description = "None"
+sell_price = 0

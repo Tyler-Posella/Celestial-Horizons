@@ -10,7 +10,7 @@ region = Rect2(32, 0, 16, 16)
 [resource]
 script = ExtResource("3_y5l5c")
 noureshment = 0
-name = "Pear"
+name = "Prime Drupe"
 texture = SubResource("AtlasTexture_jb3gn")
 description = "Mildly sweet with a soft crunch. Great for a light boost on your adventures."
 sell_price = 0

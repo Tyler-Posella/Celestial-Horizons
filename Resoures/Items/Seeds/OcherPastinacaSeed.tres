@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SeedPackRes" load_steps=5 format=3 uid="uid://d46nu7xrysg2"]
+
+[ext_resource type="Resource" uid="uid://dkpy21433g1ip" path="res://Resoures/Plants/Crops/OcherPastinacaCrop.tres" id="1_rcx56"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/SeedPackRes.gd" id="2_ce0pq"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="3_4cuof"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l8i8p"]
+atlas = ExtResource("3_4cuof")
+region = Rect2(0, 32, 16, 16)
+
+[resource]
+script = ExtResource("2_ce0pq")
+crop_resource = ExtResource("1_rcx56")
+name = "Ocher Pastinaca Seeds"
+texture = SubResource("AtlasTexture_l8i8p")
+description = "None"
+sell_price = 0

@@ -9,8 +9,8 @@
 [ext_resource type="Resource" uid="uid://di8kno6cp4ovj" path="res://Resoures/Trees/OrangeTree.tres" id="6_gp5es"]
 [ext_resource type="Resource" uid="uid://xenbyuir35vw" path="res://Resoures/Trees/PeachTree.tres" id="7_qxybd"]
 [ext_resource type="Resource" uid="uid://clwlgyka6o3sx" path="res://Resoures/Trees/PearTree.tres" id="8_qqsbr"]
-[ext_resource type="Resource" uid="uid://cum57os15y7i0" path="res://Resoures/Tools/Axe.tres" id="9_kx8yr"]
-[ext_resource type="Resource" uid="uid://rq0qxv1gksng" path="res://Resoures/Tools/Hoe.tres" id="10_2knyr"]
+[ext_resource type="Resource" uid="uid://cum57os15y7i0" path="res://Resoures/Items/Tools/Axe.tres" id="9_kx8yr"]
+[ext_resource type="Resource" uid="uid://rq0qxv1gksng" path="res://Resoures/Items/Tools/Hoe.tres" id="10_2knyr"]
 [ext_resource type="PackedScene" uid="uid://c8qtlqw4bwuph" path="res://Scenes/Objects/PickableObject.tscn" id="11_a2q22"]
 [ext_resource type="Resource" uid="uid://bkqm2vjhhauws" path="res://Resoures/Harvestables/Pickables/SmallStone1.tres" id="12_bl15b"]
 

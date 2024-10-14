@@ -10,7 +10,7 @@ region = Rect2(48, 0, 16, 16)
 [resource]
 script = ExtResource("1_44q70")
 noureshment = 0
-name = "Peach"
+name = "Suede Paio"
 texture = SubResource("AtlasTexture_pwe4q")
 description = "Soft, sweet, and fragrant. A favorite of many for its comforting taste."
 sell_price = 0

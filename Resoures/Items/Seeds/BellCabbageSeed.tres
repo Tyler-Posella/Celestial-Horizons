@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SeedPackRes" load_steps=5 format=3 uid="uid://druktkrakvam6"]
+
+[ext_resource type="Resource" uid="uid://dmswxqxiwn721" path="res://Resoures/Plants/Crops/BellCabbageCrop.tres" id="1_fslxm"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/SeedPackRes.gd" id="2_oreat"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="3_8muor"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p68sg"]
+atlas = ExtResource("3_8muor")
+region = Rect2(0, 96, 16, 16)
+
+[resource]
+script = ExtResource("2_oreat")
+crop_resource = ExtResource("1_fslxm")
+name = "Bell Cabbage Seeds"
+texture = SubResource("AtlasTexture_p68sg")
+description = "None"
+sell_price = 0
