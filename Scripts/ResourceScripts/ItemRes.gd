@@ -3,7 +3,7 @@ extends Resource
 
 # Exports
 @export var name : String = "None"
-@export var texture : Texture = null
+@export var texture : AtlasTexture = null
 @export var description : String = "None"
 @export var sell_price : int
 

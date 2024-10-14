@@ -1,3 +1,5 @@
+PlantedCropRes
+SeedPackRes
 ItemRes
 PickableRes
 GrowableTreeRes

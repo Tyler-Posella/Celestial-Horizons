@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PlantedCropRes" load_steps=2 format=3 uid="uid://b2t7ukhkwio5w"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/PlantedCropRes.gd" id="1_8lkq8"]
+
+[resource]
+script = ExtResource("1_8lkq8")
+stage_count = 3
+texture_row_number = 3
+growtime = 0
+grow_seasons = [0, 0, 0, 0]

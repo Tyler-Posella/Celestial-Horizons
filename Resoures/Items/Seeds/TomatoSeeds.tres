@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SeedPackRes" load_steps=5 format=3 uid="uid://bg5kdm4buqypv"]
+
+[ext_resource type="Resource" uid="uid://b1ffetordcd5m" path="res://Resoures/Crops/TomatoCrop.tres" id="1_oti8n"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/SeedPackRes.gd" id="1_whvuf"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_381do"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8i42u"]
+atlas = ExtResource("2_381do")
+region = Rect2(0, 64, 16, 16)
+
+[resource]
+script = ExtResource("1_whvuf")
+crop_resource = ExtResource("1_oti8n")
+name = "Tomato Seeds"
+texture = SubResource("AtlasTexture_8i42u")
+description = "None"
+sell_price = 0

@@ -1,3 +1,5 @@
+res://Resoures/Crops/
+res://Resoures/Items/Seeds/
 res://Resoures/Craftables
 res://Scripts/UI/CenterMenu/CraftingMenu
 res://Scenes/UI/CenterMenu/CraftingMenu
@@ -18,5 +20,3 @@ res://Scenes/UI/Menus/MainMenu
 res://Scripts/Levels
 res://Assets/Fonts
 res://Assets/UI Sprites/Mouse sprites
-res://Resoures/UI/GameMenu/
-res://Scripts/ResourceScripts/

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SeedPackRes" load_steps=5 format=3 uid="uid://druktkrakvam6"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/SeedPackRes.gd" id="1_vf6f2"]
+[ext_resource type="Resource" uid="uid://dmswxqxiwn721" path="res://Resoures/Crops/TBDCrop1.tres" id="1_y21hs"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_k4jqa"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p68sg"]
+atlas = ExtResource("2_k4jqa")
+region = Rect2(0, 96, 16, 16)
+
+[resource]
+script = ExtResource("1_vf6f2")
+crop_resource = ExtResource("1_y21hs")
+name = "None"
+texture = SubResource("AtlasTexture_p68sg")
+description = "None"
+sell_price = 0

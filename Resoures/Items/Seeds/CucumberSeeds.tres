@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SeedPackRes" load_steps=5 format=3 uid="uid://bjuloyx7kpqnx"]
+
+[ext_resource type="Resource" uid="uid://byaenv7cn43yn" path="res://Resoures/Crops/CucumberCrop.tres" id="1_cvppe"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/SeedPackRes.gd" id="1_g2uhf"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_5j0a2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_euaan"]
+atlas = ExtResource("2_5j0a2")
+region = Rect2(0, 224, 16, 16)
+
+[resource]
+script = ExtResource("1_g2uhf")
+crop_resource = ExtResource("1_cvppe")
+name = "Cucumber Seeds"
+texture = SubResource("AtlasTexture_euaan")
+description = "None"
+sell_price = 0
