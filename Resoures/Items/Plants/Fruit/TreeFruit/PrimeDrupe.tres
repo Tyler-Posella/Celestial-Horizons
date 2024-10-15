@@ -1,16 +1,16 @@
 [gd_resource type="Resource" script_class="FruitRes" load_steps=4 format=3 uid="uid://btrrqpk15yphg"]
 
 [ext_resource type="Script" path="res://Scripts/ResourceScripts/FruitRes.gd" id="1_5hiem"]
-[ext_resource type="Texture2D" uid="uid://cotu7jtdtnnv" path="res://Assets/Items/Fruits.png" id="2_6btsr"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_g11qv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jb3gn"]
-atlas = ExtResource("2_6btsr")
-region = Rect2(48, 0, 16, 16)
+atlas = ExtResource("2_g11qv")
+region = Rect2(32, 144, 16, 16)
 
 [resource]
 script = ExtResource("1_5hiem")
 noureshment = 0
+is_consumable = true
 name = "Prime Drupe"
 texture = SubResource("AtlasTexture_jb3gn")
 description = "Mildly sweet with a soft crunch. Great for a light boost on your adventures."
-sell_price = 0

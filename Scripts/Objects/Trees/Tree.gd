@@ -5,7 +5,7 @@ extends Node2D
 const STUMP_SCENE = preload("res://Scenes/Objects/Trees/TreeStump.tscn")
 const COLLECTABLE_SCENE = preload("res://Scenes/Objects/Collectable.tscn")
 const LOG_RESOURCE = preload("res://Resoures/Items/Trees/Log.tres")
-const BRANCH_RESOURCE = preload("res://Resoures/Items/Trees//Branch.tres")
+const BRANCH_RESOURCE = preload("res://Resoures/Items/Trees/Branch.tres")
 const TWIG_RESOURCE = preload("res://Resoures/Items/Trees/Twig.tres")
 
 # Export Variables

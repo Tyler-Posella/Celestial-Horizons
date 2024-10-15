@@ -10,7 +10,7 @@ region = Rect2(32, 192, 16, 16)
 [resource]
 script = ExtResource("1_jtc2h")
 noureshment = 0
+is_consumable = true
 name = "Starling Whortleberry"
 texture = SubResource("AtlasTexture_57vtv")
 description = "None"
-sell_price = 0

@@ -10,7 +10,7 @@ region = Rect2(32, 176, 16, 16)
 [resource]
 script = ExtResource("1_1anur")
 noureshment = 0
+is_consumable = true
 name = "Sappy Sultana"
 texture = SubResource("AtlasTexture_fkqdi")
 description = "None"
-sell_price = 0

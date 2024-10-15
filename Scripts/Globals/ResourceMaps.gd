@@ -35,19 +35,19 @@ var items = {
 	"fruit": {
 		"100": {
 			"name": "Passionate Pome",
-			"path": "res://Resoures/Plants/Fruit/PassionatePome.tres"
+			"path": "res://Resoures/Items/Plants/Fruit/TreeFruit/PassionatePome.tres"
 		},
 		"101": {
 			"name": "Lovable Tawny",
-			"resource_path": "res://Resoures/Plants/Fruit/LovableTawny.tres"
+			"resource_path": "res://Resoures/Items/Plants/Fruit/TreeFruit/LovableTawny.tres"
 		},
 		"102": {
 			"name": "Suede Paio",
-			"resource_path": "res://Resoures/Plants/Fruit/SuedePaio.tres"
+			"resource_path": "res://Resoures/Items/Plants/Fruit/TreeFruit/SuedePaio.tres"
 		},
 		"103": {
 			"name": "Prime Drupe",
-			"resource_path": "res://Resoures/Plants/Fruit/PrimeDrupe.tres"
+			"resource_path": "res://Resoures/Items/Plants/Fruit/TreeFruit/PrimeDrupe.tres"
 		},
 	},
 	# Harvestables 200 - 299
@@ -81,7 +81,7 @@ var items = {
 			],
 			"craftable": 1,
 			"crafting_location": 0,
-			"resource_path": "res://Resoures/Craftables/Stick.tres"
+			"resource_path": "res://Resoures/Items/Craftables/Stick.tres"
 		}
 	}
 }
