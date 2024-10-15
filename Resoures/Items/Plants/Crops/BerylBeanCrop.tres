@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="PlantedCropRes" load_steps=2 format=3 uid="uid://byaenv7cn43yn"]
+[gd_resource type="Resource" script_class="PlantedCropRes" load_steps=3 format=3 uid="uid://byaenv7cn43yn"]
 
 [ext_resource type="Script" path="res://Scripts/ResourceScripts/PlantedCropRes.gd" id="1_le2an"]
+[ext_resource type="Resource" uid="uid://yc2u4vbdll2p" path="res://Resoures/Items/Plants/Vegetables/BerylBean.tres" id="1_vnpmv"]
 
 [resource]
 script = ExtResource("1_le2an")
@@ -8,3 +9,4 @@ stage_count = 3
 texture_row_number = 13
 growtime = 0
 grow_seasons = [0, 0, 0, 0]
+harvest_item = ExtResource("1_vnpmv")

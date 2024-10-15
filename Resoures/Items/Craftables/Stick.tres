@@ -1,15 +1,14 @@
 [gd_resource type="Resource" script_class="ItemRes" load_steps=4 format=3 uid="uid://dbiwhnwd3dfst"]
 
 [ext_resource type="Script" path="res://Scripts/ResourceScripts/ItemRes.gd" id="1_vb7th"]
-[ext_resource type="Texture2D" uid="uid://d0vkukchi2y8g" path="res://Assets/Items/Tools-Materials.png" id="2_d8xr4"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_610ak"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fdmta"]
-atlas = ExtResource("2_d8xr4")
-region = Rect2(48, 16, 16, 16)
+atlas = ExtResource("2_610ak")
+region = Rect2(48, 48, 16, 16)
 
 [resource]
 script = ExtResource("1_vb7th")
 name = "Stick"
 texture = SubResource("AtlasTexture_fdmta")
 description = "A stick for crafting."
-sell_price = 0

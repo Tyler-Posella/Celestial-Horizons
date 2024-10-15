@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="PlantedCropRes" load_steps=2 format=3 uid="uid://bynn0idcmjei3"]
+[gd_resource type="Resource" script_class="PlantedCropRes" load_steps=3 format=3 uid="uid://bynn0idcmjei3"]
 
 [ext_resource type="Script" path="res://Scripts/ResourceScripts/PlantedCropRes.gd" id="1_lerdq"]
+[ext_resource type="Resource" uid="uid://83wk40pmcx4h" path="res://Resoures/Items/Plants/Vegetables/BlondMealie.tres" id="1_osfso"]
 
 [resource]
 script = ExtResource("1_lerdq")
@@ -8,3 +9,4 @@ stage_count = 4
 texture_row_number = 0
 growtime = 0
 grow_seasons = [0, 0, 0, 0]
+harvest_item = ExtResource("1_osfso")

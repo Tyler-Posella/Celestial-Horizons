@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="VegetableRes" load_steps=4 format=3 uid="uid://dvsvvbgoxtr2m"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/VegetableRes.gd" id="1_mhuwp"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_n2vvv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ybrfp"]
+atlas = ExtResource("2_n2vvv")
+region = Rect2(16, 80, 16, 16)
+
+[resource]
+script = ExtResource("1_mhuwp")
+is_consumable = true
+name = "Violaceous Eggplant"
+texture = SubResource("AtlasTexture_ybrfp")
+description = "None"

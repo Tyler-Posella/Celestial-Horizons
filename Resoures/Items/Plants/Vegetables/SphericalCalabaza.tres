@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="VegetableRes" load_steps=4 format=3 uid="uid://b8c8ltasce36b"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/VegetableRes.gd" id="1_dk5fc"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_mj2te"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lsj8i"]
+atlas = ExtResource("2_mj2te")
+region = Rect2(16, 144, 16, 16)
+
+[resource]
+script = ExtResource("1_dk5fc")
+is_consumable = true
+name = "Spherical Calabaza"
+texture = SubResource("AtlasTexture_lsj8i")
+description = "None"

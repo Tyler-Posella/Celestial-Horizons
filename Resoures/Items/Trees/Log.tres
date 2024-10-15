@@ -12,4 +12,3 @@ script = ExtResource("1_h6wpe")
 name = "Log"
 texture = SubResource("AtlasTexture_xfwxl")
 description = "A heavy chunk of wood, perfect for crafting larger items or fueling a big fire."
-sell_price = 0

@@ -1,15 +1,15 @@
 [gd_resource type="Resource" script_class="UsableRes" load_steps=4 format=3 uid="uid://del5xkhbu3ywb"]
 
 [ext_resource type="Script" path="res://Scripts/ResourceScripts/UsableRes.gd" id="1_q47eh"]
-[ext_resource type="Texture2D" uid="uid://d0vkukchi2y8g" path="res://Assets/Items/Tools-Materials.png" id="2_45pwl"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_15cnm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y7l74"]
-atlas = ExtResource("2_45pwl")
-region = Rect2(0, 0, 16, 16)
+atlas = ExtResource("2_15cnm")
+region = Rect2(32, 16, 16, 16)
 
 [resource]
 script = ExtResource("1_q47eh")
+usable_layer = 0
 name = "Watering Can"
 texture = SubResource("AtlasTexture_y7l74")
 description = "A simple tool used to water your crops. Can be refilled from any water source."
-sell_price = 0

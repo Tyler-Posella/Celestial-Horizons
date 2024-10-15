@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="VegetableRes" load_steps=4 format=3 uid="uid://bsi7jfqie2ik1"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/VegetableRes.gd" id="1_x0lxj"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_5epqu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pvy4v"]
+atlas = ExtResource("2_5epqu")
+region = Rect2(16, 128, 16, 16)
+
+[resource]
+script = ExtResource("1_x0lxj")
+is_consumable = true
+name = "Golden Atta"
+texture = SubResource("AtlasTexture_pvy4v")
+description = "None"

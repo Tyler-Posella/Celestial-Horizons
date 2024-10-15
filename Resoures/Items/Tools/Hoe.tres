@@ -1,11 +1,11 @@
 [gd_resource type="Resource" script_class="UsableRes" load_steps=4 format=3 uid="uid://rq0qxv1gksng"]
 
 [ext_resource type="Script" path="res://Scripts/ResourceScripts/UsableRes.gd" id="1_j2b7i"]
-[ext_resource type="Texture2D" uid="uid://d0vkukchi2y8g" path="res://Assets/Items/Tools-Materials.png" id="2_wt41m"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_f6agb"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k6eiy"]
-atlas = ExtResource("2_wt41m")
-region = Rect2(32, 0, 16, 16)
+atlas = ExtResource("2_f6agb")
+region = Rect2(48, 0, 16, 16)
 
 [resource]
 script = ExtResource("1_j2b7i")
@@ -13,4 +13,3 @@ usable_layer = 9
 name = "Hoe"
 texture = SubResource("AtlasTexture_k6eiy")
 description = "A trusty tool for tilling soil. Creates plots for planting seeds."
-sell_price = 0

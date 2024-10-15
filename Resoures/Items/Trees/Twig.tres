@@ -12,4 +12,3 @@ script = ExtResource("1_mxoyc")
 name = "Twig"
 texture = SubResource("AtlasTexture_opgxa")
 description = "A small, brittle piece of wood. Great for starting fires or crafting basic items."
-sell_price = 0

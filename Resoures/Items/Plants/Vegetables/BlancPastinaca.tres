@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="VegetableRes" load_steps=4 format=3 uid="uid://dmk6p4hwnoane"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/VegetableRes.gd" id="1_7vpb7"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_ku3cu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2gf8s"]
+atlas = ExtResource("2_ku3cu")
+region = Rect2(16, 160, 16, 16)
+
+[resource]
+script = ExtResource("1_7vpb7")
+is_consumable = true
+name = "Blanc Pastinaca"
+texture = SubResource("AtlasTexture_2gf8s")
+description = "None"

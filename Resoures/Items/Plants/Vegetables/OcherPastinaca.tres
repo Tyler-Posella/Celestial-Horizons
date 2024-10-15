@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="VegetableRes" load_steps=4 format=3 uid="uid://k87pv2gvv6e"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/VegetableRes.gd" id="1_astlf"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_ir01h"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m06uu"]
+atlas = ExtResource("2_ir01h")
+region = Rect2(16, 32, 16, 16)
+
+[resource]
+script = ExtResource("1_astlf")
+is_consumable = true
+name = "Ocher Pastinaca"
+texture = SubResource("AtlasTexture_m06uu")
+description = "None"

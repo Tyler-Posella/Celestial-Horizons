@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="VegetableRes" load_steps=4 format=3 uid="uid://83wk40pmcx4h"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/VegetableRes.gd" id="1_r2q87"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_awe7e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yqhdb"]
+atlas = ExtResource("2_awe7e")
+region = Rect2(16, 16, 16, 16)
+
+[resource]
+script = ExtResource("1_r2q87")
+is_consumable = true
+name = "Blond Mealie"
+texture = SubResource("AtlasTexture_yqhdb")
+description = "None"

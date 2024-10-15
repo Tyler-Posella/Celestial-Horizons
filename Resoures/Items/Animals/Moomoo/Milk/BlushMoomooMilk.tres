@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoomooMilkRes" load_steps=4 format=3 uid="uid://ddyifsiqbqus0"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/MoomooMilkRes.gd" id="1_ls4ml"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_iuxm3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gjklu"]
+atlas = ExtResource("2_iuxm3")
+region = Rect2(80, 128, 16, 16)
+
+[resource]
+script = ExtResource("1_ls4ml")
+is_consumable = true
+name = "Blush Moomoo Milk"
+texture = SubResource("AtlasTexture_gjklu")
+description = "None"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemRes" load_steps=4 format=3 uid="uid://bcvcnqkfr5uhx"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/ItemRes.gd" id="1_pgt4c"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_mnlai"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n0tp1"]
+atlas = ExtResource("2_mnlai")
+region = Rect2(48, 16, 16, 16)
+
+[resource]
+script = ExtResource("1_pgt4c")
+name = "Tuff"
+texture = SubResource("AtlasTexture_n0tp1")
+description = "None"
