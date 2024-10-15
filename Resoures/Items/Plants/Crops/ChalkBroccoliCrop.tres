@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="PlantedCropRes" load_steps=3 format=3 uid="uid://b2t7ukhkwio5w"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/PlantedCropRes.gd" id="1_8lkq8"]
+[ext_resource type="Resource" uid="uid://dlag5tmaibjsf" path="res://Resoures/Items/Plants/Vegetables/ChalkBroccoli.tres" id="1_v77yv"]
+
+[resource]
+script = ExtResource("1_8lkq8")
+stage_count = 3
+texture_row_number = 3
+growtime = 0
+grow_seasons = [0, 0, 0, 0]
+harvest_item = ExtResource("1_v77yv")

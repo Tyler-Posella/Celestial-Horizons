@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="PlantedCropRes" load_steps=3 format=3 uid="uid://dmswxqxiwn721"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/PlantedCropRes.gd" id="1_d8rrw"]
+[ext_resource type="Resource" uid="uid://pmiew5p18uoa" path="res://Resoures/Items/Plants/Vegetables/BellCabbage.tres" id="1_lh23m"]
+
+[resource]
+script = ExtResource("1_d8rrw")
+stage_count = 3
+texture_row_number = 5
+growtime = 0
+grow_seasons = [0, 0, 0, 0]
+harvest_item = ExtResource("1_lh23m")

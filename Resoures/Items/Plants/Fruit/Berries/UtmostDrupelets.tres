@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="FruitRes" load_steps=4 format=3 uid="uid://dlstnwrvkfk44"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/FruitRes.gd" id="1_qmjur"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_fdrif"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rg1ni"]
+atlas = ExtResource("2_fdrif")
+region = Rect2(32, 160, 16, 16)
+
+[resource]
+script = ExtResource("1_qmjur")
+noureshment = 0
+name = "Utmost Drupelets"
+texture = SubResource("AtlasTexture_rg1ni")
+description = "None"
+sell_price = 0

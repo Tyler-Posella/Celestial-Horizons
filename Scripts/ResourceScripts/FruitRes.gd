@@ -1,5 +1,5 @@
 class_name FruitRes
-extends ItemRes
+extends ConsumableRes
 
 # Exports
 @export var noureshment : int

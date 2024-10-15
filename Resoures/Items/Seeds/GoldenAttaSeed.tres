@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SeedPackRes" load_steps=5 format=3 uid="uid://w0rc5bh1vggb"]
+
+[ext_resource type="Resource" uid="uid://dmylmtp7uesek" path="res://Resoures/Items/Plants/Crops/GoldenAttaCrop.tres" id="1_ds2kh"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/SeedPackRes.gd" id="2_vcc65"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="3_2kg23"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7xiw"]
+atlas = ExtResource("3_2kg23")
+region = Rect2(0, 128, 16, 16)
+
+[resource]
+script = ExtResource("2_vcc65")
+crop_resource = ExtResource("1_ds2kh")
+name = "Golden Atta Seeds"
+texture = SubResource("AtlasTexture_j7xiw")
+description = "None"
+sell_price = 0

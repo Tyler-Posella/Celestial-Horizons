@@ -13,41 +13,41 @@ var items = {
 			"item_name": "Axe",
 			"ingredients": [
 				{ "item_name": "Small Stone", "count": 3, "resource_path" : "res://Resoures/Items/Rocks/SmallStone.tres"},
-				{ "item_name": "Stick", "count": 2, "resource_path": "res://Resoures/Craftables/Stick.tres"}
+				{ "item_name": "Stick", "count": 2, "resource_path": "res://Resoures/Items/Craftables/Stick.tres"}
 			],
 			"craftable": 1,
 			"crafting_location": 0,
-			"resource_path": "res://Resoures/Tools/Axe.tres"
+			"resource_path": "res://Resoures/Items/Tools/Axe.tres"
 		},
 		"2": {
 			"item_name": "Hoe",
 			"item_type": "Tool",
 			"ingredients": [
 				{ "item_name": "Small Stone", "count": 2, "resource_path" : "res://Resoures/Items/Rocks/SmallStone.tres"},
-				{ "item_name": "Stick", "count": 2, "resource_path": "res://Resoures/Craftables/Stick.tres"}
+				{ "item_name": "Stick", "count": 2, "resource_path": "res://Resoures/Items/Craftables/Stick.tres"}
 			],
 			"craftable": 1,
 			"crafting_location": 0,
-			"resource_path": "res://Resoures/Tools/Hoe.tres"
+			"resource_path": "res://Resoures/Items/Tools/Hoe.tres"
 		 }
 	},
 	# Fruit 100 - 199
 	"fruit": {
 		"100": {
-			"name": "Apple",
-			"path": "res://Resoures/Fruit/Apple.tres"
+			"name": "Passionate Pome",
+			"path": "res://Resoures/Items/Plants/Fruit/TreeFruit/PassionatePome.tres"
 		},
 		"101": {
-			"name": "Orange",
-			"resource_path": "res://Resoures/Fruit/Orange.tres"
+			"name": "Lovable Tawny",
+			"resource_path": "res://Resoures/Items/Plants/Fruit/TreeFruit/LovableTawny.tres"
 		},
 		"102": {
-			"name": "Peach",
-			"resource_path": "res://Resoures/Fruit/Peach.tres"
+			"name": "Suede Paio",
+			"resource_path": "res://Resoures/Items/Plants/Fruit/TreeFruit/SuedePaio.tres"
 		},
 		"103": {
-			"name": "Pear",
-			"resource_path": "res://Resoures/Fruit/Pear.tres"
+			"name": "Prime Drupe",
+			"resource_path": "res://Resoures/Items/Plants/Fruit/TreeFruit/PrimeDrupe.tres"
 		},
 	},
 	# Harvestables 200 - 299
@@ -81,7 +81,7 @@ var items = {
 			],
 			"craftable": 1,
 			"crafting_location": 0,
-			"resource_path": "res://Resoures/Craftables/Stick.tres"
+			"resource_path": "res://Resoures/Items/Craftables/Stick.tres"
 		}
 	}
 }

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="PlantedCropRes" load_steps=3 format=3 uid="uid://bryri0u7cu8yy"]
+
+[ext_resource type="Resource" uid="uid://nsdx2c1apr61" path="res://Resoures/Items/Plants/Vegetables/BeadTurnip.tres" id="1_frf78"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/PlantedCropRes.gd" id="1_mar2p"]
+
+[resource]
+script = ExtResource("1_mar2p")
+stage_count = 3
+texture_row_number = 11
+growtime = 0
+grow_seasons = [0, 0, 0, 0]
+harvest_item = ExtResource("1_frf78")

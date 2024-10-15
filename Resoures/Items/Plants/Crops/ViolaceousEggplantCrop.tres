@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="PlantedCropRes" load_steps=3 format=3 uid="uid://bocw0w3efoffv"]
+
+[ext_resource type="Resource" uid="uid://dvsvvbgoxtr2m" path="res://Resoures/Items/Plants/Vegetables/ViolaceousEggplant.tres" id="1_j6ewa"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/PlantedCropRes.gd" id="1_s2nlk"]
+
+[resource]
+script = ExtResource("1_s2nlk")
+stage_count = 3
+texture_row_number = 4
+growtime = 0
+grow_seasons = [0, 0, 0, 0]
+harvest_item = ExtResource("1_j6ewa")

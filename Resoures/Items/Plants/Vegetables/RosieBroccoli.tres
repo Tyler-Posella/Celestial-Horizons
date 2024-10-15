@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="VegetableRes" load_steps=4 format=3 uid="uid://dw3if2fpqeclq"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/VegetableRes.gd" id="1_e0nhd"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_bbpn5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_15g68"]
+atlas = ExtResource("2_bbpn5")
+region = Rect2(16, 176, 16, 16)
+
+[resource]
+script = ExtResource("1_e0nhd")
+is_consumable = true
+name = "Rosie Broccoli"
+texture = SubResource("AtlasTexture_15g68")
+description = "None"

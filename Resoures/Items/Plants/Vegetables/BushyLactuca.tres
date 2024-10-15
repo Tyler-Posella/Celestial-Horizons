@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="VegetableRes" load_steps=4 format=3 uid="uid://bqyl1whyiqjj7"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/VegetableRes.gd" id="1_n1l24"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_6myt1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_neqq0"]
+atlas = ExtResource("2_6myt1")
+region = Rect2(16, 112, 16, 16)
+
+[resource]
+script = ExtResource("1_n1l24")
+is_consumable = true
+name = "Bushy Lactuca"
+texture = SubResource("AtlasTexture_neqq0")
+description = "None"

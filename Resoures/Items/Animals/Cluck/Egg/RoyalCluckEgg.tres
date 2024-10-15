@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="CluckEggRes" load_steps=4 format=3 uid="uid://by1gwn2cgqif0"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/CluckEggRes.gd" id="1_edg5i"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_gg5rj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l5nhv"]
+atlas = ExtResource("2_gg5rj")
+region = Rect2(112, 176, 16, 16)
+
+[resource]
+script = ExtResource("1_edg5i")
+is_consumable = true
+name = "Royal Cluck Egg"
+texture = SubResource("AtlasTexture_l5nhv")
+description = "None"

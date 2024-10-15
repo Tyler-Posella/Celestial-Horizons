@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="VegetableRes" load_steps=4 format=3 uid="uid://b8edju3caqp4c"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/VegetableRes.gd" id="1_mfsur"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_sgk70"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_magji"]
+atlas = ExtResource("2_sgk70")
+region = Rect2(16, 208, 16, 16)
+
+[resource]
+script = ExtResource("1_mfsur")
+is_consumable = true
+name = "Asteroid Pome"
+texture = SubResource("AtlasTexture_magji")
+description = "None"

@@ -1,6 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://bhmrogi0cr2f3"]
+[gd_scene load_steps=6 format=3 uid="uid://bhmrogi0cr2f3"]
 
 [ext_resource type="Script" path="res://Scripts/Objects/Collectable.gd" id="1_dvecc"]
+[ext_resource type="Texture2D" uid="uid://b1yl8t3tvgl44" path="res://Assets/Items/Item-Shadows.png" id="2_lc3gl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uu7fh"]
+atlas = ExtResource("2_lc3gl")
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hwlg2"]
 radius = 4.01386
@@ -19,6 +23,11 @@ script = ExtResource("1_dvecc")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 offset = Vector2(1, -4)
+
+[node name="ItemShadowSprite" type="Sprite2D" parent="."]
+position = Vector2(0, 2)
+scale = Vector2(0.5, 0.5)
+texture = SubResource("AtlasTexture_uu7fh")
 
 [node name="GravityTimer" type="Timer" parent="."]
 wait_time = 3.0

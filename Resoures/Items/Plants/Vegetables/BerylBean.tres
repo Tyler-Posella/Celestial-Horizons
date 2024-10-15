@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="VegetableRes" load_steps=4 format=3 uid="uid://yc2u4vbdll2p"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/VegetableRes.gd" id="1_idkih"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_s6uxy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_woma0"]
+atlas = ExtResource("2_s6uxy")
+region = Rect2(16, 224, 16, 16)
+
+[resource]
+script = ExtResource("1_idkih")
+is_consumable = true
+name = "Beryl Bean"
+texture = SubResource("AtlasTexture_woma0")
+description = "None"

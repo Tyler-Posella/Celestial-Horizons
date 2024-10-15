@@ -1,4 +1,10 @@
+VegetableRes
 ItemRes
+MoomooMilkRes
+CluckEggRes
+FruitRes
+PlantedCropRes
+SeedPackRes
 PickableRes
 GrowableTreeRes
 TreeRes

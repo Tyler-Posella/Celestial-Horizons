@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="FruitRes" load_steps=4 format=3 uid="uid://b50obduc44hn4"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/FruitRes.gd" id="1_mimtq"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_tyd4d"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pwe4q"]
+atlas = ExtResource("2_tyd4d")
+region = Rect2(32, 128, 16, 16)
+
+[resource]
+script = ExtResource("1_mimtq")
+noureshment = 0
+is_consumable = true
+name = "Suede Paio"
+texture = SubResource("AtlasTexture_pwe4q")
+description = "Soft, sweet, and fragrant. A favorite of many for its comforting taste."

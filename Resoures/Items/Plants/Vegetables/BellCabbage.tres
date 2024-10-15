@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="VegetableRes" load_steps=4 format=3 uid="uid://pmiew5p18uoa"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/VegetableRes.gd" id="1_tmd7f"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_qx648"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x5kfh"]
+atlas = ExtResource("2_qx648")
+region = Rect2(16, 96, 16, 16)
+
+[resource]
+script = ExtResource("1_tmd7f")
+is_consumable = true
+name = "Bell Cabbage"
+texture = SubResource("AtlasTexture_x5kfh")
+description = "None"

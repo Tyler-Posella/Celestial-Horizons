@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="VegetableRes" load_steps=4 format=3 uid="uid://dlag5tmaibjsf"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/VegetableRes.gd" id="1_fuv21"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_8ldkc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g86da"]
+atlas = ExtResource("2_8ldkc")
+region = Rect2(16, 48, 16, 16)
+
+[resource]
+script = ExtResource("1_fuv21")
+is_consumable = true
+name = "Chalk Broccoli"
+texture = SubResource("AtlasTexture_g86da")
+description = "None"

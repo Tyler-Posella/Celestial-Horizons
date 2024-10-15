@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoomooMilkRes" load_steps=4 format=3 uid="uid://b8a3f2g7eun7w"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/MoomooMilkRes.gd" id="1_0glxc"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_y5xne"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e7032"]
+atlas = ExtResource("2_y5xne")
+region = Rect2(112, 160, 16, 16)
+
+[resource]
+script = ExtResource("1_0glxc")
+is_consumable = true
+name = "Large Viridescent Moomoo Milk"
+texture = SubResource("AtlasTexture_e7032")
+description = "None"

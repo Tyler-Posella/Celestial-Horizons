@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoomooMilkRes" load_steps=4 format=3 uid="uid://csvba7a5thy73"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/MoomooMilkRes.gd" id="1_kmheb"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_433vr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kxfbs"]
+atlas = ExtResource("2_433vr")
+region = Rect2(80, 32, 16, 16)
+
+[resource]
+script = ExtResource("1_kmheb")
+is_consumable = true
+name = "Pearly Moomoo Milk"
+texture = SubResource("AtlasTexture_kxfbs")
+description = "None"

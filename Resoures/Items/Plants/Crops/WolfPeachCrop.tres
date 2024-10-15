@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="PlantedCropRes" load_steps=3 format=3 uid="uid://b1ffetordcd5m"]
+
+[ext_resource type="Resource" uid="uid://cgeoe0a4uv8gu" path="res://Resoures/Items/Plants/Vegetables/WolfPeach.tres" id="1_gskot"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/PlantedCropRes.gd" id="1_ks6nc"]
+
+[resource]
+script = ExtResource("1_ks6nc")
+stage_count = 3
+texture_row_number = 4
+growtime = 0
+grow_seasons = [0, 0, 0, 0]
+harvest_item = ExtResource("1_gskot")

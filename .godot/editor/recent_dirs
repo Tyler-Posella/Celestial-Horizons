@@ -1,7 +1,10 @@
-res://Resoures/Craftables
+res://Resoures/Items/Plants/Vegetables/
+res://Resoures/Items/Plants/
+res://Resoures/Items/Animals/Moomoo/Milk/
+res://Resoures/Items/Animals/
+res://Resoures/Items/Seeds/
 res://Scripts/UI/CenterMenu/CraftingMenu
 res://Scenes/UI/CenterMenu/CraftingMenu
-res://Resoures/Tools
 res://Resoures/Harvestables/Pickables
 res://Scenes/Components
 res://Scripts/Components
@@ -17,6 +20,3 @@ res://Scripts/UI/Menus
 res://Scenes/UI/Menus/MainMenu
 res://Scripts/Levels
 res://Assets/Fonts
-res://Assets/UI Sprites/Mouse sprites
-res://Resoures/UI/GameMenu/
-res://Scripts/ResourceScripts/

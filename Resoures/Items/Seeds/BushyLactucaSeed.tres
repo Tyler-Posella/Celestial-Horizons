@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SeedPackRes" load_steps=5 format=3 uid="uid://drhaxfqsurdes"]
+
+[ext_resource type="Resource" uid="uid://dkokxhdg2mb3" path="res://Resoures/Items/Plants/Crops/BushyLactucaCrop.tres" id="1_up6h5"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/SeedPackRes.gd" id="2_rtp2p"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="3_tncyv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dx1l1"]
+atlas = ExtResource("3_tncyv")
+region = Rect2(0, 112, 16, 16)
+
+[resource]
+script = ExtResource("2_rtp2p")
+crop_resource = ExtResource("1_up6h5")
+name = "Bushy Lactuca Seeds"
+texture = SubResource("AtlasTexture_dx1l1")
+description = "None"
+sell_price = 0

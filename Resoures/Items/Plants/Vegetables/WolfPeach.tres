@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="VegetableRes" load_steps=4 format=3 uid="uid://cgeoe0a4uv8gu"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/VegetableRes.gd" id="1_47n1g"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_iu8uk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vm5s3"]
+atlas = ExtResource("2_iu8uk")
+region = Rect2(16, 64, 16, 16)
+
+[resource]
+script = ExtResource("1_47n1g")
+is_consumable = true
+name = "Wolf Peach"
+texture = SubResource("AtlasTexture_vm5s3")
+description = "None"
