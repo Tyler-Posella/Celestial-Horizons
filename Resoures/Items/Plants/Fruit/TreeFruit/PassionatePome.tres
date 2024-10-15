@@ -1,14 +1,14 @@
 [gd_resource type="Resource" script_class="FruitRes" load_steps=4 format=3 uid="uid://dx8pjxwvtcnw7"]
 
-[ext_resource type="Script" path="res://Scripts/ResourceScripts/FruitRes.gd" id="1_ixybq"]
-[ext_resource type="Texture2D" uid="uid://cotu7jtdtnnv" path="res://Assets/Items/Fruits.png" id="2_mq0ut"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/FruitRes.gd" id="1_cmdma"]
+[ext_resource type="Texture2D" uid="uid://cotu7jtdtnnv" path="res://Assets/Items/Fruits.png" id="2_t86p3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wf0jj"]
-atlas = ExtResource("2_mq0ut")
+atlas = ExtResource("2_t86p3")
 region = Rect2(0, 0, 16, 16)
 
 [resource]
-script = ExtResource("1_ixybq")
+script = ExtResource("1_cmdma")
 noureshment = 0
 name = "Passionate Pome"
 texture = SubResource("AtlasTexture_wf0jj")

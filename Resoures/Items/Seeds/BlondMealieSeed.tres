@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="SeedPackRes" load_steps=5 format=3 uid="uid://bnx6qonxeow6o"]
 
-[ext_resource type="Resource" uid="uid://bynn0idcmjei3" path="res://Resoures/Plants/Crops/BlondMealieCrop.tres" id="1_oholh"]
+[ext_resource type="Resource" uid="uid://bynn0idcmjei3" path="res://Resoures/Items/Plants/Crops/BlondMealieCrop.tres" id="1_oholh"]
 [ext_resource type="Script" path="res://Scripts/ResourceScripts/SeedPackRes.gd" id="2_7e041"]
 [ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="3_lf8lx"]
 

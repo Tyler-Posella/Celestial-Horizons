@@ -1,9 +1,7 @@
-res://Resoures/Crops/
+res://Resoures/Plants/Fruit/
 res://Resoures/Items/Seeds/
-res://Resoures/Craftables
 res://Scripts/UI/CenterMenu/CraftingMenu
 res://Scenes/UI/CenterMenu/CraftingMenu
-res://Resoures/Tools
 res://Resoures/Harvestables/Pickables
 res://Scenes/Components
 res://Scripts/Components

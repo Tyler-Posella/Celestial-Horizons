@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="SeedPackRes" load_steps=5 format=3 uid="uid://df54mtlv8ggke"]
 
-[ext_resource type="Resource" uid="uid://clpfgq00jmurr" path="res://Resoures/Plants/Crops/RosieBroccoliCrop.tres" id="1_r8pgp"]
+[ext_resource type="Resource" uid="uid://clpfgq00jmurr" path="res://Resoures/Items/Plants/Crops/RosieBroccoliCrop.tres" id="1_r8pgp"]
 [ext_resource type="Script" path="res://Scripts/ResourceScripts/SeedPackRes.gd" id="2_8d40d"]
 [ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="3_r4wfj"]
 

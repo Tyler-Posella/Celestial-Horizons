@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="SeedPackRes" load_steps=5 format=3 uid="uid://rr7d8uoo7d82"]
 
-[ext_resource type="Resource" uid="uid://cjp020hl4pjnn" path="res://Resoures/Plants/Crops/BlancPastinacaCrop.tres" id="1_trkg4"]
+[ext_resource type="Resource" uid="uid://cjp020hl4pjnn" path="res://Resoures/Items/Plants/Crops/BlancPastinacaCrop.tres" id="1_trkg4"]
 [ext_resource type="Script" path="res://Scripts/ResourceScripts/SeedPackRes.gd" id="2_0rqc8"]
 [ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="3_6iij3"]
 

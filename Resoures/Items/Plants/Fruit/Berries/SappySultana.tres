@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="FruitRes" load_steps=4 format=3 uid="uid://cuqww8uih4gf"]
+
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/FruitRes.gd" id="1_1anur"]
+[ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_8bb3f"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fkqdi"]
+atlas = ExtResource("2_8bb3f")
+region = Rect2(32, 176, 16, 16)
+
+[resource]
+script = ExtResource("1_1anur")
+noureshment = 0
+name = "Sappy Sultana"
+texture = SubResource("AtlasTexture_fkqdi")
+description = "None"
+sell_price = 0

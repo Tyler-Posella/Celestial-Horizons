@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="GrowableTreeRes" load_steps=6 format=3 uid="uid://clwlgyka6o3sx"]
+
+[ext_resource type="Texture2D" uid="uid://bbc4f518t1x12" path="res://Assets/Trees/tree_fall.png" id="1_rqnk3"]
+[ext_resource type="Resource" uid="uid://b50obduc44hn4" path="res://Resoures/Items/Plants/Fruit/TreeFruit/SuedePaio.tres" id="2_njmoy"]
+[ext_resource type="Texture2D" uid="uid://c3j0k364mo7c3" path="res://Assets/Trees/tree_pear.png" id="3_544nw"]
+[ext_resource type="Texture2D" uid="uid://dgrowgmovs0fi" path="res://Assets/Trees/tree_none.png" id="4_wdifv"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/Objects/GrowableTreeRes.gd" id="5_n8x2y"]
+
+[resource]
+script = ExtResource("5_n8x2y")
+fruit_grown_texture = ExtResource("3_544nw")
+grow_time = 5
+fruit = ExtResource("2_njmoy")
+normal_texture = ExtResource("4_wdifv")
+fall_texture = ExtResource("1_rqnk3")
+hitpoints = 5

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="SeedPackRes" load_steps=5 format=3 uid="uid://c1ont72f8nhts"]
 
-[ext_resource type="Resource" uid="uid://bocw0w3efoffv" path="res://Resoures/Plants/Crops/ViolaceousEggplantCrop.tres" id="1_0sqnm"]
+[ext_resource type="Resource" uid="uid://bocw0w3efoffv" path="res://Resoures/Items/Plants/Crops/ViolaceousEggplantCrop.tres" id="1_0sqnm"]
 [ext_resource type="Script" path="res://Scripts/ResourceScripts/SeedPackRes.gd" id="2_o6x2g"]
 [ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="3_g5thi"]
 

@@ -1,3 +1,4 @@
+FruitRes
 PlantedCropRes
 SeedPackRes
 ItemRes
