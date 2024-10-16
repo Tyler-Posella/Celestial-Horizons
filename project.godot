@@ -18,10 +18,12 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-SaveManager="*res://Scripts/Globals/SaveManager.gd"
+SaveHandler="*res://Scripts/Globals/SaveHandler.gd"
 ResourceMaps="*res://Scripts/Globals/ResourceMaps.gd"
 Game="*res://Scripts/Globals/Utils.gd"
 GameManager="*res://Scripts/Globals/GameManager.gd"
+DateTimeManager="*res://Scripts/DateTime.gd"
+SignalManager="*res://Scripts/Globals/SignalManager.gd"
 
 [display]
 

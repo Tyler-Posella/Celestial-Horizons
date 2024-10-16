@@ -8,6 +8,9 @@ var music_player
 var audio_player
 var level
 var popup
+var date_manager
+var date_time
+
 
 # Functions
 func get_level_node():
@@ -60,6 +63,10 @@ func set_ui(obj):
 	
 func get_game_audio():
 	return get_tree().get_first_node_in_group("GameAudio")
+	
+	
+func get_date_time():
+	return get_tree().get_first_node_in_group("DateTime")
 	
 
 	

@@ -627,6 +627,7 @@ _data = {
 
 [node name="Player" type="CharacterBody2D" groups=["Persist", "Player"]]
 collision_layer = 2
+collision_mask = 65
 script = ExtResource("1_6d1b7")
 
 [node name="ItemGravityComponent" parent="." instance=ExtResource("7_gxf2s")]

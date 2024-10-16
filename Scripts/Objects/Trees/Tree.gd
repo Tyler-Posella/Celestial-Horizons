@@ -121,7 +121,7 @@ func _on_growable_component_harvested() -> void:
 		get_parent().add_child(collectable)
 		$TreeSprite.texture = type.get_default_texture()
 
-
+		
 func _on_growable_component_grown() -> void:
 	$TreeSprite.texture = type.get_fruity_texture()
 

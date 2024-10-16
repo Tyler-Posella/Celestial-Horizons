@@ -3,7 +3,6 @@
 [ext_resource type="Script" path="res://Scripts/Levels/Start.gd" id="1_wfjas"]
 [ext_resource type="TileSet" uid="uid://cuhlrvbbaqqsk" path="res://Assets/Tilesets/Tileset_Main.tres" id="2_x3dv7"]
 [ext_resource type="PackedScene" uid="uid://bhmrogi0cr2f3" path="res://Scenes/Objects/Collectable.tscn" id="3_1r330"]
-[ext_resource type="Resource" uid="uid://h041qntemutu" path="res://Resoures/Trees/DefaultTree.tres" id="4_3v22f"]
 [ext_resource type="Resource" uid="uid://ueq3awjcr8oc" path="res://Resoures/Trees/PassionatePomeTree.tres" id="5_m4hy1"]
 [ext_resource type="PackedScene" uid="uid://bvcypkp2xfprc" path="res://Scenes/Objects/Trees/Tree.tscn" id="5_sioew"]
 [ext_resource type="Resource" uid="uid://di8kno6cp4ovj" path="res://Resoures/Trees/LovableTawnyTree.tres" id="6_gp5es"]
@@ -13,6 +12,7 @@
 [ext_resource type="Resource" uid="uid://rq0qxv1gksng" path="res://Resoures/Items/Tools/Hoe.tres" id="10_2knyr"]
 [ext_resource type="PackedScene" uid="uid://c8qtlqw4bwuph" path="res://Scenes/Objects/PickableObject.tscn" id="11_a2q22"]
 [ext_resource type="Resource" uid="uid://bkqm2vjhhauws" path="res://Resoures/Harvestables/Pickables/SmallStone1.tres" id="12_bl15b"]
+[ext_resource type="PackedScene" uid="uid://e3aoeskctp2q" path="res://Scenes/Objects/Bed.tscn" id="14_j2wfb"]
 
 [node name="Game_Level" type="Node2D" groups=["Level", "Persist"]]
 y_sort_enabled = true
@@ -39,10 +39,6 @@ layer_4/name = "Surface_2"
 layer_4/y_sort_enabled = true
 layer_4/tile_data = PackedInt32Array(-327683, 393216, 1, 196617, 524288, 1, 262153, 524288, 2, 196618, 589824, 1, 262154, 589824, 2, 393220, 131072, 0, -65529, 196608, 0, 524283, 131072, 3, 196601, 720896, 3, -589823, 720896, 3, -655360, 393216, 4, -327687, 65536, 4, 196611, 327680, 1, -327671, 65536, 1, 327674, 131072, 1, 131079, 720896, 4, 262139, 1, 6, -458742, 65537, 3, -131062, 65537, 6, -131064, 589825, 6, 327679, 262145, 6)
 metadata/_edit_lock_ = true
-
-[node name="Tree" parent="." instance=ExtResource("5_sioew")]
-position = Vector2(111, 93)
-type = ExtResource("4_3v22f")
 
 [node name="Tree2" parent="." instance=ExtResource("5_sioew")]
 position = Vector2(-88, 109)
@@ -71,3 +67,6 @@ item = ExtResource("10_2knyr")
 [node name="Pickupable" parent="." instance=ExtResource("11_a2q22")]
 position = Vector2(53, 53)
 pickable = ExtResource("12_bl15b")
+
+[node name="Bed" parent="." instance=ExtResource("14_j2wfb")]
+position = Vector2(150, 38)

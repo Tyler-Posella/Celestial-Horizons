@@ -10,6 +10,7 @@ const COLLECTABLE_SCENE = preload("res://Scenes/Objects/Collectable.tscn")
 
 # Variables
 var growable : ItemRes
+var age : int = 0
 var has_grown : bool = false
 
 # Onready Variables
@@ -17,6 +18,9 @@ var has_grown : bool = false
 @onready var marker_array = []
 
 # Functions
+func _ready():
+	SignalManager.add_listener("advance_day", self, "_on_day_pass")
+	
 func is_grown(): # Returns true if the growable is grown
 	if(has_grown):
 		return true
@@ -38,8 +42,12 @@ func drop_collectables(item : ItemRes): # Drops the collectables from the growwa
 		get_parent().get_parent().add_child(collectable)
 		#Instantiate into scene
 	
+func _on_day_pass():
+	age = age + 1
+	if(age == 5):
+		_on_finished_growing()
 	
-func _on_growth_timer_timeout(): # On growth timer timout, grow the growable
+func _on_finished_growing(): # On growth timer timout, grow the growable
 	grown.emit()
 	has_grown = true
 	
@@ -50,4 +58,3 @@ func get_growable(): # Get the item on the growable component
 	
 func set_growable(new_growable : ItemRes):
 	growable = new_growable
-	growth_timer.start()
