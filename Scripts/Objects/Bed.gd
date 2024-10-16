@@ -4,14 +4,7 @@ extends Node2D
 # Constnats
 const CONFIRMATION_MENU = preload("res://Scenes/UI/GamePrompts/ConfirmationMenu.tscn")
 
-# Signals
-signal slept()
-
-# Functions
-func _ready():
-	self.slept.connect(Game.get_date_time()._on_day_finished)
-	
-	
+# Functions	
 func _on_interactable_component_interacted() -> void:
 		# Handle sleeping mechanic
 	var new_confirmation_menu = CONFIRMATION_MENU.instantiate()
@@ -23,8 +16,7 @@ func _on_interactable_component_interacted() -> void:
 
 
 func _on_sleep_confirmed():
-	slept.emit()
-	
+	SignalManager.emit_signal_global("advance_day", [])
 
 func _on_sleep_declined():
 	pass
