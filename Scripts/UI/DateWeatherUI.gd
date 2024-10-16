@@ -4,8 +4,7 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	Game.get_date_time().day_incremented.connect(_on_date_incremented)
-	_on_date_incremented()
+	SignalManager.add_listener("advance_day", self, "_on_date_incremented")
 
 func _on_date_incremented():
 	var day_part : String = "Day " + str(Game.get_date_time().get_day())
