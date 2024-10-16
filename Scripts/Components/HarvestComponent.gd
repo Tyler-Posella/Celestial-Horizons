@@ -14,8 +14,7 @@ func _ready():
 	if(harvest_layer != 0):
 		$HarvestArea.set_collision_mask_value(harvest_layer, true)
 	
-func _on_harvester_area_entered(area): # On tool hitbox entered tree hitbox	
-	print("hasd")
+func _on_harvester_area_entered(area): # On tool hitbox entered tree hitbox
 	hit.emit()
 	damage(1)
 	
