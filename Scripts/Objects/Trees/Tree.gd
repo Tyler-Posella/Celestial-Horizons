@@ -41,15 +41,15 @@ func _ready(): # Initializes the default values and configures the markers and a
 	
 
 func set_markers() -> void: # Sets the markers to the proper positions for each fruit
-	if(type.get_fruit().get_item_name() == "Apple"):
+	if(type.get_fruit().get_item_name() == "Passionate Pome"):
 		markers[0].position = Vector2(-20, -5)
 		markers[1].position = Vector2(16, -1)
 		markers[2].position = Vector2(19, -9)
-	if(type.get_fruit().get_item_name() == "Pear"):
+	if(type.get_fruit().get_item_name() == "Suede Paio"):
 		markers[0].position = Vector2(-21, -7)
 		markers[1].position = Vector2(15, 0)
 		markers[2].position = Vector2(-19, 3)
-	if(type.get_fruit().get_item_name() == "Peach"):
+	if(type.get_fruit().get_item_name() == "Prime Drupe"):
 		markers[0].position = Vector2(-19, -6)
 		markers[1].position = Vector2(16, -1)
 		markers[2].position = Vector2(-16, 3)
@@ -132,5 +132,5 @@ func _on_harvest_component_hit() -> void:
 	audio_component.play_sound("res://Audio/SFX/Tree/TreeHit.wav")
 
 
-func _on_interactable_component_interacted(interacting_body: Node2D) -> void:
+func _on_interactable_component_interacted():
 	shake()
