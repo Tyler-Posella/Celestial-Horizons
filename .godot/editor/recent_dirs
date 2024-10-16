@@ -1,3 +1,5 @@
+res://Scenes/Objects
+res://Scripts/Objects
 res://Resoures/Items/Plants/Vegetables/
 res://Resoures/Items/Plants/
 res://Resoures/Items/Animals/Moomoo/Milk/
@@ -9,8 +11,6 @@ res://Resoures/Harvestables/Pickables
 res://Scenes/Components
 res://Scripts/Components
 res://Resoures/Items/Rocks
-res://Scenes/Objects
-res://Scripts/Objects
 res://Scripts/Objects/Trees
 res://Scripts/Globals
 res://Scripts
