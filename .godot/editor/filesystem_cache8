@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729046546
+::res://::1729051514
 icon.svg::CompressedTexture2D::4648720931128078553::1729037508::1729040086::1::::<><>::
 README.md::TextFile::-1::1729037508::0::1::::<><>::
 ::res://Assets/::1729040634
@@ -364,9 +364,9 @@ Options.tres::Resource/UiMenuButton::2046374664903258345::1729040064::0::1::::<>
 PlayerInfo.tres::Resource/UiMenuButton::5886254321324137483::1729040064::0::1::::<><>::uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png<>res://Scripts/ResourceScripts/UI/TopmenubuttonRes.gd<>uid://cplibp16gv3lc::::res://Scenes/UI/CenterMenu/PlayerInfoMenu.tscn
 Quests.tres::Resource/UiMenuButton::6372427630001804532::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/UI/TopmenubuttonRes.gd<>uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png<>uid://u1ai243xqkh1::::res://Scenes/UI/CenterMenu/QuestsMenu.tscn
 Relations.tres::Resource/UiMenuButton::605547281686704687::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/UI/TopmenubuttonRes.gd<>uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png<>uid://fejg0r0tixx8::::res://Scenes/UI/CenterMenu/RelationsMenu.tscn
-::res://Scenes/::1729046546
-DateTime.tscn::PackedScene::6415086269190616754::1729046552::0::1::::<><>::res://Scripts/DateTimeManager.gd
-Game.tscn::PackedScene::7346731436723818536::1729046459::0::1::::<><>::res://Scripts/Game.gd<>uid://dsj5jii06d4rf::::res://Scenes/Audio/AudioMachine.tscn
+::res://Scenes/::1729050731
+DateTime.tscn::PackedScene::6415086269190616754::1729050731::0::1::::<><>::res://Scripts/DateTime.gd
+Game.tscn::PackedScene::7346731436723818536::1729050720::0::1::::<><>::res://Scripts/Game.gd<>uid://dsj5jii06d4rf::::res://Scenes/Audio/AudioMachine.tscn<>uid://cxnrse3r4mt2a::::res://Scenes/DateTime.tscn
 ::res://Scenes/Audio/::1729037508
 AudioMachine.tscn::PackedScene::8443078652001262563::1729037508::0::1::::<><>::res://Scripts/Audio/AudioMachine.gd
 AudioPlayer.tscn::PackedScene::5938702550180849935::1729037508::0::1::::<><>::
@@ -382,8 +382,8 @@ ItemGravityComponent.tscn::PackedScene::5164566930284803297::1729040064::0::1:::
 InventorySlot.tscn::PackedScene::2065143751123783890::1729037508::0::1::::<><>::res://Scripts/Inventory/InventorySlot.gd
 ::res://Scenes/Levels/::1729041271
 Start.tscn::PackedScene::2932314189228811374::1729041271::0::1::::<><>::res://Scripts/Levels/Start.gd<>uid://cuhlrvbbaqqsk::::res://Assets/Tilesets/Tileset_Main.tres<>uid://bhmrogi0cr2f3::::res://Scenes/Objects/Collectable.tscn<>uid://h041qntemutu::::res://Resoures/Trees/DefaultTree.tres<>uid://ueq3awjcr8oc::::res://Resoures/Trees/PassionatePomeTree.tres<>uid://bvcypkp2xfprc::::res://Scenes/Objects/Trees/Tree.tscn<>uid://di8kno6cp4ovj::::res://Resoures/Trees/LovableTawnyTree.tres<>uid://xenbyuir35vw::::res://Resoures/Trees/PrimeDrupeTree.tres<>uid://clwlgyka6o3sx::::res://Resoures/Trees/SuedePaioTree.tres<>uid://cum57os15y7i0::::res://Resoures/Items/Tools/Axe.tres<>uid://rq0qxv1gksng::::res://Resoures/Items/Tools/Hoe.tres<>uid://c8qtlqw4bwuph::::res://Scenes/Objects/PickableObject.tscn<>uid://bkqm2vjhhauws::::res://Resoures/Harvestables/Pickables/SmallStone1.tres<>uid://e3aoeskctp2q::::res://Scenes/Objects/Bed.tscn
-::res://Scenes/Objects/::1729046358
-Bed.tscn::PackedScene::338583191138143834::1729046358::0::1::::<><>::res://Scripts/Objects/Bed.gd<>uid://cjyp74klcqibc::::res://Scenes/Components/InteractionComponent.tscn
+::res://Scenes/Objects/::1729050720
+Bed.tscn::PackedScene::338583191138143834::1729050720::0::1::::<><>::res://Scripts/Objects/Bed.gd<>uid://cjyp74klcqibc::::res://Scenes/Components/InteractionComponent.tscn
 Collectable.tscn::PackedScene::2903572640837537530::1729040064::0::1::::<><>::res://Scripts/Objects/Collectable.gd<>uid://b1yl8t3tvgl44::::res://Assets/Items/Item-Shadows.png
 PickableObject.tscn::PackedScene::7123277393780895285::1729040064::0::1::::<><>::res://Scripts/Objects/PickupableObject.gd<>uid://b7b5mk8jjsywi::::res://Scenes/Components/HarvestComponent.tscn
 Player.tscn::PackedScene::2865639875494289319::1729041271::0::1::::<><>::res://Scripts/Objects/Player.gd<>uid://idajb5n31743::::res://Assets/Characters/Character.png<>uid://dlo4ny25kmrga::::res://Scenes/Components/InventoryComponent.tscn<>uid://tf88mpduami1::::res://Scenes/Components/CurrencyComponent.tscn<>uid://bna0blnh7t1ky::::res://Scenes/Components/HealthComponent.tscn<>uid://dsj5jii06d4rf::::res://Scenes/Audio/AudioMachine.tscn<>uid://cft0wsgi7v4cb::::res://Scenes/Components/ItemGravityComponent.tscn
@@ -404,11 +404,11 @@ RelationsMenu.tscn::PackedScene::359760237411775067::1729037508::0::1::::<><>::
 CraftableItem.tscn::PackedScene::3114336320388135580::1729040064::0::1::::<><>::res://Scripts/UI/CenterMenu/CraftingMenu/CraftableItem.gd
 CraftableItemHover.tscn::PackedScene::6503599263291338989::1729040064::0::1::::<><>::res://Scripts/UI/CenterMenu/CraftingMenu/CraftableItemHover.gd
 CraftingItemIngredient.tscn::PackedScene::7575221163007313619::1729040064::0::1::::<><>::res://Scripts/UI/CenterMenu/CraftingMenu/CraftingItemIngredient.gd
-::res://Scenes/UI/GamePrompts/::1729046358
-ConfirmationMenu.tscn::PackedScene::1641620364475347460::1729046358::0::1::::<><>::res://Scripts/UI/GamePrompt/ConfirmationMenu.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png
+::res://Scenes/UI/GamePrompts/::1729050720
+ConfirmationMenu.tscn::PackedScene::1641620364475347460::1729050720::0::1::::<><>::res://Scripts/UI/GamePrompt/ConfirmationMenu.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png
 WelcomeGamePrompt.tscn::PackedScene::1587395320966958176::1729041446::0::1::::<><>::res://Scripts/UI/GamePrompt/NewGame/WelcomeGamePrompt.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png
-::res://Scenes/UI/GameUI/::1729046358
-DateWeatherUI.tscn::PackedScene::9105615493604555223::1729046358::0::1::::<><>::uid://dxoxnqvm06ypq::::res://Assets/UI Sprites/Weather_UI.png<>res://Scripts/UI/DateWeatherUI.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png
+::res://Scenes/UI/GameUI/::1729050720
+DateWeatherUI.tscn::PackedScene::9105615493604555223::1729050720::0::1::::<><>::uid://dxoxnqvm06ypq::::res://Assets/UI Sprites/Weather_UI.png<>res://Scripts/UI/DateWeatherUI.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png
 PlayerUI.tscn::PackedScene::1181129390942667866::1729046038::0::1::::<><>::res://Scripts/UI/PlayerUI.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://kwcxoisinfym::::res://Scenes/UI/GameUI/Inventory/Hotbar.tscn<>uid://hju5w1smhwpi::::res://Scenes/UI/CenterMenu/CenterMenu.tscn<>uid://d2y3flkfbn7nf::::res://Scenes/UI/GameUI/DateWeatherUI.tscn
 UIHeart.tscn::PackedScene::2091948515756754235::1729037508::0::1::::<><>::uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png
 ::res://Scenes/UI/GameUI/CenterMenu/::1729037508
@@ -425,8 +425,8 @@ MainMenu.tscn::PackedScene::8276991850760991509::1729040063::0::1::::<><>::res:/
 MainMenuButton.tscn::PackedScene::3001381932848814218::1729037508::0::1::::<><>::uid://dshut2sdrrnxf::::res://Assets/Fonts/pixelFont-7-8x14-sproutLands.ttf<>res://Scripts/UI/Menus/MainMenuButton.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png
 SaveInstance.tscn::PackedScene::2580645954527241797::1729040063::0::1::::<><>::res://Scripts/UI/Menus/SaveInstance.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://idajb5n31743::::res://Assets/Characters/Character.png
 SaveManagerMenu.tscn::PackedScene::117726338034832567::1729040063::0::1::::<><>::res://Scripts/UI/Menus/SaveManagerMenu.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png
-::res://Scripts/::1729046546
-DateTimeManager.gd::GDScript::-1::1729046538::0::1::::<>Node<>::
+::res://Scripts/::1729051494
+DateTime.gd::GDScript::-1::1729051494::0::1::::<>Node<>::
 Game.gd::GDScript::-1::1729037508::0::1::::BaseGame<>Node2D<>::
 ::res://Scripts/Audio/::1729037508
 AudioMachine.gd::GDScript::-1::1729037508::0::1::::AudioMachine<>Node2D<>::
@@ -438,17 +438,18 @@ HealthComponent.gd::GDScript::-1::1729040064::0::1::::HealthComponent<>Node2D<>:
 InteractionComponent.gd::GDScript::-1::1729041201::0::1::::InteractionComponent<>Node2D<>::
 InventoryComponent.gd::GDScript::-1::1729040064::0::1::::InventoryComponent<>Node2D<>::
 ItemGravityComponent.gd::GDScript::-1::1729040064::0::1::::ItemGravityComponent<>Node2D<>::
-::res://Scripts/Globals/::1729046546
+::res://Scripts/Globals/::1729051494
 GameManager.gd::GDScript::-1::1729043235::0::1::::<>Node<>::
 ResourceMaps.gd::GDScript::-1::1729040064::0::1::::<>Node<>::
 SaveHandler.gd::GDScript::-1::1729040064::0::1::::<>Node<>::
-Utils.gd::GDScript::-1::1729043040::0::1::::<>Node<>::
+SignalManager.gd::GDScript::-1::1729051494::0::1::::<>Node<>::
+Utils.gd::GDScript::-1::1729046629::0::1::::<>Node<>::
 ::res://Scripts/Inventory/::1729040064
 InventorySlot.gd::GDScript::-1::1729040064::0::1::::InventorySlot<>Node2D<>::
 ::res://Scripts/Levels/::1729037508
 Start.gd::GDScript::-1::1729037508::0::1::::<>Node2D<>::
-::res://Scripts/Objects/::1729046357
-Bed.gd::GDScript::-1::1729046357::0::1::::Bed<>Node2D<>::
+::res://Scripts/Objects/::1729051494
+Bed.gd::GDScript::-1::1729051494::0::1::::Bed<>Node2D<>::
 Collectable.gd::GDScript::-1::1729040064::0::1::::Collectable<>RigidBody2D<>::
 PickupableObject.gd::GDScript::-1::1729040064::0::1::::PickableObject<>Node2D<>::
 Player.gd::GDScript::-1::1729040064::0::1::::Player<>CharacterBody2D<>::
@@ -473,8 +474,8 @@ TreeRes.gd::GDScript::-1::1729040064::0::1::::TreeRes<>Resource<>::
 CoinRes.gd::GDScript::-1::1729040064::0::1::::CoinRes<>ItemRes<>::
 HotbarslotRes.gd::GDScript::-1::1729040064::0::1::::SlotRes<>Resource<>::
 TopmenubuttonRes.gd::GDScript::-1::1729040064::0::1::::UiMenuButtonRes<>Resource<>::
-::res://Scripts/UI/::1729046256
-DateWeatherUI.gd::GDScript::-1::1729046256::0::1::::DateWeatherUI<>Control<>::
+::res://Scripts/UI/::1729051494
+DateWeatherUI.gd::GDScript::-1::1729051494::0::1::::DateWeatherUI<>Control<>::
 InventoryMenu.gd::GDScript::-1::1729037508::0::1::::InventoryMenu<>Control<>::
 PlayerUI.gd::GDScript::-1::1729037508::0::1::::PlayerUI<>Control<>::
 UIHeart.gd::GDScript::-1::1729037508::0::1::::UIHeart<>NinePatchRect<>::
