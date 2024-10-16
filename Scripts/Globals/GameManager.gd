@@ -41,7 +41,7 @@ func start_loaded_game(save : SaveInstance):
 	Game.set_level(current_level)
 	# Load player
 	var player_directory = (save.save_dir + "/PlayerData.json")
-	var current_player = SaveManager.load_node(player_directory)
+	var current_player = SaveHandler.load_node(player_directory)
 	Game.get_player_node().add_child(current_player)
 	# Remove existing menu
 	Game.get_ui().queue_free()

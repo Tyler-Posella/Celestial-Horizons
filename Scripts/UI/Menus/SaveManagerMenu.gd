@@ -65,7 +65,7 @@ func _on_info_button_pressed() -> void:
 
 func _on_delete_button_pressed():
 	if(selected_save != null):
-		SaveManager.delete_save(selected_save.save_dir)
+		SaveHandler.delete_save(selected_save.save_dir)
 		selected_save.queue_free()
 		saves.erase(selected_save)
 		for i in saves.size():

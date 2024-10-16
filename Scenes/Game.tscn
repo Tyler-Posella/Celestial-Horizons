@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dcw2uf7xavjo7"]
+[gd_scene load_steps=4 format=3 uid="uid://dcw2uf7xavjo7"]
 
 [ext_resource type="Script" path="res://Scripts/Game.gd" id="1_symbq"]
 [ext_resource type="PackedScene" uid="uid://dsj5jii06d4rf" path="res://Scenes/Audio/AudioMachine.tscn" id="2_cmana"]
+[ext_resource type="PackedScene" uid="uid://cxnrse3r4mt2a" path="res://Scenes/DateTime.tscn" id="3_y7quy"]
 
 [node name="Game" type="Node2D" groups=["GameNode"]]
 z_as_relative = false
@@ -18,3 +19,5 @@ y_sort_enabled = true
 
 [node name="AudioMachine" parent="." instance=ExtResource("2_cmana")]
 script = null
+
+[node name="DateTime" parent="." groups=["DateTime"] instance=ExtResource("3_y7quy")]

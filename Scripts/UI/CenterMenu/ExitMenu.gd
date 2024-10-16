@@ -2,7 +2,7 @@ extends Control
 
 
 func _on_save_button_pressed() -> void:
-	SaveManager.save_game()
+	SaveHandler.save_game()
 
 
 func _on_load_button_pressed() -> void:

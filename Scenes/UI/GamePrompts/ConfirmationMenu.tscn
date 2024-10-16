@@ -1,0 +1,110 @@
+[gd_scene load_steps=10 format=3 uid="uid://xnhiogch7im3"]
+
+[ext_resource type="Script" path="res://Scripts/UI/GamePrompt/ConfirmationMenu.gd" id="1_splfp"]
+[ext_resource type="Texture2D" uid="uid://cc0uxg71e5lu0" path="res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png" id="2_g7qdu"]
+[ext_resource type="Texture2D" uid="uid://dfublfalq30f7" path="res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png" id="3_jmqne"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u7ec0"]
+atlas = ExtResource("2_g7qdu")
+region = Rect2(56, 104, 32, 32)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d5wle"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4nupr"]
+atlas = ExtResource("3_jmqne")
+region = Rect2(0, 288, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e03kq"]
+atlas = ExtResource("3_jmqne")
+region = Rect2(32, 288, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_51j6o"]
+atlas = ExtResource("3_jmqne")
+region = Rect2(0, 320, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_onrbh"]
+atlas = ExtResource("3_jmqne")
+region = Rect2(32, 320, 32, 32)
+
+[node name="ConfirmationMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_splfp")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2
+anchor_top = 0.2
+anchor_right = 0.8
+anchor_bottom = 0.8
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="PanelContainer"]
+layout_mode = 2
+texture = SubResource("AtlasTexture_u7ec0")
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/NinePatchRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.1
+anchor_right = 0.9
+anchor_bottom = 0.9
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PromptLabel" type="Label" parent="PanelContainer/NinePatchRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 32
+text = "Prompt"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AspectRatioContainer" type="PanelContainer" parent="PanelContainer/NinePatchRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_d5wle")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/NinePatchRect/VBoxContainer/AspectRatioContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="ConfirmButton" type="TextureButton" parent="PanelContainer/NinePatchRect/VBoxContainer/AspectRatioContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = SubResource("AtlasTexture_4nupr")
+texture_pressed = SubResource("AtlasTexture_e03kq")
+stretch_mode = 5
+
+[node name="DeclineButton" type="TextureButton" parent="PanelContainer/NinePatchRect/VBoxContainer/AspectRatioContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = SubResource("AtlasTexture_51j6o")
+texture_pressed = SubResource("AtlasTexture_onrbh")
+stretch_mode = 5
+
+[connection signal="pressed" from="PanelContainer/NinePatchRect/VBoxContainer/AspectRatioContainer/HBoxContainer/ConfirmButton" to="." method="_on_confirm_button_pressed"]
+[connection signal="pressed" from="PanelContainer/NinePatchRect/VBoxContainer/AspectRatioContainer/HBoxContainer/DeclineButton" to="." method="_on_decline_button_pressed"]
