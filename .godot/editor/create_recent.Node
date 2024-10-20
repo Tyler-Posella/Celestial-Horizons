@@ -1,9 +1,9 @@
+Node2D
 NinePatchRect
 TextureRect
 InteractionComponent
 Sprite2D
 AnimationPlayer
-Node2D
 PanelContainer
 Label
 Panel
