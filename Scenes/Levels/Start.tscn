@@ -1,8 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://bh1o1y67pi8du"]
+[gd_scene load_steps=15 format=3 uid="uid://bh1o1y67pi8du"]
 
 [ext_resource type="Script" path="res://Scripts/Levels/Start.gd" id="1_wfjas"]
 [ext_resource type="TileSet" uid="uid://cuhlrvbbaqqsk" path="res://Assets/Tilesets/Tileset_Main.tres" id="2_x3dv7"]
 [ext_resource type="PackedScene" uid="uid://bhmrogi0cr2f3" path="res://Scenes/Objects/Collectable.tscn" id="3_1r330"]
+[ext_resource type="PackedScene" uid="uid://bvcypkp2xfprc" path="res://Scenes/Objects/Trees/Tree.tscn" id="5_sioew"]
+[ext_resource type="Resource" uid="uid://di8kno6cp4ovj" path="res://Resoures/Trees/LovableTawnyTree.tres" id="6_gp5es"]
 [ext_resource type="Resource" uid="uid://cum57os15y7i0" path="res://Resoures/Items/Tools/Axe.tres" id="9_kx8yr"]
 [ext_resource type="Resource" uid="uid://rq0qxv1gksng" path="res://Resoures/Items/Tools/Hoe.tres" id="10_2knyr"]
 [ext_resource type="PackedScene" uid="uid://c8qtlqw4bwuph" path="res://Scenes/Objects/PickableObject.tscn" id="11_a2q22"]
@@ -68,3 +70,7 @@ type = ExtResource("16_ah55s")
 [node name="FourStageCropObject4" parent="." instance=ExtResource("14_fw4nl")]
 position = Vector2(105, 41)
 type = ExtResource("17_jucjf")
+
+[node name="Tree" parent="." instance=ExtResource("5_sioew")]
+position = Vector2(44, -60)
+type = ExtResource("6_gp5es")

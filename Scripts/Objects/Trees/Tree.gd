@@ -26,7 +26,7 @@ var markers = []
 func _ready(): # Initializes the default values and configures the markers and arrays
 	# Set TreeRes data
 	if(type is GrowableTreeRes):
-		growable_component.set_growable(type.get_fruit())
+		growable_component.set_growable(type)
 		$FallSprite.texture = type.get_fall_texture()
 		$TreeSprite.texture = type.get_default_texture()
 		markers.append($Marker1)

@@ -9,8 +9,9 @@
 [resource]
 script = ExtResource("5_n8x2y")
 fruit_grown_texture = ExtResource("3_544nw")
-grow_time = 5
 fruit = ExtResource("2_njmoy")
 normal_texture = ExtResource("4_wdifv")
 fall_texture = ExtResource("1_rqnk3")
 hitpoints = 5
+growtime = 2
+growth_stages = 2

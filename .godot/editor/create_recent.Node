@@ -1,3 +1,5 @@
+NinePatchRect
+TextureRect
 InteractionComponent
 Sprite2D
 AnimationPlayer
@@ -8,7 +10,5 @@ Panel
 AspectRatioContainer
 TextureButton
 HBoxContainer
-TextureRect
 Control
 GridContainer
-NinePatchRect

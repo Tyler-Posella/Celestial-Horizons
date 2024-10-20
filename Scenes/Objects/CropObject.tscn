@@ -51,7 +51,6 @@ script = ExtResource("1_jc5bo")
 type = ExtResource("2_vlfts")
 
 [node name="GrowableComponent" parent="." instance=ExtResource("3_y4ku1")]
-position = Vector2(68.1595, -45.1057)
 
 [node name="InteractableComponent" parent="." instance=ExtResource("4_jisy6")]
 

@@ -33,7 +33,6 @@ func is_grown(): # Returns true if the growable is grown
 func harvest(): # Harvests the growable
 	if(is_grown()):
 		harvested.emit()
-		growth_timer.start()
 		has_grown = false
 	
 
