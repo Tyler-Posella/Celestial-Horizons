@@ -53,7 +53,7 @@ func set_markers() -> void: # Sets the markers to the proper positions for each 
 		markers[0].position = Vector2(-19, -6)
 		markers[1].position = Vector2(16, -1)
 		markers[2].position = Vector2(-16, 3)
-	if(type.get_fruit().get_item_name() == "Orange"):
+	if(type.get_fruit().get_item_name() == "Lovable Tawny"):
 		markers[0].position = Vector2(-20, -6)
 		markers[1].position = Vector2(16, -1)
 		markers[2].position = Vector2(-17, 3)

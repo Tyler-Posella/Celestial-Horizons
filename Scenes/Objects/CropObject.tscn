@@ -61,7 +61,7 @@ libraries = {
 
 [node name="OneHSprite" type="Sprite2D" parent="."]
 y_sort_enabled = true
-position = Vector2(0, -6)
+position = Vector2(0, -5)
 texture = ExtResource("3_obntn")
 hframes = 5
 vframes = 15
