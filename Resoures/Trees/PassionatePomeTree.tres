@@ -6,12 +6,12 @@
 [ext_resource type="Texture2D" uid="uid://bn31tfimxoo77" path="res://Assets/Trees/tree_apple.png" id="2_2xdol"]
 [ext_resource type="Texture2D" uid="uid://bbc4f518t1x12" path="res://Assets/Trees/tree_fall.png" id="2_klr3h"]
 
-
 [resource]
 script = ExtResource("1_q7bpq")
 fruit_grown_texture = ExtResource("2_2xdol")
-grow_time = 5
 fruit = ExtResource("1_ax0cj")
 normal_texture = ExtResource("1_dwth5")
 fall_texture = ExtResource("2_klr3h")
 hitpoints = 5
+growtime = 2
+growth_stages = 2

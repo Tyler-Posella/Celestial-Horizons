@@ -5,8 +5,9 @@
 
 [resource]
 script = ExtResource("1_mar2p")
-stage_count = 3
-texture_row_number = 11
-growtime = 0
+height = 1
+texture_row = 12
 grow_seasons = [0, 0, 0, 0]
 harvest_item = ExtResource("1_frf78")
+growtime = 3
+growth_stages = 3

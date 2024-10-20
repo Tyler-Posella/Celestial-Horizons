@@ -1,507 +1,506 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729051514
-icon.svg::CompressedTexture2D::4648720931128078553::1729037508::1729040086::1::::<><>::
-README.md::TextFile::-1::1729037508::0::1::::<><>::
-::res://Assets/::1729040634
-::res://Assets/Animals/::1729040634
-::res://Assets/Animals/Chicken/::1729037508
-::res://Assets/Animals/Chicken/Adult/::1729040086
-Chicken-Blue.png::CompressedTexture2D::1828684576078513934::1729037508::1729040086::1::::<><>::
-Chicken-Brown.png::CompressedTexture2D::1925022970930225505::1729037508::1729040086::1::::<><>::
-Chicken-Default.png::CompressedTexture2D::4583860815485201428::1729037508::1729040086::1::::<><>::
-Chicken-Green.png::CompressedTexture2D::965682699116937258::1729037508::1729040086::1::::<><>::
-Chicken-Red.png::CompressedTexture2D::6196537151209637959::1729037508::1729040086::1::::<><>::
-::res://Assets/Animals/Chicken/Baby/::1729040086
-Chicken-Baby-Default.png::CompressedTexture2D::5022223094519769723::1729037508::1729040086::1::::<><>::
-Chicken-Baby_Blue.png::CompressedTexture2D::5462276664130552010::1729037508::1729040086::1::::<><>::
-Chicken-Baby_Brown.png::CompressedTexture2D::3097299445946477706::1729037508::1729040086::1::::<><>::
-Chicken_Baby-Green.png::CompressedTexture2D::6952428637276441869::1729037508::1729040086::1::::<><>::
-Chicken_Baby-Red.png::CompressedTexture2D::6352612206323133384::1729037508::1729040086::1::::<><>::
-::res://Assets/Animals/Chicken/Egg/::1729040086
-Egg-Spritesheet-Blue.png::CompressedTexture2D::3000480245013987166::1729037508::1729040086::1::::<><>::
-Egg-Spritesheet-Brown.png::CompressedTexture2D::5615801536039989440::1729037508::1729040086::1::::<><>::
-Egg-Spritesheet-Green.png::CompressedTexture2D::6786390330744676330::1729037508::1729040086::1::::<><>::
-Egg-Spritesheet-Red.png::CompressedTexture2D::3414609296721141463::1729037508::1729040086::1::::<><>::
-Egg-Spritesheet.png::CompressedTexture2D::5774966564873621234::1729037508::1729040086::1::::<><>::
-::res://Assets/Animals/Cow/::1729037508
-::res://Assets/Animals/Cow/Adult/::1729040086
-Cow-Brown.png::CompressedTexture2D::8882502417466873048::1729037508::1729040086::1::::<><>::
-Cow-Green.png::CompressedTexture2D::3537493826749734620::1729037508::1729040086::1::::<><>::
-Cow-Light.png::CompressedTexture2D::6053960722640014482::1729037508::1729040086::1::::<><>::
-Cow-Pink.png::CompressedTexture2D::166932046515901663::1729037508::1729040086::1::::<><>::
-Cow-Purple.png::CompressedTexture2D::2390907830727606451::1729037508::1729040086::1::::<><>::
-::res://Assets/Animals/Cow/Baby/::1729040086
-Cow-Baby-Brown.png::CompressedTexture2D::7543043423616130041::1729037508::1729040086::1::::<><>::
-Cow-Baby-Green.png::CompressedTexture2D::8147254051635468050::1729037508::1729040086::1::::<><>::
-Cow-Baby-Light.png::CompressedTexture2D::888788598889485618::1729037508::1729040086::1::::<><>::
-Cow-Baby-Pink.png::CompressedTexture2D::7865845738847705396::1729037508::1729040086::1::::<><>::
-Cow-Baby-Purple.png::CompressedTexture2D::1687012434314036378::1729037508::1729040086::1::::<><>::
-::res://Assets/Animals/Slime/::1729040086
-Slime-Green.png::CompressedTexture2D::7811573628471470371::1729037508::1729040086::1::::<><>::
-::res://Assets/Building/::1729037508
-::res://Assets/Building/Animal Structures/::1729040086
-Barn.png::CompressedTexture2D::5485240274654283760::1729037508::1729040086::1::::<><>::
-Chicken-Coops.png::CompressedTexture2D::8061068781058091117::1729037508::1729040086::1::::<><>::
-Watering-Tray.png::CompressedTexture2D::6740693552718869636::1729037508::1729040086::1::::<><>::
-::res://Assets/Building/Furniture/::1729040086
-Chest.png::CompressedTexture2D::8661842267829376266::1729037508::1729040086::1::::<><>::
-Furniture.png::CompressedTexture2D::4781150098396265955::1729037508::1729040086::1::::<><>::
-::res://Assets/Building/House/::1729040086
-Building-House.png::CompressedTexture2D::7956403844727659955::1729037508::1729040086::1::::<><>::
-Doors.png::CompressedTexture2D::7647866197904500998::1729037508::1729040086::1::::<><>::
-::res://Assets/Building/Outside/::1729040086
-Bridge-Wooden-Old.png::CompressedTexture2D::6153909246699599882::1729037508::1729040086::1::::<><>::
-Bridge-Wooden.png::CompressedTexture2D::5010166468421021928::1729037508::1729040086::1::::<><>::
-Fence-Gate.png::CompressedTexture2D::9055760635407101074::1729037508::1729040086::1::::<><>::
-Fences.png::CompressedTexture2D::5078868655122700595::1729037508::1729040086::1::::<><>::
-Mailbox.png::CompressedTexture2D::7646777659218782112::1729037508::1729040086::1::::<><>::
-Paths-Stone.png::CompressedTexture2D::6530958522929718122::1729037508::1729040086::1::::<><>::
-Paths-Wood.png::CompressedTexture2D::6921336797693414826::1729037508::1729040086::1::::<><>::
-::res://Assets/Characters/::1729040086
-Character.png::CompressedTexture2D::567720054008202918::1729037508::1729040086::1::::<><>::
-Tools-No-Player.png::CompressedTexture2D::7600226953497683433::1729037508::1729040086::1::::<><>::
-Watering-Water.png::CompressedTexture2D::4105102135168255611::1729037508::1729040086::1::::<><>::
-::res://Assets/Fonts/::1729040086
-pixel-letters-7-8x14-preview.png::CompressedTexture2D::5244233707392569666::1729037508::1729040086::1::::<><>::
-pixel-letters-7-8x14.png::CompressedTexture2D::3695330802914800952::1729037508::1729040086::1::::<><>::
-pixelFont-7-8x14-sproutLands.ttf::FontFile::8438361596878468159::1729037508::1729040086::1::::<><>::
-PixulBrush-Mono.ttf::FontFile::7223372669270547579::1729037508::1729040086::1::::<><>::
-PixulBrush.ttf::FontFile::1341930072519928526::1729037508::1729040086::1::::<><>::
-::res://Assets/Items/::1729040086
-Complete-Sheet.png::CompressedTexture2D::3181462826755442307::1729037508::1729040086::1::::<><>::
-Item-Shadows.png::CompressedTexture2D::4261603544588432387::1729037508::1729040086::1::::<><>::
-::res://Assets/Objects/::1729040086
-Boats.png::CompressedTexture2D::5614725272010440006::1729037508::1729040086::1::::<><>::
-Ground-Objects.png::CompressedTexture2D::752302636694552968::1729040064::1729040086::1::::<><>::
-Picnic-Basket.png::CompressedTexture2D::1521268337486582389::1729037508::1729040086::1::::<><>::
-Picnic-Blanket.png::CompressedTexture2D::1358359787126565727::1729037508::1729040086::1::::<><>::
-Plant-Stages.png::CompressedTexture2D::7877656966905319643::1729037508::1729040086::1::::<><>::
-Signs-Crops.png::CompressedTexture2D::7748483075873132914::1729037508::1729040086::1::::<><>::
-signs.png::CompressedTexture2D::5785739587431149979::1729037508::1729040086::1::::<><>::
-Trees.png::CompressedTexture2D::7095306002870333892::1729040064::1729040086::1::::<><>::
-Water-Objects.png::CompressedTexture2D::3685129344122376900::1729037508::1729040086::1::::<><>::
-Well.png::CompressedTexture2D::4346772730740371897::1729037508::1729040086::1::::<><>::
-Workbench.png::CompressedTexture2D::1134479622575654221::1729037508::1729040086::1::::<><>::
-::res://Assets/Tilesets/::1729040962
-Tileset_Main 2.tres::TileSet::6191768234423323406::1729040064::0::1::::<><>::uid://kyokxtv2lr0k::::res://Assets/Objects/Ground-Objects.png<>uid://c8dawhes5jwpg::::res://Assets/Objects/Trees.png<>uid://bxexduqeicxgv::::res://Assets/Tilesets/SubTileSets/Water.png<>uid://40cge1nvl8mi::::res://Assets/Tilesets/SubTileSets/Light_Dirt.png<>uid://plyr0nsndh8n::::res://Assets/Tilesets/SubTileSets/Stone.png<>uid://g6m8f86yo4np::::res://Assets/Tilesets/SubTileSets/Dark_Grass.png<>uid://s1l8w6s40jet::::res://Assets/Tilesets/SubTileSets/Dark_Dirt.png<>uid://dc8sqr53sn08s::::res://Assets/Tilesets/SubTileSets/Light_Grass.png
-Tileset_Main.tres::TileSet::6191768234423323406::1729040962::0::1::::<><>::uid://bxexduqeicxgv::::res://Assets/Tilesets/SubTileSets/Water.png<>uid://40cge1nvl8mi::::res://Assets/Tilesets/SubTileSets/Light_Dirt.png<>uid://plyr0nsndh8n::::res://Assets/Tilesets/SubTileSets/Stone.png<>uid://g6m8f86yo4np::::res://Assets/Tilesets/SubTileSets/Dark_Grass.png<>uid://s1l8w6s40jet::::res://Assets/Tilesets/SubTileSets/Dark_Dirt.png<>uid://dc8sqr53sn08s::::res://Assets/Tilesets/SubTileSets/Light_Grass.png
-::res://Assets/Tilesets/Ground/::1729040086
-Bush_Tiles.png::CompressedTexture2D::6208205264938119123::1729037508::1729040086::1::::<><>::
-Darker_Grass_Hills_Tiles_v2.png::CompressedTexture2D::7132289834968085737::1729037508::1729040086::1::::<><>::
-Darker_Grass_Hill_Tiles_Slopes_v2.png::CompressedTexture2D::3005541836024660252::1729037508::1729040086::1::::<><>::
-Darker_Grass_Tiles_v2.png::CompressedTexture2D::4055937916052708551::1729037508::1729040086::1::::<><>::
-Darker_Grass_Tile_Layers2.png::CompressedTexture2D::7387088786060728847::1729037508::1729040086::1::::<><>::
-Darker_Grass_Tile_Layers.png::CompressedTexture2D::7209699523839571220::1729037508::1729040086::1::::<><>::
-Darker_Soil_Ground_Hills_Tiles.png::CompressedTexture2D::2232861325550514202::1729037508::1729040086::1::::<><>::
-Darker_Soil_Ground_Tiles.png::CompressedTexture2D::1945302229674008706::1729037508::1729040086::1::::<><>::
-Grass_Hill_Tiles_Slopes v.2.png::CompressedTexture2D::5307702997477795818::1729037508::1729040086::1::::<><>::
-Grass_Hill_Tiles_v2.png::CompressedTexture2D::3225866867758269360::1729037508::1729040086::1::::<><>::
-Grass_tiles_v2.png::CompressedTexture2D::1607938466781673895::1729037508::1729040086::1::::<><>::
-Grass_Tile_layers2.png::CompressedTexture2D::1396614242753803284::1729037508::1729040086::1::::<><>::
-Grass_Tile_Layers.png::CompressedTexture2D::7201217570838163237::1729037508::1729040086::1::::<><>::
-Ground_Hill_Tiles_Slopes.png::CompressedTexture2D::3878324960534460959::1729037508::1729040086::1::::<><>::
-Soil_Ground_HiIls_Tiles.png::CompressedTexture2D::7707387922561544340::1729037508::1729040086::1::::<><>::
-Soil_Ground_Tiles.png::CompressedTexture2D::7826169042861948864::1729037508::1729040086::1::::<><>::
-Stone_Ground_Hills_Tiles.png::CompressedTexture2D::3480404166657210398::1729037508::1729040086::1::::<><>::
-Stone_Ground_Tiles.png::CompressedTexture2D::4732064118409528635::1729037508::1729040086::1::::<><>::
-::res://Assets/Tilesets/SubTileSets/::1729040086
-Dark_Dirt.png::CompressedTexture2D::1317801029469654359::1729037508::1729040086::1::::<><>::
-Dark_Grass.png::CompressedTexture2D::485916622352557389::1729037508::1729040086::1::::<><>::
-Light_Dirt.png::CompressedTexture2D::2087218308980905708::1729037508::1729040086::1::::<><>::
-Light_Grass.png::CompressedTexture2D::7368886623349487072::1729037508::1729040086::1::::<><>::
-Stone.png::CompressedTexture2D::1077029710189469811::1729037508::1729040086::1::::<><>::
-Water.png::CompressedTexture2D::4010424521975839693::1729037508::1729040086::1::::<><>::
-::res://Assets/Trees/::1729040086
-no_tree_appel_sprites.png::CompressedTexture2D::587153493471253588::1729037508::1729040086::1::::<><>::
-no_tree_orange_sprites.png::CompressedTexture2D::8166340460033920705::1729037508::1729040086::1::::<><>::
-no_tree_peach_sprites.png::CompressedTexture2D::3185153089421168612::1729037508::1729040086::1::::<><>::
-no_tree_pear_sprites.png::CompressedTexture2D::6529481701849564998::1729037508::1729040086::1::::<><>::
-tree_apple.png::CompressedTexture2D::3358291075549031288::1729037508::1729040086::1::::<><>::
-tree_fall.png::CompressedTexture2D::2462509621990232843::1729037508::1729040086::1::::<><>::
-tree_none.png::CompressedTexture2D::7616379194433801270::1729037508::1729040086::1::::<><>::
-tree_orange.png::CompressedTexture2D::8436169385765845944::1729037508::1729040086::1::::<><>::
-tree_peach.png::CompressedTexture2D::7490329219023218359::1729037508::1729040086::1::::<><>::
-tree_pear.png::CompressedTexture2D::6758245691672849008::1729037508::1729040086::1::::<><>::
-::res://Assets/UI Sprites/::1729040086
-ALL UI ASSETS on one sheet.png::CompressedTexture2D::4966084277390604253::1729037508::1729040086::1::::<><>::
-Weather_UI.png::CompressedTexture2D::8803927322859652406::1729037508::1729040086::1::::<><>::
-::res://Assets/UI Sprites/Buttons/::1729037508
-::res://Assets/UI Sprites/Buttons/Icon Buttons/::1729040086
-Icon Buttons Spritesheet.png::CompressedTexture2D::7551574448215432302::1729037508::1729040086::1::::<><>::
-::res://Assets/UI Sprites/Buttons/Round/::1729040086
-medium colored round buttons.png::CompressedTexture2D::4094385278124072202::1729037508::1729040086::1::::<><>::
-small colored round buttons.png::CompressedTexture2D::5113230232680340036::1729037508::1729040086::1::::<><>::
-::res://Assets/UI Sprites/Buttons/Square/::1729040086
-Small Square Buttons.png::CompressedTexture2D::6500329149072409733::1729037508::1729040086::1::::<><>::
-Square Buttons 19x26.png::CompressedTexture2D::4596448274565414579::1729037508::1729040086::1::::<><>::
-Square Buttons 26x19.png::CompressedTexture2D::8586434749405396117::1729037508::1729040086::1::::<><>::
-Square Buttons 26x26.png::CompressedTexture2D::4713483383471966637::1729037508::1729040086::1::::<><>::
-::res://Assets/UI Sprites/Dialouge UI/::1729040086
-dialog box big.png::CompressedTexture2D::3704523203023552947::1729037508::1729040086::1::::<><>::
-dialog box character finished talking click to continue indicator - spritesheet_.png::CompressedTexture2D::2808631448771883385::1729037508::1729040086::1::::<><>::
-dialog box medium.png::CompressedTexture2D::6961743594250825096::1729037508::1729040086::1::::<><>::
-dialog box small.png::CompressedTexture2D::8128647930571212175::1729037508::1729040086::1::::<><>::
-dialog box.png::CompressedTexture2D::6601383896826494274::1729037508::1729040086::1::::<><>::
-Premade dialog box  big.png::CompressedTexture2D::2986877401410831051::1729037508::1729040086::1::::<><>::
-Premade dialog box medium.png::CompressedTexture2D::5817177131240241341::1729037508::1729040086::1::::<><>::
-Premade dialog box small.png::CompressedTexture2D::1290004841637647811::1729037508::1729040086::1::::<><>::
-::res://Assets/UI Sprites/Dialouge UI/Emotes/::1729040086
-Teemo Basic emote animations sprite sheet.png::CompressedTexture2D::439747440878991260::1729037508::1729040086::1::::<><>::
-Teemo premium emote animations sprite sheet-export.png::CompressedTexture2D::5603506402855542963::1729037508::1729040086::1::::<><>::
-::res://Assets/UI Sprites/Icons/::1729040086
-All Icons.png::CompressedTexture2D::7772006727715695547::1729037508::1729040086::1::::<><>::
-white icons.png::CompressedTexture2D::7510619746953018968::1729037508::1729040086::1::::<><>::
-::res://Assets/UI Sprites/Icons/Icons/::1729040086
-coins.png::CompressedTexture2D::8285839349981974485::1729037508::1729040086::1::::<><>::
-Hearts in wood.png::CompressedTexture2D::5205483675241907164::1729037508::1729040086::1::::<><>::
-Hearts.png::CompressedTexture2D::3144550313728729356::1729037508::1729040086::1::::<><>::
-Medium Happines-Sadness icons.png::CompressedTexture2D::529590337327529724::1729037508::1729040086::1::::<><>::
-Small Happines-Sadness icons.png::CompressedTexture2D::7428418679207929839::1729037508::1729040086::1::::<><>::
-stars in wood.png::CompressedTexture2D::6572468906926743033::1729037508::1729040086::1::::<><>::
-stars.png::CompressedTexture2D::7768104034616036247::1729037508::1729040086::1::::<><>::
-::res://Assets/UI Sprites/Mouse sprites/::1729040086
-Arrow Mouse icon 1.png::CompressedTexture2D::8476654976102399372::1729037508::1729040086::1::::<><>::
-Arrow Mouse icon 2.png::CompressedTexture2D::5395779205653107733::1729037508::1729040086::1::::<><>::
-Arrow Mouse icon 3.png::CompressedTexture2D::7884919978939645323::1729037508::1729040086::1::::<><>::
-Catpaw holding Mouse icon.png::CompressedTexture2D::1551597769764855852::1729037508::1729040086::1::::<><>::
-Catpaw Mouse icon.png::CompressedTexture2D::1461629809403116454::1729037508::1729040086::1::::<><>::
-Catpaw pointing Mouse icon.png::CompressedTexture2D::4524367077435589920::1729037508::1729040086::1::::<><>::
-Triangle Mouse icon 1.png::CompressedTexture2D::84904151572241117::1729037508::1729040086::1::::<><>::
-Triangle Mouse icon 2.png::CompressedTexture2D::449303885090648164::1729037508::1729040086::1::::<><>::
-Triangle Mouse icon 3.png::CompressedTexture2D::4776440911791150543::1729037508::1729040086::1::::<><>::
-Triangle small Mouse icon 1.png::CompressedTexture2D::5352252575437333540::1729037508::1729040086::1::::<><>::
-Triangle small Mouse icon 2.png::CompressedTexture2D::542753713037679653::1729037508::1729040086::1::::<><>::
-Triangle small Mouse icon 3.png::CompressedTexture2D::6812944316307643888::1729037508::1729040086::1::::<><>::
-::res://Assets/UI Sprites/Other UI sprites/::1729040086
-Setting menu.png::CompressedTexture2D::1251454154951489174::1729037508::1729040086::1::::<><>::
-Stamina circle with black outline sprite sheet_.png::CompressedTexture2D::6486852404153495250::1729037508::1729040086::1::::<><>::
-Stamina circle with white outline sprite sheet_.png::CompressedTexture2D::8440531000411839680::1729037508::1729040086::1::::<><>::
-UI Big Play Button.png::CompressedTexture2D::684585668706289160::1729037508::1729040086::1::::<><>::
-UI Settings Buttons.png::CompressedTexture2D::46921738799510215::1729037508::1729040086::1::::<><>::
-::res://Assets/UI Sprites/Other UI sprites/Xs and check marks/::1729040086
-Xs and check marks.png::CompressedTexture2D::957733035116101851::1729037508::1729040086::1::::<><>::
-::res://Assets/UI Sprites/Other UI sprites/Xs and check marks/1s/::1729040086
-big check mark pressed.png::CompressedTexture2D::1773652876041596544::1729037508::1729040086::1::::<><>::
-big check mark.png::CompressedTexture2D::4040829818084489361::1729037508::1729040086::1::::<><>::
-big X pressed.png::CompressedTexture2D::2074533200113905268::1729037508::1729040086::1::::<><>::
-big X.png::CompressedTexture2D::1766548600194627774::1729037508::1729040086::1::::<><>::
-check mark pressed.png::CompressedTexture2D::6803627176025222665::1729037508::1729040086::1::::<><>::
-check mark.png::CompressedTexture2D::3783569330056953390::1729037508::1729040086::1::::<><>::
-darker big check mark pres.png::CompressedTexture2D::3508658429021555283::1729037508::1729040086::1::::<><>::
-darker big check mark.png::CompressedTexture2D::6642826349996782509::1729037508::1729040086::1::::<><>::
-darker big X pressed.png::CompressedTexture2D::1199575726603719227::1729037508::1729040086::1::::<><>::
-darker big X.png::CompressedTexture2D::5132931451158225050::1729037508::1729040086::1::::<><>::
-darker check mark pressed.png::CompressedTexture2D::7308744031664046678::1729037508::1729040086::1::::<><>::
-darker check mark.png::CompressedTexture2D::368096654609972552::1729037508::1729040086::1::::<><>::
-darker small check mark pr.png::CompressedTexture2D::7105438663216012310::1729037508::1729040086::1::::<><>::
-darker small check mark.png::CompressedTexture2D::411231658823988054::1729037508::1729040086::1::::<><>::
-darker small X pressed.png::CompressedTexture2D::3841982755387488824::1729037508::1729040086::1::::<><>::
-darker small X.png::CompressedTexture2D::5647243316143398635::1729037508::1729040086::1::::<><>::
-darker X prssed.png::CompressedTexture2D::781065192531125462::1729037508::1729040086::1::::<><>::
-darker X.png::CompressedTexture2D::3244626620029008478::1729037508::1729040086::1::::<><>::
-small check mark pressed.png::CompressedTexture2D::698756877054292560::1729037508::1729040086::1::::<><>::
-small check mark.png::CompressedTexture2D::5120588731841325894::1729037508::1729040086::1::::<><>::
-small X pressed.png::CompressedTexture2D::8178862548921034846::1729037508::1729040086::1::::<><>::
-small X.png::CompressedTexture2D::7962380021035779284::1729037508::1729040086::1::::<><>::
-X pressed.png::CompressedTexture2D::1248939866791898268::1729037508::1729040086::1::::<><>::
-X.png::CompressedTexture2D::1395532697896385058::1729037508::1729040086::1::::<><>::
-::res://Assets/UI Sprites/Other UI sprites/Xs and check marks/2s/::1729040086
-big check marks.png::CompressedTexture2D::3436936043196626313::1729037508::1729040086::1::::<><>::
-big X.png::CompressedTexture2D::7233501937737089920::1729037508::1729040086::1::::<><>::
-check marks.png::CompressedTexture2D::3412806222853071691::1729037508::1729040086::1::::<><>::
-darker big check marks.png::CompressedTexture2D::738863090824082911::1729037508::1729040086::1::::<><>::
-darker big x.png::CompressedTexture2D::4659884862546969024::1729037508::1729040086::1::::<><>::
-darker check marks.png::CompressedTexture2D::2804471640952467871::1729037508::1729040086::1::::<><>::
-darker small check marks.png::CompressedTexture2D::6048687387372819969::1729037508::1729040086::1::::<><>::
-darker small x.png::CompressedTexture2D::6372766794755688358::1729037508::1729040086::1::::<><>::
-darker x.png::CompressedTexture2D::7655508550749811550::1729037508::1729040086::1::::<><>::
-small check marks.png::CompressedTexture2D::4439036621064467439::1729037508::1729040086::1::::<><>::
-small X.png::CompressedTexture2D::5825107171248473844::1729037508::1729040086::1::::<><>::
-X.png::CompressedTexture2D::6311676183576795352::1729037508::1729040086::1::::<><>::
-::res://Audio/::1729040064
-::res://Audio/Music/::1729040087
-Autumn.wav::AudioStreamWAV::2454193808025584167::1729037508::1729040087::1::::<><>::
-Menu.wav::AudioStreamWAV::6249059891083016546::1729037508::1729040087::1::::<><>::
-Night.wav::AudioStreamWAV::2720239800596644507::1729037508::1729040087::1::::<><>::
-Rain.wav::AudioStreamWAV::3768737551729769451::1729037508::1729040087::1::::<><>::
-Spring.wav::AudioStreamWAV::2697032926067191611::1729037508::1729040087::1::::<><>::
-Summer.wav::AudioStreamWAV::4545617125798697714::1729037508::1729040087::1::::<><>::
-Winter.wav::AudioStreamWAV::2235477782689835285::1729037508::1729040087::1::::<><>::
-::res://Audio/SFX/::1729037508
-::res://Audio/SFX/Inventory/::1729040086
-CoinPickup.wav::AudioStreamWAV::2391698435073157131::1729037508::1729040086::1::::<><>::
-CollectItem.wav::AudioStreamWAV::5579751672430144908::1729037508::1729040086::1::::<><>::
-InventoryClose.wav::AudioStreamWAV::9069863972087354044::1729037508::1729040086::1::::<><>::
-InventoryOpen.wav::AudioStreamWAV::1437431054276414198::1729037508::1729040086::1::::<><>::
-UIButtonClick.wav::AudioStreamWAV::3190798061151785273::1729037508::1729040086::1::::<><>::
-::res://Audio/SFX/Player/::1729040086
-AxeSwing.wav::AudioStreamWAV::1408857252376491754::1729037508::1729040086::1::::<><>::
-DirtDig.mp3::AudioStreamMP3::8692016724516045454::1729037508::1729040086::1::::<><>::
-::res://Audio/SFX/Tree/::1729040086
-TreeFall.wav::AudioStreamWAV::5895521267134146515::1729037508::1729040086::1::::<><>::
-TreeHit.wav::AudioStreamWAV::5682944328184495600::1729037508::1729040086::1::::<><>::
-TreeShake.wav::AudioStreamWAV::2130007710296679858::1729037508::1729040086::1::::<><>::
-::res://LocalData/::1729043272
-::res://LocalData/Saves/::1729043295
-::res://LocalData/Saves/Save1/::1729043295
-PlayerData.json::JSON::-1::1729043301::0::1::::<><>::
-::res://Resoures/::1729040064
-::res://Resoures/Harvestables/::1729040064
-::res://Resoures/Harvestables/Pickables/::1729040962
-SmallStone1.tres::Resource/PickableRes::3122117101708030046::1729040962::0::1::::<><>::res://Scripts/ResourceScripts/Objects/PickableRes.gd<>uid://tn6e04v71801::::res://Resoures/Items/Rocks/SmallStone.tres<>uid://kyokxtv2lr0k::::res://Assets/Objects/Ground-Objects.png
-::res://Resoures/Items/::1729040064
-::res://Resoures/Items/Animals/::1729040064
-::res://Resoures/Items/Animals/Cluck/::1729040064
-::res://Resoures/Items/Animals/Cluck/Egg/::1729040064
-BlushCluckEgg.tres::Resource/CluckEggRes::5475777676874071541::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/CluckEggRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-BronzeCluckEgg.tres::Resource/CluckEggRes::4898059886822454961::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/CluckEggRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-PearlyCluckEgg.tres::Resource/CluckEggRes::4087206336112548685::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/CluckEggRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-RoyalCluckEgg.tres::Resource/CluckEggRes::4125031066646737219::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/CluckEggRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-ViridescentCluckEgg.tres::Resource/CluckEggRes::6941534432712971279::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/CluckEggRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-::res://Resoures/Items/Animals/Moomoo/::1729040064
-::res://Resoures/Items/Animals/Moomoo/Milk/::1729040064
-BlushMoomooMilk.tres::Resource/MoomooMilkRes::7419869271510184797::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/MoomooMilkRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-BronzeMoomooMilk.tres::Resource/MoomooMilkRes::2425554039821723783::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/MoomooMilkRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-LargeBlushMoomooMilk.tres::Resource/MoomooMilkRes::7531666661641058151::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/MoomooMilkRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-LargeBronzeMoomooMilk.tres::Resource/MoomooMilkRes::9125942174709824553::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/MoomooMilkRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-LargePearlyMoomooMilk.tres::Resource/MoomooMilkRes::2567289957981744796::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/MoomooMilkRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-LargeRoyalMoomooMilk.tres::Resource/MoomooMilkRes::4338403065998323512::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/MoomooMilkRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-LargeViridescentMoomooMilk.tres::Resource/MoomooMilkRes::4704362957374516714::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/MoomooMilkRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-PearlyMoomooMilk.tres::Resource/MoomooMilkRes::6079654884834768484::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/MoomooMilkRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-RoyalMoomooMilk.tres::Resource/MoomooMilkRes::3208578861802846886::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/MoomooMilkRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-ViridescentMoomooMilk.tres::Resource/MoomooMilkRes::3977300653696573121::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/MoomooMilkRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-::res://Resoures/Items/Coins/::1729040064
-Coin1.tres::Resource/CoinRes::4533192487889256930::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/UI/CoinRes.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
-Coin5.tres::Resource/CoinRes::6676952843479005369::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/UI/CoinRes.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
-Coin10.tres::Resource/Coin::7266894828757097971::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/UI/CoinRes.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
-Coin25.tres::Resource/Coin::5050494394035386367::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/UI/CoinRes.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
-Coin50.tres::Resource/Coin::2869072488568406102::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/UI/CoinRes.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
-Coin100.tres::Resource/Coin::1611956614010352413::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/UI/CoinRes.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
-Coin250.tres::Resource/Coin::4100181307558912702::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/UI/CoinRes.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
-Coin1000.tres::Resource/Coin::7338772723298554720::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/UI/CoinRes.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
-::res://Resoures/Items/Craftables/::1729040064
-Stick.tres::Resource/ItemRes::7247314908111107267::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/ItemRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-::res://Resoures/Items/Plants/::1729040064
-Tuff.tres::Resource/ItemRes::2570295809183461493::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/ItemRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-::res://Resoures/Items/Plants/Crops/::1729040064
-AsteroidPomeCrop.tres::Resource/PlantedCropRes::3869995915719618861::1729040064::0::1::::<><>::uid://b8edju3caqp4c::::res://Resoures/Items/Plants/Vegetables/AsteroidPome.tres<>res://Scripts/ResourceScripts/PlantedCropRes.gd
-BeadTurnipCrop.tres::Resource/PlantedCropRes::3630223912302628492::1729040064::0::1::::<><>::uid://nsdx2c1apr61::::res://Resoures/Items/Plants/Vegetables/BeadTurnip.tres<>res://Scripts/ResourceScripts/PlantedCropRes.gd
-BellCabbageCrop.tres::Resource/PlantedCropRes::8040064697706978104::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/PlantedCropRes.gd<>uid://pmiew5p18uoa::::res://Resoures/Items/Plants/Vegetables/BellCabbage.tres
-BerylBeanCrop.tres::Resource/PlantedCropRes::4071220166831218341::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/PlantedCropRes.gd<>uid://yc2u4vbdll2p::::res://Resoures/Items/Plants/Vegetables/BerylBean.tres
-BlancPastinacaCrop.tres::Resource/PlantedCropRes::5437074092130512339::1729040064::0::1::::<><>::uid://dmk6p4hwnoane::::res://Resoures/Items/Plants/Vegetables/BlancPastinaca.tres<>res://Scripts/ResourceScripts/PlantedCropRes.gd
-BlondMealieCrop.tres::Resource/PlantedCropRes::4098624232490721732::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/PlantedCropRes.gd<>uid://83wk40pmcx4h::::res://Resoures/Items/Plants/Vegetables/BlondMealie.tres
-BushyLactucaCrop.tres::Resource/PlantedCropRes::232079423288558022::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/PlantedCropRes.gd<>uid://bqyl1whyiqjj7::::res://Resoures/Items/Plants/Vegetables/BushyLactuca.tres
-ChalkBroccoliCrop.tres::Resource/PlantedCropRes::4322721835424953578::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/PlantedCropRes.gd<>uid://dlag5tmaibjsf::::res://Resoures/Items/Plants/Vegetables/ChalkBroccoli.tres
-GoldenAttaCrop.tres::Resource/PlantedCropRes::8051763579876973690::1729040064::0::1::::<><>::uid://bsi7jfqie2ik1::::res://Resoures/Items/Plants/Vegetables/GoldenAtta.tres<>res://Scripts/ResourceScripts/PlantedCropRes.gd
-OcherPastinacaCrop.tres::Resource/PlantedCropRes::7893622989748658231::1729040064::0::1::::<><>::uid://k87pv2gvv6e::::res://Resoures/Items/Plants/Vegetables/OcherPastinaca.tres<>res://Scripts/ResourceScripts/PlantedCropRes.gd
-RosieBroccoliCrop.tres::Resource/PlantedCropRes::5576199493584837363::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/PlantedCropRes.gd<>uid://dw3if2fpqeclq::::res://Resoures/Items/Plants/Vegetables/RosieBroccoli.tres
-SphericalCalabazaCrop.tres::Resource/PlantedCropRes::5177991478667222421::1729040064::0::1::::<><>::uid://b8c8ltasce36b::::res://Resoures/Items/Plants/Vegetables/SphericalCalabaza.tres<>res://Scripts/ResourceScripts/PlantedCropRes.gd
-ViolaceousEggplantCrop.tres::Resource/PlantedCropRes::3374574867779365011::1729040064::0::1::::<><>::uid://dvsvvbgoxtr2m::::res://Resoures/Items/Plants/Vegetables/ViolaceousEggplant.tres<>res://Scripts/ResourceScripts/PlantedCropRes.gd
-WolfPeachCrop.tres::Resource/PlantedCropRes::4221964255539102708::1729040064::0::1::::<><>::uid://cgeoe0a4uv8gu::::res://Resoures/Items/Plants/Vegetables/WolfPeach.tres<>res://Scripts/ResourceScripts/PlantedCropRes.gd
-::res://Resoures/Items/Plants/Fruit/::1729040064
-::res://Resoures/Items/Plants/Fruit/Berries/::1729040064
-SappySultana.tres::Resource/FruitRes::182677209119388349::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/FruitRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-StarlingWhortleberry.tres::Resource/FruitRes::3749079900121504791::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/FruitRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-UtmostDrupelets.tres::Resource/FruitRes::7969676151597156423::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/FruitRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-::res://Resoures/Items/Plants/Fruit/TreeFruit/::1729040962
-LovableTawny.tres::Resource/FruitRes::3827721363064717261::1729040962::0::1::::<><>::res://Scripts/ResourceScripts/FruitRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-PassionatePome.tres::Resource/FruitRes::8842657990677040800::1729040962::0::1::::<><>::res://Scripts/ResourceScripts/FruitRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-PrimeDrupe.tres::Resource/FruitRes::3756164700734909072::1729040962::0::1::::<><>::res://Scripts/ResourceScripts/FruitRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-SuedePaio.tres::Resource/FruitRes::4544547448975114091::1729040962::0::1::::<><>::res://Scripts/ResourceScripts/FruitRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-::res://Resoures/Items/Plants/Vegetables/::1729040064
-AsteroidPome.tres::Resource/VegetableRes::4711109351700896856::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-BeadTurnip.tres::Resource/VegetableRes::949838413507602996::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-BellCabbage.tres::Resource/VegetableRes::1078099269312386740::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-BerylBean.tres::Resource/VegetableRes::1690337633171626553::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-BlancPastinaca.tres::Resource/VegetableRes::8024082500968910846::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-BlondMealie.tres::Resource/VegetableRes::2375389611443591725::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-BushyLactuca.tres::Resource/VegetableRes::3559702732990126774::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-ChalkBroccoli.tres::Resource/VegetableRes::7931758223363451797::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-GoldenAtta.tres::Resource/VegetableRes::3668294194827354022::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-OcherPastinaca.tres::Resource/VegetableRes::22705405233617822::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-RosieBroccoli.tres::Resource/VegetableRes::8761715279698894158::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-SphericalCalabaza.tres::Resource/VegetableRes::4708805582514890127::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-ViolaceousEggplant.tres::Resource/VegetableRes::8671699188030933422::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-WolfPeach.tres::Resource/VegetableRes::5203090435733956972::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-::res://Resoures/Items/Rocks/::1729040962
-SmallStone.tres::Resource/ItemRes::1362315668757821600::1729040962::0::1::::<><>::res://Scripts/ResourceScripts/ItemRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-Stone.tres::Resource/ItemRes::2314833597356838365::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/ItemRes.gd<>uid://d0vkukchi2y8g::::res://Assets/Items/Tools-Materials.png
-::res://Resoures/Items/Seeds/::1729040064
-AsteroidPomeSeed.tres::Resource/SeedPackRes::7146743720695440347::1729040064::0::1::::<><>::uid://bvewjdaxh43s8::::res://Resoures/Items/Plants/Crops/AsteroidPomeCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-BeadTurnipSeed.tres::Resource/SeedPackRes::5945008787596550583::1729040064::0::1::::<><>::uid://bryri0u7cu8yy::::res://Resoures/Items/Plants/Crops/BeadTurnipCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-BellCabbageSeed.tres::Resource/SeedPackRes::8394401599528272575::1729040064::0::1::::<><>::uid://dmswxqxiwn721::::res://Resoures/Items/Plants/Crops/BellCabbageCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-BerylBeanSeed.tres::Resource/SeedPackRes::3060102017110498153::1729040064::0::1::::<><>::uid://byaenv7cn43yn::::res://Resoures/Items/Plants/Crops/BerylBeanCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-BlancPastinacaSeed.tres::Resource/SeedPackRes::1230254829638518313::1729040064::0::1::::<><>::uid://cjp020hl4pjnn::::res://Resoures/Items/Plants/Crops/BlancPastinacaCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-BlondMealieSeed.tres::Resource/SeedPackRes::3348267895269431892::1729040064::0::1::::<><>::uid://bynn0idcmjei3::::res://Resoures/Items/Plants/Crops/BlondMealieCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-BushyLactucaSeed.tres::Resource/SeedPackRes::8366964398642942254::1729040064::0::1::::<><>::uid://dkokxhdg2mb3::::res://Resoures/Items/Plants/Crops/BushyLactucaCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-ChalkBroccoliSeed.tres::Resource/SeedPackRes::5805653968695308464::1729040064::0::1::::<><>::uid://b2t7ukhkwio5w::::res://Resoures/Items/Plants/Crops/ChalkBroccoliCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-GoldenAttaSeed.tres::Resource/SeedPackRes::1596801341951980493::1729040064::0::1::::<><>::uid://dmylmtp7uesek::::res://Resoures/Items/Plants/Crops/GoldenAttaCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-OcherPastinacaSeed.tres::Resource/SeedPackRes::272340028847795679::1729040064::0::1::::<><>::uid://dkpy21433g1ip::::res://Resoures/Items/Plants/Crops/OcherPastinacaCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-RosieBroccoliSeed.tres::Resource/SeedPackRes::7573920840143331984::1729040064::0::1::::<><>::uid://clpfgq00jmurr::::res://Resoures/Items/Plants/Crops/RosieBroccoliCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-SphericalCalabazaSeed.tres::Resource/SeedPackRes::7575987621286263418::1729040064::0::1::::<><>::uid://cf1i07go7q2g4::::res://Resoures/Items/Plants/Crops/SphericalCalabazaCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-ViolaceousEggplantSeed.tres::Resource/SeedPackRes::6627477564250757772::1729040064::0::1::::<><>::uid://bocw0w3efoffv::::res://Resoures/Items/Plants/Crops/ViolaceousEggplantCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-WolfPeachSeed.tres::Resource/SeedPackRes::2870098280604817043::1729040064::0::1::::<><>::uid://b1ffetordcd5m::::res://Resoures/Items/Plants/Crops/WolfPeachCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-::res://Resoures/Items/Tools/::1729040962
-Axe.tres::Resource/UsableRes::6203270192739290889::1729040962::0::1::::<><>::res://Scripts/ResourceScripts/UsableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-Hoe.tres::Resource/UsableRes::1227788125100846264::1729040962::0::1::::<><>::res://Scripts/ResourceScripts/UsableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-WateringCan.tres::Resource/UsableRes::7464588700089320269::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/UsableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-::res://Resoures/Items/Trees/::1729040112
-Branch.tres::Resource/ItemRes::4331760544566554697::1729040112::0::1::::<><>::res://Scripts/ResourceScripts/ItemRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-Log.tres::Resource/ItemRes::686534140547864542::1729040112::0::1::::<><>::res://Scripts/ResourceScripts/ItemRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-Twig.tres::Resource/ItemRes::3012106836762515075::1729040112::0::1::::<><>::res://Scripts/ResourceScripts/ItemRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
-::res://Resoures/Trees/::1729040064
-DefaultTree.tres::Resource/TreeRes::544739434074649386::1729040064::0::1::::<><>::uid://dgrowgmovs0fi::::res://Assets/Trees/tree_none.png<>res://Scripts/ResourceScripts/Objects/TreeRes.gd<>uid://bbc4f518t1x12::::res://Assets/Trees/tree_fall.png
-LovableTawnyTree.tres::Resource/GrowableTreeRes::7789528434643874659::1729040064::0::1::::<><>::uid://bbc4f518t1x12::::res://Assets/Trees/tree_fall.png<>uid://busganook08a8::::res://Resoures/Items/Plants/Fruit/TreeFruit/LovableTawny.tres<>uid://dsgsqhxub821a::::res://Assets/Trees/tree_orange.png<>uid://dgrowgmovs0fi::::res://Assets/Trees/tree_none.png<>res://Scripts/ResourceScripts/Objects/GrowableTreeRes.gd
-PassionatePomeTree.tres::Resource/GrowableTreeRes::1413055892288482730::1729040064::0::1::::<><>::uid://dx8pjxwvtcnw7::::res://Resoures/Items/Plants/Fruit/TreeFruit/PassionatePome.tres<>uid://dgrowgmovs0fi::::res://Assets/Trees/tree_none.png<>res://Scripts/ResourceScripts/Objects/GrowableTreeRes.gd<>uid://bn31tfimxoo77::::res://Assets/Trees/tree_apple.png<>uid://bbc4f518t1x12::::res://Assets/Trees/tree_fall.png
-PrimeDrupeTree.tres::Resource/GrowableTreeRes::1623393313234681672::1729040064::0::1::::<><>::uid://bbc4f518t1x12::::res://Assets/Trees/tree_fall.png<>uid://btrrqpk15yphg::::res://Resoures/Items/Plants/Fruit/TreeFruit/PrimeDrupe.tres<>uid://deymvl3pmfj7l::::res://Assets/Trees/tree_peach.png<>uid://dgrowgmovs0fi::::res://Assets/Trees/tree_none.png<>res://Scripts/ResourceScripts/Objects/GrowableTreeRes.gd
-SuedePaioTree.tres::Resource/GrowableTreeRes::5591014835728191179::1729040064::0::1::::<><>::uid://bbc4f518t1x12::::res://Assets/Trees/tree_fall.png<>uid://b50obduc44hn4::::res://Resoures/Items/Plants/Fruit/TreeFruit/SuedePaio.tres<>uid://c3j0k364mo7c3::::res://Assets/Trees/tree_pear.png<>uid://dgrowgmovs0fi::::res://Assets/Trees/tree_none.png<>res://Scripts/ResourceScripts/Objects/GrowableTreeRes.gd
-::res://Resoures/UI/::1729037508
-::res://Resoures/UI/GameMenu/::1729040064
-Crafting.tres::Resource/UiMenuButton::6469702539542288708::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/UI/TopmenubuttonRes.gd<>uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png<>uid://yjtyrpy5hupd::::res://Scenes/UI/CenterMenu/CraftingMenu.tscn
-Exit.tres::Resource/UiMenuButton::7877717558822732294::1729040064::0::1::::<><>::uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png<>uid://bpm645y0841i6::::res://Scenes/UI/CenterMenu/ExitMenu.tscn<>res://Scripts/ResourceScripts/UI/TopmenubuttonRes.gd
-Inventory.tres::Resource/UiMenuButton::7156068489461758322::1729040064::0::1::::<><>::uid://cjnolyv432q8::::res://Scenes/UI/CenterMenu/InventoryMenu.tscn<>res://Scripts/ResourceScripts/UI/TopmenubuttonRes.gd
-Options.tres::Resource/UiMenuButton::2046374664903258345::1729040064::0::1::::<><>::uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png<>res://Scripts/ResourceScripts/UI/TopmenubuttonRes.gd<>uid://eqmc5akv01g2::::res://Scenes/UI/CenterMenu/OptionsMenu.tscn
-PlayerInfo.tres::Resource/UiMenuButton::5886254321324137483::1729040064::0::1::::<><>::uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png<>res://Scripts/ResourceScripts/UI/TopmenubuttonRes.gd<>uid://cplibp16gv3lc::::res://Scenes/UI/CenterMenu/PlayerInfoMenu.tscn
-Quests.tres::Resource/UiMenuButton::6372427630001804532::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/UI/TopmenubuttonRes.gd<>uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png<>uid://u1ai243xqkh1::::res://Scenes/UI/CenterMenu/QuestsMenu.tscn
-Relations.tres::Resource/UiMenuButton::605547281686704687::1729040064::0::1::::<><>::res://Scripts/ResourceScripts/UI/TopmenubuttonRes.gd<>uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png<>uid://fejg0r0tixx8::::res://Scenes/UI/CenterMenu/RelationsMenu.tscn
-::res://Scenes/::1729050731
-DateTime.tscn::PackedScene::6415086269190616754::1729050731::0::1::::<><>::res://Scripts/DateTime.gd
-Game.tscn::PackedScene::7346731436723818536::1729050720::0::1::::<><>::res://Scripts/Game.gd<>uid://dsj5jii06d4rf::::res://Scenes/Audio/AudioMachine.tscn<>uid://cxnrse3r4mt2a::::res://Scenes/DateTime.tscn
-::res://Scenes/Audio/::1729037508
-AudioMachine.tscn::PackedScene::8443078652001262563::1729037508::0::1::::<><>::res://Scripts/Audio/AudioMachine.gd
-AudioPlayer.tscn::PackedScene::5938702550180849935::1729037508::0::1::::<><>::
-::res://Scenes/Components/::1729041271
-CurrencyComponent.tscn::PackedScene::1345973163468384186::1729037508::0::1::::<><>::res://Scripts/Components/CurrencyComponent.gd
-GrowableComponent.tscn::PackedScene::3197548925624742601::1729037508::0::1::::<><>::res://Scripts/Components/GrowableComponent.gd
-HarvestComponent.tscn::PackedScene::4636371573807778772::1729040064::0::1::::<><>::res://Scripts/Components/HarvestComponent.gd
-HealthComponent.tscn::PackedScene::3300395959801485452::1729037508::0::1::::<><>::res://Scripts/Components/HealthComponent.gd
-InteractionComponent.tscn::PackedScene::5455055465650680644::1729041271::0::1::::<><>::res://Scripts/Components/InteractionComponent.gd
-InventoryComponent.tscn::PackedScene::7962025931412527632::1729037508::0::1::::<><>::res://Scripts/Components/InventoryComponent.gd
-ItemGravityComponent.tscn::PackedScene::5164566930284803297::1729040064::0::1::::<><>::res://Scripts/Components/ItemGravityComponent.gd
-::res://Scenes/Inventory/::1729037508
-InventorySlot.tscn::PackedScene::2065143751123783890::1729037508::0::1::::<><>::res://Scripts/Inventory/InventorySlot.gd
-::res://Scenes/Levels/::1729041271
-Start.tscn::PackedScene::2932314189228811374::1729041271::0::1::::<><>::res://Scripts/Levels/Start.gd<>uid://cuhlrvbbaqqsk::::res://Assets/Tilesets/Tileset_Main.tres<>uid://bhmrogi0cr2f3::::res://Scenes/Objects/Collectable.tscn<>uid://h041qntemutu::::res://Resoures/Trees/DefaultTree.tres<>uid://ueq3awjcr8oc::::res://Resoures/Trees/PassionatePomeTree.tres<>uid://bvcypkp2xfprc::::res://Scenes/Objects/Trees/Tree.tscn<>uid://di8kno6cp4ovj::::res://Resoures/Trees/LovableTawnyTree.tres<>uid://xenbyuir35vw::::res://Resoures/Trees/PrimeDrupeTree.tres<>uid://clwlgyka6o3sx::::res://Resoures/Trees/SuedePaioTree.tres<>uid://cum57os15y7i0::::res://Resoures/Items/Tools/Axe.tres<>uid://rq0qxv1gksng::::res://Resoures/Items/Tools/Hoe.tres<>uid://c8qtlqw4bwuph::::res://Scenes/Objects/PickableObject.tscn<>uid://bkqm2vjhhauws::::res://Resoures/Harvestables/Pickables/SmallStone1.tres<>uid://e3aoeskctp2q::::res://Scenes/Objects/Bed.tscn
-::res://Scenes/Objects/::1729050720
-Bed.tscn::PackedScene::338583191138143834::1729050720::0::1::::<><>::res://Scripts/Objects/Bed.gd<>uid://cjyp74klcqibc::::res://Scenes/Components/InteractionComponent.tscn
-Collectable.tscn::PackedScene::2903572640837537530::1729040064::0::1::::<><>::res://Scripts/Objects/Collectable.gd<>uid://b1yl8t3tvgl44::::res://Assets/Items/Item-Shadows.png
-PickableObject.tscn::PackedScene::7123277393780895285::1729040064::0::1::::<><>::res://Scripts/Objects/PickupableObject.gd<>uid://b7b5mk8jjsywi::::res://Scenes/Components/HarvestComponent.tscn
-Player.tscn::PackedScene::2865639875494289319::1729041271::0::1::::<><>::res://Scripts/Objects/Player.gd<>uid://idajb5n31743::::res://Assets/Characters/Character.png<>uid://dlo4ny25kmrga::::res://Scenes/Components/InventoryComponent.tscn<>uid://tf88mpduami1::::res://Scenes/Components/CurrencyComponent.tscn<>uid://bna0blnh7t1ky::::res://Scenes/Components/HealthComponent.tscn<>uid://dsj5jii06d4rf::::res://Scenes/Audio/AudioMachine.tscn<>uid://cft0wsgi7v4cb::::res://Scenes/Components/ItemGravityComponent.tscn
-::res://Scenes/Objects/Trees/::1729041271
-Tree.tscn::PackedScene::3865999699998143544::1729041271::0::1::::<><>::res://Scripts/Objects/Trees/Tree.gd<>uid://bls6ftfun40dh::::res://Scenes/Components/GrowableComponent.tscn<>uid://cjyp74klcqibc::::res://Scenes/Components/InteractionComponent.tscn<>uid://dgrowgmovs0fi::::res://Assets/Trees/tree_none.png<>uid://b7b5mk8jjsywi::::res://Scenes/Components/HarvestComponent.tscn<>uid://dsj5jii06d4rf::::res://Scenes/Audio/AudioMachine.tscn
-TreeStump.tscn::PackedScene::1161430971943041464::1729040064::0::1::::<><>::res://Scripts/Objects/Trees/Stump.gd<>uid://b7b5mk8jjsywi::::res://Scenes/Components/HarvestComponent.tscn<>uid://c8dawhes5jwpg::::res://Assets/Objects/Trees.png<>uid://dsj5jii06d4rf::::res://Scenes/Audio/AudioMachine.tscn
-::res://Scenes/UI/::1729037508
-::res://Scenes/UI/CenterMenu/::1729040064
-CenterMenu.tscn::PackedScene::511170415438033558::1729037508::0::1::::<><>::uid://domfakxmg6lbb::::res://Scenes/UI/GameUI/CenterMenu/MenuBar.tscn<>res://Scripts/UI/CenterMenu/CenterMenu.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png
-CraftingMenu.tscn::PackedScene::1704309046215453225::1729040064::0::1::::<><>::res://Scripts/UI/CenterMenu/CraftingMenu/CraftingMenu.gd
-ExitMenu.tscn::PackedScene::3465961500068271663::1729037508::0::1::::<><>::res://Scripts/UI/CenterMenu/ExitMenu.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://tebnlopbok7g::::res://Assets/Fonts/PixulBrush.ttf
-InventoryMenu.tscn::PackedScene::159772024909422845::1729037508::0::1::::<><>::res://Scripts/UI/InventoryMenu.gd
-OptionsMenu.tscn::PackedScene::314519170302027815::1729037508::0::1::::<><>::
-PlayerInfoMenu.tscn::PackedScene::5848870528419923280::1729037508::0::1::::<><>::
-QuestsMenu.tscn::PackedScene::1457466444950791264::1729037508::0::1::::<><>::
-RelationsMenu.tscn::PackedScene::359760237411775067::1729037508::0::1::::<><>::
-::res://Scenes/UI/CenterMenu/CraftingMenu/::1729040064
-CraftableItem.tscn::PackedScene::3114336320388135580::1729040064::0::1::::<><>::res://Scripts/UI/CenterMenu/CraftingMenu/CraftableItem.gd
-CraftableItemHover.tscn::PackedScene::6503599263291338989::1729040064::0::1::::<><>::res://Scripts/UI/CenterMenu/CraftingMenu/CraftableItemHover.gd
-CraftingItemIngredient.tscn::PackedScene::7575221163007313619::1729040064::0::1::::<><>::res://Scripts/UI/CenterMenu/CraftingMenu/CraftingItemIngredient.gd
-::res://Scenes/UI/GamePrompts/::1729050720
-ConfirmationMenu.tscn::PackedScene::1641620364475347460::1729050720::0::1::::<><>::res://Scripts/UI/GamePrompt/ConfirmationMenu.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png
-WelcomeGamePrompt.tscn::PackedScene::1587395320966958176::1729041446::0::1::::<><>::res://Scripts/UI/GamePrompt/NewGame/WelcomeGamePrompt.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png
-::res://Scenes/UI/GameUI/::1729050720
-DateWeatherUI.tscn::PackedScene::9105615493604555223::1729050720::0::1::::<><>::uid://dxoxnqvm06ypq::::res://Assets/UI Sprites/Weather_UI.png<>res://Scripts/UI/DateWeatherUI.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png
-PlayerUI.tscn::PackedScene::1181129390942667866::1729046038::0::1::::<><>::res://Scripts/UI/PlayerUI.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://kwcxoisinfym::::res://Scenes/UI/GameUI/Inventory/Hotbar.tscn<>uid://hju5w1smhwpi::::res://Scenes/UI/CenterMenu/CenterMenu.tscn<>uid://d2y3flkfbn7nf::::res://Scenes/UI/GameUI/DateWeatherUI.tscn
-UIHeart.tscn::PackedScene::2091948515756754235::1729037508::0::1::::<><>::uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png
-::res://Scenes/UI/GameUI/CenterMenu/::1729037508
-MenuBar.tscn::PackedScene::8166982541342783463::1729037508::0::1::::<><>::res://Scripts/UI/CenterMenu/MenuBar.gd
-TopBarButton.tscn::PackedScene::5389724670890528535::1729037508::0::1::::<><>::res://Scripts/UI/CenterMenu/TopBarButton.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png
-::res://Scenes/UI/GameUI/Inventory/::1729037508
-Hotbar.tscn::PackedScene::747468002729367672::1729037508::0::1::::<><>::res://Scripts/UI/InventoryUI/Hotbar.gd
-InventorySlotUI.tscn::PackedScene::2744641145248791617::1729037508::0::1::::<><>::res://Scripts/UI/InventoryUI/InventorySlotUI.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://dshut2sdrrnxf::::res://Assets/Fonts/pixelFont-7-8x14-sproutLands.ttf
-ItemHoverMenu.tscn::PackedScene::5412628253780271351::1729037508::0::1::::<><>::res://Scripts/UI/InventoryUI/ItemHoverMenu.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://tebnlopbok7g::::res://Assets/Fonts/PixulBrush.ttf
-MovingItem.tscn::PackedScene::4400342098727453985::1729037508::0::1::::<><>::res://Scripts/UI/InventoryUI/MovingItem.gd
-::res://Scenes/UI/Menus/::1729037508
-::res://Scenes/UI/Menus/MainMenu/::1729040063
-MainMenu.tscn::PackedScene::8276991850760991509::1729040063::0::1::::<><>::res://Scripts/UI/Menus/MainMenu.gd<>uid://bi05k7fafahkk::::res://Scenes/UI/Menus/MainMenu/MainMenuButton.tscn
-MainMenuButton.tscn::PackedScene::3001381932848814218::1729037508::0::1::::<><>::uid://dshut2sdrrnxf::::res://Assets/Fonts/pixelFont-7-8x14-sproutLands.ttf<>res://Scripts/UI/Menus/MainMenuButton.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png
-SaveInstance.tscn::PackedScene::2580645954527241797::1729040063::0::1::::<><>::res://Scripts/UI/Menus/SaveInstance.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://idajb5n31743::::res://Assets/Characters/Character.png
-SaveManagerMenu.tscn::PackedScene::117726338034832567::1729040063::0::1::::<><>::res://Scripts/UI/Menus/SaveManagerMenu.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png
-::res://Scripts/::1729051494
-DateTime.gd::GDScript::-1::1729051494::0::1::::<>Node<>::
-Game.gd::GDScript::-1::1729037508::0::1::::BaseGame<>Node2D<>::
-::res://Scripts/Audio/::1729037508
-AudioMachine.gd::GDScript::-1::1729037508::0::1::::AudioMachine<>Node2D<>::
-::res://Scripts/Components/::1729041201
-CurrencyComponent.gd::GDScript::-1::1729037508::0::1::::CurrencyComponent<>Node2D<>::
-GrowableComponent.gd::GDScript::-1::1729040064::0::1::::GrowableComponent<>Node2D<>::
-HarvestComponent.gd::GDScript::-1::1729040635::0::1::::HarvestComponent<>Node2D<>::
-HealthComponent.gd::GDScript::-1::1729040064::0::1::::HealthComponent<>Node2D<>::
-InteractionComponent.gd::GDScript::-1::1729041201::0::1::::InteractionComponent<>Node2D<>::
-InventoryComponent.gd::GDScript::-1::1729040064::0::1::::InventoryComponent<>Node2D<>::
-ItemGravityComponent.gd::GDScript::-1::1729040064::0::1::::ItemGravityComponent<>Node2D<>::
-::res://Scripts/Globals/::1729051494
-GameManager.gd::GDScript::-1::1729043235::0::1::::<>Node<>::
-ResourceMaps.gd::GDScript::-1::1729040064::0::1::::<>Node<>::
-SaveHandler.gd::GDScript::-1::1729040064::0::1::::<>Node<>::
-SignalManager.gd::GDScript::-1::1729051494::0::1::::<>Node<>::
-Utils.gd::GDScript::-1::1729046629::0::1::::<>Node<>::
-::res://Scripts/Inventory/::1729040064
-InventorySlot.gd::GDScript::-1::1729040064::0::1::::InventorySlot<>Node2D<>::
-::res://Scripts/Levels/::1729037508
-Start.gd::GDScript::-1::1729037508::0::1::::<>Node2D<>::
-::res://Scripts/Objects/::1729051494
-Bed.gd::GDScript::-1::1729051494::0::1::::Bed<>Node2D<>::
-Collectable.gd::GDScript::-1::1729040064::0::1::::Collectable<>RigidBody2D<>::
-PickupableObject.gd::GDScript::-1::1729040064::0::1::::PickableObject<>Node2D<>::
-Player.gd::GDScript::-1::1729040064::0::1::::Player<>CharacterBody2D<>::
-::res://Scripts/Objects/Trees/::1729040635
-Stump.gd::GDScript::-1::1729040064::0::1::::StumpObject<>Node2D<>::
-Tree.gd::GDScript::-1::1729040635::0::1::::TreeObject<>Node2D<>::
-::res://Scripts/ResourceScripts/::1729040064
-CluckEggRes.gd::GDScript::-1::1729040064::0::1::::CluckEggRes<>ConsumableRes<>::
-ConsumableRes.gd::GDScript::-1::1729040064::0::1::::ConsumableRes<>ItemRes<>::
-FruitRes.gd::GDScript::-1::1729040064::0::1::::FruitRes<>ConsumableRes<>::
-ItemRes.gd::GDScript::-1::1729040064::0::1::::ItemRes<>Resource<>::
-MoomooMilkRes.gd::GDScript::-1::1729040064::0::1::::MoomooMilkRes<>ConsumableRes<>::
-PlantedCropRes.gd::GDScript::-1::1729040064::0::1::::PlantedCropRes<>Resource<>::
-SeedPackRes.gd::GDScript::-1::1729040064::0::1::::SeedPackRes<>ItemRes<>::
-UsableRes.gd::GDScript::-1::1729040064::0::1::::UsableRes<>ItemRes<>::
-VegetableRes.gd::GDScript::-1::1729040064::0::1::::VegetableRes<>ConsumableRes<>::
-::res://Scripts/ResourceScripts/Objects/::1729040064
-GrowableTreeRes.gd::GDScript::-1::1729040064::0::1::::GrowableTreeRes<>TreeRes<>::
-PickableRes.gd::GDScript::-1::1729040064::0::1::::PickableRes<>Resource<>::
-TreeRes.gd::GDScript::-1::1729040064::0::1::::TreeRes<>Resource<>::
-::res://Scripts/ResourceScripts/UI/::1729040064
-CoinRes.gd::GDScript::-1::1729040064::0::1::::CoinRes<>ItemRes<>::
-HotbarslotRes.gd::GDScript::-1::1729040064::0::1::::SlotRes<>Resource<>::
-TopmenubuttonRes.gd::GDScript::-1::1729040064::0::1::::UiMenuButtonRes<>Resource<>::
-::res://Scripts/UI/::1729051494
-DateWeatherUI.gd::GDScript::-1::1729051494::0::1::::DateWeatherUI<>Control<>::
-InventoryMenu.gd::GDScript::-1::1729037508::0::1::::InventoryMenu<>Control<>::
-PlayerUI.gd::GDScript::-1::1729037508::0::1::::PlayerUI<>Control<>::
-UIHeart.gd::GDScript::-1::1729037508::0::1::::UIHeart<>NinePatchRect<>::
-::res://Scripts/UI/CenterMenu/::1729043497
-CenterMenu.gd::GDScript::-1::1729037508::0::1::::CenterMenu<>VBoxContainer<>::
-ExitMenu.gd::GDScript::-1::1729043497::0::1::::<>Control<>::
-MenuBar.gd::GDScript::-1::1729037508::0::1::::CenterMenuTopNav<>HBoxContainer<>::
-TopBarButton.gd::GDScript::-1::1729040064::0::1::::GuiMenuButton<>TextureButton<>::
-::res://Scripts/UI/CenterMenu/CraftingMenu/::1729040064
-CraftableItem.gd::GDScript::-1::1729040064::0::1::::CraftableItem<>Control<>::
-CraftableItemHover.gd::GDScript::-1::1729040064::0::1::::CraftableItemHover<>Control<>::
-CraftingItemIngredient.gd::GDScript::-1::1729040064::0::1::::CraftingItemIngredient<>Control<>::
-CraftingMenu.gd::GDScript::-1::1729040064::0::1::::CraftingMenu<>Control<>::
-::res://Scripts/UI/GamePrompt/::1729042804
-ConfirmationMenu.gd::GDScript::-1::1729042804::0::1::::ConfirmationMenu<>Control<>::
-::res://Scripts/UI/GamePrompt/NewGame/::1729043127
-WelcomeGamePrompt.gd::GDScript::-1::1729043127::0::1::::WelcomeGamePrompt<>Control<>::
-::res://Scripts/UI/InventoryUI/::1729040064
-Hotbar.gd::GDScript::-1::1729037508::0::1::::<>GridContainer<>::
-InventorySlotUI.gd::GDScript::-1::1729037508::0::1::::GuiInventorySlot<>Control<>::
-ItemHoverMenu.gd::GDScript::-1::1729040064::0::1::::ItemHoverMenu<>Control<>::
-MovingItem.gd::GDScript::-1::1729040064::0::1::::MovingInvItem<>Control<>::
-::res://Scripts/UI/Menus/::1729043243
-MainMenu.gd::GDScript::-1::1729037508::0::1::::MainMenu<>Control<>::
-MainMenuButton.gd::GDScript::-1::1729037508::0::1::::MainMenuButton<>Button<>::
-SaveInstance.gd::GDScript::-1::1729037508::0::1::::SaveInstance<>PanelContainer<>::
-SaveManagerMenu.gd::GDScript::-1::1729043243::0::1::::SaveManagerMenu<>Control<>::
-::res://Styles/::1729037508
-SelectedPanel.tres::StyleBoxFlat::7211582117426874463::1729037508::0::1::::<><>::
+::res://::1729380109
+icon.svg::CompressedTexture2D::4648720931128078553::1729380018::1729380109::1::::<><>::
+README.md::TextFile::-1::1729380018::0::1::::<><>::
+::res://Assets/::1729380094
+::res://Assets/Animals/::1729380094
+::res://Assets/Animals/Chicken/::1729380017
+::res://Assets/Animals/Chicken/Adult/::1729380110
+Chicken-Blue.png::CompressedTexture2D::1828684576078513934::1729380017::1729380110::1::::<><>::
+Chicken-Brown.png::CompressedTexture2D::1925022970930225505::1729380017::1729380110::1::::<><>::
+Chicken-Default.png::CompressedTexture2D::4583860815485201428::1729380017::1729380110::1::::<><>::
+Chicken-Green.png::CompressedTexture2D::965682699116937258::1729380017::1729380110::1::::<><>::
+Chicken-Red.png::CompressedTexture2D::6196537151209637959::1729380017::1729380110::1::::<><>::
+::res://Assets/Animals/Chicken/Baby/::1729380110
+Chicken-Baby-Default.png::CompressedTexture2D::5022223094519769723::1729380017::1729380110::1::::<><>::
+Chicken-Baby_Blue.png::CompressedTexture2D::5462276664130552010::1729380017::1729380110::1::::<><>::
+Chicken-Baby_Brown.png::CompressedTexture2D::3097299445946477706::1729380017::1729380110::1::::<><>::
+Chicken_Baby-Green.png::CompressedTexture2D::6952428637276441869::1729380017::1729380110::1::::<><>::
+Chicken_Baby-Red.png::CompressedTexture2D::6352612206323133384::1729380017::1729380110::1::::<><>::
+::res://Assets/Animals/Chicken/Egg/::1729380110
+Egg-Spritesheet-Blue.png::CompressedTexture2D::3000480245013987166::1729380017::1729380110::1::::<><>::
+Egg-Spritesheet-Brown.png::CompressedTexture2D::5615801536039989440::1729380017::1729380110::1::::<><>::
+Egg-Spritesheet-Green.png::CompressedTexture2D::6786390330744676330::1729380017::1729380110::1::::<><>::
+Egg-Spritesheet-Red.png::CompressedTexture2D::3414609296721141463::1729380017::1729380110::1::::<><>::
+Egg-Spritesheet.png::CompressedTexture2D::5774966564873621234::1729380017::1729380110::1::::<><>::
+::res://Assets/Animals/Cow/::1729380017
+::res://Assets/Animals/Cow/Adult/::1729380110
+Cow-Brown.png::CompressedTexture2D::8882502417466873048::1729380017::1729380110::1::::<><>::
+Cow-Green.png::CompressedTexture2D::3537493826749734620::1729380017::1729380110::1::::<><>::
+Cow-Light.png::CompressedTexture2D::6053960722640014482::1729380017::1729380110::1::::<><>::
+Cow-Pink.png::CompressedTexture2D::166932046515901663::1729380017::1729380110::1::::<><>::
+Cow-Purple.png::CompressedTexture2D::2390907830727606451::1729380017::1729380110::1::::<><>::
+::res://Assets/Animals/Cow/Baby/::1729380110
+Cow-Baby-Brown.png::CompressedTexture2D::7543043423616130041::1729380017::1729380110::1::::<><>::
+Cow-Baby-Green.png::CompressedTexture2D::8147254051635468050::1729380017::1729380110::1::::<><>::
+Cow-Baby-Light.png::CompressedTexture2D::888788598889485618::1729380017::1729380109::1::::<><>::
+Cow-Baby-Pink.png::CompressedTexture2D::7865845738847705396::1729380017::1729380109::1::::<><>::
+Cow-Baby-Purple.png::CompressedTexture2D::1687012434314036378::1729380017::1729380109::1::::<><>::
+::res://Assets/Animals/Slime/::1729380109
+Slime-Green.png::CompressedTexture2D::7811573628471470371::1729380017::1729380109::1::::<><>::
+::res://Assets/Building/::1729380017
+::res://Assets/Building/Animal Structures/::1729380109
+Barn.png::CompressedTexture2D::5485240274654283760::1729380017::1729380109::1::::<><>::
+Chicken-Coops.png::CompressedTexture2D::8061068781058091117::1729380017::1729380109::1::::<><>::
+Watering-Tray.png::CompressedTexture2D::6740693552718869636::1729380017::1729380109::1::::<><>::
+::res://Assets/Building/Furniture/::1729380110
+Chest.png::CompressedTexture2D::8661842267829376266::1729380017::1729380109::1::::<><>::
+Furniture.png::CompressedTexture2D::4781150098396265955::1729380017::1729380109::1::::<><>::
+::res://Assets/Building/House/::1729380110
+Building-House.png::CompressedTexture2D::7956403844727659955::1729380017::1729380109::1::::<><>::
+Doors.png::CompressedTexture2D::7647866197904500998::1729380017::1729380110::1::::<><>::
+::res://Assets/Building/Outside/::1729380110
+Bridge-Wooden-Old.png::CompressedTexture2D::6153909246699599882::1729380017::1729380110::1::::<><>::
+Bridge-Wooden.png::CompressedTexture2D::5010166468421021928::1729380017::1729380110::1::::<><>::
+Fence-Gate.png::CompressedTexture2D::9055760635407101074::1729380017::1729380110::1::::<><>::
+Fences.png::CompressedTexture2D::5078868655122700595::1729380017::1729380110::1::::<><>::
+Mailbox.png::CompressedTexture2D::7646777659218782112::1729380017::1729380110::1::::<><>::
+Paths-Stone.png::CompressedTexture2D::6530958522929718122::1729380017::1729380110::1::::<><>::
+Paths-Wood.png::CompressedTexture2D::6921336797693414826::1729380017::1729380110::1::::<><>::
+::res://Assets/Characters/::1729380110
+Character.png::CompressedTexture2D::567720054008202918::1729380017::1729380110::1::::<><>::
+Tools-No-Player.png::CompressedTexture2D::7600226953497683433::1729380017::1729380110::1::::<><>::
+Watering-Water.png::CompressedTexture2D::4105102135168255611::1729380017::1729380110::1::::<><>::
+::res://Assets/Fonts/::1729380110
+pixel-letters-7-8x14-preview.png::CompressedTexture2D::5244233707392569666::1729380017::1729380110::1::::<><>::
+pixel-letters-7-8x14.png::CompressedTexture2D::3695330802914800952::1729380017::1729380110::1::::<><>::
+pixelFont-7-8x14-sproutLands.ttf::FontFile::8438361596878468159::1729380017::1729380109::1::::<><>::
+PixulBrush-Mono.ttf::FontFile::7223372669270547579::1729380017::1729380109::1::::<><>::
+PixulBrush.ttf::FontFile::1341930072519928526::1729380017::1729380109::1::::<><>::
+::res://Assets/Items/::1729380110
+Complete-Sheet.png::CompressedTexture2D::3181462826755442307::1729380017::1729380110::1::::<><>::
+Item-Shadows.png::CompressedTexture2D::4261603544588432387::1729380017::1729380110::1::::<><>::
+::res://Assets/Objects/::1729380110
+Boats.png::CompressedTexture2D::5614725272010440006::1729380017::1729380110::1::::<><>::
+Ground-Objects.png::CompressedTexture2D::752302636694552968::1729380095::1729380110::1::::<><>::
+Picnic-Basket.png::CompressedTexture2D::1521268337486582389::1729380017::1729380110::1::::<><>::
+Picnic-Blanket.png::CompressedTexture2D::1358359787126565727::1729380017::1729380110::1::::<><>::
+Plant-Stages.png::CompressedTexture2D::7877656966905319643::1729380017::1729380110::1::::<><>::
+Signs-Crops.png::CompressedTexture2D::7748483075873132914::1729380017::1729380110::1::::<><>::
+signs.png::CompressedTexture2D::5785739587431149979::1729380017::1729380110::1::::<><>::
+Trees.png::CompressedTexture2D::7095306002870333892::1729380095::1729380110::1::::<><>::
+Water-Objects.png::CompressedTexture2D::3685129344122376900::1729380017::1729380110::1::::<><>::
+Well.png::CompressedTexture2D::4346772730740371897::1729380017::1729380110::1::::<><>::
+Workbench.png::CompressedTexture2D::1134479622575654221::1729380017::1729380110::1::::<><>::
+::res://Assets/Tilesets/::1729381750
+Tileset_Main 2.tres::TileSet::6191768234423323406::1729380095::0::1::::<><>::uid://kyokxtv2lr0k::::res://Assets/Objects/Ground-Objects.png<>uid://c8dawhes5jwpg::::res://Assets/Objects/Trees.png<>uid://bxexduqeicxgv::::res://Assets/Tilesets/SubTileSets/Water.png<>uid://40cge1nvl8mi::::res://Assets/Tilesets/SubTileSets/Light_Dirt.png<>uid://plyr0nsndh8n::::res://Assets/Tilesets/SubTileSets/Stone.png<>uid://g6m8f86yo4np::::res://Assets/Tilesets/SubTileSets/Dark_Grass.png<>uid://s1l8w6s40jet::::res://Assets/Tilesets/SubTileSets/Dark_Dirt.png<>uid://dc8sqr53sn08s::::res://Assets/Tilesets/SubTileSets/Light_Grass.png
+Tileset_Main.tres::TileSet::6191768234423323406::1729381750::0::1::::<><>::uid://bxexduqeicxgv::::res://Assets/Tilesets/SubTileSets/Water.png<>uid://40cge1nvl8mi::::res://Assets/Tilesets/SubTileSets/Light_Dirt.png<>uid://plyr0nsndh8n::::res://Assets/Tilesets/SubTileSets/Stone.png<>uid://g6m8f86yo4np::::res://Assets/Tilesets/SubTileSets/Dark_Grass.png<>uid://s1l8w6s40jet::::res://Assets/Tilesets/SubTileSets/Dark_Dirt.png<>uid://dc8sqr53sn08s::::res://Assets/Tilesets/SubTileSets/Light_Grass.png
+::res://Assets/Tilesets/Ground/::1729380110
+Bush_Tiles.png::CompressedTexture2D::6208205264938119123::1729380017::1729380110::1::::<><>::
+Darker_Grass_Hills_Tiles_v2.png::CompressedTexture2D::7132289834968085737::1729380017::1729380110::1::::<><>::
+Darker_Grass_Hill_Tiles_Slopes_v2.png::CompressedTexture2D::3005541836024660252::1729380017::1729380110::1::::<><>::
+Darker_Grass_Tiles_v2.png::CompressedTexture2D::4055937916052708551::1729380017::1729380110::1::::<><>::
+Darker_Grass_Tile_Layers2.png::CompressedTexture2D::7387088786060728847::1729380017::1729380110::1::::<><>::
+Darker_Grass_Tile_Layers.png::CompressedTexture2D::7209699523839571220::1729380017::1729380110::1::::<><>::
+Darker_Soil_Ground_Hills_Tiles.png::CompressedTexture2D::2232861325550514202::1729380017::1729380110::1::::<><>::
+Darker_Soil_Ground_Tiles.png::CompressedTexture2D::1945302229674008706::1729380017::1729380110::1::::<><>::
+Grass_Hill_Tiles_Slopes v.2.png::CompressedTexture2D::5307702997477795818::1729380017::1729380110::1::::<><>::
+Grass_Hill_Tiles_v2.png::CompressedTexture2D::3225866867758269360::1729380017::1729380110::1::::<><>::
+Grass_tiles_v2.png::CompressedTexture2D::1607938466781673895::1729380017::1729380110::1::::<><>::
+Grass_Tile_layers2.png::CompressedTexture2D::1396614242753803284::1729380017::1729380110::1::::<><>::
+Grass_Tile_Layers.png::CompressedTexture2D::7201217570838163237::1729380017::1729380110::1::::<><>::
+Ground_Hill_Tiles_Slopes.png::CompressedTexture2D::3878324960534460959::1729380017::1729380110::1::::<><>::
+Soil_Ground_HiIls_Tiles.png::CompressedTexture2D::7707387922561544340::1729380017::1729380110::1::::<><>::
+Soil_Ground_Tiles.png::CompressedTexture2D::7826169042861948864::1729380017::1729380110::1::::<><>::
+Stone_Ground_Hills_Tiles.png::CompressedTexture2D::3480404166657210398::1729380017::1729380110::1::::<><>::
+Stone_Ground_Tiles.png::CompressedTexture2D::4732064118409528635::1729380017::1729380110::1::::<><>::
+::res://Assets/Tilesets/SubTileSets/::1729380110
+Dark_Dirt.png::CompressedTexture2D::1317801029469654359::1729380017::1729380110::1::::<><>::
+Dark_Grass.png::CompressedTexture2D::485916622352557389::1729380017::1729380110::1::::<><>::
+Light_Dirt.png::CompressedTexture2D::2087218308980905708::1729380017::1729380110::1::::<><>::
+Light_Grass.png::CompressedTexture2D::7368886623349487072::1729380017::1729380110::1::::<><>::
+Stone.png::CompressedTexture2D::1077029710189469811::1729380017::1729380110::1::::<><>::
+Water.png::CompressedTexture2D::4010424521975839693::1729380017::1729380110::1::::<><>::
+::res://Assets/Trees/::1729380110
+no_tree_appel_sprites.png::CompressedTexture2D::587153493471253588::1729380017::1729380110::1::::<><>::
+no_tree_orange_sprites.png::CompressedTexture2D::8166340460033920705::1729380017::1729380110::1::::<><>::
+no_tree_peach_sprites.png::CompressedTexture2D::3185153089421168612::1729380017::1729380110::1::::<><>::
+no_tree_pear_sprites.png::CompressedTexture2D::6529481701849564998::1729380017::1729380110::1::::<><>::
+tree_apple.png::CompressedTexture2D::3358291075549031288::1729380017::1729380110::1::::<><>::
+tree_fall.png::CompressedTexture2D::2462509621990232843::1729380017::1729380110::1::::<><>::
+tree_none.png::CompressedTexture2D::7616379194433801270::1729380017::1729380109::1::::<><>::
+tree_orange.png::CompressedTexture2D::8436169385765845944::1729380017::1729380109::1::::<><>::
+tree_peach.png::CompressedTexture2D::7490329219023218359::1729380017::1729380109::1::::<><>::
+tree_pear.png::CompressedTexture2D::6758245691672849008::1729380017::1729380109::1::::<><>::
+::res://Assets/UI Sprites/::1729380109
+ALL UI ASSETS on one sheet.png::CompressedTexture2D::4966084277390604253::1729380017::1729380109::1::::<><>::
+Weather_UI.png::CompressedTexture2D::8803927322859652406::1729380017::1729380109::1::::<><>::
+::res://Assets/UI Sprites/Buttons/::1729380017
+::res://Assets/UI Sprites/Buttons/Icon Buttons/::1729380109
+Icon Buttons Spritesheet.png::CompressedTexture2D::7551574448215432302::1729380017::1729380109::1::::<><>::
+::res://Assets/UI Sprites/Buttons/Round/::1729380109
+medium colored round buttons.png::CompressedTexture2D::4094385278124072202::1729380017::1729380109::1::::<><>::
+small colored round buttons.png::CompressedTexture2D::5113230232680340036::1729380017::1729380109::1::::<><>::
+::res://Assets/UI Sprites/Buttons/Square/::1729380109
+Small Square Buttons.png::CompressedTexture2D::6500329149072409733::1729380017::1729380109::1::::<><>::
+Square Buttons 19x26.png::CompressedTexture2D::4596448274565414579::1729380017::1729380109::1::::<><>::
+Square Buttons 26x19.png::CompressedTexture2D::8586434749405396117::1729380017::1729380109::1::::<><>::
+Square Buttons 26x26.png::CompressedTexture2D::4713483383471966637::1729380017::1729380109::1::::<><>::
+::res://Assets/UI Sprites/Dialouge UI/::1729380109
+dialog box big.png::CompressedTexture2D::3704523203023552947::1729380017::1729380109::1::::<><>::
+dialog box character finished talking click to continue indicator - spritesheet_.png::CompressedTexture2D::2808631448771883385::1729380017::1729380109::1::::<><>::
+dialog box medium.png::CompressedTexture2D::6961743594250825096::1729380017::1729380109::1::::<><>::
+dialog box small.png::CompressedTexture2D::8128647930571212175::1729380017::1729380109::1::::<><>::
+dialog box.png::CompressedTexture2D::6601383896826494274::1729380017::1729380109::1::::<><>::
+Premade dialog box  big.png::CompressedTexture2D::2986877401410831051::1729380017::1729380109::1::::<><>::
+Premade dialog box medium.png::CompressedTexture2D::5817177131240241341::1729380017::1729380109::1::::<><>::
+Premade dialog box small.png::CompressedTexture2D::1290004841637647811::1729380017::1729380109::1::::<><>::
+::res://Assets/UI Sprites/Dialouge UI/Emotes/::1729380109
+Teemo Basic emote animations sprite sheet.png::CompressedTexture2D::439747440878991260::1729380017::1729380109::1::::<><>::
+Teemo premium emote animations sprite sheet-export.png::CompressedTexture2D::5603506402855542963::1729380017::1729380109::1::::<><>::
+::res://Assets/UI Sprites/Icons/::1729380109
+All Icons.png::CompressedTexture2D::7772006727715695547::1729380017::1729380109::1::::<><>::
+white icons.png::CompressedTexture2D::7510619746953018968::1729380017::1729380109::1::::<><>::
+::res://Assets/UI Sprites/Icons/Icons/::1729380109
+coins.png::CompressedTexture2D::8285839349981974485::1729380017::1729380109::1::::<><>::
+Hearts in wood.png::CompressedTexture2D::5205483675241907164::1729380017::1729380109::1::::<><>::
+Hearts.png::CompressedTexture2D::3144550313728729356::1729380017::1729380109::1::::<><>::
+Medium Happines-Sadness icons.png::CompressedTexture2D::529590337327529724::1729380017::1729380109::1::::<><>::
+Small Happines-Sadness icons.png::CompressedTexture2D::7428418679207929839::1729380017::1729380109::1::::<><>::
+stars in wood.png::CompressedTexture2D::6572468906926743033::1729380017::1729380109::1::::<><>::
+stars.png::CompressedTexture2D::7768104034616036247::1729380017::1729380109::1::::<><>::
+::res://Assets/UI Sprites/Mouse sprites/::1729380109
+Arrow Mouse icon 1.png::CompressedTexture2D::8476654976102399372::1729380017::1729380109::1::::<><>::
+Arrow Mouse icon 2.png::CompressedTexture2D::5395779205653107733::1729380017::1729380109::1::::<><>::
+Arrow Mouse icon 3.png::CompressedTexture2D::7884919978939645323::1729380017::1729380109::1::::<><>::
+Catpaw holding Mouse icon.png::CompressedTexture2D::1551597769764855852::1729380017::1729380109::1::::<><>::
+Catpaw Mouse icon.png::CompressedTexture2D::1461629809403116454::1729380017::1729380109::1::::<><>::
+Catpaw pointing Mouse icon.png::CompressedTexture2D::4524367077435589920::1729380017::1729380109::1::::<><>::
+Triangle Mouse icon 1.png::CompressedTexture2D::84904151572241117::1729380017::1729380109::1::::<><>::
+Triangle Mouse icon 2.png::CompressedTexture2D::449303885090648164::1729380017::1729380109::1::::<><>::
+Triangle Mouse icon 3.png::CompressedTexture2D::4776440911791150543::1729380017::1729380109::1::::<><>::
+Triangle small Mouse icon 1.png::CompressedTexture2D::5352252575437333540::1729380017::1729380109::1::::<><>::
+Triangle small Mouse icon 2.png::CompressedTexture2D::542753713037679653::1729380017::1729380109::1::::<><>::
+Triangle small Mouse icon 3.png::CompressedTexture2D::6812944316307643888::1729380017::1729380109::1::::<><>::
+::res://Assets/UI Sprites/Other UI sprites/::1729380109
+Setting menu.png::CompressedTexture2D::1251454154951489174::1729380017::1729380109::1::::<><>::
+Stamina circle with black outline sprite sheet_.png::CompressedTexture2D::6486852404153495250::1729380017::1729380109::1::::<><>::
+Stamina circle with white outline sprite sheet_.png::CompressedTexture2D::8440531000411839680::1729380017::1729380109::1::::<><>::
+UI Big Play Button.png::CompressedTexture2D::684585668706289160::1729380017::1729380109::1::::<><>::
+UI Settings Buttons.png::CompressedTexture2D::46921738799510215::1729380017::1729380109::1::::<><>::
+::res://Assets/UI Sprites/Other UI sprites/Xs and check marks/::1729380109
+Xs and check marks.png::CompressedTexture2D::957733035116101851::1729380017::1729380109::1::::<><>::
+::res://Assets/UI Sprites/Other UI sprites/Xs and check marks/1s/::1729380109
+big check mark pressed.png::CompressedTexture2D::1773652876041596544::1729380017::1729380109::1::::<><>::
+big check mark.png::CompressedTexture2D::4040829818084489361::1729380017::1729380109::1::::<><>::
+big X pressed.png::CompressedTexture2D::2074533200113905268::1729380017::1729380109::1::::<><>::
+big X.png::CompressedTexture2D::1766548600194627774::1729380017::1729380109::1::::<><>::
+check mark pressed.png::CompressedTexture2D::6803627176025222665::1729380017::1729380109::1::::<><>::
+check mark.png::CompressedTexture2D::3783569330056953390::1729380017::1729380109::1::::<><>::
+darker big check mark pres.png::CompressedTexture2D::3508658429021555283::1729380017::1729380109::1::::<><>::
+darker big check mark.png::CompressedTexture2D::6642826349996782509::1729380017::1729380109::1::::<><>::
+darker big X pressed.png::CompressedTexture2D::1199575726603719227::1729380017::1729380109::1::::<><>::
+darker big X.png::CompressedTexture2D::5132931451158225050::1729380017::1729380109::1::::<><>::
+darker check mark pressed.png::CompressedTexture2D::7308744031664046678::1729380017::1729380109::1::::<><>::
+darker check mark.png::CompressedTexture2D::368096654609972552::1729380017::1729380109::1::::<><>::
+darker small check mark pr.png::CompressedTexture2D::7105438663216012310::1729380017::1729380109::1::::<><>::
+darker small check mark.png::CompressedTexture2D::411231658823988054::1729380017::1729380109::1::::<><>::
+darker small X pressed.png::CompressedTexture2D::3841982755387488824::1729380017::1729380109::1::::<><>::
+darker small X.png::CompressedTexture2D::5647243316143398635::1729380017::1729380109::1::::<><>::
+darker X prssed.png::CompressedTexture2D::781065192531125462::1729380017::1729380109::1::::<><>::
+darker X.png::CompressedTexture2D::3244626620029008478::1729380017::1729380109::1::::<><>::
+small check mark pressed.png::CompressedTexture2D::698756877054292560::1729380017::1729380109::1::::<><>::
+small check mark.png::CompressedTexture2D::5120588731841325894::1729380017::1729380109::1::::<><>::
+small X pressed.png::CompressedTexture2D::8178862548921034846::1729380017::1729380109::1::::<><>::
+small X.png::CompressedTexture2D::7962380021035779284::1729380017::1729380109::1::::<><>::
+X pressed.png::CompressedTexture2D::1248939866791898268::1729380017::1729380109::1::::<><>::
+X.png::CompressedTexture2D::1395532697896385058::1729380017::1729380109::1::::<><>::
+::res://Assets/UI Sprites/Other UI sprites/Xs and check marks/2s/::1729380109
+big check marks.png::CompressedTexture2D::3436936043196626313::1729380017::1729380109::1::::<><>::
+big X.png::CompressedTexture2D::7233501937737089920::1729380017::1729380109::1::::<><>::
+check marks.png::CompressedTexture2D::3412806222853071691::1729380017::1729380109::1::::<><>::
+darker big check marks.png::CompressedTexture2D::738863090824082911::1729380017::1729380109::1::::<><>::
+darker big x.png::CompressedTexture2D::4659884862546969024::1729380017::1729380109::1::::<><>::
+darker check marks.png::CompressedTexture2D::2804471640952467871::1729380017::1729380109::1::::<><>::
+darker small check marks.png::CompressedTexture2D::6048687387372819969::1729380017::1729380109::1::::<><>::
+darker small x.png::CompressedTexture2D::6372766794755688358::1729380017::1729380109::1::::<><>::
+darker x.png::CompressedTexture2D::7655508550749811550::1729380017::1729380109::1::::<><>::
+small check marks.png::CompressedTexture2D::4439036621064467439::1729380017::1729380109::1::::<><>::
+small X.png::CompressedTexture2D::5825107171248473844::1729380017::1729380109::1::::<><>::
+X.png::CompressedTexture2D::6311676183576795352::1729380017::1729380109::1::::<><>::
+::res://Audio/::1729380094
+::res://Audio/Music/::1729380110
+Autumn.wav::AudioStreamWAV::2454193808025584167::1729380017::1729380110::1::::<><>::
+Menu.wav::AudioStreamWAV::6249059891083016546::1729380017::1729380110::1::::<><>::
+Night.wav::AudioStreamWAV::2720239800596644507::1729380017::1729380110::1::::<><>::
+Rain.wav::AudioStreamWAV::3768737551729769451::1729380017::1729380110::1::::<><>::
+Spring.wav::AudioStreamWAV::2697032926067191611::1729380017::1729380110::1::::<><>::
+Summer.wav::AudioStreamWAV::4545617125798697714::1729380018::1729380110::1::::<><>::
+Winter.wav::AudioStreamWAV::2235477782689835285::1729380018::1729380110::1::::<><>::
+::res://Audio/SFX/::1729380094
+::res://Audio/SFX/Inventory/::1729380110
+CoinPickup.wav::AudioStreamWAV::2391698435073157131::1729380018::1729380110::1::::<><>::
+CollectItem.wav::AudioStreamWAV::5579751672430144908::1729380018::1729380110::1::::<><>::
+InventoryClose.wav::AudioStreamWAV::9069863972087354044::1729380018::1729380110::1::::<><>::
+InventoryOpen.wav::AudioStreamWAV::1437431054276414198::1729380018::1729380110::1::::<><>::
+UIButtonClick.wav::AudioStreamWAV::3190798061151785273::1729380018::1729380110::1::::<><>::
+::res://Audio/SFX/Player/::1729380110
+AxeSwing.wav::AudioStreamWAV::1408857252376491754::1729380018::1729380110::1::::<><>::
+DirtDig.mp3::AudioStreamMP3::8692016724516045454::1729380018::1729380109::1::::<><>::
+::res://Audio/SFX/Tree/::1729380110
+TreeFall.wav::AudioStreamWAV::5895521267134146515::1729380018::1729380110::1::::<><>::
+TreeHit.wav::AudioStreamWAV::5682944328184495600::1729380018::1729380110::1::::<><>::
+TreeShake.wav::AudioStreamWAV::2130007710296679858::1729380018::1729380110::1::::<><>::
+::res://Resoures/::1729380095
+::res://Resoures/Harvestables/::1729380095
+::res://Resoures/Harvestables/Pickables/::1729381750
+SmallStone1.tres::Resource/PickableRes::3122117101708030046::1729381750::0::1::::<><>::res://Scripts/ResourceScripts/Objects/PickableRes.gd<>uid://tn6e04v71801::::res://Resoures/Items/Rocks/SmallStone.tres<>uid://kyokxtv2lr0k::::res://Assets/Objects/Ground-Objects.png
+::res://Resoures/Items/::1729380095
+::res://Resoures/Items/Animals/::1729380095
+::res://Resoures/Items/Animals/Cluck/::1729380095
+::res://Resoures/Items/Animals/Cluck/Egg/::1729380095
+BlushCluckEgg.tres::Resource/CluckEggRes::5475777676874071541::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/CluckEggRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+BronzeCluckEgg.tres::Resource/CluckEggRes::4898059886822454961::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/CluckEggRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+PearlyCluckEgg.tres::Resource/CluckEggRes::4087206336112548685::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/CluckEggRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+RoyalCluckEgg.tres::Resource/CluckEggRes::4125031066646737219::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/CluckEggRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+ViridescentCluckEgg.tres::Resource/CluckEggRes::6941534432712971279::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/CluckEggRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+::res://Resoures/Items/Animals/Moomoo/::1729380095
+::res://Resoures/Items/Animals/Moomoo/Milk/::1729380095
+BlushMoomooMilk.tres::Resource/MoomooMilkRes::7419869271510184797::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/MoomooMilkRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+BronzeMoomooMilk.tres::Resource/MoomooMilkRes::2425554039821723783::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/MoomooMilkRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+LargeBlushMoomooMilk.tres::Resource/MoomooMilkRes::7531666661641058151::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/MoomooMilkRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+LargeBronzeMoomooMilk.tres::Resource/MoomooMilkRes::9125942174709824553::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/MoomooMilkRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+LargePearlyMoomooMilk.tres::Resource/MoomooMilkRes::2567289957981744796::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/MoomooMilkRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+LargeRoyalMoomooMilk.tres::Resource/MoomooMilkRes::4338403065998323512::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/MoomooMilkRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+LargeViridescentMoomooMilk.tres::Resource/MoomooMilkRes::4704362957374516714::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/MoomooMilkRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+PearlyMoomooMilk.tres::Resource/MoomooMilkRes::6079654884834768484::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/MoomooMilkRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+RoyalMoomooMilk.tres::Resource/MoomooMilkRes::3208578861802846886::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/MoomooMilkRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+ViridescentMoomooMilk.tres::Resource/MoomooMilkRes::3977300653696573121::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/MoomooMilkRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+::res://Resoures/Items/Coins/::1729380095
+Coin1.tres::Resource/CoinRes::4533192487889256930::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/UI/CoinRes.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
+Coin5.tres::Resource/CoinRes::6676952843479005369::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/UI/CoinRes.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
+Coin10.tres::Resource/Coin::7266894828757097971::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/UI/CoinRes.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
+Coin25.tres::Resource/Coin::5050494394035386367::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/UI/CoinRes.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
+Coin50.tres::Resource/Coin::2869072488568406102::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/UI/CoinRes.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
+Coin100.tres::Resource/Coin::1611956614010352413::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/UI/CoinRes.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
+Coin250.tres::Resource/Coin::4100181307558912702::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/UI/CoinRes.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
+Coin1000.tres::Resource/Coin::7338772723298554720::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/UI/CoinRes.gd<>uid://dqbytforj2b7j::::res://Assets/UI Sprites/Icons/Icons/coins.png
+::res://Resoures/Items/Craftables/::1729380095
+Stick.tres::Resource/ItemRes::7247314908111107267::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/ItemRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+::res://Resoures/Items/Plants/::1729380095
+Tuff.tres::Resource/ItemRes::2570295809183461493::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/ItemRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+::res://Resoures/Items/Plants/Crops/::1729383980
+AsteroidPomeCrop.tres::Resource/PlantedCropRes::3869995915719618861::1729384032::0::1::::<><>::uid://b8edju3caqp4c::::res://Resoures/Items/Plants/Vegetables/AsteroidPome.tres<>res://Scripts/ResourceScripts/PlantedCropRes.gd
+BeadTurnipCrop.tres::Resource/PlantedCropRes::3630223912302628492::1729383980::0::1::::<><>::uid://nsdx2c1apr61::::res://Resoures/Items/Plants/Vegetables/BeadTurnip.tres<>res://Scripts/ResourceScripts/PlantedCropRes.gd
+BellCabbageCrop.tres::Resource/PlantedCropRes::8040064697706978104::1729383469::0::1::::<><>::res://Scripts/ResourceScripts/PlantedCropRes.gd<>uid://pmiew5p18uoa::::res://Resoures/Items/Plants/Vegetables/BellCabbage.tres
+BerylBeanCrop.tres::Resource/PlantedCropRes::4071220166831218341::1729383469::0::1::::<><>::res://Scripts/ResourceScripts/PlantedCropRes.gd<>uid://yc2u4vbdll2p::::res://Resoures/Items/Plants/Vegetables/BerylBean.tres
+BlancPastinacaCrop.tres::Resource/PlantedCropRes::5437074092130512339::1729383980::0::1::::<><>::uid://dmk6p4hwnoane::::res://Resoures/Items/Plants/Vegetables/BlancPastinaca.tres<>res://Scripts/ResourceScripts/PlantedCropRes.gd
+BlondMealieCrop.tres::Resource/PlantedCropRes::4098624232490721732::1729383469::0::1::::<><>::res://Scripts/ResourceScripts/PlantedCropRes.gd<>uid://83wk40pmcx4h::::res://Resoures/Items/Plants/Vegetables/BlondMealie.tres
+BushyLactucaCrop.tres::Resource/PlantedCropRes::232079423288558022::1729383469::0::1::::<><>::res://Scripts/ResourceScripts/PlantedCropRes.gd<>uid://bqyl1whyiqjj7::::res://Resoures/Items/Plants/Vegetables/BushyLactuca.tres
+ChalkBroccoliCrop.tres::Resource/PlantedCropRes::4322721835424953578::1729383469::0::1::::<><>::res://Scripts/ResourceScripts/PlantedCropRes.gd<>uid://dlag5tmaibjsf::::res://Resoures/Items/Plants/Vegetables/ChalkBroccoli.tres
+GoldenAttaCrop.tres::Resource/PlantedCropRes::8051763579876973690::1729383469::0::1::::<><>::uid://bsi7jfqie2ik1::::res://Resoures/Items/Plants/Vegetables/GoldenAtta.tres<>res://Scripts/ResourceScripts/PlantedCropRes.gd
+OcherPastinacaCrop.tres::Resource/PlantedCropRes::7893622989748658231::1729383469::0::1::::<><>::uid://k87pv2gvv6e::::res://Resoures/Items/Plants/Vegetables/OcherPastinaca.tres<>res://Scripts/ResourceScripts/PlantedCropRes.gd
+RosieBroccoliCrop.tres::Resource/PlantedCropRes::5576199493584837363::1729383980::0::1::::<><>::res://Scripts/ResourceScripts/PlantedCropRes.gd<>uid://dw3if2fpqeclq::::res://Resoures/Items/Plants/Vegetables/RosieBroccoli.tres
+SphericalCalabazaCrop.tres::Resource/PlantedCropRes::5177991478667222421::1729383469::0::1::::<><>::uid://b8c8ltasce36b::::res://Resoures/Items/Plants/Vegetables/SphericalCalabaza.tres<>res://Scripts/ResourceScripts/PlantedCropRes.gd
+ViolaceousEggplantCrop.tres::Resource/PlantedCropRes::3374574867779365011::1729383469::0::1::::<><>::uid://dvsvvbgoxtr2m::::res://Resoures/Items/Plants/Vegetables/ViolaceousEggplant.tres<>res://Scripts/ResourceScripts/PlantedCropRes.gd
+WolfPeachCrop.tres::Resource/PlantedCropRes::4221964255539102708::1729383469::0::1::::<><>::uid://cgeoe0a4uv8gu::::res://Resoures/Items/Plants/Vegetables/WolfPeach.tres<>res://Scripts/ResourceScripts/PlantedCropRes.gd
+::res://Resoures/Items/Plants/Fruit/::1729380095
+::res://Resoures/Items/Plants/Fruit/Berries/::1729380095
+SappySultana.tres::Resource/FruitRes::182677209119388349::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/FruitRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+StarlingWhortleberry.tres::Resource/FruitRes::3749079900121504791::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/FruitRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+UtmostDrupelets.tres::Resource/FruitRes::7969676151597156423::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/FruitRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+::res://Resoures/Items/Plants/Fruit/TreeFruit/::1729381750
+LovableTawny.tres::Resource/FruitRes::3827721363064717261::1729381750::0::1::::<><>::res://Scripts/ResourceScripts/FruitRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+PassionatePome.tres::Resource/FruitRes::8842657990677040800::1729381750::0::1::::<><>::res://Scripts/ResourceScripts/FruitRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+PrimeDrupe.tres::Resource/FruitRes::3756164700734909072::1729381750::0::1::::<><>::res://Scripts/ResourceScripts/FruitRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+SuedePaio.tres::Resource/FruitRes::4544547448975114091::1729381750::0::1::::<><>::res://Scripts/ResourceScripts/FruitRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+::res://Resoures/Items/Plants/Vegetables/::1729380563
+AsteroidPome.tres::Resource/VegetableRes::4711109351700896856::1729380258::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+BeadTurnip.tres::Resource/VegetableRes::949838413507602996::1729380258::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+BellCabbage.tres::Resource/VegetableRes::1078099269312386740::1729380563::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+BerylBean.tres::Resource/VegetableRes::1690337633171626553::1729380563::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+BlancPastinaca.tres::Resource/VegetableRes::8024082500968910846::1729380563::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+BlondMealie.tres::Resource/VegetableRes::2375389611443591725::1729380563::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+BushyLactuca.tres::Resource/VegetableRes::3559702732990126774::1729380563::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+ChalkBroccoli.tres::Resource/VegetableRes::7931758223363451797::1729380563::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+GoldenAtta.tres::Resource/VegetableRes::3668294194827354022::1729380563::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+OcherPastinaca.tres::Resource/VegetableRes::22705405233617822::1729380563::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+RosieBroccoli.tres::Resource/VegetableRes::8761715279698894158::1729380563::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+SphericalCalabaza.tres::Resource/VegetableRes::4708805582514890127::1729380563::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+ViolaceousEggplant.tres::Resource/VegetableRes::8671699188030933422::1729380563::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+WolfPeach.tres::Resource/VegetableRes::5203090435733956972::1729380563::0::1::::<><>::res://Scripts/ResourceScripts/VegetableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+::res://Resoures/Items/Rocks/::1729381750
+SmallStone.tres::Resource/ItemRes::1362315668757821600::1729381750::0::1::::<><>::res://Scripts/ResourceScripts/ItemRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+Stone.tres::Resource/ItemRes::2314833597356838365::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/ItemRes.gd<>uid://d0vkukchi2y8g::::res://Assets/Items/Tools-Materials.png
+::res://Resoures/Items/Seeds/::1729380095
+AsteroidPomeSeed.tres::Resource/SeedPackRes::7146743720695440347::1729380095::0::1::::<><>::uid://bvewjdaxh43s8::::res://Resoures/Items/Plants/Crops/AsteroidPomeCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+BeadTurnipSeed.tres::Resource/SeedPackRes::5945008787596550583::1729380095::0::1::::<><>::uid://bryri0u7cu8yy::::res://Resoures/Items/Plants/Crops/BeadTurnipCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+BellCabbageSeed.tres::Resource/SeedPackRes::8394401599528272575::1729380095::0::1::::<><>::uid://dmswxqxiwn721::::res://Resoures/Items/Plants/Crops/BellCabbageCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+BerylBeanSeed.tres::Resource/SeedPackRes::3060102017110498153::1729380095::0::1::::<><>::uid://byaenv7cn43yn::::res://Resoures/Items/Plants/Crops/BerylBeanCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+BlancPastinacaSeed.tres::Resource/SeedPackRes::1230254829638518313::1729380095::0::1::::<><>::uid://cjp020hl4pjnn::::res://Resoures/Items/Plants/Crops/BlancPastinacaCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+BlondMealieSeed.tres::Resource/SeedPackRes::3348267895269431892::1729380095::0::1::::<><>::uid://bynn0idcmjei3::::res://Resoures/Items/Plants/Crops/BlondMealieCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+BushyLactucaSeed.tres::Resource/SeedPackRes::8366964398642942254::1729380095::0::1::::<><>::uid://dkokxhdg2mb3::::res://Resoures/Items/Plants/Crops/BushyLactucaCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+ChalkBroccoliSeed.tres::Resource/SeedPackRes::5805653968695308464::1729380095::0::1::::<><>::uid://b2t7ukhkwio5w::::res://Resoures/Items/Plants/Crops/ChalkBroccoliCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+GoldenAttaSeed.tres::Resource/SeedPackRes::1596801341951980493::1729380095::0::1::::<><>::uid://dmylmtp7uesek::::res://Resoures/Items/Plants/Crops/GoldenAttaCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+OcherPastinacaSeed.tres::Resource/SeedPackRes::272340028847795679::1729380095::0::1::::<><>::uid://dkpy21433g1ip::::res://Resoures/Items/Plants/Crops/OcherPastinacaCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+RosieBroccoliSeed.tres::Resource/SeedPackRes::7573920840143331984::1729380095::0::1::::<><>::uid://clpfgq00jmurr::::res://Resoures/Items/Plants/Crops/RosieBroccoliCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+SphericalCalabazaSeed.tres::Resource/SeedPackRes::7575987621286263418::1729380095::0::1::::<><>::uid://cf1i07go7q2g4::::res://Resoures/Items/Plants/Crops/SphericalCalabazaCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+ViolaceousEggplantSeed.tres::Resource/SeedPackRes::6627477564250757772::1729380095::0::1::::<><>::uid://bocw0w3efoffv::::res://Resoures/Items/Plants/Crops/ViolaceousEggplantCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+WolfPeachSeed.tres::Resource/SeedPackRes::2870098280604817043::1729380095::0::1::::<><>::uid://b1ffetordcd5m::::res://Resoures/Items/Plants/Crops/WolfPeachCrop.tres<>res://Scripts/ResourceScripts/SeedPackRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+::res://Resoures/Items/Tools/::1729381750
+Axe.tres::Resource/UsableRes::6203270192739290889::1729381750::0::1::::<><>::res://Scripts/ResourceScripts/UsableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+Hoe.tres::Resource/UsableRes::1227788125100846264::1729381750::0::1::::<><>::res://Scripts/ResourceScripts/UsableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+WateringCan.tres::Resource/UsableRes::7464588700089320269::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/UsableRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+::res://Resoures/Items/Trees/::1729380123
+Branch.tres::Resource/ItemRes::4331760544566554697::1729380123::0::1::::<><>::res://Scripts/ResourceScripts/ItemRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+Log.tres::Resource/ItemRes::686534140547864542::1729380123::0::1::::<><>::res://Scripts/ResourceScripts/ItemRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+Twig.tres::Resource/ItemRes::3012106836762515075::1729380123::0::1::::<><>::res://Scripts/ResourceScripts/ItemRes.gd<>uid://blleh0q6i3l52::::res://Assets/Items/Complete-Sheet.png
+::res://Resoures/Trees/::1729380095
+DefaultTree.tres::Resource/TreeRes::544739434074649386::1729380095::0::1::::<><>::uid://dgrowgmovs0fi::::res://Assets/Trees/tree_none.png<>res://Scripts/ResourceScripts/Objects/TreeRes.gd<>uid://bbc4f518t1x12::::res://Assets/Trees/tree_fall.png
+LovableTawnyTree.tres::Resource/GrowableTreeRes::7789528434643874659::1729380095::0::1::::<><>::uid://bbc4f518t1x12::::res://Assets/Trees/tree_fall.png<>uid://busganook08a8::::res://Resoures/Items/Plants/Fruit/TreeFruit/LovableTawny.tres<>uid://dsgsqhxub821a::::res://Assets/Trees/tree_orange.png<>uid://dgrowgmovs0fi::::res://Assets/Trees/tree_none.png<>res://Scripts/ResourceScripts/Objects/GrowableTreeRes.gd
+PassionatePomeTree.tres::Resource/GrowableTreeRes::1413055892288482730::1729380095::0::1::::<><>::uid://dx8pjxwvtcnw7::::res://Resoures/Items/Plants/Fruit/TreeFruit/PassionatePome.tres<>uid://dgrowgmovs0fi::::res://Assets/Trees/tree_none.png<>res://Scripts/ResourceScripts/Objects/GrowableTreeRes.gd<>uid://bn31tfimxoo77::::res://Assets/Trees/tree_apple.png<>uid://bbc4f518t1x12::::res://Assets/Trees/tree_fall.png
+PrimeDrupeTree.tres::Resource/GrowableTreeRes::1623393313234681672::1729380095::0::1::::<><>::uid://bbc4f518t1x12::::res://Assets/Trees/tree_fall.png<>uid://btrrqpk15yphg::::res://Resoures/Items/Plants/Fruit/TreeFruit/PrimeDrupe.tres<>uid://deymvl3pmfj7l::::res://Assets/Trees/tree_peach.png<>uid://dgrowgmovs0fi::::res://Assets/Trees/tree_none.png<>res://Scripts/ResourceScripts/Objects/GrowableTreeRes.gd
+SuedePaioTree.tres::Resource/GrowableTreeRes::5591014835728191179::1729380095::0::1::::<><>::uid://bbc4f518t1x12::::res://Assets/Trees/tree_fall.png<>uid://b50obduc44hn4::::res://Resoures/Items/Plants/Fruit/TreeFruit/SuedePaio.tres<>uid://c3j0k364mo7c3::::res://Assets/Trees/tree_pear.png<>uid://dgrowgmovs0fi::::res://Assets/Trees/tree_none.png<>res://Scripts/ResourceScripts/Objects/GrowableTreeRes.gd
+::res://Resoures/UI/::1729380018
+::res://Resoures/UI/GameMenu/::1729380095
+Crafting.tres::Resource/UiMenuButton::6469702539542288708::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/UI/TopmenubuttonRes.gd<>uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png<>uid://yjtyrpy5hupd::::res://Scenes/UI/CenterMenu/CraftingMenu.tscn
+Exit.tres::Resource/UiMenuButton::7877717558822732294::1729380095::0::1::::<><>::uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png<>uid://bpm645y0841i6::::res://Scenes/UI/CenterMenu/ExitMenu.tscn<>res://Scripts/ResourceScripts/UI/TopmenubuttonRes.gd
+Inventory.tres::Resource/UiMenuButton::7156068489461758322::1729380095::0::1::::<><>::uid://cjnolyv432q8::::res://Scenes/UI/CenterMenu/InventoryMenu.tscn<>res://Scripts/ResourceScripts/UI/TopmenubuttonRes.gd
+Options.tres::Resource/UiMenuButton::2046374664903258345::1729380095::0::1::::<><>::uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png<>res://Scripts/ResourceScripts/UI/TopmenubuttonRes.gd<>uid://eqmc5akv01g2::::res://Scenes/UI/CenterMenu/OptionsMenu.tscn
+PlayerInfo.tres::Resource/UiMenuButton::5886254321324137483::1729380095::0::1::::<><>::uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png<>res://Scripts/ResourceScripts/UI/TopmenubuttonRes.gd<>uid://cplibp16gv3lc::::res://Scenes/UI/CenterMenu/PlayerInfoMenu.tscn
+Quests.tres::Resource/UiMenuButton::6372427630001804532::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/UI/TopmenubuttonRes.gd<>uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png<>uid://u1ai243xqkh1::::res://Scenes/UI/CenterMenu/QuestsMenu.tscn
+Relations.tres::Resource/UiMenuButton::605547281686704687::1729380095::0::1::::<><>::res://Scripts/ResourceScripts/UI/TopmenubuttonRes.gd<>uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png<>uid://fejg0r0tixx8::::res://Scenes/UI/CenterMenu/RelationsMenu.tscn
+::res://Scenes/::1729383980
+DateTime.tscn::PackedScene::6415086269190616754::1729380123::0::1::::<><>::res://Scripts/DateTime.gd
+Game.tscn::PackedScene::7346731436723818536::1729383980::0::1::::<><>::res://Scripts/Game.gd<>uid://dsj5jii06d4rf::::res://Scenes/Audio/AudioMachine.tscn<>uid://cxnrse3r4mt2a::::res://Scenes/DateTime.tscn
+::res://Scenes/Audio/::1729380018
+AudioMachine.tscn::PackedScene::8443078652001262563::1729380018::0::1::::<><>::res://Scripts/Audio/AudioMachine.gd
+AudioPlayer.tscn::PackedScene::5938702550180849935::1729380018::0::1::::<><>::
+::res://Scenes/Components/::1729383981
+CurrencyComponent.tscn::PackedScene::1345973163468384186::1729380018::0::1::::<><>::res://Scripts/Components/CurrencyComponent.gd
+GrowableComponent.tscn::PackedScene::3197548925624742601::1729383980::0::1::::<><>::res://Scripts/Components/GrowableComponent.gd
+HarvestComponent.tscn::PackedScene::4636371573807778772::1729380095::0::1::::<><>::res://Scripts/Components/HarvestComponent.gd
+HealthComponent.tscn::PackedScene::3300395959801485452::1729380018::0::1::::<><>::res://Scripts/Components/HealthComponent.gd
+InteractionComponent.tscn::PackedScene::5455055465650680644::1729383995::0::1::::<><>::res://Scripts/Components/InteractionComponent.gd
+InventoryComponent.tscn::PackedScene::7962025931412527632::1729380018::0::1::::<><>::res://Scripts/Components/InventoryComponent.gd
+ItemGravityComponent.tscn::PackedScene::5164566930284803297::1729380095::0::1::::<><>::res://Scripts/Components/ItemGravityComponent.gd
+::res://Scenes/Inventory/::1729380018
+InventorySlot.tscn::PackedScene::2065143751123783890::1729380018::0::1::::<><>::res://Scripts/Inventory/InventorySlot.gd
+::res://Scenes/Levels/::1729383980
+Start.tscn::PackedScene::2932314189228811374::1729383980::0::1::::<><>::res://Scripts/Levels/Start.gd<>uid://cuhlrvbbaqqsk::::res://Assets/Tilesets/Tileset_Main.tres<>uid://bhmrogi0cr2f3::::res://Scenes/Objects/Collectable.tscn<>uid://cum57os15y7i0::::res://Resoures/Items/Tools/Axe.tres<>uid://rq0qxv1gksng::::res://Resoures/Items/Tools/Hoe.tres<>uid://c8qtlqw4bwuph::::res://Scenes/Objects/PickableObject.tscn<>uid://bkqm2vjhhauws::::res://Resoures/Harvestables/Pickables/SmallStone1.tres<>uid://dw54gipr37u3k::::res://Scenes/Objects/CropObject.tscn<>uid://e3aoeskctp2q::::res://Scenes/Objects/Bed.tscn<>uid://bryri0u7cu8yy::::res://Resoures/Items/Plants/Crops/BeadTurnipCrop.tres<>uid://cjp020hl4pjnn::::res://Resoures/Items/Plants/Crops/BlancPastinacaCrop.tres<>uid://clpfgq00jmurr::::res://Resoures/Items/Plants/Crops/RosieBroccoliCrop.tres
+::res://Scenes/Objects/::1729383981
+Bed.tscn::PackedScene::338583191138143834::1729384032::0::1::::<><>::res://Scripts/Objects/Bed.gd<>uid://cjyp74klcqibc::::res://Scenes/Components/InteractionComponent.tscn
+Collectable.tscn::PackedScene::2903572640837537530::1729380095::0::1::::<><>::res://Scripts/Objects/Collectable.gd<>uid://b1yl8t3tvgl44::::res://Assets/Items/Item-Shadows.png
+PickableObject.tscn::PackedScene::7123277393780895285::1729380095::0::1::::<><>::res://Scripts/Objects/PickupableObject.gd<>uid://b7b5mk8jjsywi::::res://Scenes/Components/HarvestComponent.tscn
+Player.tscn::PackedScene::2865639875494289319::1729380095::0::1::::<><>::res://Scripts/Objects/Player.gd<>uid://idajb5n31743::::res://Assets/Characters/Character.png<>uid://dlo4ny25kmrga::::res://Scenes/Components/InventoryComponent.tscn<>uid://tf88mpduami1::::res://Scenes/Components/CurrencyComponent.tscn<>uid://bna0blnh7t1ky::::res://Scenes/Components/HealthComponent.tscn<>uid://dsj5jii06d4rf::::res://Scenes/Audio/AudioMachine.tscn<>uid://cft0wsgi7v4cb::::res://Scenes/Components/ItemGravityComponent.tscn
+CropObject.tscn::PackedScene::8767119895461434546::1729384032::0::1::::<><>::res://Scripts/Objects/CropObject.gd<>uid://bvewjdaxh43s8::::res://Resoures/Items/Plants/Crops/AsteroidPomeCrop.tres<>uid://dkh84hmd86jvf::::res://Assets/Objects/Plant-Stages.png<>uid://bls6ftfun40dh::::res://Scenes/Components/GrowableComponent.tscn<>uid://cjyp74klcqibc::::res://Scenes/Components/InteractionComponent.tscn
+::res://Scenes/Objects/Trees/::1729383980
+Tree.tscn::PackedScene::3865999699998143544::1729384032::0::1::::<><>::res://Scripts/Objects/Trees/Tree.gd<>uid://bls6ftfun40dh::::res://Scenes/Components/GrowableComponent.tscn<>uid://cjyp74klcqibc::::res://Scenes/Components/InteractionComponent.tscn<>uid://dgrowgmovs0fi::::res://Assets/Trees/tree_none.png<>uid://b7b5mk8jjsywi::::res://Scenes/Components/HarvestComponent.tscn<>uid://dsj5jii06d4rf::::res://Scenes/Audio/AudioMachine.tscn
+TreeStump.tscn::PackedScene::1161430971943041464::1729380095::0::1::::<><>::res://Scripts/Objects/Trees/Stump.gd<>uid://b7b5mk8jjsywi::::res://Scenes/Components/HarvestComponent.tscn<>uid://c8dawhes5jwpg::::res://Assets/Objects/Trees.png<>uid://dsj5jii06d4rf::::res://Scenes/Audio/AudioMachine.tscn
+::res://Scenes/UI/::1729380018
+::res://Scenes/UI/CenterMenu/::1729380095
+CenterMenu.tscn::PackedScene::511170415438033558::1729380018::0::1::::<><>::uid://domfakxmg6lbb::::res://Scenes/UI/GameUI/CenterMenu/MenuBar.tscn<>res://Scripts/UI/CenterMenu/CenterMenu.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png
+CraftingMenu.tscn::PackedScene::1704309046215453225::1729380095::0::1::::<><>::res://Scripts/UI/CenterMenu/CraftingMenu/CraftingMenu.gd
+ExitMenu.tscn::PackedScene::3465961500068271663::1729380018::0::1::::<><>::res://Scripts/UI/CenterMenu/ExitMenu.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://tebnlopbok7g::::res://Assets/Fonts/PixulBrush.ttf
+InventoryMenu.tscn::PackedScene::159772024909422845::1729380018::0::1::::<><>::res://Scripts/UI/InventoryMenu.gd
+OptionsMenu.tscn::PackedScene::314519170302027815::1729380018::0::1::::<><>::
+PlayerInfoMenu.tscn::PackedScene::5848870528419923280::1729380018::0::1::::<><>::
+QuestsMenu.tscn::PackedScene::1457466444950791264::1729380018::0::1::::<><>::
+RelationsMenu.tscn::PackedScene::359760237411775067::1729380018::0::1::::<><>::
+::res://Scenes/UI/CenterMenu/CraftingMenu/::1729380095
+CraftableItem.tscn::PackedScene::3114336320388135580::1729380095::0::1::::<><>::res://Scripts/UI/CenterMenu/CraftingMenu/CraftableItem.gd
+CraftableItemHover.tscn::PackedScene::6503599263291338989::1729380095::0::1::::<><>::res://Scripts/UI/CenterMenu/CraftingMenu/CraftableItemHover.gd
+CraftingItemIngredient.tscn::PackedScene::7575221163007313619::1729380095::0::1::::<><>::res://Scripts/UI/CenterMenu/CraftingMenu/CraftingItemIngredient.gd
+::res://Scenes/UI/GamePrompts/::1729380123
+ConfirmationMenu.tscn::PackedScene::1641620364475347460::1729380123::0::1::::<><>::res://Scripts/UI/GamePrompt/ConfirmationMenu.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png
+WelcomeGamePrompt.tscn::PackedScene::1587395320966958176::1729380018::0::1::::<><>::res://Scripts/UI/GamePrompt/NewGame/WelcomeGamePrompt.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png
+::res://Scenes/UI/GameUI/::1729380123
+DateWeatherUI.tscn::PackedScene::9105615493604555223::1729380123::0::1::::<><>::uid://dxoxnqvm06ypq::::res://Assets/UI Sprites/Weather_UI.png<>res://Scripts/UI/DateWeatherUI.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png
+PlayerUI.tscn::PackedScene::1181129390942667866::1729380018::0::1::::<><>::res://Scripts/UI/PlayerUI.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://kwcxoisinfym::::res://Scenes/UI/GameUI/Inventory/Hotbar.tscn<>uid://hju5w1smhwpi::::res://Scenes/UI/CenterMenu/CenterMenu.tscn<>uid://d2y3flkfbn7nf::::res://Scenes/UI/GameUI/DateWeatherUI.tscn
+UIHeart.tscn::PackedScene::2091948515756754235::1729380018::0::1::::<><>::uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png
+::res://Scenes/UI/GameUI/CenterMenu/::1729380018
+MenuBar.tscn::PackedScene::8166982541342783463::1729380018::0::1::::<><>::res://Scripts/UI/CenterMenu/MenuBar.gd
+TopBarButton.tscn::PackedScene::5389724670890528535::1729380018::0::1::::<><>::res://Scripts/UI/CenterMenu/TopBarButton.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png
+::res://Scenes/UI/GameUI/Inventory/::1729380018
+Hotbar.tscn::PackedScene::747468002729367672::1729380018::0::1::::<><>::res://Scripts/UI/InventoryUI/Hotbar.gd
+InventorySlotUI.tscn::PackedScene::2744641145248791617::1729380018::0::1::::<><>::res://Scripts/UI/InventoryUI/InventorySlotUI.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://dshut2sdrrnxf::::res://Assets/Fonts/pixelFont-7-8x14-sproutLands.ttf
+ItemHoverMenu.tscn::PackedScene::5412628253780271351::1729380018::0::1::::<><>::res://Scripts/UI/InventoryUI/ItemHoverMenu.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://tebnlopbok7g::::res://Assets/Fonts/PixulBrush.ttf
+MovingItem.tscn::PackedScene::4400342098727453985::1729380018::0::1::::<><>::res://Scripts/UI/InventoryUI/MovingItem.gd
+::res://Scenes/UI/Menus/::1729380018
+::res://Scenes/UI/Menus/MainMenu/::1729380018
+MainMenu.tscn::PackedScene::8276991850760991509::1729380018::0::1::::<><>::res://Scripts/UI/Menus/MainMenu.gd<>uid://bi05k7fafahkk::::res://Scenes/UI/Menus/MainMenu/MainMenuButton.tscn
+MainMenuButton.tscn::PackedScene::3001381932848814218::1729380018::0::1::::<><>::uid://dshut2sdrrnxf::::res://Assets/Fonts/pixelFont-7-8x14-sproutLands.ttf<>res://Scripts/UI/Menus/MainMenuButton.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png
+SaveInstance.tscn::PackedScene::2580645954527241797::1729380018::0::1::::<><>::res://Scripts/UI/Menus/SaveInstance.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://idajb5n31743::::res://Assets/Characters/Character.png
+SaveManagerMenu.tscn::PackedScene::117726338034832567::1729380018::0::1::::<><>::res://Scripts/UI/Menus/SaveManagerMenu.gd<>uid://cc0uxg71e5lu0::::res://Assets/UI Sprites/ALL UI ASSETS on one sheet.png<>uid://dfublfalq30f7::::res://Assets/UI Sprites/Buttons/Icon Buttons/Icon Buttons Spritesheet.png
+::res://Scripts/::1729380095
+DateTime.gd::GDScript::-1::1729380095::0::1::::<>Node<>::
+Game.gd::GDScript::-1::1729380018::0::1::::BaseGame<>Node2D<>::
+::res://Scripts/Audio/::1729380018
+AudioMachine.gd::GDScript::-1::1729380018::0::1::::AudioMachine<>Node2D<>::
+::res://Scripts/Components/::1729383727
+CurrencyComponent.gd::GDScript::-1::1729380018::0::1::::CurrencyComponent<>Node2D<>::
+GrowableComponent.gd::GDScript::-1::1729383185::0::1::::GrowableComponent<>Node2D<>::
+HarvestComponent.gd::GDScript::-1::1729380095::0::1::::HarvestComponent<>Node2D<>::
+HealthComponent.gd::GDScript::-1::1729380095::0::1::::HealthComponent<>Node2D<>::
+InteractionComponent.gd::GDScript::-1::1729383995::0::1::::InteractionComponent<>Node2D<>::
+InventoryComponent.gd::GDScript::-1::1729380095::0::1::::InventoryComponent<>Node2D<>::
+ItemGravityComponent.gd::GDScript::-1::1729380095::0::1::::ItemGravityComponent<>Node2D<>::
+::res://Scripts/Globals/::1729380095
+GameManager.gd::GDScript::-1::1729380095::0::1::::<>Node<>::
+ResourceMaps.gd::GDScript::-1::1729380095::0::1::::<>Node<>::
+SaveHandler.gd::GDScript::-1::1729380095::0::1::::<>Node<>::
+SignalManager.gd::GDScript::-1::1729380095::0::1::::<>Node<>::
+Utils.gd::GDScript::-1::1729380095::0::1::::<>Node<>::
+::res://Scripts/Inventory/::1729380095
+InventorySlot.gd::GDScript::-1::1729380095::0::1::::InventorySlot<>Node2D<>::
+::res://Scripts/Levels/::1729380018
+Start.gd::GDScript::-1::1729380018::0::1::::<>Node2D<>::
+::res://Scripts/Objects/::1729383959
+Bed.gd::GDScript::-1::1729380095::0::1::::Bed<>Node2D<>::
+Collectable.gd::GDScript::-1::1729380095::0::1::::Collectable<>RigidBody2D<>::
+PickupableObject.gd::GDScript::-1::1729380095::0::1::::PickableObject<>Node2D<>::
+Player.gd::GDScript::-1::1729380095::0::1::::Player<>CharacterBody2D<>::
+CropObject.gd::GDScript::-1::1729384013::0::1::::CropObject<>Node2D<>::
+::res://Scripts/Objects/Trees/::1729380095
+Stump.gd::GDScript::-1::1729380095::0::1::::StumpObject<>Node2D<>::
+Tree.gd::GDScript::-1::1729380095::0::1::::TreeObject<>Node2D<>::
+::res://Scripts/ResourceScripts/::1729383323
+CluckEggRes.gd::GDScript::-1::1729380095::0::1::::CluckEggRes<>ConsumableRes<>::
+ConsumableRes.gd::GDScript::-1::1729380095::0::1::::ConsumableRes<>ItemRes<>::
+FruitRes.gd::GDScript::-1::1729382739::0::1::::FruitRes<>ConsumableRes<>::
+ItemRes.gd::GDScript::-1::1729380095::0::1::::ItemRes<>Resource<>::
+MoomooMilkRes.gd::GDScript::-1::1729380095::0::1::::MoomooMilkRes<>ConsumableRes<>::
+PlantedCropRes.gd::GDScript::-1::1729383312::0::1::::PlantedCropRes<>GrowableRes<>::
+GrowableRes.gd::GDScript::-1::1729383323::0::1::::GrowableRes<>Resource<>::
+SeedPackRes.gd::GDScript::-1::1729380095::0::1::::SeedPackRes<>ItemRes<>::
+UsableRes.gd::GDScript::-1::1729380095::0::1::::UsableRes<>ItemRes<>::
+VegetableRes.gd::GDScript::-1::1729380095::0::1::::VegetableRes<>ConsumableRes<>::
+::res://Scripts/ResourceScripts/Objects/::1729382620
+GrowableTreeRes.gd::GDScript::-1::1729382620::0::1::::GrowableTreeRes<>TreeRes<>::
+PickableRes.gd::GDScript::-1::1729380095::0::1::::PickableRes<>Resource<>::
+TreeRes.gd::GDScript::-1::1729382610::0::1::::TreeRes<>GrowableRes<>::
+::res://Scripts/ResourceScripts/UI/::1729380095
+CoinRes.gd::GDScript::-1::1729380095::0::1::::CoinRes<>ItemRes<>::
+HotbarslotRes.gd::GDScript::-1::1729380095::0::1::::SlotRes<>Resource<>::
+TopmenubuttonRes.gd::GDScript::-1::1729380095::0::1::::UiMenuButtonRes<>Resource<>::
+::res://Scripts/UI/::1729380095
+DateWeatherUI.gd::GDScript::-1::1729380095::0::1::::DateWeatherUI<>Control<>::
+InventoryMenu.gd::GDScript::-1::1729380018::0::1::::InventoryMenu<>Control<>::
+PlayerUI.gd::GDScript::-1::1729380018::0::1::::PlayerUI<>Control<>::
+UIHeart.gd::GDScript::-1::1729380018::0::1::::UIHeart<>NinePatchRect<>::
+::res://Scripts/UI/CenterMenu/::1729380095
+CenterMenu.gd::GDScript::-1::1729380018::0::1::::CenterMenu<>VBoxContainer<>::
+ExitMenu.gd::GDScript::-1::1729380095::0::1::::<>Control<>::
+MenuBar.gd::GDScript::-1::1729380018::0::1::::CenterMenuTopNav<>HBoxContainer<>::
+TopBarButton.gd::GDScript::-1::1729380095::0::1::::GuiMenuButton<>TextureButton<>::
+::res://Scripts/UI/CenterMenu/CraftingMenu/::1729380095
+CraftableItem.gd::GDScript::-1::1729380095::0::1::::CraftableItem<>Control<>::
+CraftableItemHover.gd::GDScript::-1::1729380095::0::1::::CraftableItemHover<>Control<>::
+CraftingItemIngredient.gd::GDScript::-1::1729380095::0::1::::CraftingItemIngredient<>Control<>::
+CraftingMenu.gd::GDScript::-1::1729380095::0::1::::CraftingMenu<>Control<>::
+::res://Scripts/UI/GamePrompt/::1729380095
+ConfirmationMenu.gd::GDScript::-1::1729380095::0::1::::ConfirmationMenu<>Control<>::
+::res://Scripts/UI/GamePrompt/NewGame/::1729380018
+WelcomeGamePrompt.gd::GDScript::-1::1729380018::0::1::::WelcomeGamePrompt<>Control<>::
+::res://Scripts/UI/InventoryUI/::1729380095
+Hotbar.gd::GDScript::-1::1729380018::0::1::::<>GridContainer<>::
+InventorySlotUI.gd::GDScript::-1::1729380018::0::1::::GuiInventorySlot<>Control<>::
+ItemHoverMenu.gd::GDScript::-1::1729380095::0::1::::ItemHoverMenu<>Control<>::
+MovingItem.gd::GDScript::-1::1729380095::0::1::::MovingInvItem<>Control<>::
+::res://Scripts/UI/Menus/::1729380095
+MainMenu.gd::GDScript::-1::1729380018::0::1::::MainMenu<>Control<>::
+MainMenuButton.gd::GDScript::-1::1729380018::0::1::::MainMenuButton<>Button<>::
+SaveInstance.gd::GDScript::-1::1729380018::0::1::::SaveInstance<>PanelContainer<>::
+SaveManagerMenu.gd::GDScript::-1::1729380095::0::1::::SaveManagerMenu<>Control<>::
+::res://Styles/::1729380018
+SelectedPanel.tres::StyleBoxFlat::7211582117426874463::1729380018::0::1::::<><>::

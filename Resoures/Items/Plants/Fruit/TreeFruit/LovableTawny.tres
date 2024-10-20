@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/ResourceScripts/FruitRes.gd" id="1_rlgk3"]
 [ext_resource type="Texture2D" uid="uid://blleh0q6i3l52" path="res://Assets/Items/Complete-Sheet.png" id="2_d2aln"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_57tck"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_6gpcw"]
 atlas = ExtResource("2_d2aln")
 region = Rect2(32, 112, 16, 16)
 
@@ -12,5 +12,5 @@ script = ExtResource("1_rlgk3")
 noureshment = 0
 is_consumable = true
 name = "Lovable Tawny"
-texture = SubResource("AtlasTexture_57tck")
-description = "A tangy and juicy fruit, packed with vitamin C. Refreshing and boosts health."
+texture = SubResource("AtlasTexture_6gpcw")
+description = "None"
