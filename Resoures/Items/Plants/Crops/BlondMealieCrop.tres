@@ -5,8 +5,9 @@
 
 [resource]
 script = ExtResource("1_lerdq")
-stage_count = 4
-texture_row_number = 0
-growtime = 0
+height = 2
+texture_row = 1
 grow_seasons = [0, 0, 0, 0]
 harvest_item = ExtResource("1_osfso")
+growtime = 4
+growth_stages = 4

@@ -1,5 +1,5 @@
 class_name TreeRes
-extends Resource
+extends GrowableRes
 
 # Export Variables
 @export var normal_texture : Texture

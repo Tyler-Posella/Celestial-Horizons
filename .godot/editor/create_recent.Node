@@ -1,3 +1,6 @@
+InteractionComponent
+Sprite2D
+AnimationPlayer
 Node2D
 PanelContainer
 Label
@@ -5,10 +8,7 @@ Panel
 AspectRatioContainer
 TextureButton
 HBoxContainer
-Sprite2D
-InteractionComponent
 TextureRect
 Control
 GridContainer
 NinePatchRect
-MarginContainer

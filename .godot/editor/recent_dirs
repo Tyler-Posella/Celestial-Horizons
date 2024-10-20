@@ -1,10 +1,10 @@
+res://Scripts/Objects
+res://Scenes/Objects
 res://Scripts/Globals
 res://Scenes
 res://Scenes/UI/GameUI
 res://Scripts/UI/GamePrompt
 res://Scripts/UI/GamePrompt/NewGame
-res://Scenes/Objects
-res://Scripts/Objects
 res://Resoures/Items/Plants/Vegetables/
 res://Resoures/Items/Plants/
 res://Resoures/Items/Animals/Moomoo/Milk/

@@ -1,13 +1,12 @@
 class_name PlantedCropRes
-extends Resource
+extends GrowableRes
 
 # Constant Variables
 const crop_texture : Texture = preload("res://Assets/Items/Complete-Sheet.png")
 
 # Export Variables
-@export var stage_count : int
-@export var texture_row_number : int
-@export var growtime : int
+@export var height : int = 1
+@export var texture_row : int
 @export var grow_seasons : Array = [0, 0, 0, 0]
 @export var harvest_item : ItemRes
 
@@ -15,13 +14,13 @@ const crop_texture : Texture = preload("res://Assets/Items/Complete-Sheet.png")
 func get_crop_texture():
 	return crop_texture
 	
+
+func get_crop_height():
+	return height
 	
-func get_stage_count():
-	return stage_count
 	
-	
-func get_texture_row_number():
-	return texture_row_number
+func get_texture_row():
+	return texture_row
 	
 	
 func get_growtime():
@@ -41,3 +40,7 @@ func grows_in_season(season_number : int):
 		return grow_seasons[2]
 	elif(season_number == 3):
 		return grow_seasons[3]
+		
+		
+func get_harvest_item():
+	return harvest_item
