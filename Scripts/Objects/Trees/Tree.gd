@@ -1,5 +1,5 @@
 class_name TreeObject
-extends Node2D
+extends GridObject
 
 # Constant Variables
 const STUMP_SCENE = preload("res://Scenes/Objects/Trees/TreeStump.tscn")

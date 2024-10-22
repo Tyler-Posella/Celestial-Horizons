@@ -14,4 +14,3 @@ crop_resource = ExtResource("1_trkg4")
 name = "Blanc Pastinaca Seeds"
 texture = SubResource("AtlasTexture_klnct")
 description = "None"
-sell_price = 0

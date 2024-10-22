@@ -14,4 +14,3 @@ crop_resource = ExtResource("1_1ecwg")
 name = "Asteroid Pome Seeds"
 texture = SubResource("AtlasTexture_rmoap")
 description = "None"
-sell_price = 0

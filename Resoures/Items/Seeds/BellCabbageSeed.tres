@@ -14,4 +14,3 @@ crop_resource = ExtResource("1_fslxm")
 name = "Bell Cabbage Seeds"
 texture = SubResource("AtlasTexture_p68sg")
 description = "None"
-sell_price = 0

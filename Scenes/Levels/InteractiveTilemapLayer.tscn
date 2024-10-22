@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://50f23jscecd2"]
+
+[ext_resource type="Script" path="res://Scripts/Levels/InteractiveTilemapLayer.gd" id="1_ewwdf"]
+
+[node name="InteractiveTilemap" type="TileMapLayer"]
+script = ExtResource("1_ewwdf")
+
+[connection signal="child_entered_tree" from="." to="." method="_on_child_entered_tree"]

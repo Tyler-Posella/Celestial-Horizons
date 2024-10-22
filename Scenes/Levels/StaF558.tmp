@@ -1,0 +1,33 @@
+[gd_scene load_steps=7 format=4 uid="uid://bh1o1y67pi8du"]
+
+[ext_resource type="Script" path="res://Scripts/Levels/Start.gd" id="1_wfjas"]
+[ext_resource type="TileSet" uid="uid://cuhlrvbbaqqsk" path="res://Assets/Tilesets/Tileset_Main.tres" id="2_x3dv7"]
+[ext_resource type="PackedScene" uid="uid://bhmrogi0cr2f3" path="res://Scenes/Objects/Collectable.tscn" id="3_1r330"]
+[ext_resource type="Script" path="res://Scripts/Levels/InteractiveTilemapLayer.gd" id="3_m4jgv"]
+[ext_resource type="Resource" uid="uid://del5xkhbu3ywb" path="res://Resoures/Items/Tools/WateringCan.tres" id="6_m5t4t"]
+[ext_resource type="Resource" uid="uid://rq0qxv1gksng" path="res://Resoures/Items/Tools/Hoe.tres" id="10_2knyr"]
+
+[node name="Game_Level" type="Node2D" groups=["Level", "Persist"]]
+y_sort_enabled = true
+script = ExtResource("1_wfjas")
+
+[node name="TileMap" type="Node2D" parent="."]
+y_sort_enabled = true
+position = Vector2(2.08165e-12, 2.08165e-12)
+metadata/_edit_lock_ = true
+
+[node name="Background_1" type="TileMapLayer" parent="TileMap" node_paths=PackedStringArray("tile_map_layer")]
+z_index = -1
+use_parent_material = true
+tile_map_data = PackedByteArray("AAD9//z/FwAMAAEAAAD9//3/FwALAAUAAAD9//7/FwAMAAEAAAD9////FwALAAUAAAD9/wAAFwAMAAEAAAD9/wEAFwALAAUAAAD9/wIAFwAMAAEAAAD+//z/FwALAAUAAAD+//3/FwAMAAEAAAD+//7/FwALAAUAAAD+////FwAMAAEAAAD+/wAAFwALAAUAAAD+/wEAFwAMAAEAAAD+/wIAFwALAAUAAAD///z/FwAMAAEAAAD///3/FwALAAUAAAD///7/FwAMAAEAAAD/////FwALAAUAAAD//wAAFwAMAAEAAAD//wEAFwALAAUAAAD//wIAFwAMAAEAAAAAAPz/FwALAAUAAAAAAP3/FwAMAAEAAAAAAP7/FwALAAUAAAAAAP//FwAMAAEAAAAAAAAAFwALAAUAAAAAAAEAFwAMAAEAAAAAAAIAFwALAAUAAAABAPz/FwAMAAEAAAABAP3/FwALAAUAAAABAP7/FwAMAAEAAAABAP//FwALAAUAAAABAAAAFwAMAAEAAAABAAEAFwALAAUAAAABAAIAFwAMAAEAAAACAPz/FwALAAUAAAACAP3/FwAMAAEAAAACAP7/FwALAAUAAAACAP//FwAMAAEAAAACAAAAFwALAAUAAAACAAEAFwAMAAEAAAACAAIAFwALAAUAAAD9/wMAFwALAAUAAAD+/wMAFwAMAAEAAAD//wMAFwALAAUAAAAAAAMAFwAMAAEAAAABAAMAFwALAAUAAAACAAMAFwAMAAEAAAADAAMAFwALAAUAAAADAAIAFwAMAAEAAAADAAEAFwALAAUAAAADAAAAFwAMAAEAAAADAP//FwALAAUAAAADAP7/FwAMAAEAAAADAP3/FwALAAUAAAADAPz/FwAMAAEAAAD8//z/FwALAAUAAAD8//3/FwAMAAEAAAD8////FwAMAAEAAAD8/wAAFwALAAUAAAD8/wEAFwAMAAEAAAD8/wIAFwALAAUAAAD8/wMAFwAMAAEAAAD8//7/FwALAAUAAAA=")
+tile_set = ExtResource("2_x3dv7")
+script = ExtResource("3_m4jgv")
+tile_map_layer = NodePath(".")
+
+[node name="Item" parent="TileMap" instance=ExtResource("3_1r330")]
+position = Vector2(-58, 41)
+item = ExtResource("10_2knyr")
+
+[node name="Item2" parent="TileMap" instance=ExtResource("3_1r330")]
+position = Vector2(-58, 41)
+item = ExtResource("6_m5t4t")

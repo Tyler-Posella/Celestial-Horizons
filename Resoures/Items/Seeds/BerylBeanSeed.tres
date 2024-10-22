@@ -14,4 +14,3 @@ crop_resource = ExtResource("1_6tu5a")
 name = "Beryl Bean Seeds"
 texture = SubResource("AtlasTexture_euaan")
 description = "None"
-sell_price = 0

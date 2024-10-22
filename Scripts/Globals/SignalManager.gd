@@ -4,7 +4,8 @@ extends Node
 # Declare any signals you want to manage
 signal example_signal()
 signal advance_day()
-
+signal player_hoed()
+signal player_watered()
 # Singleton pattern
 var listeners = {}
 

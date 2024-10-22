@@ -1,5 +1,5 @@
 class_name PickableObject
-extends Node2D
+extends GridObject
 
 # Export Variables
 @export var pickable : PickableRes

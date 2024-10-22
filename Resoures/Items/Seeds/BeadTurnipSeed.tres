@@ -14,4 +14,3 @@ crop_resource = ExtResource("1_w5lt4")
 name = "Bead Turnip Seeds"
 texture = SubResource("AtlasTexture_bxwwx")
 description = "None"
-sell_price = 0
