@@ -4,10 +4,13 @@ extends Node2D
 @export var tile_size: Vector2 = Vector2(16, 16)  # Adjust based on your tile size
 
 # Onready Variables
-@onready var tile_map_layers = [$TileMap/Water, $TileMap/Background_1, $TileMap/Background_2, $TileMap/Surface_1]
+var tile_map_layers = []
 
 # Functions
 func _ready() -> void:
+	var tile_map_children = $TileMap.get_children()
+	for child in tile_map_children:
+		tile_map_layers.append(child)
 	SignalManager.add_listener("player_hoed", self, "_on_player_hoe")
 	SignalManager.add_listener("player_watered", self, "_on_player_water")
 		
@@ -23,13 +26,15 @@ func _on_player_hoe():
 	var cell_position = Vector2(cell_x, cell_y)
 	
 	var is_good : bool = true
-	var i : int = 3
+	var i : int = tile_map_layers.size() - 1
 	while(is_good):
 		print(i)
 		var tile_data = tile_map_layers[i].get_cell_tile_data(cell_position)
 		if(tile_data != null):
 			if(tile_data.get_custom_data("Hoe-able") == false):
 				is_good = false
+				print(tile_data)
+				print(tile_data.get_custom_data("Hoe-able"))
 				break
 			else:
 				print(tile_data)
@@ -52,7 +57,7 @@ func _on_player_water():
 	var cell_position = Vector2(cell_x, cell_y)
 	
 	var is_good : bool = true
-	var i : int = 3
+	var i : int = tile_map_layers.size() - 1
 	while(is_good):
 		print(i)
 		var tile_data = tile_map_layers[i].get_cell_tile_data(cell_position)
