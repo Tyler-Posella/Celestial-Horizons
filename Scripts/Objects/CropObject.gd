@@ -1,5 +1,7 @@
 class_name CropObject
-extends Node2D
+extends GridObject
+
+# Signals
 
 # Variables
 @export var type : PlantedCropRes

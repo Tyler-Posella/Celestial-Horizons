@@ -5,13 +5,14 @@ extends CharacterBody2D
 signal coins_changed(count : int)
 signal inventory_changed()
 signal health_changed(count : int)
-
+signal hoed()
 
 # Variables
 var movement_speed : int = 100
 var state : String = "Idle"
 var is_action : bool = false
 var last_direction : String = "Down"
+var facing_direction : Vector2
 var direction : Vector2 = Vector2.ZERO
 var position_x : float
 var position_y : float
@@ -67,33 +68,45 @@ func _physics_process(delta):
 		#Update animations
 		if(is_actioning()):
 			pass
-		elif(direction_input.x == 0 and direction_input.y == 0):
-			if(last_direction == "Left"):
-				$AnimationPlayer.play("idle_left")
-			if(last_direction == "Down"):
-				$AnimationPlayer.play("idle_down")
-			if(last_direction == "Right"):
-				$AnimationPlayer.play("idle_right")
-			if(last_direction == "Up"):
-				$AnimationPlayer.play("idle_up")
-		elif(direction_input.x == -1 and direction_input.y == 0):
-			$AnimationPlayer.play("walk_left")
-			last_direction = "Left"
-		elif(direction_input.x == 1 and direction_input.y == 0):
-			$AnimationPlayer.play("walk_right")
-			last_direction = "Right"
-		elif(direction_input.y == 1 and direction_input.x == 0):
-			$AnimationPlayer.play("walk_down")
-			last_direction = "Down"
-		elif(direction_input.y == -1 and direction_input.x == 0):
-			$AnimationPlayer.play("walk_up")
-			last_direction = "Up"
-		elif(direction_input.x == -1 and direction_input.y != 0):
-			$AnimationPlayer.play("walk_left")
-			last_direction = "Left"
-		elif(direction_input.x == 1 and direction_input.y != 0):
-			$AnimationPlayer.play("walk_right")
-			last_direction = "Right"
+		elif(direction == Vector2.ZERO):
+			# Get the global mouse position
+			var mouse_position = get_global_mouse_position()
+			# Get the player's position
+			var player_position = self.global_position
+			# Calculate the direction vector from the player to the mouse
+			facing_direction = (mouse_position - player_position).normalized()
+			if abs(facing_direction.x) > abs(facing_direction.y):
+		# Horizontal facing (left or right)
+				if facing_direction.x > 0:
+					$AnimationPlayer.play("idle_right")
+				else:
+					$AnimationPlayer.play("idle_left")
+			else:
+			# Vertical facing (up or down)
+				if facing_direction.y > 0:
+					$AnimationPlayer.play("idle_down")
+				else:
+					$AnimationPlayer.play("idle_up")
+		else:
+			if(direction_input.x == -1 and direction_input.y == 0):
+				$AnimationPlayer.play("walk_left")
+				last_direction = "Left"
+			elif(direction_input.x == 1 and direction_input.y == 0):
+				$AnimationPlayer.play("walk_right")
+				last_direction = "Right"
+			elif(direction_input.y == 1 and direction_input.x == 0):
+				$AnimationPlayer.play("walk_down")
+				last_direction = "Down"
+			elif(direction_input.y == -1 and direction_input.x == 0):
+				$AnimationPlayer.play("walk_up")
+				last_direction = "Up"
+			elif(direction_input.x == -1 and direction_input.y != 0):
+				$AnimationPlayer.play("walk_left")
+				last_direction = "Left"
+			elif(direction_input.x == 1 and direction_input.y != 0):
+				$AnimationPlayer.play("walk_right")
+				last_direction = "Right"
+
 		#Update player velocity
 		velocity = movement_speed * direction
 		#Check for state change with velocity vector
@@ -135,8 +148,22 @@ func check_for_button_press():
 		if(inventory_component.selected.item != null):
 			if(inventory_component.selected.item is UsableRes and is_actioning() == false):
 				use_item()
+			if(inventory_component.selected.item is SeedPackRes and is_actioning() == false):
+				plant()
 		
 		
+func plant():
+	pass
+	
+	
+func hoe():
+	SignalManager.emit_signal_global("player_hoed", [])
+	
+	
+func water():
+	SignalManager.emit_signal_global("player_watered", [])
+	
+	
 func get_inventory_component():
 	return inventory_component
 	
@@ -162,38 +189,52 @@ func use_item():
 		if(inventory_component.get_selected_slot().get_item().get_item_name() == "Axe"):
 			state = "Axe"
 			$ToolArea.set_collision_layer_value(9, true)
-			if(last_direction == "Left"):
-				$AnimationPlayer.play("axe_left")
-			elif(last_direction == "Down"):
-				$AnimationPlayer.play("axe_down")
-			elif(last_direction == "Right"):
-				$AnimationPlayer.play("axe_right")
-			elif(last_direction == "Up"):
-				$AnimationPlayer.play("axe_up")
+			if abs(facing_direction.x) > abs(facing_direction.y):
+			# Horizontal facing (left or right)
+				if facing_direction.x > 0:
+					$AnimationPlayer.play("axe_right")
+				else:
+					$AnimationPlayer.play("axe_left")
+			else:
+			# Vertical facing (up or down)
+				if facing_direction.y > 0:
+					$AnimationPlayer.play("axe_down")
+				else:
+					$AnimationPlayer.play("axe_up")
 			await get_tree().create_timer(0.35).timeout
 			audio_player.play_sound("res://Audio/SFX/Player/AxeSwing.wav")
 		elif(inventory_component.get_selected_slot().get_item().get_item_name() == "Hoe"):
 			state = "Hoe"
 			$ToolArea.set_collision_layer_value(10, true)
-			if(last_direction == "Left"):
-				$AnimationPlayer.play("hoe_left")
-			elif(last_direction == "Down"):
-				$AnimationPlayer.play("hoe_down")
-			elif(last_direction == "Right"):
-				$AnimationPlayer.play("hoe_right")
-			elif(last_direction == "Up"):
-				$AnimationPlayer.play("hoe_up")
+			if abs(facing_direction.x) > abs(facing_direction.y):
+			# Horizontal facing (left or right)
+				if facing_direction.x > 0:
+					$AnimationPlayer.play("hoe_right")
+				else:
+					$AnimationPlayer.play("hoe_left")
+			else:
+			# Vertical facing (up or down)
+				if facing_direction.y > 0:
+					$AnimationPlayer.play("hoe_down")
+				else:
+					$AnimationPlayer.play("hoe_up")
+			hoe()
 			audio_player.play_sound("res://Audio/SFX/Player/DirtDig.mp3")
 		elif(inventory_component.get_selected_slot().get_item().get_item_name() == "Watering Can"):
 			state = "Watering"
-			if(last_direction == "Left"):
-				$AnimationPlayer.play("water_left")
-			elif(last_direction == "Down"):
-				$AnimationPlayer.play("water_down")
-			elif(last_direction == "Right"):
-				$AnimationPlayer.play("water_right")
-			elif(last_direction == "Up"):
-				$AnimationPlayer.play("water_up")
+			if abs(facing_direction.x) > abs(facing_direction.y):
+			# Horizontal facing (left or right)
+				if facing_direction.x > 0:
+					$AnimationPlayer.play("water_right")
+				else:
+					$AnimationPlayer.play("water_left")
+			else:
+			# Vertical facing (up or down)
+				if facing_direction.y > 0:
+					$AnimationPlayer.play("water_down")
+				else:
+					$AnimationPlayer.play("water_up")
+			water()
 		
 		
 func use_item_end():

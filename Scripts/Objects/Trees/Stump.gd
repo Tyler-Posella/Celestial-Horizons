@@ -1,5 +1,5 @@
 class_name StumpObject
-extends Node2D
+extends GridObject
 
 # Onready Variables
 @onready var harvest_component = $HarvestComponent

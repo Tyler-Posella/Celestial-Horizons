@@ -14,4 +14,3 @@ crop_resource = ExtResource("1_up6h5")
 name = "Bushy Lactuca Seeds"
 texture = SubResource("AtlasTexture_dx1l1")
 description = "None"
-sell_price = 0
