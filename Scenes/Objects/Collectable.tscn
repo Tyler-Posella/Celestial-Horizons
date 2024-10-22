@@ -13,7 +13,6 @@ radius = 4.01386
 radius = 1.0
 
 [node name="Item" type="RigidBody2D" groups=["Collectable"]]
-z_index = 1
 collision_layer = 32
 collision_mask = 0
 can_sleep = false
