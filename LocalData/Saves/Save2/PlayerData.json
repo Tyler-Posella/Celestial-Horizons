@@ -1,0 +1,399 @@
+{
+	"children": [
+		{
+			"children": [
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				},
+				{
+					"children": [],
+					"properties": {
+						"count": 0,
+						"item_id": 0
+					},
+					"scene": "res://Scenes/Inventory/InventorySlot.tscn",
+					"unique": false
+				}
+			],
+			"properties": {
+				"size": 40
+			},
+			"scene": "res://Scenes/Components/InventoryComponent.tscn",
+			"unique": true
+		},
+		{
+			"children": [],
+			"properties": {
+				"coin_count": 0
+			},
+			"scene": "res://Scenes/Components/CurrencyComponent.tscn",
+			"unique": true
+		},
+		{
+			"children": [],
+			"properties": {
+				"health": 0,
+				"max_health": 0
+			},
+			"scene": "res://Scenes/Components/HealthComponent.tscn",
+			"unique": true
+		}
+	],
+	"properties": {
+		"name": "",
+		"playtime": 3,
+		"position_x": 0,
+		"position_y": 0
+	},
+	"save_file_path": "PlayerData.json",
+	"scene": "res://Scenes/Objects/Player.tscn",
+	"unique": true
+}

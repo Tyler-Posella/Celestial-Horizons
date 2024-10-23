@@ -6,7 +6,7 @@ const CONFIRMATION_MENU = preload("res://Scenes/UI/GamePrompts/ConfirmationMenu.
 
 # Functions	
 func _on_interactable_component_interacted() -> void:
-		# Handle sleeping mechanic
+	# Handle sleeping mechanic
 	var new_confirmation_menu = CONFIRMATION_MENU.instantiate()
 	var prompt : String = "Are you sure you would like to sleep?"
 	new_confirmation_menu.confirmed.connect(_on_sleep_confirmed)
