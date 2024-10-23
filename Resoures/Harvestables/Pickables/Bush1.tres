@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PickableRes" load_steps=5 format=3 uid="uid://b8lwr3a1cxyi6"]
+
+[ext_resource type="Resource" uid="uid://bi6c7vhixprax" path="res://Resoures/Items/Trees/Twig.tres" id="1_7pr2w"]
+[ext_resource type="Script" path="res://Scripts/ResourceScripts/Objects/PickableRes.gd" id="1_b03ja"]
+[ext_resource type="Texture2D" uid="uid://kyokxtv2lr0k" path="res://Assets/Objects/Ground-Objects.png" id="2_agui8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bcqv8"]
+atlas = ExtResource("2_agui8")
+region = Rect2(48, 32, 16, 16)
+
+[resource]
+script = ExtResource("1_b03ja")
+normal_texture = SubResource("AtlasTexture_bcqv8")
+item = ExtResource("1_7pr2w")

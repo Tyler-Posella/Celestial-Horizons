@@ -7,6 +7,7 @@
 size = Vector2(16, 32)
 
 [node name="Bed" type="Node2D"]
+z_as_relative = false
 script = ExtResource("1_l74yo")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

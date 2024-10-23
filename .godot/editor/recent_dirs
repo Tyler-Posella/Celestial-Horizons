@@ -1,5 +1,6 @@
-res://Assets/Tilesets/Ground
+res://Resoures/Harvestables/Pickables
 res://Assets/Tilesets/SubTileSets
+res://Assets/Tilesets/Ground
 res://Assets/Tilesets
 res://
 res://Scripts/Levels
@@ -19,4 +20,3 @@ res://Resoures/Items/Animals/Moomoo/Milk/
 res://Resoures/Items/Animals/
 res://Resoures/Items/Seeds/
 res://Scripts/UI/CenterMenu/CraftingMenu
-res://Scenes/UI/CenterMenu/CraftingMenu

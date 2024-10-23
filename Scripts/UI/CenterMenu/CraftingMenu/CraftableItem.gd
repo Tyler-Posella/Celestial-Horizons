@@ -55,11 +55,13 @@ func _on_gui_input(event: InputEvent):
 					slots_to_use.append(searching_slots[0])
 					amount_to_remove.append(need)
 					searching_slots = []
+		
+		inventory.add_item(item, 1)
 					
 		for i in slots_to_use.size():
 			slots_to_use[i].set_count(slots_to_use[i].get_count() - amount_to_remove[i])
 		
-		inventory.add_item(item, 1)
+
 			
 		
 			

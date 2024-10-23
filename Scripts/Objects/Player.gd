@@ -56,6 +56,7 @@ func _ready():
 	$ToolArea/Tool.set_disabled(true)
 	$ToolArea.monitorable = false
 	
+	$WalkPlayer.stream = load("res://Audio/SFX/Player/Footsteps_Grass_Run.wav")
 	
 func _physics_process(delta):
 	if(1 == 1):
@@ -69,6 +70,7 @@ func _physics_process(delta):
 		if(is_actioning()):
 			pass
 		elif(direction == Vector2.ZERO):
+			$AnimationPlayer.speed_scale = 1
 			# Get the global mouse position
 			var mouse_position = get_global_mouse_position()
 			# Get the player's position
@@ -88,6 +90,11 @@ func _physics_process(delta):
 				else:
 					$AnimationPlayer.play("idle_up")
 		else:
+			if($Timer2.time_left <= 0):
+				$AnimationPlayer.speed_scale = 1.75
+				$WalkPlayer.pitch_scale = randf_range(0.8, 1.2)
+				$WalkPlayer.play()
+				$Timer2.start(0.3)
 			if(direction_input.x == -1 and direction_input.y == 0):
 				$AnimationPlayer.play("walk_left")
 				last_direction = "Left"
@@ -181,6 +188,7 @@ func get_drop_marker():
 	
 	
 func use_item():
+	$AnimationPlayer.speed_scale = 1
 	if(inventory_component.selected.get_item() is UsableRes):
 		is_action = true
 		movement_speed = 0

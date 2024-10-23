@@ -1,3 +1,5 @@
+PickableRes
+AnimatedTexture
 VegetableRes
 ItemRes
 MoomooMilkRes
@@ -5,10 +7,8 @@ CluckEggRes
 FruitRes
 PlantedCropRes
 SeedPackRes
-PickableRes
 GrowableTreeRes
 TreeRes
 Resource
 GDScript
 PackedScene
-AtlasTexture
