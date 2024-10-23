@@ -159,6 +159,7 @@ _data = {
 radius = 7.0
 
 [node name="Tree" type="Node2D" groups=["Tree"]]
+y_sort_enabled = true
 script = ExtResource("1_my5rv")
 
 [node name="InteractableComponent" parent="." instance=ExtResource("2_rxix3")]

@@ -13,6 +13,7 @@ region = Rect2(16, 96, 16, 16)
 radius = 4.0
 
 [node name="TreeStump" type="Node2D"]
+z_as_relative = false
 script = ExtResource("1_2t4oq")
 
 [node name="AudioMachine" parent="." instance=ExtResource("3_pwhsr")]

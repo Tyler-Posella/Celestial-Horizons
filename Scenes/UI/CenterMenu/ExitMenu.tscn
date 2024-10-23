@@ -57,34 +57,6 @@ text = "Save"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="LoadButton" type="TextureButton" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-texture_normal = SubResource("AtlasTexture_8ykr1")
-texture_pressed = SubResource("AtlasTexture_ptsai")
-stretch_mode = 5
-
-[node name="LoadLabel" type="Label" parent="VBoxContainer/LoadButton"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -960.0
-offset_top = -104.0
-offset_right = 960.0
-offset_bottom = 104.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 8
-theme_override_fonts/font = ExtResource("3_xm5pc")
-theme_override_font_sizes/font_size = 48
-text = "Load"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="ExitButton" type="TextureButton" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
@@ -114,5 +86,4 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [connection signal="pressed" from="VBoxContainer/SaveButton" to="." method="_on_save_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/LoadButton" to="." method="_on_load_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]
