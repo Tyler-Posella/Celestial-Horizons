@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=4 uid="uid://bh1o1y67pi8du"]
+[gd_scene load_steps=10 format=4 uid="uid://bh1o1y67pi8du"]
 
 [ext_resource type="Script" path="res://Scripts/Levels/Start.gd" id="1_wfjas"]
 [ext_resource type="TileSet" uid="uid://cuhlrvbbaqqsk" path="res://Assets/Tilesets/Tileset_Main.tres" id="2_x3dv7"]
@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://bvcypkp2xfprc" path="res://Scenes/Objects/Trees/Tree.tscn" id="4_3cpkl"]
 [ext_resource type="PackedScene" uid="uid://c8qtlqw4bwuph" path="res://Scenes/Objects/PickableObject.tscn" id="5_opu50"]
 [ext_resource type="Resource" uid="uid://bkqm2vjhhauws" path="res://Resoures/Harvestables/Pickables/SmallStone1.tres" id="6_4os3t"]
+[ext_resource type="PackedScene" uid="uid://bhmrogi0cr2f3" path="res://Scenes/Objects/Collectable.tscn" id="8_5ml3l"]
+[ext_resource type="Resource" uid="uid://cum57os15y7i0" path="res://Resoures/Items/Tools/Axe.tres" id="9_q2i85"]
 [ext_resource type="Resource" uid="uid://b8lwr3a1cxyi6" path="res://Resoures/Harvestables/Pickables/Bush1.tres" id="11_n83yo"]
 
 [node name="Game_Level" type="Node2D" groups=["Level", "Persist"]]
@@ -702,3 +704,7 @@ pickable = ExtResource("11_n83yo")
 [node name="GroundItems" type="Node2D" parent="WorldObjects"]
 z_as_relative = false
 y_sort_enabled = true
+
+[node name="Item" parent="WorldObjects/GroundItems" instance=ExtResource("8_5ml3l")]
+position = Vector2(60, 10)
+item = ExtResource("9_q2i85")
