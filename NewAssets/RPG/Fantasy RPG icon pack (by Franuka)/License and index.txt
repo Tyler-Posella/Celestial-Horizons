@@ -1,0 +1,577 @@
+FANTASY RPG ICON PACK (by Franuka) v1.9
+-------------------------
+Thank you for purchasing this asset pack!
+It was created from scratch, and licensed under the Creative commons BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+Feel free to use it on any commercial or non-commercial project, just remember to add a link to my itch page and/or Twitter, it helps a lot :) -->https://twitter.com/franuka_art
+---
+Included are all the files for each icon, in .png format, transparent background.
+The icons are 16x16px, and upscaled to 32x32 and 48x48
+---
+All art was made from scratch by me. 
+
+Contact: franukai@gmail.com
+Instagram: https://www.instagram.com/franuka.art/
+Twitter: https://twitter.com/franuka_art
+Other projects and games: https://franuka.itch.io/
+
+If you like what I do, consider supporting me by donating, sharing, or sending your feedback.
+Have a good time making your games :)
+
+CHANGELOG
+----------
+v1.1: First expansion, added colour variations (95 new icons)
+v1.2: Second expansion, fishing set (rods, bait, junk, and a lot of new fishes)
+v1.3: Added 10 more defense items (blue robe, shirt, copper armour, shields, etc.)
+v1.4: Added exclamation/question marks and math symbols
+v1.5: Added mail/letter icon
+v1.6: Added 20 extra icons (scrolls, letters, writing material, etc.)
+v1.7: Added 20 extra icons (awards, coins, lock, clock, compass, paw, sound, and more)
+v1.8: Added 20 extra icons (tickets, lute, flute, drum, concertina, violin, vynil, music sheet)
+v1.9: Added 3 ingots (copper, silver, gold)
+
+INDEX
+----------
+//Equipment & Tools//
+1: Copper dagger
+2: Copper sword
+3: Shortbow
+4: Copper spear
+5: Copper axe
+6: Copper mace
+7: Copper shovel
+8: Copper pickaxe
+9: Copper hammer
+10: Copper scythe
+
+11: Steel dagger
+12: Steel sword
+13: Longbow
+14: Steel spear
+15: Steel axe
+16: Steel mace
+17: Steel shovel
+18: Steel pickaxe
+19: Steel hammer
+20: Steel scythe
+
+21: Golden dagger
+22: Golden sword
+23: Golden longbow
+24: Golden spear
+25: Golden axe
+26: Golden mace
+27: Golden shovel
+28: Golden pickaxe
+29: Golden hammer
+30: Golden scythe
+
+31: Copper arrow
+32: Steel arrow
+33: Golden arrow
+34: Poison arrow
+35: Fire arrow
+36: Ice arrow
+37: Electric arrow
+38: Charm arrow
+39: Leather quiver
+40: Elven quiver
+
+//Armor//
+41: Apprentice robes
+42: Common shirt
+43: Copper armor
+44: Turtle buckler
+45: Wooden shield
+46: Plank shield
+47: Shoes
+48: Apprentice hat
+49: Cloth cap
+50: Copper helmet
+
+51: Mage robes
+52: Leather armor
+53: Steel armor
+54: Wooden buckler
+55: Reinforced wooden shield
+56: Steel shield
+57: Leather boots
+58: Mage hat
+59: Leather helmet
+60: Steel helmet
+
+61: Archmage robes
+62: Elven armor
+63: Golden armor
+64: Steel buckler
+65: Steel round shield
+66: Golden shield
+67: Elven boots
+68: Archmage hat
+69: Elven helmet
+70: Golden helmet
+
+//Magic & Potions//
+71: Wooden staff
+72: Fire staff
+73: Lightning staff
+74: Ice staff
+75: Fire ring
+76: Lightning ring
+77: Ice ring
+78: Fire necklace
+79: Lightning necklace
+80: Ice necklace
+
+81: Minor healing potion
+82: Healing potion
+83: Greater healing potion
+84: Minor mana potion
+85: Mana potion
+86: Greater mana potion
+87: Yellow potion
+88: Green potion
+89: Purple potion
+90: Flying potion
+
+//Treasure//
+91: Gold coins (small)
+92: Gold coins (medium)
+93: Gold coins (big)
+94: Gold pouch
+95: Gold chest
+96: Ruby
+97: Topaz
+98: Emerald
+99: Sapphire
+100: Diamond
+
+//Adventuring//
+101: Map
+102: Journal
+103: Satchel
+104: Backpack
+105: Pouch
+106: Chest (small)
+107: Chest (big)
+108: Bronze key
+109: Silver key
+110: Golden key
+
+//Resources//
+111: Wood log
+112: Stone
+113: Meat
+114: Cheese
+115: Apple
+116: Poisoned apple
+117: Milk glass
+118: Egg (white)
+119: Egg (brown)
+120: Egg (golden)
+
+121: Carrot
+122: Berries
+123: Sunflower
+124: Flower (yellow)
+125: Flower (blue)
+126: Flower (red)
+127: Fishing rod
+128: Worm
+129: Fish_1
+130: Fish_2
+
+//GUI//
+131: Disk (save)
+132: Gear (options)
+133: Check mark
+134: X mark
+135: Cursor
+136: Speech bubble
+137: Skull (big)
+138: Skull (small)
+139: Heart (big)
+140: Heart (small)
+
+//Skills//
+141: Fire
+142: Water
+143: Earth
+144: Air
+145: Fire bolt
+146: Ice bolt
+147: Lightning bolt
+148: Buff
+149: Debuff
+150: Targeted
+
+151: Sword slash
+152: Sword slash (red)
+153: Sword slash (yellow)
+154: Sword slash (blue)
+155: Thrust
+156: Sword buff
+157: Crush
+158: Impale
+159: Defense buff
+160: Triple shot
+
+161: Poison nova
+162: Rage
+163: Icy death
+164: Haste
+165: Far sight (purple)
+166: Far sight (green)
+167: Heal
+168: Heal_2
+169: Bleeding
+170: Poisoned
+
+171: Bleeding damage
+172: Poison damage
+173: Fire damage
+174: Cold damage
+175: Electric damage
+176: Bleeding resistance
+177: Poison resistance
+178: Fire resistance
+179: Cold resistance
+180: Electric resistance
+
+//Monster drops//
+181: Bat wing
+182: Bat wing (red)
+183: Bat wing (black)
+184: Mushroom (purple)
+185: Mushroom (red)
+186: Mushroom (yellow)
+187: Mushroom (blue)
+188: Ogre eye (red)
+189: Ogre eye (yellow)
+190: Ogre eye (purple)
+
+191: Skeleton bone
+192: Skeleton bone (dark)
+193: Skeleton bone (red)
+194: Slime goo (green)
+195: Slime goo (yellow)
+196: Slime goo (red)
+197: Slime goo (blue)
+198: Wolf fang
+199: Wolf fang_2 
+200: Wolf fang_3
+
+//Numbers//
+201: Number_0
+202: Number_1
+203: Number_2
+204: Number_3
+205: Number_4
+206: Number_5
+207: Number_6
+208: Number_7
+209: Number_8
+210: Number_9
+
+211: Number_0 (red)
+212: Number_1 (red)
+213: Number_2 (red)
+214: Number_3 (red)
+215: Number_4 (red)
+216: Number_5 (red)
+217: Number_6 (red)
+218: Number_7 (red)
+219: Number_8 (red)
+220: Number_9 (red)
+
+//Frames//
+221: Frame (copper)
+222: Frame (silver)
+223: Frame (gold)
+224: Frame (bright gold)
+225: Frame (green)
+226: Frame (blue)
+227: Frame (purple)
+228: Frame (red)
+229: Background
+230: Catface =^･ω･^=
+
+//Signs//
+231: Exclamation mark
+232: Question mark
+233: Minus
+234: Plus
+235: Equal
+236: Multiply
+237: Divide
+
+238: Exclamation mark (red)
+239: Question mark (red)
+240: Minus (red)
+241: Plus (red)
+242: Equal (red)
+243: Multiply (red)
+244: Divide (red)
+
+//Extras//
+245: Mail
+246: Scroll_closed
+247: Letter_open
+248: Scroll_open
+249: ScrollVertical_closed
+250: ScrollVertical_open
+251: ScrollDiag
+252: ScrollDiag (red)
+253: ScrollDiag (purple)
+254: ScrollDiag (green)
+255: Scroll_open (blue)
+256: Scroll_open (red)
+257: Scroll_open (green)
+258: Crystal ball
+259: Pencil
+260: Pen
+261: Brush
+262: Quill
+263: Ink
+264: Magnifying glass
+265: Star
+266: Trophy
+267: Ribbon (red)
+268: Ribbon (blue)
+269: Ribbon (green)
+270: Crown
+271: Coin (gold)
+272: Coin (silver)
+273: Coin (bronze)
+274: Lock
+275: Clock
+276: Home
+277: Compass
+278: Paw
+279: Sound (high)
+280: Sound (low)
+281: Sound (muted)
+282: Music ON
+283: Music OFF
+284: Leaf
+285: Ticket 1
+286: Ticket 2
+287: Lute 1
+288: Lute 2
+289: Lute 3
+290: Flute 1
+291: Flute 2
+292: Flute 3
+293: Drum 1
+294: Drum 2
+295: Concertina 1
+296: Concertina 2
+297: Concertina 3
+298: Violin 1
+299: Violin 2
+300: Violin 3
+301: Vynil 1
+302: Vynil 2
+303: Vynil 3
+304: Music sheet
+305: Copper ingot
+306: Silver ingot
+307: Gold ingot
+
+EXPANSION 1 (Colour variations)
+----------
+1: Fire dagger
+2: Fire sword
+3: Fire longbow
+4: Fire spear
+5: Fire axe
+6: Fire mace
+7: Fire shovel
+8: Fire pickaxe
+9: Fire hammer
+10: Fire scythe
+
+11: Ice dagger
+12: Ice sword
+13: Ice longbow
+14: Ice spear
+15: Ice axe
+16: Ice mace
+17: Ice shovel
+18: Ice pickaxe
+19: Ice hammer
+20: Ice scythe
+
+21: Lightning dagger
+22: Lightning sword
+23: Lightning longbow
+24: Lightning spear
+25: Lightning axe
+26: Lightning mace
+27: Lightning shovel
+28: Lightning pickaxe
+29: Lightning hammer
+30: Lightning scythe
+
+31: Minor white potion
+32: White potion
+33: Greater white potion
+34: Purple staff
+35: Purple ring
+36: Purple necklace
+37: Copper coins (small)
+38: Copper coins (medium)
+39: Copper coins (big)
+40: Copper pouch
+
+41: Copper chest
+42: Pink diamond
+43: Black diamond
+44: Silver coins (small)
+45: Silver coins (medium)
+46: Silver coins (big)
+47: Silver pouch
+48: Silver chest
+49: Golden apple
+50: Green apple
+
+51: Monster meat
+52: Burnt meat
+53: Glass of water
+54: Cup of wine
+55: Book (red)
+56: Book (blue)
+57: Book (green)
+58: Archmage book
+59: Ash log
+60: Birch log
+
+61: Coal ore
+62: Copper ore
+63: Silver ore
+64: Gold ore
+65: Half heart_1
+66: Half heart_2
+67: Empty heart
+68: Sword slash (brown)
+69: Sword slash (green)
+70: Sword slash (purple)
+
+71: Sword slash (black)
+72: Healing spell (green)
+73: Healing spell_2 (green)
+74: Thrust (blue)
+75: Sword buff (blue)
+76: Crush (blue)
+77: Impale (blue)
+78: Defense buff (red)
+79: Triple shot (blue)
+80: Thrust (yellow)
+
+81: Sword buff (yellow)
+82: Crush (yellow)
+83: Impale (yellow)
+84: Defense buff (yellow)
+85: Triple shot (red)
+86: Number_0 (black)
+87: Number_1 (black)
+88: Number_2 (black)
+89: Number_3 (black)
+90: Number_4 (black)
+
+91: Number_5 (black)
+92: Number_6 (black)
+93: Number_7 (black)
+94: Number_8 (black)
+95: Number_9 (black)
+
+96: Exclamation mark (black)
+97: Question mark (black)
+98: Minus (black)
+99: Plus (black)
+100: Equal (black)
+101: Multiply (black)
+102: Divide (black)
+
+EXPANSION 2 (Fishing set)
+----------
+1: Wooden rod
+2: Steel rod
+3: Golden rod
+4: Bait_1
+5: Bait_2
+6: Bait_3
+7: Bait_4
+8: Net
+9: Leech_1
+10: Leech_2
+
+11: Leech_3
+12: Worm_1
+13: Worm_2
+14: Worm_3
+15: Seaweed
+16: Driftwood
+17: Old boot
+18: Fish skeleton
+19: Cursed fish
+20: Sardine_1
+
+21: Sardine_2
+22: Sardine_3
+23: Sardine_4
+24: Sardine_5
+25: Sardine_6
+26: Sardine_7
+27: Sardine_8
+28: Sardine_golden
+29: Bass_1
+30: Bass_2
+
+31: Bass_3
+32: Bass_4
+33: Bass_5
+34: Bass_6
+35: Bass_7
+36: Bass_8
+37: Bass_9
+38: Bass_golden
+39: Carp_1
+40: Carp_2
+
+41: Carp_3
+42: Carp_4
+43: Carp_5
+44: Carp_6
+45: Carp_7
+46: Carp_8
+47: Carp_golden
+48: Shrimp_1
+49: Shrimp_2
+50: Shrimp_3
+
+51: Shrimp_4
+52: Shrimp_5
+53: Shrimp_6
+54: Shrimp_golden
+55: Swordfish_1
+56: Swordfish_2
+57: Swordfish_3
+58: Swordfish_4
+59: Swordfish_5
+60: Swordfish_6
+
+61: Swordfish_7
+62: Swordfish_8
+63: Swordfish_9
+64: Swordfish_golden
+65: Eel_1
+66: Eel_2
+67: Eel_3
+68: Eel_4
+69: Eel_5
+70: Eel_6
+
+71: Eel_7
+72: Eel_8
+73: Eel_9
+74: Eel_golden
